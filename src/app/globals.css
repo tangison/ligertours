@@ -1,0 +1,252 @@
+@import "tailwindcss";
+
+/* ============ Liger Tours Namibia design tokens (from brand kit 03-tokens/tokens.css) ============ */
+:root {
+  --rose-50: #FBF4F2;
+  --rose-100: #F6E8E4;
+  --rose-200: #F0DAD5;
+  --rose-300: #E3C3BE;
+  --rose-400: #CDA9A4;
+  --rose-500: #B58B88;
+  --rose-600: #996660;
+  --rose-700: #744642;
+  --rose-800: #523431;
+  --rose-900: #2F1E1C;
+  --night: #1F1613;
+  --acacia: #483E22;
+  --sunrise: #F58A3A;
+  --sun: #F8C808;
+  --white: #FFFFFF;
+  --bg: #FBF4F2;
+  --surface: #FFFFFF;
+  --surface-alt: #F6E8E4;
+  --surface-tint: #F0DAD5;
+  --ink: #2F1E1C;
+  --ink-muted: #6B5450;
+  --brand: #744642;
+  --brand-hover: #523431;
+  --border: #E3C3BE;
+  --focus-light: #483E22;
+  --focus-dark: #F58A3A;
+  --bg-dark: #1F1613;
+  --surface-dark: #2F1E1C;
+  --ink-on-dark: #F0DAD5;
+  --ink-muted-on-dark: #CDA9A4;
+  --brand-on-dark: #F0DAD5;
+  --font-script: 'Kaushan Script', "Brush Script MT", cursive;
+  --font-display: 'Archivo', "Helvetica Neue", Arial, sans-serif;
+  --font-body: 'Schibsted Grotesk', "Helvetica Neue", Arial, sans-serif;
+  --fs-hero: clamp(3.5rem, 2.1rem + 7vw, 8.5rem);
+  --fs-h1: clamp(2.75rem, 1.8rem + 4.2vw, 5.75rem);
+  --fs-h2: clamp(1.875rem, 1.35rem + 2.4vw, 3.5rem);
+  --fs-h3: clamp(1.375rem, 1.15rem + 1vw, 2rem);
+  --fs-h4: 1.25rem;
+  --fs-lead: clamp(1.125rem, 1.05rem + 0.4vw, 1.375rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-label: 0.75rem;
+  --lh-tight: 1.02;
+  --lh-heading: 1.1;
+  --lh-body: 1.65;
+  --track-label: 0.16em;
+  --track-display: -0.015em;
+  --section-y: clamp(4.5rem, 3rem + 6vw, 9.5rem);
+  --gutter: clamp(1rem, 0.5rem + 3vw, 2rem);
+  --container: 1280px;
+  --container-narrow: 760px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --radius-arch: 999px 999px 0 0;
+  --shadow-1: 0 1px 2px rgba(47, 30, 28, .08), 0 2px 8px rgba(47, 30, 28, .06);
+  --shadow-2: 0 4px 12px rgba(47, 30, 28, .10), 0 16px 40px rgba(47, 30, 28, .10);
+  --shadow-3: 0 12px 32px rgba(47, 30, 28, .14), 0 32px 80px rgba(47, 30, 28, .16);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 120ms;
+  --dur-base: 240ms;
+  --dur-slow: 480ms;
+  --dur-hero: 800ms;
+  --overlay-dusk: linear-gradient(180deg, rgba(31, 22, 19, 0) 0%, rgba(31, 22, 19, .35) 45%, rgba(31, 22, 19, .78) 100%);
+  --overlay-top: linear-gradient(180deg, rgba(31, 22, 19, .55) 0%, rgba(31, 22, 19, 0) 40%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur-fast: 0ms; --dur-base: 0ms; --dur-slow: 0ms; --dur-hero: 0ms; }
+}
+
+/* ============ Tailwind theme mapping (kit values only) ============ */
+@theme inline {
+  --color-rose-50: var(--rose-50);
+  --color-rose-100: var(--rose-100);
+  --color-rose-200: var(--rose-200);
+  --color-rose-300: var(--rose-300);
+  --color-rose-400: var(--rose-400);
+  --color-rose-500: var(--rose-500);
+  --color-rose-600: var(--rose-600);
+  --color-rose-700: var(--rose-700);
+  --color-rose-800: var(--rose-800);
+  --color-rose-900: var(--rose-900);
+  --color-night: var(--night);
+  --color-acacia: var(--acacia);
+  --color-sunrise: var(--sunrise);
+  --color-brand: var(--brand);
+  --color-brand-hover: var(--brand-hover);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+  --color-surface-tint: var(--surface-tint);
+  --color-line: var(--border);
+  --color-ink-on-dark: var(--ink-on-dark);
+  --color-ink-muted-on-dark: var(--ink-muted-on-dark);
+  --font-script: var(--font-script);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --radius-arch: 999px 999px 0 0;
+  --shadow-card: var(--shadow-2);
+}
+
+/* ============ Self-hosted fonts (brand kit 04-typography, SIL OFL) ============ */
+@font-face {
+  font-family: 'Kaushan Script';
+  src: url('/fonts/KaushanScript-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Archivo';
+  src: url('/fonts/Archivo-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Schibsted Grotesk';
+  src: url('/fonts/SchibstedGrotesk-Variable.woff2') format('woff2');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============ Base ============ */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; height: auto; display: block; }
+:focus-visible { outline: 3px solid var(--focus-light); outline-offset: 3px; border-radius: 4px; }
+.on-dark :focus-visible { outline-color: var(--focus-dark); }
+
+/* ============ Type roles (kit fonts.css) ============ */
+.t-hero { font-family: var(--font-script); font-weight: 400; font-size: var(--fs-hero); line-height: var(--lh-tight); letter-spacing: 0; }
+.t-h1 { font-family: var(--font-script); font-weight: 400; font-size: var(--fs-h1); line-height: 1.04; letter-spacing: 0; }
+.t-h2 { font-family: var(--font-display); font-weight: 800; font-stretch: 115%; font-size: var(--fs-h2); line-height: var(--lh-heading); letter-spacing: var(--track-display); }
+.t-h3 { font-family: var(--font-display); font-weight: 700; font-stretch: 108%; font-size: var(--fs-h3); line-height: 1.15; letter-spacing: -.01em; }
+.t-h4 { font-family: var(--font-display); font-weight: 700; font-stretch: 100%; font-size: var(--fs-h4); line-height: 1.25; }
+.t-eyebrow { font-family: var(--font-display); font-weight: 700; font-stretch: 125%; font-size: var(--fs-label); line-height: 1.2; letter-spacing: var(--track-label); text-transform: uppercase; }
+.t-lead { font-family: var(--font-body); font-weight: 400; font-size: var(--fs-lead); line-height: 1.55; }
+.t-body { font-family: var(--font-body); font-weight: 400; font-size: var(--fs-body); line-height: var(--lh-body); }
+.t-small { font-family: var(--font-body); font-weight: 400; font-size: var(--fs-small); line-height: 1.5; }
+.t-button { font-family: var(--font-display); font-weight: 700; font-stretch: 112%; font-size: .8125rem; letter-spacing: .1em; text-transform: uppercase; }
+
+/* ============ Layout primitives ============ */
+.container-liger { width: min(100% - 2 * var(--gutter), var(--container)); margin-inline: auto; }
+.container-narrow { width: min(100% - 2 * var(--gutter), var(--container-narrow)); margin-inline: auto; }
+.section { padding-block: var(--section-y); }
+.on-dark { background: var(--bg-dark); color: var(--ink-on-dark); }
+.prose-liger { max-width: 62ch; }
+
+/* ============ Buttons (kit components-reference.css) ============ */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-3, 12px); min-height: 52px; padding: 0 32px; border-radius: var(--radius-pill); font-family: var(--font-display); font-weight: 700; font-stretch: 112%; font-size: .8125rem; letter-spacing: .1em; text-transform: uppercase; text-decoration: none; border: 2px solid transparent; cursor: pointer; transition: background var(--dur-base) var(--ease), color var(--dur-base) var(--ease), transform var(--dur-base) var(--ease), border-color var(--dur-base) var(--ease); }
+.btn:hover { transform: translateY(-2px); }
+.btn--primary { background: var(--brand); color: #fff; }
+.btn--primary:hover { background: var(--brand-hover); }
+.btn--ghost { border-color: var(--brand); color: var(--brand); background: transparent; }
+.btn--ghost:hover { background: var(--brand); color: #fff; }
+.on-dark .btn--primary { background: var(--rose-200); color: var(--night); }
+.on-dark .btn--primary:hover { background: #fff; }
+.on-dark .btn--ghost { border-color: var(--rose-200); color: var(--rose-200); }
+.on-dark .btn--ghost:hover { background: var(--rose-200); color: var(--night); }
+
+/* ============ Signature device 1: arch-masked photo ============ */
+.arch { border-radius: var(--radius-arch); overflow: hidden; aspect-ratio: 4 / 5; position: relative; }
+.arch img { width: 100%; height: 100%; object-fit: cover; }
+.arch-wrap { position: relative; }
+.arch-wrap::before { content: ""; position: absolute; inset: -22px -22px 0 -22px; border: 3px solid var(--rose-400); border-bottom: 0; border-radius: 999px 999px 0 0; pointer-events: none; }
+
+/* ============ Signature device 2: sun discs ============ */
+.sun-disc { position: absolute; width: clamp(180px, 28vw, 420px); aspect-ratio: 1; border-radius: 50%; background: var(--rose-400); z-index: 0; pointer-events: none; }
+.sun-disc::after { content: ""; position: absolute; inset: 18%; border-radius: 50%; background: var(--rose-500); }
+
+/* ============ Signature device 3: dune divider ============ */
+.dune { display: block; width: 100%; height: clamp(60px, 10vw, 160px); line-height: 0; }
+.dune img, .dune svg { width: 100%; height: 100%; display: block; object-fit: fill; }
+
+/* ============ Headline lockup ============ */
+.lockup { display: grid; gap: .15em; }
+.lockup .kicker { font-family: var(--font-display); font-weight: 800; font-stretch: 125%; text-transform: uppercase; font-size: clamp(1rem, .7rem + 1.4vw, 1.75rem); letter-spacing: .12em; }
+.lockup .script { font-family: var(--font-script); font-size: var(--fs-hero); line-height: .95; color: inherit; }
+
+/* ============ Photo heroes: always overlaid ============ */
+.photo-hero { position: relative; min-height: min(92svh, 56rem); display: grid; align-items: end; color: var(--rose-50); isolation: isolate; }
+.photo-hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.photo-hero::before { content: ""; position: absolute; inset: 0; background: var(--overlay-top), var(--overlay-dusk); z-index: -1; }
+
+.page-header { position: relative; min-height: 50svh; display: grid; align-items: end; color: var(--rose-50); isolation: isolate; }
+.page-header > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.page-header::before { content: ""; position: absolute; inset: 0; background: var(--overlay-top), var(--overlay-dusk); z-index: -1; }
+
+/* ============ Tour card ============ */
+.card-tour { display: grid; gap: var(--space-4, 16px); }
+.card-tour .media { aspect-ratio: 4 / 5; border-radius: var(--radius-arch); overflow: hidden; position: relative; }
+.card-tour .media img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--dur-slow) var(--ease); }
+.card-tour:hover .media img, .card-tour:focus-within .media img { transform: scale(1.04); }
+
+/* ============ Scroll craft: reveal system ============ */
+/* Hidden state only applies when JS is running (html.js) so content is never lost without JS */
+html.js .reveal { opacity: 0; transform: translateY(24px); transition: opacity var(--dur-slow) var(--ease), transform var(--dur-slow) var(--ease); transition-delay: var(--reveal-delay, 0ms); }
+html.js .reveal.is-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html.js .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* Header scroll state */
+.site-header { transition: background var(--dur-base) var(--ease), box-shadow var(--dur-base) var(--ease); }
+.site-header.is-scrolled { background: var(--rose-50); box-shadow: inset 0 -1px 0 var(--rose-300); }
+
+/* Mobile nav drawer */
+.nav-drawer { transition: opacity var(--dur-base) var(--ease), visibility var(--dur-base) var(--ease); }
+.nav-drawer[data-open="false"] { opacity: 0; visibility: hidden; }
+.nav-drawer[data-open="true"] { opacity: 1; visibility: visible; }
+
+/* Timeline (tour detail day-by-day) */
+.timeline { position: relative; padding-inline-start: 2.5rem; }
+.timeline::before { content: ""; position: absolute; left: .6rem; top: .4rem; bottom: .4rem; width: 2px; background: var(--rose-300); }
+.timeline-item { position: relative; padding-block-end: var(--space-6, 32px); }
+.timeline-item::before { content: ""; position: absolute; left: -2.5rem; top: .5rem; width: 14px; height: 14px; border-radius: 50%; background: var(--surface); border: 3px solid var(--rose-700); }
+
+/* Form field states */
+.field { width: 100%; min-height: 52px; padding: 12px 16px; border-radius: var(--radius-md); border: 1.5px solid var(--rose-300); background: var(--surface); color: var(--ink); font-family: var(--font-body); font-size: 1rem; transition: border-color var(--dur-base) var(--ease); }
+.field:hover { border-color: var(--rose-400); }
+.field:focus { outline: 3px solid var(--focus-light); outline-offset: 2px; }
+.field[aria-invalid="true"] { border-color: #A33B2E; }
+.field-error { color: #A33B2E; font-size: var(--fs-small); margin-top: 6px; }
+
+/* Gallery */
+.gallery-item { position: relative; overflow: hidden; border-radius: var(--radius-md); }
+.gallery-item img { transition: transform var(--dur-slow) var(--ease); }
+.gallery-item:hover img, .gallery-item:focus-visible img { transform: scale(1.04); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}

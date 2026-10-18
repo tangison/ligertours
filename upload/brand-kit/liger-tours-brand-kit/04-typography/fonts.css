@@ -1,0 +1,17 @@
+/* Self-hosted fonts (SIL Open Font License, free for commercial use). Place the /fonts folder next to this file or adjust the url() paths. */
+@font-face{font-family:'Kaushan Script';src:url('fonts/KaushanScript-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Archivo';src:url('fonts/Archivo-Variable.woff2') format('woff2');font-weight:100 900;font-stretch:62% 125%;font-style:normal;font-display:swap}
+@font-face{font-family:'Schibsted Grotesk';src:url('fonts/SchibstedGrotesk-Variable.woff2') format('woff2');font-weight:400 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Schibsted Grotesk';src:url('fonts/SchibstedGrotesk-Italic-Variable.woff2') format('woff2');font-weight:400 900;font-style:italic;font-display:swap}
+
+/* Type roles. Copy these exactly. */
+.t-hero  {font-family:var(--font-script);font-weight:400;font-size:var(--fs-hero);line-height:var(--lh-tight);letter-spacing:0}
+.t-h1    {font-family:var(--font-script);font-weight:400;font-size:var(--fs-h1);line-height:1.04;letter-spacing:0}
+.t-h2    {font-family:var(--font-display);font-weight:800;font-stretch:115%;font-size:var(--fs-h2);line-height:var(--lh-heading);letter-spacing:var(--track-display)}
+.t-h3    {font-family:var(--font-display);font-weight:700;font-stretch:108%;font-size:var(--fs-h3);line-height:1.15;letter-spacing:-.01em}
+.t-h4    {font-family:var(--font-display);font-weight:700;font-stretch:100%;font-size:var(--fs-h4);line-height:1.25}
+.t-eyebrow{font-family:var(--font-display);font-weight:700;font-stretch:125%;font-size:var(--fs-label);line-height:1.2;letter-spacing:var(--track-label);text-transform:uppercase}
+.t-lead  {font-family:var(--font-body);font-weight:400;font-size:var(--fs-lead);line-height:1.55}
+.t-body  {font-family:var(--font-body);font-weight:400;font-size:var(--fs-body);line-height:var(--lh-body)}
+.t-small {font-family:var(--font-body);font-weight:400;font-size:var(--fs-small);line-height:1.5}
+.t-button{font-family:var(--font-display);font-weight:700;font-stretch:112%;font-size:.8125rem;letter-spacing:.1em;text-transform:uppercase}

@@ -1,0 +1,55 @@
+/* Reference CSS for the signature devices. Requires tokens.css + fonts.css. Adapt class names to the site, keep the values. */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:var(--fs-body);line-height:var(--lh-body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+:focus-visible{outline:3px solid var(--focus-light);outline-offset:3px;border-radius:4px}
+.on-dark :focus-visible{outline-color:var(--focus-dark)}
+.container{width:min(100% - 2*var(--gutter),var(--container));margin-inline:auto}
+.section{padding-block:var(--section-y)}
+.on-dark{background:var(--bg-dark);color:var(--ink-on-dark)}
+.prose{max-width:62ch}
+
+/* Buttons: pill, display font, uppercase */
+.btn{display:inline-flex;align-items:center;gap:var(--space-3);min-height:52px;padding:0 var(--space-6);border-radius:var(--radius-pill);font-family:var(--font-display);font-weight:700;font-stretch:112%;font-size:.8125rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;transition:background var(--dur-base) var(--ease),color var(--dur-base) var(--ease),transform var(--dur-base) var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn--primary{background:var(--brand);color:#fff}
+.btn--primary:hover{background:var(--brand-hover)}
+.btn--ghost{border-color:var(--brand);color:var(--brand);background:transparent}
+.btn--ghost:hover{background:var(--brand);color:#fff}
+.on-dark .btn--primary{background:var(--rose-200);color:var(--night)}
+.on-dark .btn--primary:hover{background:#fff}
+.on-dark .btn--ghost{border-color:var(--rose-200);color:var(--rose-200)}
+.on-dark .btn--ghost:hover{background:var(--rose-200);color:var(--night)}
+
+/* Signature device 1: arch-masked photo */
+.arch{border-radius:var(--radius-arch);overflow:hidden;aspect-ratio:4/5;position:relative}
+.arch img{width:100%;height:100%;object-fit:cover}
+.arch-wrap{position:relative}
+.arch-wrap::before{content:"";position:absolute;inset:-22px -22px 0 -22px;border:3px solid var(--rose-400);border-bottom:0;border-radius:999px 999px 0 0;pointer-events:none}
+
+/* Signature device 2: sun discs (decorative) */
+.sun-disc{position:absolute;width:clamp(180px,28vw,420px);aspect-ratio:1;border-radius:50%;background:var(--rose-400);z-index:-1}
+.sun-disc::after{content:"";position:absolute;inset:18%;border-radius:50%;background:var(--rose-500)}
+
+/* Signature device 3: dune divider */
+.dune{display:block;width:100%;height:clamp(60px,10vw,160px);line-height:0}
+.dune img,.dune svg{width:100%;height:100%;display:block}
+
+/* Headline lockup: Archivo kicker + script word */
+.lockup{display:grid;gap:.15em}
+.lockup .kicker{font-family:var(--font-display);font-weight:800;font-stretch:125%;text-transform:uppercase;font-size:clamp(1rem,.7rem+1.4vw,1.75rem);letter-spacing:.12em}
+.lockup .script{font-family:var(--font-script);font-size:var(--fs-hero);line-height:.95;color:inherit}
+
+/* Text over photography: ALWAYS an overlay */
+.photo-hero{position:relative;min-height:min(92svh,56rem);display:grid;align-items:end;color:var(--rose-50);isolation:isolate}
+.photo-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.photo-hero::before{content:"";position:absolute;inset:0;background:var(--overlay-top),var(--overlay-dusk);z-index:-1}
+
+/* Tour card (4:5, arch top) */
+.card-tour{display:grid;gap:var(--space-4)}
+.card-tour .media{aspect-ratio:4/5;border-radius:var(--radius-arch);overflow:hidden}
+.card-tour .media img{width:100%;height:100%;object-fit:cover;transition:transform var(--dur-slow) var(--ease)}
+.card-tour:hover .media img{transform:scale(1.04)}
+
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
