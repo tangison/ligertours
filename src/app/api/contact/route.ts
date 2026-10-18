@@ -2,6 +2,28 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 import { db } from "@/lib/db";
 
+/* Serverless filesystems start empty, so the SQLite file may not exist yet.
+   Make sure the Leads table exists before the first write of an instance. */
+let schemaReady: Promise<unknown> | null = null;
+function ensureSchema() {
+  if (!schemaReady) {
+    schemaReady = db.$executeRawUnsafe(
+      `CREATE TABLE IF NOT EXISTS "Lead" (
+        "id" TEXT NOT NULL PRIMARY KEY,
+        "name" TEXT NOT NULL,
+        "email" TEXT NOT NULL,
+        "phone" TEXT,
+        "travelFrom" TEXT,
+        "groupSize" TEXT,
+        "message" TEXT NOT NULL,
+        "source" TEXT NOT NULL DEFAULT 'contact',
+        "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+      )`
+    );
+  }
+  return schemaReady;
+}
+
 const schema = z.object({
   name: z.string().trim().min(2).max(120),
   email: z.string().trim().email().max(200),
@@ -20,6 +42,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ ok: false, error: "Invalid enquiry data." }, { status: 400 });
     }
     const d = parsed.data;
+    await ensureSchema();
     await db.lead.create({
       data: {
         name: d.name,
