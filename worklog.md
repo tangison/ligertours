@@ -40,3 +40,24 @@ Work Log:
 
 Stage Summary:
 - IN PROGRESS: scroll-craft engine (GSAP ScrollTrigger primitives) + all-page application + SVG logo swap + copyright + CTA copy pass, then build, verify, deploy.
+
+Work Log (continued):
+- Built scroll-craft engine v2 (src/components/site/scroll-craft.tsx): WordsIn, WordScrub (0.1->1.0 scrub), ImgReveal (0.85->1.0), Batch (ScrollTrigger.batch), CountUp, PinnedQuote (flagship pin +=750 scrub), LineDraw, DriftY. All scoped useGSAP + prefers-reduced-motion guards.
+- template.tsx page entrance on every navigation; scroll-progress hairline (rose-400, 3px) on every route.
+- Applied everywhere: home (hero load timeline, count-up stats strip 7/12/100%/NTB, pinned Dead Vlei quote, batched cards/testimonials), /tours, 7x /tours/[slug] (timeline line draw, summary bar, ImgReveal band, batched more-tours), /activities, /about, /gallery (batch inside GalleryGrid), /contact (DriftY sun disc + batched info panel), legal pages Reveal, 404 class fix (duration-s] bug from Task 1 found and fixed).
+- SVG logos live in header (mono-cream over hero / primary-rose scrolled), drawer, footer (on-dark). PNGs kept for favicons/OG.
+- Footer copyright: (c) 2026 Liger Tours Namibia. All rights reserved. + Registered with the Namibia Tourism Board (NTB) + Made by Tangison Studio. Legal pages Last updated -> October 2026.
+- CTA pass: "WhatsApp us now" everywhere (friction-free-first per RNG), "See the tours", "See all routes", "Browse all experiences", "Add this to my trip", "Prefer WhatsApp? Message us now". No forbidden CTAs, no em dashes.
+- Patterns: sun-gradient-disc added to night CTA; sun discs + dune dividers + arch outlines retained; sun disc drift via DriftY on home + contact night sections.
+- Fixed during verification: stale next-server processes (pid kill) were serving old manifest (CSS 404); standalone server needed static+public copies; scroll-craft has no default export (build fix); stats type union fix.
+- Verified in browser (agent-browser): hero entrance, scrub states mid-scroll, pin release, count-ups landed, timeline draw, zero console errors on / /tours /tours/[slug] /about /gallery /contact /privacy /terms, 404 title correct.
+- Weight audit: ~408KB worst case incl. all JS chunks + double-counted srcset (real first view approx 300KB) -> inside 500KB budget with GSAP.
+- Deployed: git push (936c9ce) + vercel --prod. Production verified: 10 routes 200, 404 works, CSS 200, SVG logos in HTML, NTB line live, contact API {"ok":true}, robots+sitemap 200.
+
+Stage Summary (Task 2 COMPLETE):
+- Live: https://ligertours.vercel.app
+- Repo: https://github.com/tangison/ligertours @ 936c9ce
+- Scroll craft: every route, every major section (user correction resolved)
+- Copyright: on point (2026 + entity + NTB); Tangison credit intact
+- Skills installed this task: gsap-core, gsap-scrolltrigger, gsap-react, react-view-transitions, vercel-optimize (5 max rule honored)
+- SECURITY: rotate GitHub PAT + Vercel token after session (both appeared in chat).
