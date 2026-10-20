@@ -5,12 +5,32 @@
 
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { gsap, ScrollTrigger, useGSAP, prefersReduced } from "@/lib/gsap";
 
 export type GalleryPhoto = { src: string; alt: string; tall?: boolean };
 
 export default function GalleryGrid({ photos }: { photos: GalleryPhoto[] }) {
   const [active, setActive] = useState<number | null>(null);
   const openerRef = useRef<HTMLButtonElement | null>(null);
+  const gridRef = useRef<HTMLDivElement | null>(null);
+
+  /* Craft: photos batch in with a gentle settle, on every scroll into view. */
+  useGSAP(
+    () => {
+      const el = gridRef.current;
+      if (!el || prefersReduced()) return;
+      const items = gsap.utils.toArray<HTMLElement>(el.querySelectorAll(".gallery-item"));
+      if (!items.length) return;
+      gsap.set(items, { autoAlpha: 0, y: 24, scale: 0.96 });
+      ScrollTrigger.batch(items, {
+        start: "top 90%",
+        once: true,
+        onEnter: (batch) =>
+          gsap.to(batch, { autoAlpha: 1, y: 0, scale: 1, duration: 0.7, stagger: 0.06, overwrite: true }),
+      });
+    },
+    { scope: gridRef }
+  );
 
   const close = useCallback(() => {
     setActive(null);
@@ -41,7 +61,7 @@ export default function GalleryGrid({ photos }: { photos: GalleryPhoto[] }) {
 
   return (
     <>
-      <div className="columns-1 gap-4 sm:columns-2 lg:columns-3 [&>*]:mb-4">
+      <div ref={gridRef} className="columns-1 gap-4 sm:columns-2 lg:columns-3 [&>*]:mb-4">
         {photos.map((p, i) => (
           <button
             key={p.src}

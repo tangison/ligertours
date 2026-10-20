@@ -25,3 +25,18 @@ Stage Summary:
 - Copyright line: (c) 2026 Liger Tours Namibia + hardcoded "Made by Tangison Studio" -> https://studio.tangison.com
 - Handover items: connect Git in Vercel dashboard (vercel git connect) for push-to-deploy; leads live in ephemeral SQLite /tmp per lambda instance, move to Vercel Postgres or Convex for durable storage; wire SMTP + SPF/DKIM/DMARC for enquiry notifications; ligertoursnamibia.com DNS can point to this project when the client is ready.
 - SECURITY: rotate both tokens (GitHub PAT + Vercel vcp_ token) after this session, they appeared in chat plaintext.
+
+---
+Task ID: 2
+Agent: main (Z.ai)
+Task: User-ordered corrections: (1) apply real scroll craft to ALL pages not just home, (2) use SVG logo, (3) update copyright to be on point, (4) run tangison-super-skills skill hunt, (5) add patterns + copywriting-grade CTAs.
+
+Work Log:
+- Skill hunt executed per tangison-super-skills: npx skills find x3 (scroll animation gsap / page transition nextjs / web performance). Scored candidates (relevance/popularity/trust/maintenance/stack-fit). INSTALLED + disk-verified 5: gsap-core, gsap-scrolltrigger, gsap-react (all official greensock/gsap-skills), react-view-transitions, vercel-optimize (official vercel-labs/agent-skills). REJECTED: brightdata seo-audit (remote CLI + credentials, fails vetting), awwwards-animations + awesome-copilot gsap (unofficial, overlap), addyosmani performance (vercel-optimize is stack-exact). Read all 5 SKILL.md fully. npx skills add CLI hung on TUI prompt again -> used documented fallback (direct fetch), consistent with Task 1.
+- react-view-transitions: React 19.2.3 stable has no ViewTransition export and Next is 16.1.3 (<16.2 needed for transitionTypes prop) -> substituted route-change craft via template.tsx GSAP entrance (documented reason, compatible API).
+- Installed gsap@3.15.0 + @gsap/react@2.1.2.
+- Converted user's uploaded primary rose logo PNG -> SVG via palette quantization + vtracer (public/brand/logos/svg/: liger-tours-primary-rose.svg 62.8KB, liger-tours-mono-cream.svg 48.3KB, liger-icon-rose.svg 33.8KB). Render-checked via cairosvg: faithful.
+- gpt-taste RNG (scripts/design_rng.py, seed 20261020): hero=cinematic-center, motion=restrained, flagship=pinned-story, cta=friction-free-first, stats=count-up.
+
+Stage Summary:
+- IN PROGRESS: scroll-craft engine (GSAP ScrollTrigger primitives) + all-page application + SVG logo swap + copyright + CTA copy pass, then build, verify, deploy.

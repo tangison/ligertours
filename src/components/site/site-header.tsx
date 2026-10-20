@@ -6,10 +6,10 @@
    Mobile: full-screen drawer on night with the on-dark logo and WhatsApp button. */
 
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { company, nav } from "@/lib/content";
+import ScrollProgress from "./scroll-progress";
 
 export default function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
@@ -30,12 +30,15 @@ export default function SiteHeader() {
     };
   }, [open]);
 
+  /* SVG brand marks (vector, user-supplied artwork): rose primary on light,
+     cream mono over photos/night. Aspect 2560x841 -> 150px wide = 49px tall, CLS 0. */
   const logoSrc = scrolled
-    ? "/brand/logos/light-bg/liger-tours-primary-rose-800w.png"
-    : "/brand/logos/dark-bg/liger-tours-on-dark-800w.png";
+    ? "/brand/logos/svg/liger-tours-primary-rose.svg"
+    : "/brand/logos/svg/liger-tours-mono-cream.svg";
 
   return (
     <>
+      <ScrollProgress />
       <div className="fixed inset-x-0 top-0 z-[100]">
         {/* Brand bar: 4px, dominant accent from the logo artwork, zero layout shift */}
         <div className="h-1 w-full bg-brand" aria-hidden="true" />
@@ -50,13 +53,13 @@ export default function SiteHeader() {
               className={`relative shrink-0 transition-opacity duration-[240ms] ${open ? "pointer-events-none opacity-0" : "z-10"}`}
               aria-label="Liger Tours Namibia: home"
             >
-              <Image
+              <img
                 src={logoSrc}
-                alt="Liger Tours Namibia logo"
-                width={800}
-                height={320}
-                priority
-                sizes="150px"
+                alt="Liger Tours Namibia"
+                width={2560}
+                height={841}
+                fetchPriority="high"
+                decoding="async"
                 className="h-auto w-[150px]"
               />
             </Link>
@@ -128,12 +131,11 @@ export default function SiteHeader() {
         aria-label="Menu"
       >
         <div className="flex h-full flex-col px-[var(--gutter)] pb-10 pt-28">
-          <Image
-            src="/brand/logos/dark-bg/liger-tours-on-dark-800w.png"
-            alt="Liger Tours Namibia logo"
-            width={800}
-            height={320}
-            sizes="180px"
+          <img
+            src="/brand/logos/svg/liger-tours-mono-cream.svg"
+            alt="Liger Tours Namibia"
+            width={2560}
+            height={841}
             className="h-auto w-[180px]"
           />
           <nav aria-label="Mobile" className="mt-10 grid gap-6">
@@ -156,7 +158,7 @@ export default function SiteHeader() {
               rel="noopener noreferrer"
               className="btn btn--primary w-full"
             >
-              WhatsApp us
+              WhatsApp us now
             </a>
             <a href={company.phoneHref} className="t-body text-center text-rose-200">
               {company.phone}

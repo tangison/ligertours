@@ -3,6 +3,7 @@ import PageHeader from "@/components/site/page-header";
 import Reveal from "@/components/site/reveal";
 import Dune from "@/components/site/dune";
 import ContactForm from "@/components/site/contact-form";
+import { WordScrub, Batch, DriftY } from "@/components/site/scroll-craft";
 import { company } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -36,7 +37,11 @@ export default function ContactPage() {
           </Reveal>
 
           <Reveal delay={120} className="self-start">
-            <div className="rounded-[var(--radius-lg)] bg-surface-tint p-8">
+            <Batch
+              className="rounded-[var(--radius-lg)] bg-surface-tint p-8"
+              y={16}
+              selector=":scope > *"
+            >
               <h2 className="t-h3">Reach us directly</h2>
               <dl className="mt-6 grid gap-6">
                 <div>
@@ -93,18 +98,23 @@ export default function ContactPage() {
               >
                 Open the map
               </a>
-            </div>
+            </Batch>
           </Reveal>
         </div>
       </section>
 
       <Dune variant="night" />
-      <section className="section on-dark" aria-label="Planning ahead">
-        <div className="container-liger text-center">
+      <section className="section on-dark relative overflow-hidden" aria-label="Planning ahead">
+        <DriftY className="absolute -right-20 top-6" percent={6}>
+          <div className="sun-disc opacity-60" aria-hidden="true" />
+        </DriftY>
+        <div className="container-liger relative z-10 text-center">
+          <WordScrub
+            as="h2"
+            className="t-h2 mx-auto max-w-3xl text-rose-100"
+            text="The best months book out early."
+          />
           <Reveal>
-            <h2 className="t-h2 mx-auto max-w-3xl text-rose-100">
-              The best months book out early.
-            </h2>
             <p className="t-lead mx-auto mt-4 max-w-2xl text-ink-on-dark">
               May to October is high season in Namibia, and the best lodges
               around Etosha and Sossusvlei fill months ahead. The earlier you

@@ -54,3 +54,4 @@ server.log
 /skills/
 # sqlite dev database
 /db
+scripts/tmp_logo/

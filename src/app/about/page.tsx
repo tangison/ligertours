@@ -3,6 +3,7 @@ import Image from "next/image";
 import PageHeader from "@/components/site/page-header";
 import Reveal from "@/components/site/reveal";
 import Dune from "@/components/site/dune";
+import { Batch, ImgReveal, WordScrub } from "@/components/site/scroll-craft";
 import { about, company } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -26,9 +27,11 @@ export default function AboutPage() {
         <div className="container-liger grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
           <Reveal className="order-2 lg:order-1">
             <p className="t-eyebrow text-rose-600">Our story</p>
-            <h2 className="t-h2 mt-4">
-              Built by people who grew up with this land.
-            </h2>
+            <WordScrub
+              as="h2"
+              className="t-h2 mt-4"
+              text="Built by people who grew up with this land."
+            />
             <div className="prose-liger mt-6 grid gap-4">
               {about.story.map((p) => (
                 <p key={p.slice(0, 24)} className="t-body text-ink-muted">
@@ -37,7 +40,7 @@ export default function AboutPage() {
               ))}
             </div>
           </Reveal>
-          <Reveal delay={120} className="arch-wrap relative order-1 mx-auto w-full max-w-[420px] lg:order-2">
+          <ImgReveal className="arch-wrap relative order-1 mx-auto w-full max-w-[420px] lg:order-2">
             <div className="sun-disc -right-14 top-16 md:-right-20" aria-hidden="true" />
             <div className="arch relative z-10">
               <Image
@@ -48,7 +51,7 @@ export default function AboutPage() {
                 className="object-cover"
               />
             </div>
-          </Reveal>
+          </ImgReveal>
         </div>
       </section>
 
@@ -73,19 +76,23 @@ export default function AboutPage() {
         <div className="container-liger">
           <Reveal>
             <p className="t-eyebrow text-rose-600">What makes us different</p>
-            <h2 className="t-h2 mt-4 max-w-3xl">Five things we will not compromise.</h2>
           </Reveal>
-          <div className="mt-12 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+          <WordScrub
+            as="h2"
+            className="t-h2 mt-4 max-w-3xl"
+            text="Five things we will not compromise."
+          />
+          <Batch className="mt-12 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-3" stagger={0.06}>
             {about.values.map((v, i) => (
-              <Reveal key={v.title} delay={(i % 3) * 80} className="border-t-2 border-rose-700/30 pt-6">
+              <div key={v.title} className="border-t-2 border-rose-700/30 pt-6">
                 <span className="font-script text-4xl text-rose-700" aria-hidden="true">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <h3 className="t-h4 mt-3">{v.title}</h3>
                 <p className="t-body mt-3 text-ink-muted">{v.body}</p>
-              </Reveal>
+              </div>
             ))}
-            <Reveal delay={160} className="self-end">
+            <div className="self-end">
               <div className="rounded-[var(--radius-lg)] bg-surface-tint p-8">
                 <p className="t-body text-ink">
                   Registered with the Namibia Tourism Board and based in
@@ -95,8 +102,8 @@ export default function AboutPage() {
                   Plan my trip
                 </a>
               </div>
-            </Reveal>
-          </div>
+            </div>
+          </Batch>
         </div>
       </section>
     </>

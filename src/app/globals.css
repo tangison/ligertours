@@ -250,3 +250,8 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
 }
+
+/* ============ Scroll craft v2: timeline line draw overlay ============ */
+/* Sits exactly on .timeline::before (rose-300) and draws over it in rose-700. */
+.timeline-line-draw { position: absolute; left: .6rem; top: .4rem; bottom: .4rem; width: 2px; background: var(--rose-700); transform: scaleY(0); transform-origin: top center; z-index: 1; }
+@media (prefers-reduced-motion: reduce) { .timeline-line-draw { transform: none; } }

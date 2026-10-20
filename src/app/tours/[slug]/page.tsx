@@ -6,6 +6,7 @@ import PageHeader from "@/components/site/page-header";
 import Reveal from "@/components/site/reveal";
 import Dune from "@/components/site/dune";
 import ContactForm from "@/components/site/contact-form";
+import { Batch, ImgReveal, LineDraw } from "@/components/site/scroll-craft";
 import { tours, company } from "@/lib/content";
 
 export function generateStaticParams() {
@@ -83,22 +84,24 @@ export default async function TourDetailPage({
       {/* Summary bar */}
       <div className="border-b border-line bg-surface-alt">
         <div className="container-liger grid gap-6 py-8 sm:grid-cols-2 lg:grid-cols-4">
-          <div>
-            <p className="t-eyebrow text-rose-600">Route</p>
-            <p className="t-body mt-1">{tour.route}</p>
-          </div>
-          <div>
-            <p className="t-eyebrow text-rose-600">Duration</p>
-            <p className="t-body mt-1">{tour.duration ?? "Confirmed at enquiry"}</p>
-          </div>
-          <div>
-            <p className="t-eyebrow text-rose-600">Group size</p>
-            <p className="t-body mt-1">Your group only</p>
-          </div>
-          <div>
-            <p className="t-eyebrow text-rose-600">Departs</p>
-            <p className="t-body mt-1">Windhoek, on your dates</p>
-          </div>
+          <Batch className="contents" selector=":scope > *">
+            <div>
+              <p className="t-eyebrow text-rose-600">Route</p>
+              <p className="t-body mt-1">{tour.route}</p>
+            </div>
+            <div>
+              <p className="t-eyebrow text-rose-600">Duration</p>
+              <p className="t-body mt-1">{tour.duration ?? "Confirmed at enquiry"}</p>
+            </div>
+            <div>
+              <p className="t-eyebrow text-rose-600">Group size</p>
+              <p className="t-body mt-1">Your group only</p>
+            </div>
+            <div>
+              <p className="t-eyebrow text-rose-600">Departs</p>
+              <p className="t-body mt-1">Windhoek, on your dates</p>
+            </div>
+          </Batch>
         </div>
       </div>
 
@@ -117,14 +120,21 @@ export default async function TourDetailPage({
               </div>
             </Reveal>
 
-            {/* Day-by-day timeline */}
+            {/* Day-by-day timeline: items batch in, rule draws on scrub */}
             <Reveal className="mt-16">
               <h2 className="t-h2">Day by day</h2>
               <p className="t-body mt-4 max-w-2xl text-ink-muted">
                 The exact day plan is confirmed with you at enquiry and shaped
                 around your dates. These are the stops that never change.
               </p>
-              <ol className="timeline mt-10">
+              <Batch
+                as="ol"
+                className="timeline mt-10"
+                y={18}
+                stagger={0.09}
+                selector=":scope > li"
+              >
+                <LineDraw className="timeline-line-draw" />
                 {tour.highlights.map((h, i) => (
                   <li key={h} className="timeline-item">
                     <p className="font-script text-3xl text-rose-700" aria-hidden="true">
@@ -133,11 +143,11 @@ export default async function TourDetailPage({
                     <h3 className="t-h4 mt-1">{h}</h3>
                   </li>
                 ))}
-              </ol>
+              </Batch>
             </Reveal>
 
             {/* Highlights gallery band */}
-            <Reveal className="mt-16">
+            <ImgReveal className="mt-16">
               <div className="relative aspect-[16/9] overflow-hidden rounded-[var(--radius-lg)]">
                 <Image
                   src="/imagery/web/deadvlei-warm-light.webp"
@@ -148,7 +158,7 @@ export default async function TourDetailPage({
                   className="object-cover"
                 />
               </div>
-            </Reveal>
+            </ImgReveal>
 
             {/* Included / not included */}
             <Reveal className="mt-16">
@@ -207,7 +217,7 @@ export default async function TourDetailPage({
                 rel="noopener noreferrer"
                 className="btn btn--ghost mt-6 w-full"
               >
-                WhatsApp us instead
+                Prefer WhatsApp? Message us now
               </a>
             </Reveal>
           </aside>
@@ -221,35 +231,34 @@ export default async function TourDetailPage({
           <Reveal>
             <h2 className="t-h2">Other routes you might like</h2>
           </Reveal>
-          <div className="mt-10 grid gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+          <Batch className="mt-10 grid gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
             {tours
               .filter((t) => t.slug !== tour.slug)
               .slice(0, 3)
-              .map((t, i) => (
-                <Reveal key={t.slug} delay={i * 80}>
-                  <Link
-                    href={`/tours/${t.slug}`}
-                    className="card-tour group"
-                    aria-label={`View the tour: ${t.name}`}
-                  >
-                    <span className="media arch block">
-                      <Image
-                        src={t.image}
-                        alt={t.alt}
-                        fill
-                        loading="lazy"
-                        sizes="(min-width: 1024px) 380px, (min-width: 768px) 45vw, 86vw"
-                        className="object-cover"
-                      />
-                    </span>
-                    <span className="t-eyebrow mt-2 block text-rose-600">{t.eyebrow}</span>
-                    <span className="t-h3 mt-2 block transition-colors duration-[240ms] group-hover:text-brand">
-                      {t.name}
-                    </span>
-                  </Link>
-                </Reveal>
+              .map((t) => (
+                <Link
+                  key={t.slug}
+                  href={`/tours/${t.slug}`}
+                  className="card-tour group"
+                  aria-label={`View the tour: ${t.name}`}
+                >
+                  <span className="media arch block">
+                    <Image
+                      src={t.image}
+                      alt={t.alt}
+                      fill
+                      loading="lazy"
+                      sizes="(min-width: 1024px) 380px, (min-width: 768px) 45vw, 86vw"
+                      className="object-cover"
+                    />
+                  </span>
+                  <span className="t-eyebrow mt-2 block text-rose-600">{t.eyebrow}</span>
+                  <span className="t-h3 mt-2 block transition-colors duration-[240ms] group-hover:text-brand">
+                    {t.name}
+                  </span>
+                </Link>
               ))}
-          </div>
+          </Batch>
         </div>
       </section>
     </>
