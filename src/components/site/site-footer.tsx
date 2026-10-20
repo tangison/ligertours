@@ -2,7 +2,6 @@
    Copyright: current calendar year + official entity name (on point, per checklist). */
 
 import Link from "next/link";
-import Image from "next/image";
 import { company, nav } from "@/lib/content";
 import Dune from "./dune";
 
@@ -13,12 +12,12 @@ export default function SiteFooter() {
       <footer className="on-dark bg-night text-ink-on-dark">
         <div className="container-liger grid gap-12 pb-10 pt-16 md:grid-cols-[1.2fr_1fr_1fr] md:gap-8">
           <div>
-            <Image
-              src="/brand/logos/dark-bg/liger-tours-on-dark-800w.png"
-              alt="Liger Tours Namibia logo"
-              width={800}
-              height={320}
-              sizes="200px"
+            <img
+              src="/brand/logos/svg/liger-tours-on-dark.svg"
+              alt="Liger Tours Namibia"
+              width={2560}
+              height={841}
+              loading="lazy"
               className="h-auto w-[200px]"
             />
             <p className="prose-liger mt-6 text-[15px] leading-relaxed text-ink-muted-on-dark">
@@ -76,9 +75,12 @@ export default function SiteFooter() {
 
         <div className="border-t border-white/10">
           <div className="container-liger flex flex-col gap-4 py-6 pb-24 md:flex-row md:items-center md:justify-between md:pb-6">
-            <p className="t-small text-ink-muted-on-dark">
-              &copy; 2026 {company.legalName}. All rights reserved.
-            </p>
+            <div className="grid gap-1">
+              <p className="t-small text-ink-muted-on-dark">
+                &copy; 2026 {company.legalName}. All rights reserved.
+              </p>
+              <p className="t-small text-ink-muted-on-dark">{company.registered}</p>
+            </div>
             <div className="flex flex-wrap items-center gap-5">
               <Link
                 href="/privacy-policy"

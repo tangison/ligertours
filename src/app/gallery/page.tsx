@@ -3,6 +3,8 @@ import PageHeader from "@/components/site/page-header";
 import Reveal from "@/components/site/reveal";
 import Dune from "@/components/site/dune";
 import GalleryGrid, { type GalleryPhoto } from "@/components/site/gallery-grid";
+import { WordScrub } from "@/components/site/scroll-craft";
+import { company } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Gallery: Namibia in Pictures",
@@ -91,8 +93,8 @@ export default function GalleryPage() {
       <Dune variant="night" />
       <section className="section on-dark" aria-label="See it yourself">
         <div className="container-liger text-center">
+          <WordScrub as="h2" className="t-h2 mx-auto max-w-3xl text-rose-100" text="Better in person." />
           <Reveal>
-            <h2 className="t-h2 mx-auto max-w-3xl text-rose-100">Better in person.</h2>
             <p className="t-lead mx-auto mt-4 max-w-2xl text-ink-on-dark">
               Every photograph here was taken on a Liger route. Come and take
               your own.
@@ -100,6 +102,14 @@ export default function GalleryPage() {
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a href="/contact" className="btn btn--primary">
                 Plan my trip
+              </a>
+              <a
+                href={company.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn--ghost"
+              >
+                WhatsApp us now
               </a>
             </div>
           </Reveal>

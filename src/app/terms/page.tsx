@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { company } from "@/lib/content";
+import Reveal from "@/components/site/reveal";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
@@ -65,10 +66,10 @@ export default function TermsPage() {
         <div className="container-narrow">
           <p className="t-eyebrow text-rose-600">Legal</p>
           <h1 className="t-h1 mt-3">Terms of service</h1>
-          <p className="t-small mt-4 text-ink-muted">Last updated: January 2026</p>
+          <p className="t-small mt-4 text-ink-muted">Last updated: October 2026</p>
           <div className="mt-12 grid gap-10">
             {sections.map((s) => (
-              <section key={s.h}>
+              <Reveal key={s.h} as="section">
                 <h2 className="t-h3">{s.h}</h2>
                 <div className="mt-4 grid gap-4">
                   {s.p.map((p) => (
@@ -77,7 +78,7 @@ export default function TermsPage() {
                     </p>
                   ))}
                 </div>
-              </section>
+              </Reveal>
             ))}
           </div>
         </div>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import PageHeader from "@/components/site/page-header";
 import Reveal from "@/components/site/reveal";
 import Dune from "@/components/site/dune";
+import { ImgReveal, WordScrub } from "@/components/site/scroll-craft";
 import { activities, company } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -39,7 +40,7 @@ export default function ActivitiesPage() {
                     i % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
                   }`}
                 >
-                  <div className="arch-wrap relative mx-auto w-full max-w-[420px]">
+                  <ImgReveal className="arch-wrap relative mx-auto w-full max-w-[420px]">
                     {i % 2 === 0 && (
                       <div className="sun-disc -left-14 bottom-8 md:-left-20" aria-hidden="true" />
                     )}
@@ -53,7 +54,7 @@ export default function ActivitiesPage() {
                         className="object-cover"
                       />
                     </div>
-                  </div>
+                  </ImgReveal>
                   <div>
                     <p className="t-eyebrow text-rose-600">
                       {a.duration} &middot; {a.location}
@@ -66,7 +67,7 @@ export default function ActivitiesPage() {
                       rel="noopener noreferrer"
                       className="t-button mt-6 inline-block text-brand underline decoration-2 underline-offset-[6px] transition-colors duration-[240ms] hover:text-brand-hover"
                     >
-                      Book this activity
+                      Add this to my trip
                     </a>
                   </div>
                 </article>
@@ -79,10 +80,12 @@ export default function ActivitiesPage() {
       <Dune variant="night" />
       <section className="section on-dark" aria-label="Add an activity to your tour">
         <div className="container-liger text-center">
+          <WordScrub
+            as="h2"
+            className="t-h2 mx-auto max-w-3xl text-rose-100"
+            text="Add any of these to your tour."
+          />
           <Reveal>
-            <h2 className="t-h2 mx-auto max-w-3xl text-rose-100">
-              Add any of these to your tour.
-            </h2>
             <p className="t-lead mx-auto mt-4 max-w-2xl text-ink-on-dark">
               Most guests book one or two day experiences around a longer route.
               Tell us what caught your eye and we will fit it into the plan.
@@ -97,7 +100,7 @@ export default function ActivitiesPage() {
                 rel="noopener noreferrer"
                 className="btn btn--ghost"
               >
-                WhatsApp us
+                WhatsApp us now
               </a>
             </div>
           </Reveal>
