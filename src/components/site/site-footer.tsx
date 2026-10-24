@@ -43,6 +43,7 @@ export default function SiteFooter({
               <Link
                 key={item.href}
                 href={localePath(locale, item.href)}
+                prefetch={false}
                 className="t-body w-fit text-ink-on-dark transition-colors duration-[240ms] hover:text-white"
               >
                 {item.label}
@@ -50,6 +51,7 @@ export default function SiteFooter({
             ))}
             <Link
               href={localePath(locale, "/brand")}
+              prefetch={false}
               className="t-body w-fit text-ink-muted-on-dark transition-colors duration-[240ms] hover:text-white"
             >
               {dict.footer.brandLink}
@@ -94,12 +96,14 @@ export default function SiteFooter({
             <div className="flex flex-wrap items-center gap-5">
               <Link
                 href={localePath(locale, "/privacy-policy")}
+                prefetch={false}
                 className="t-small text-ink-muted-on-dark transition-colors duration-[240ms] hover:text-white"
               >
                 {dict.footer.privacy}
               </Link>
               <Link
                 href={localePath(locale, "/terms")}
+                prefetch={false}
                 className="t-small text-ink-muted-on-dark transition-colors duration-[240ms] hover:text-white"
               >
                 {dict.footer.terms}

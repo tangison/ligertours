@@ -120,6 +120,7 @@ export default function SiteHeader({
                     key={l}
                     href={localePath(l, cleanPath)}
                     hrefLang={l}
+                    prefetch={false}
                     aria-current={l === locale ? "true" : undefined}
                     aria-label={localeNames[l]}
                     className={langPill(l)}
@@ -210,6 +211,7 @@ export default function SiteHeader({
                 key={l}
                 href={localePath(l, cleanPath)}
                 hrefLang={l}
+                prefetch={false}
                 aria-current={l === locale ? "true" : undefined}
                 aria-label={localeNames[l]}
                 onClick={() => setOpen(false)}

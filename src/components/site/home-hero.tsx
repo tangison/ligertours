@@ -52,6 +52,7 @@ export default function HomeHero({
           alt={hero.imageAlt}
           fill
           priority
+          quality={70}
           sizes="100vw"
           className="hero-img object-cover"
         />
