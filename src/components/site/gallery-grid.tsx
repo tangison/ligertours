@@ -9,7 +9,20 @@ import { gsap, ScrollTrigger, useGSAP, prefersReduced } from "@/lib/gsap";
 
 export type GalleryPhoto = { src: string; alt: string; tall?: boolean };
 
-export default function GalleryGrid({ photos }: { photos: GalleryPhoto[] }) {
+export type GalleryLabels = {
+  open: string;
+  prev: string;
+  next: string;
+  close: string;
+};
+
+export default function GalleryGrid({
+  photos,
+  labels,
+}: {
+  photos: GalleryPhoto[];
+  labels: GalleryLabels;
+}) {
   const [active, setActive] = useState<number | null>(null);
   const openerRef = useRef<HTMLButtonElement | null>(null);
   const gridRef = useRef<HTMLDivElement | null>(null);
@@ -72,7 +85,7 @@ export default function GalleryGrid({ photos }: { photos: GalleryPhoto[] }) {
               openerRef.current = e.currentTarget;
               setActive(i);
             }}
-            aria-label={`Open image: ${p.alt}`}
+            aria-label={labels.open.replace("{alt}", p.alt)}
           >
             <Image
               src={p.src}
@@ -105,7 +118,7 @@ export default function GalleryGrid({ photos }: { photos: GalleryPhoto[] }) {
               className="t-button flex h-11 min-h-11 items-center rounded-[var(--radius-pill)] border-2 border-rose-200 px-5 text-rose-200 transition-colors duration-[240ms] hover:bg-rose-200 hover:text-night"
               autoFocus
             >
-              Close
+              {labels.close}
             </button>
           </div>
           <div
@@ -115,7 +128,7 @@ export default function GalleryGrid({ photos }: { photos: GalleryPhoto[] }) {
             <button
               type="button"
               onClick={() => step(-1)}
-              aria-label="Previous image"
+              aria-label={labels.prev}
               className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-rose-200 text-2xl text-rose-200 transition-colors duration-[240ms] hover:bg-rose-200 hover:text-night"
             >
               &#8592;
@@ -132,7 +145,7 @@ export default function GalleryGrid({ photos }: { photos: GalleryPhoto[] }) {
             <button
               type="button"
               onClick={() => step(1)}
-              aria-label="Next image"
+              aria-label={labels.next}
               className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-rose-200 text-2xl text-rose-200 transition-colors duration-[240ms] hover:bg-rose-200 hover:text-night"
             >
               &#8594;

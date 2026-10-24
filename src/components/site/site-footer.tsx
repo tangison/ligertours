@@ -2,10 +2,22 @@
    Copyright: current calendar year + official entity name (on point, per checklist). */
 
 import Link from "next/link";
-import { company, nav } from "@/lib/content";
+import {
+  company,
+  localePath,
+  type Dict,
+  type Locale,
+} from "@/lib/content";
 import Dune from "./dune";
 
-export default function SiteFooter() {
+export default function SiteFooter({
+  locale,
+  dict,
+}: {
+  locale: Locale;
+  dict: Dict;
+}) {
+  const year = new Date().getFullYear();
   return (
     <>
       <Dune variant="night" />
@@ -21,33 +33,31 @@ export default function SiteFooter() {
               className="h-auto w-[200px]"
             />
             <p className="prose-liger mt-6 text-[15px] leading-relaxed text-ink-muted-on-dark">
-              Locally owned tour operator based in Windhoek, registered with the
-              Namibia Tourism Board. Guided tours across Namibia: desert, coast,
-              canyon and wildlife.
+              {dict.footer.blurb}
             </p>
           </div>
 
-          <nav aria-label="Footer" className="grid content-start gap-3">
-            <h2 className="t-eyebrow text-rose-400">Explore</h2>
-            {nav.map((item) => (
+          <nav aria-label={dict.footer.explore} className="grid content-start gap-3">
+            <h2 className="t-eyebrow text-rose-400">{dict.footer.explore}</h2>
+            {dict.nav.map((item) => (
               <Link
                 key={item.href}
-                href={item.href}
+                href={localePath(locale, item.href)}
                 className="t-body w-fit text-ink-on-dark transition-colors duration-[240ms] hover:text-white"
               >
                 {item.label}
               </Link>
             ))}
             <Link
-              href="/brand"
+              href={localePath(locale, "/brand")}
               className="t-body w-fit text-ink-muted-on-dark transition-colors duration-[240ms] hover:text-white"
             >
-              Brand
+              {dict.footer.brandLink}
             </Link>
           </nav>
 
           <div className="grid content-start gap-3">
-            <h2 className="t-eyebrow text-rose-400">Contact</h2>
+            <h2 className="t-eyebrow text-rose-400">{dict.footer.contactHeading}</h2>
             <a
               href={company.phoneHref}
               className="t-body w-fit text-ink-on-dark transition-colors duration-[240ms] hover:text-white"
@@ -66,7 +76,7 @@ export default function SiteFooter() {
               rel="noopener noreferrer"
               className="t-body w-fit text-ink-on-dark transition-colors duration-[240ms] hover:text-white"
             >
-              WhatsApp: {company.phone}
+              {dict.footer.whatsappLabel}: {company.phone}
             </a>
             <p className="t-body text-ink-muted-on-dark">{company.address}</p>
             <p className="t-small text-ink-muted-on-dark">{company.hours}</p>
@@ -77,22 +87,22 @@ export default function SiteFooter() {
           <div className="container-liger flex flex-col gap-4 py-6 pb-24 md:flex-row md:items-center md:justify-between md:pb-6">
             <div className="grid gap-1">
               <p className="t-small text-ink-muted-on-dark">
-                &copy; 2026 {company.legalName}. All rights reserved.
+                &copy; {year} {company.legalName}. {dict.footer.rights}
               </p>
-              <p className="t-small text-ink-muted-on-dark">{company.registered}</p>
+              <p className="t-small text-ink-muted-on-dark">{dict.footer.registered}</p>
             </div>
             <div className="flex flex-wrap items-center gap-5">
               <Link
-                href="/privacy-policy"
+                href={localePath(locale, "/privacy-policy")}
                 className="t-small text-ink-muted-on-dark transition-colors duration-[240ms] hover:text-white"
               >
-                Privacy policy
+                {dict.footer.privacy}
               </Link>
               <Link
-                href="/terms"
+                href={localePath(locale, "/terms")}
                 className="t-small text-ink-muted-on-dark transition-colors duration-[240ms] hover:text-white"
               >
-                Terms
+                {dict.footer.terms}
               </Link>
               <a
                 href="https://studio.tangison.com"
@@ -100,7 +110,7 @@ export default function SiteFooter() {
                 rel="noopener noreferrer"
                 className="t-small text-ink-muted-on-dark transition-colors duration-[240ms] hover:text-white"
               >
-                Made by Tangison Studio
+                {dict.footer.credit}
               </a>
             </div>
           </div>

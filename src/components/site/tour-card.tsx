@@ -3,15 +3,26 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import type { Tour } from "@/lib/content";
+import { localePath, type Locale, type Tour } from "@/lib/content";
 
-export default function TourCard({ tour, priority = false }: { tour: Tour; priority?: boolean }) {
+export default function TourCard({
+  tour,
+  locale,
+  labels,
+  priority = false,
+}: {
+  tour: Tour;
+  locale: Locale;
+  labels: { viewTour: string; viewTourAria: string };
+  priority?: boolean;
+}) {
+  const href = localePath(locale, `/tours/${tour.slug}`);
   return (
     <article className="card-tour group">
       <Link
-        href={`/tours/${tour.slug}`}
+        href={href}
         className="media arch block"
-        aria-label={`View the tour: ${tour.name}`}
+        aria-label={labels.viewTourAria.replace("{name}", tour.name)}
       >
         <Image
           src={tour.image}
@@ -25,7 +36,7 @@ export default function TourCard({ tour, priority = false }: { tour: Tour; prior
       <p className="t-eyebrow mt-2 text-rose-600">{tour.eyebrow}</p>
       <h3 className="t-h3">
         <Link
-          href={`/tours/${tour.slug}`}
+          href={href}
           className="transition-colors duration-[240ms] hover:text-brand"
         >
           {tour.name}
@@ -33,10 +44,10 @@ export default function TourCard({ tour, priority = false }: { tour: Tour; prior
       </h3>
       <p className="t-body text-ink-muted">{tour.blurb}</p>
       <Link
-        href={`/tours/${tour.slug}`}
+        href={href}
         className="t-button w-fit text-brand underline decoration-2 underline-offset-[6px] transition-colors duration-[240ms] hover:text-brand-hover"
       >
-        View the tour
+        {labels.viewTour}
       </Link>
     </article>
   );
