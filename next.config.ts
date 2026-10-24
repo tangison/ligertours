@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,
   },
   reactStrictMode: false,
+  images: {
+    /* Hero runs at quality 70 to hold the first-view weight budget. */
+    qualities: [70, 75],
+  },
   async redirects() {
     return [
       /* English is rewritten to /en internally; the /en URLs themselves must
