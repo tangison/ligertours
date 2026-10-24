@@ -21,6 +21,7 @@ export default function TourCard({
     <article className="card-tour group">
       <Link
         href={href}
+        prefetch={false}
         className="media arch block"
         aria-label={labels.viewTourAria.replace("{name}", tour.name)}
       >
@@ -37,6 +38,7 @@ export default function TourCard({
       <h3 className="t-h3">
         <Link
           href={href}
+          prefetch={false}
           className="transition-colors duration-[240ms] hover:text-brand"
         >
           {tour.name}
@@ -45,6 +47,7 @@ export default function TourCard({
       <p className="t-body text-ink-muted">{tour.blurb}</p>
       <Link
         href={href}
+        prefetch={false}
         className="t-button w-fit text-brand underline decoration-2 underline-offset-[6px] transition-colors duration-[240ms] hover:text-brand-hover"
       >
         {labels.viewTour}

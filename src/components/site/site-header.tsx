@@ -77,6 +77,7 @@ export default function SiteHeader({
           <div className="container-liger flex h-[72px] items-center justify-between gap-4">
             <Link
               href={localePath(locale, "/")}
+              prefetch={false}
               className={`relative shrink-0 transition-opacity duration-[240ms] ${open ? "pointer-events-none opacity-0" : "z-10"}`}
               aria-label={dict.a11y.homeLink}
             >
@@ -96,6 +97,7 @@ export default function SiteHeader({
                 <Link
                   key={item.href}
                   href={localePath(locale, item.href)}
+                  prefetch={false}
                   aria-current={cleanPath === item.href ? "page" : undefined}
                   className={`t-button pb-1 pt-1 transition-colors duration-[240ms] ${
                     cleanPath === item.href
@@ -193,6 +195,7 @@ export default function SiteHeader({
               <Link
                 key={item.href}
                 href={localePath(locale, item.href)}
+                prefetch={false}
                 className="t-h2 text-rose-100 transition-colors duration-[240ms] hover:text-white"
                 style={{ transitionDelay: `${i * 30}ms` }}
                 onClick={() => setOpen(false)}
