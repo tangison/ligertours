@@ -8,11 +8,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 import { gsap, useGSAP, prefersReduced } from "@/lib/gsap";
+import { localePath, type Dict, type Locale } from "@/lib/content";
 import { WordsIn } from "./scroll-craft";
 import Parallax from "./parallax";
 
-export default function HomeHero() {
+export default function HomeHero({
+  locale,
+  dict,
+}: {
+  locale: Locale;
+  dict: Dict;
+}) {
   const root = useRef<HTMLElement | null>(null);
+  const hero = dict.hero;
 
   useGSAP(
     () => {
@@ -37,11 +45,11 @@ export default function HomeHero() {
   );
 
   return (
-    <section ref={root} className="photo-hero" aria-label="Welcome">
+    <section ref={root} className="photo-hero" aria-label={hero.kicker}>
       <Parallax className="z-[-20]">
         <Image
           src="/imagery/web/safari-vehicle-red-sand.webp"
-          alt="Open safari vehicle with two guests driving over red sand at golden hour"
+          alt={hero.imageAlt}
           fill
           priority
           sizes="100vw"
@@ -50,28 +58,26 @@ export default function HomeHero() {
       </Parallax>
       <div className="container-liger pb-16 pt-44 md:pb-24">
         <div className="lockup max-w-5xl">
-          <p className="hero-kicker kicker text-rose-200">Guided by locals</p>
+          <p className="hero-kicker kicker text-rose-200">{hero.kicker}</p>
           <WordsIn
             as="h1"
-            text="Namibia, unhurried."
+            text={hero.title}
             className="script text-rose-50"
             delay={0.35}
           />
         </div>
         <p className="hero-lead t-lead mt-6 max-w-2xl text-rose-100">
-          Locally owned, Windhoek based. Small group guided tours from the red
-          dunes of Sossusvlei to the wildlife of Etosha, planned around your
-          dates and your pace.
+          {hero.lead}
         </p>
         <div className="hero-cta mt-8 flex flex-wrap gap-4">
-          <Link href="/contact" className="btn btn--primary">
-            Plan my trip
+          <Link href={localePath(locale, "/contact")} className="btn btn--primary">
+            {hero.primaryCta}
           </Link>
           <Link
-            href="/tours"
+            href={localePath(locale, "/tours")}
             className="btn btn--ghost border-rose-100 text-rose-50 hover:border-rose-50 hover:bg-rose-50 hover:text-ink"
           >
-            See the tours
+            {hero.secondaryCta}
           </Link>
         </div>
       </div>

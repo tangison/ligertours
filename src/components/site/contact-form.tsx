@@ -1,14 +1,21 @@
 "use client";
 
 /* Enquiry form: inline validation, honeypot spam trap, success state.
-   Posts to /api/contact which stores the lead. */
+   Posts to /api/contact which stores the lead. All strings localized. */
 
 import { useState, type FormEvent } from "react";
-import { company } from "@/lib/content";
+import { company, type Dict } from "@/lib/content";
 
 type Errors = Partial<Record<"name" | "email" | "message" | "general", string>>;
 
-export default function ContactForm({ source = "contact" }: { source?: string }) {
+export default function ContactForm({
+  source = "contact",
+  dict,
+}: {
+  source?: string;
+  dict: Dict;
+}) {
+  const f = dict.form;
   const [errors, setErrors] = useState<Errors>({});
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
@@ -28,9 +35,9 @@ export default function ContactForm({ source = "contact" }: { source?: string })
     const name = ((data.get("name") as string) || "").trim();
     const email = ((data.get("email") as string) || "").trim();
     const message = ((data.get("message") as string) || "").trim();
-    if (name.length < 2) next.name = "Please tell us your name.";
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) next.email = "Please use a valid email address so we can reply.";
-    if (message.length < 10) next.message = "Please add a few details about your trip (10 characters or more).";
+    if (name.length < 2) next.name = f.nameError;
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) next.email = f.emailError;
+    if (message.length < 10) next.message = f.messageError;
 
     setErrors(next);
     if (Object.keys(next).length > 0) return;
@@ -53,7 +60,7 @@ export default function ContactForm({ source = "contact" }: { source?: string })
       if (!res.ok) throw new Error("Request failed");
       setSent(true);
     } catch {
-      setErrors({ general: "Something went wrong sending your enquiry. Please try again, or reach us on WhatsApp." });
+      setErrors({ general: f.generalError });
     } finally {
       setSending(false);
     }
@@ -66,26 +73,22 @@ export default function ContactForm({ source = "contact" }: { source?: string })
         role="status"
         aria-live="polite"
       >
-        <h3 className="t-h3 text-brand">Thank you, your enquiry is in.</h3>
-        <p className="t-body mt-3 text-ink-muted">
-          We reply to every enquiry personally, usually within one working day.
-          If your dates are close, WhatsApp us on {company.phone} and we will pick
-          it up straight away.
-        </p>
+        <h3 className="t-h3 text-brand">{f.successTitle}</h3>
+        <p className="t-body mt-3 text-ink-muted">{f.successBody}</p>
         <a
           href={company.whatsapp}
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn--primary mt-6"
         >
-          WhatsApp us
+          {f.whatsappCta}
         </a>
       </div>
     );
   }
 
   const labelClass = "t-eyebrow mb-2 block text-ink";
-  const errorId = (f: string) => `${f}-error`;
+  const errorId = (field: string) => `${field}-error`;
 
   return (
     <form onSubmit={onSubmit} noValidate className="grid gap-5">
@@ -104,7 +107,7 @@ export default function ContactForm({ source = "contact" }: { source?: string })
       <div className="grid gap-5 md:grid-cols-2">
         <div>
           <label htmlFor="name" className={labelClass}>
-            Name *
+            {f.name}
           </label>
           <input
             type="text"
@@ -124,7 +127,7 @@ export default function ContactForm({ source = "contact" }: { source?: string })
         </div>
         <div>
           <label htmlFor="email" className={labelClass}>
-            Email *
+            {f.email}
           </label>
           <input
             type="email"
@@ -147,28 +150,28 @@ export default function ContactForm({ source = "contact" }: { source?: string })
       <div className="grid gap-5 md:grid-cols-2">
         <div>
           <label htmlFor="phone" className={labelClass}>
-            Phone or WhatsApp
+            {f.phone}
           </label>
-          <input type="tel" id="phone" name="phone" className="field" autoComplete="tel" placeholder="+264 ..." />
+          <input type="tel" id="phone" name="phone" className="field" autoComplete="tel" placeholder={f.phonePlaceholder} />
         </div>
         <div>
           <label htmlFor="groupSize" className={labelClass}>
-            Group size
+            {f.groupSize}
           </label>
-          <input type="text" id="groupSize" name="groupSize" className="field" placeholder="2 adults" />
+          <input type="text" id="groupSize" name="groupSize" className="field" placeholder={f.groupSizePlaceholder} />
         </div>
       </div>
 
       <div>
         <label htmlFor="travelFrom" className={labelClass}>
-          Travel dates
+          {f.dates}
         </label>
-        <input type="text" id="travelFrom" name="travelFrom" className="field" placeholder="Around 5 to 18 July 2027" />
+        <input type="text" id="travelFrom" name="travelFrom" className="field" placeholder={f.datesPlaceholder} />
       </div>
 
       <div>
         <label htmlFor="message" className={labelClass}>
-          Your message *
+          {f.message}
         </label>
         <textarea
           id="message"
@@ -178,7 +181,7 @@ export default function ContactForm({ source = "contact" }: { source?: string })
           required
           aria-invalid={!!errors.message}
           aria-describedby={errors.message ? errorId("message") : undefined}
-          placeholder="Tell us where you want to go, how long you have and what you want to see."
+          placeholder={f.messagePlaceholder}
         />
         {errors.message && (
           <p id={errorId("message")} className="field-error">
@@ -188,7 +191,7 @@ export default function ContactForm({ source = "contact" }: { source?: string })
       </div>
 
       <button type="submit" className="btn btn--primary w-fit" disabled={sending}>
-        {sending ? "Sending..." : "Send my enquiry"}
+        {sending ? f.sending : f.submit}
       </button>
     </form>
   );

@@ -1,8 +1,10 @@
 import type { MetadataRoute } from "next";
-import { tours } from "@/lib/content";
+import { getDict, locales } from "@/lib/content";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ligertoursnamibia.com";
 
+/* One sitemap entry per route per language, with hreflang alternates.
+   English keeps the clean unprefixed URL and is x-default. */
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const staticRoutes = [
@@ -15,19 +17,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/brand", priority: 0.3 },
     { path: "/privacy-policy", priority: 0.2 },
     { path: "/terms", priority: 0.2 },
-  ].map((r) => ({
-    url: `${siteUrl}${r.path}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: r.priority,
-  }));
+  ];
 
-  const tourRoutes = tours.map((t) => ({
-    url: `${siteUrl}/tours/${t.slug}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: 0.8,
-  }));
+  const tourSlugs = getDict("en").tours.map((t) => `/tours/${t.slug}`);
+  const allRoutes = [
+    ...staticRoutes,
+    ...tourSlugs.map((p) => ({ path: p, priority: 0.8 })),
+  ];
 
-  return [...staticRoutes, ...tourRoutes];
+  const urlFor = (locale: string, path: string) =>
+    locale === "en" ? `${siteUrl}${path || "/"}` : `${siteUrl}/${locale}${path}`;
+
+  const alternates = (path: string) => ({
+    languages: {
+      en: urlFor("en", path),
+      de: urlFor("de", path),
+      fr: urlFor("fr", path),
+      "x-default": urlFor("en", path),
+    },
+  });
+
+  return allRoutes.flatMap((r) =>
+    locales.map((locale) => ({
+      url: urlFor(locale, r.path),
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: r.priority,
+      alternates: alternates(r.path),
+    }))
+  );
 }

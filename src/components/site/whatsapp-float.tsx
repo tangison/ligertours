@@ -2,13 +2,13 @@
 
 import { company } from "@/lib/content";
 
-export default function WhatsAppFloat() {
+export default function WhatsAppFloat({ label }: { label: string }) {
   return (
     <a
       href={company.whatsapp}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={`Chat with Liger Tours Namibia on WhatsApp at ${company.phone}`}
+      aria-label={label}
       className="fixed bottom-6 right-6 z-[80] flex h-14 w-14 items-center justify-center rounded-full bg-brand text-white shadow-[var(--shadow-2)] transition-transform duration-[240ms] hover:-translate-y-1 hover:bg-brand-hover"
     >
       <svg viewBox="0 0 32 32" className="h-7 w-7" fill="currentColor" aria-hidden="true">
