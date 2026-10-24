@@ -71,11 +71,12 @@ export default function HomeHero({
           {hero.lead}
         </p>
         <div className="hero-cta mt-8 flex flex-wrap gap-4">
-          <Link href={localePath(locale, "/contact")} className="btn btn--primary">
+          <Link href={localePath(locale, "/contact")} prefetch={false} className="btn btn--primary">
             {hero.primaryCta}
           </Link>
           <Link
             href={localePath(locale, "/tours")}
+            prefetch={false}
             className="btn btn--ghost border-rose-100 text-rose-50 hover:border-rose-50 hover:bg-rose-50 hover:text-ink"
           >
             {hero.secondaryCta}
