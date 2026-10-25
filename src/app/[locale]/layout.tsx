@@ -52,9 +52,9 @@ export async function generateMetadata({
     alternates: {
       canonical: localePath(locale as Locale, path),
       languages: {
-        en: localePath("en", path),
-        de: localePath("de", path),
-        fr: localePath("fr", path),
+        ...Object.fromEntries(
+          locales.map((l) => [l, localePath(l, path)])
+        ),
         "x-default": localePath("en", path),
       },
     },

@@ -17,7 +17,7 @@ export const company = {
   hours: "Monday to Saturday, 08:00 to 17:00 (CAT)",
 } as const;
 
-export const locales = ["en", "de", "fr"] as const;
+export const locales = ["en", "de", "fr", "af", "pt"] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "en";
 
@@ -25,12 +25,16 @@ export const localeNames: Record<Locale, string> = {
   en: "English",
   de: "Deutsch",
   fr: "Français",
+  af: "Afrikaans",
+  pt: "Português",
 };
 
 export const ogLocales: Record<Locale, string> = {
   en: "en_NA",
   de: "de_DE",
   fr: "fr_FR",
+  af: "af_ZA",
+  pt: "pt_PT",
 };
 
 /* External URL for a locale: English keeps the clean unprefixed URL,

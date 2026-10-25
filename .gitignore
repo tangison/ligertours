@@ -61,3 +61,6 @@ scripts/img-hunt/
 scripts/free-hunt/
 scripts/free-hunt2/
 scripts/qa/
+
+# raw source material and working files, never ship
+/upload/

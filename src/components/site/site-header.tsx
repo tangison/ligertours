@@ -3,12 +3,14 @@
 /* Fixed header. Over a hero: transparent with the on-dark logo.
    After 80px: rose-50 with the primary-rose logo and a hairline rose-300 border.
    Brand bar (4px, rose-700, sampled from the logo) fixed at the very top, CLS 0.
-   Language switcher: EN / DE / FR pills, preserves the current path.
-   Mobile: full-screen drawer on night with the on-dark logo and WhatsApp button. */
+   Languages live in the side LanguageDock (globe button) on every breakpoint;
+   the mobile drawer keeps its own pill set for one-handed reach.
+   Mobile: full-screen drawer on night with the on-dark logo, a site search
+   (tours, activities, pages) and a WhatsApp button. */
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   company,
   localeNames,
@@ -19,6 +21,9 @@ import {
   type Locale,
 } from "@/lib/content";
 import ScrollProgress from "./scroll-progress";
+import LanguageDock from "./language-dock";
+
+type SearchHit = { name: string; sub: string; href: string; group: string };
 
 export default function SiteHeader({
   locale,
@@ -29,8 +34,11 @@ export default function SiteHeader({
 }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [query, setQuery] = useState("");
   const pathname = usePathname();
+  const router = useRouter();
   const cleanPath = stripLocale(pathname);
+  const searchRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 80);
@@ -41,6 +49,16 @@ export default function SiteHeader({
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
+    if (open) {
+      setQuery("");
+      /* Let the drawer paint before pulling focus, so screen reader users
+         land on the search straight away. */
+      const t = setTimeout(() => searchRef.current?.focus(), 260);
+      return () => {
+        clearTimeout(t);
+        document.body.style.overflow = "";
+      };
+    }
     return () => {
       document.body.style.overflow = "";
     };
@@ -52,16 +70,41 @@ export default function SiteHeader({
     ? "/brand/logos/svg/liger-tours-primary-rose.svg"
     : "/brand/logos/svg/liger-tours-mono-cream.svg";
 
-  const langPill = (l: Locale) =>
-    `t-eyebrow flex h-9 min-w-9 items-center justify-center rounded-full px-2 transition-colors duration-[240ms] ${
-      l === locale
-        ? scrolled
-          ? "bg-brand text-white"
-          : "bg-rose-50 text-night"
-        : scrolled
-          ? "text-ink hover:text-brand"
-          : "text-rose-100 hover:text-white"
-    }`;
+  /* Drawer search index, built from the dictionary in the active language. */
+  const index = useMemo<SearchHit[]>(() => {
+    const items: SearchHit[] = [];
+    for (const p of dict.nav)
+      items.push({ name: p.label, sub: dict.search.pages, href: p.href, group: "pages" });
+    for (const t of dict.tours)
+      items.push({ name: t.name, sub: t.route, href: `/tours/${t.slug}`, group: "tours" });
+    for (const a of dict.activities)
+      items.push({
+        name: a.name,
+        sub: `${a.location} \u00B7 ${a.duration}`,
+        href: "/activities",
+        group: "activities",
+      });
+    return items;
+  }, [dict]);
+
+  const results = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (q.length < 2) return [];
+    const hits = index.filter((i) =>
+      `${i.name} ${i.sub}`.toLowerCase().includes(q)
+    );
+    /* pages first, then tours, then activities; cap the list for the drawer. */
+    const rank = { pages: 0, tours: 1, activities: 2 } as Record<string, number>;
+    return hits
+      .sort((a, b) => (rank[a.group] ?? 3) - (rank[b.group] ?? 3))
+      .slice(0, 8);
+  }, [index, query]);
+
+  const goFirstResult = () => {
+    if (results.length === 0) return;
+    setOpen(false);
+    router.push(localePath(locale, results[0].href));
+  };
 
   return (
     <>
@@ -113,28 +156,9 @@ export default function SiteHeader({
                 </Link>
               ))}
 
-              <nav
-                aria-label={dict.a11y.languages}
-                className="ml-1 flex items-center gap-1"
-              >
-                {locales.map((l) => (
-                  <Link
-                    key={l}
-                    href={localePath(l, cleanPath)}
-                    hrefLang={l}
-                    prefetch={false}
-                    aria-current={l === locale ? "true" : undefined}
-                    aria-label={localeNames[l]}
-                    className={langPill(l)}
-                  >
-                    {l.toUpperCase()}
-                  </Link>
-                ))}
-              </nav>
-
               <Link
                 href={localePath(locale, "/contact")}
-                className="btn btn--primary ml-1"
+                className="btn btn--primary ml-2"
               >
                 {dict.header.planTrip}
               </Link>
@@ -173,7 +197,10 @@ export default function SiteHeader({
         </header>
       </div>
 
-      {/* Mobile drawer: full-screen on night */}
+      {/* Side language dock: globe button on the right edge, every breakpoint */}
+      <LanguageDock locale={locale} dict={dict} />
+
+      {/* Mobile drawer: full-screen on night, search first */}
       <div
         id="mobile-drawer"
         data-open={open}
@@ -182,7 +209,7 @@ export default function SiteHeader({
         aria-modal={open}
         aria-label={dict.a11y.menuOpen}
       >
-        <div className="flex h-full flex-col px-[var(--gutter)] pb-10 pt-28">
+        <div className="flex h-full flex-col overflow-y-auto px-[var(--gutter)] pb-10 pt-28">
           <img
             src="/brand/logos/svg/liger-tours-mono-cream.svg"
             alt="Liger Tours Namibia"
@@ -190,7 +217,83 @@ export default function SiteHeader({
             height={841}
             className="h-auto w-[180px]"
           />
-          <nav aria-label="Mobile" className="mt-10 grid gap-6">
+
+          {/* Site search: appears as soon as the navigation toggler opens */}
+          <div className="drawer-search relative mt-8">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+              className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-rose-200"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.35-4.35" />
+            </svg>
+            <input
+              ref={searchRef}
+              type="search"
+              className="field"
+              placeholder={dict.search.placeholder}
+              aria-label={dict.search.label}
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  e.preventDefault();
+                  goFirstResult();
+                }
+              }}
+              autoComplete="off"
+            />
+          </div>
+
+          {query.trim().length >= 2 && (
+            <div className="mt-3" role="group" aria-label={dict.search.label}>
+              {results.length === 0 ? (
+                <p className="t-small px-1 py-3 text-ink-muted-on-dark">
+                  {dict.search.noResults}
+                </p>
+              ) : (
+                <ul className="grid">
+                  {results.map((r) => (
+                    <li key={r.group + r.href + r.name}>
+                      <Link
+                        href={localePath(locale, r.href)}
+                        prefetch={false}
+                        onClick={() => setOpen(false)}
+                        className="drawer-search-result block rounded-[var(--radius-sm)] px-3 py-3"
+                        aria-label={dict.search.resultAria.replace("{name}", r.name)}
+                      >
+                        <span className="t-eyebrow block text-[10px] text-rose-300">
+                          {r.group === "pages"
+                            ? dict.search.pages
+                            : r.group === "tours"
+                              ? dict.search.tours
+                              : dict.search.activities}
+                        </span>
+                        <span className="t-body mt-0.5 block text-rose-50">
+                          {r.name}
+                        </span>
+                        {r.group !== "pages" && (
+                          <span className="t-small mt-0.5 block text-ink-muted-on-dark">
+                            {r.sub}
+                          </span>
+                        )}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          )}
+
+          <nav aria-label="Mobile" className="mt-8 grid gap-6">
             {dict.nav.map((item, i) => (
               <Link
                 key={item.href}
@@ -229,7 +332,7 @@ export default function SiteHeader({
             ))}
           </nav>
 
-          <div className="mt-auto grid gap-4">
+          <div className="mt-auto grid gap-4 pt-10">
             <a
               href={company.whatsapp}
               target="_blank"

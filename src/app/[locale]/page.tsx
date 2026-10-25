@@ -67,7 +67,7 @@ export default async function HomePage({ params }: Params) {
             <div className="sun-disc -left-16 bottom-10 md:-left-24" aria-hidden="true" />
             <div className="arch relative z-10">
               <Image
-                src="/imagery/crops/gemsbok-golden-light-4x5.webp"
+                src="/imagery/crops/antelope-herd-savanna-4x5.webp"
                 alt={home.intro.imageAlt}
                 fill
                 sizes="(min-width: 1024px) 420px, 86vw"

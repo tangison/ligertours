@@ -59,8 +59,8 @@ export default async function AboutPage({ params }: Params) {
             <div className="sun-disc -right-14 top-16 md:-right-20" aria-hidden="true" />
             <div className="arch relative z-10">
               <Image
-                src="/imagery/crops/gemsbok-golden-light-4x5.webp"
-                alt={dict.home.intro.imageAlt}
+                src="/imagery/crops/tropic-capricorn-group-4x5.webp"
+                alt={t.storyImageAlt}
                 fill
                 sizes="(min-width: 1024px) 420px, 86vw"
                 className="object-cover"
@@ -82,6 +82,57 @@ export default async function AboutPage({ params }: Params) {
             <p className="t-eyebrow text-rose-600">{t.visionEyebrow}</p>
             <p className="t-lead mt-4 text-ink">{t.vision}</p>
           </Reveal>
+        </div>
+      </section>
+
+      {/* From our trips: staggered arch trio of authentic journey photographs */}
+      <section className="section" aria-label={t.moments.eyebrow}>
+        <div className="container-liger">
+          <Reveal>
+            <p className="t-eyebrow text-rose-600">{t.moments.eyebrow}</p>
+          </Reveal>
+          <WordScrub as="h2" className="t-h2 mt-4 max-w-3xl" text={t.moments.h2} />
+          <p className="t-body mt-6 max-w-2xl text-ink-muted">{t.moments.lead}</p>
+          <Batch className="mt-12 grid gap-6 sm:grid-cols-3 lg:gap-10" stagger={0.09}>
+            <ImgReveal className="arch-wrap">
+              <div className="sun-disc -left-10 bottom-8" aria-hidden="true" />
+              <div className="arch relative z-10">
+                <Image
+                  src="/imagery/crops/coast-beach-group-4x5.webp"
+                  alt={t.moments.alt1}
+                  fill
+                  loading="lazy"
+                  sizes="(min-width: 640px) 30vw, 86vw"
+                  className="object-cover"
+                />
+              </div>
+            </ImgReveal>
+            <ImgReveal delay={0.1} className="arch-wrap sm:mt-14">
+              <div className="arch relative z-10">
+                <Image
+                  src="/imagery/crops/overland-road-stop-4x5.webp"
+                  alt={t.moments.alt2}
+                  fill
+                  loading="lazy"
+                  sizes="(min-width: 640px) 30vw, 86vw"
+                  className="object-cover"
+                />
+              </div>
+            </ImgReveal>
+            <ImgReveal delay={0.2} className="arch-wrap">
+              <div className="sun-disc -right-10 top-8" aria-hidden="true" />
+              <div className="arch relative z-10">
+                <Image
+                  src="/imagery/crops/sand-buried-ruins-4x5.webp"
+                  alt={t.moments.alt3}
+                  fill
+                  loading="lazy"
+                  sizes="(min-width: 640px) 30vw, 86vw"
+                  className="object-cover"
+                />
+              </div>
+            </ImgReveal>
+          </Batch>
         </div>
       </section>
 

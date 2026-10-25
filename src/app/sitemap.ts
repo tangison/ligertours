@@ -28,14 +28,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const urlFor = (locale: string, path: string) =>
     locale === "en" ? `${siteUrl}${path || "/"}` : `${siteUrl}/${locale}${path}`;
 
-  const alternates = (path: string) => ({
-    languages: {
-      en: urlFor("en", path),
-      de: urlFor("de", path),
-      fr: urlFor("fr", path),
-      "x-default": urlFor("en", path),
-    },
-  });
+  const alternates = (path: string) => {
+    const languages: Record<string, string> = {};
+    for (const l of locales) languages[l] = urlFor(l, path);
+    languages["x-default"] = urlFor("en", path);
+    return { languages };
+  };
 
   return allRoutes.flatMap((r) =>
     locales.map((locale) => ({

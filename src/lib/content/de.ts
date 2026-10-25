@@ -64,6 +64,7 @@ export const de = {
     languages: "Sprache wechseln",
     menuOpen: "Menü öffnen",
     menuClose: "Menü schließen",
+    languageDock: "Sprachoptionen",
     homeLink: "Liger Tours Namibia: Startseite",
     prevSlide: "Vorheriges Gästestimme-Zitat",
     nextSlide: "Nächstes Gästestimme-Zitat",
@@ -81,6 +82,23 @@ export const de = {
     { href: "/gallery", label: "Galerie" },
     { href: "/contact", label: "Kontakt" },
   ],
+
+  search: {
+    label: "Die Website durchsuchen",
+    placeholder: "Touren, Aktivitäten, Orte suchen",
+    noResults: "Keine Treffer. Versuchen Sie einen Ort oder ein Wort wie Dünen.",
+    clear: "Suche löschen",
+    pages: "Seiten",
+    tours: "Touren",
+    activities: "Aktivitäten",
+    resultAria: "Suchergebnis: {name}",
+  },
+
+  langDock: {
+    open: "Sprache wählen",
+    heading: "Sprache",
+    current: "Aktuell",
+  },
 
   header: { planTrip: "Reise planen", whatsapp: "Jetzt per WhatsApp schreiben" },
 
@@ -116,7 +134,7 @@ export const de = {
       p2: "Als bei der Namibia Tourism Board registriertes Unternehmen planen wir jede Reise rund um die Menschen, die sie buchen: Paare, Familien, Gruppen und Alleinreisende, jede mit einer Route, einem Tempo und einem Reisestil, der passt.",
       cta: "Mehr über uns",
       imageAlt:
-        "Gemsbok Oryx mit langen geraden Hörnern auf einem Graskamm, im warmen Gold der Abendsonne",
+        "Eine Herde Antilopen weidet auf grüner Savanne zwischen verstreuten Akazien",
     },
     stats: {
       ariaLabel: "Liger Tours in Zahlen",
@@ -318,6 +336,19 @@ export const de = {
     panel:
       "Registriert bei der Namibia Tourism Board mit Sitz in Windhoek.",
     planCta: "Reise planen",
+    storyImageAlt:
+      "Gäste von Liger Tours versammelt am Schild am Wendekreis des Steinbocks auf rotem Wüstenboden",
+    moments: {
+      eyebrow: "Von unseren Reisen",
+      h2: "Echte Momente, von der Straße.",
+      lead: "Gäste am Wendekreis des Steinbocks, ein Strandspaziergang am Atlantik, ein Stopp, wo die Wüste auf die Fernstraße trifft: Fotografien von Liger-Reisen, keine Stockbilder.",
+      alt1:
+        "Vier Gäste auf einem weiten Atlantikstrand, eine Person hockt, um Abdrücke im Sand zu fotografieren",
+      alt2:
+        "Lastwagen in einer Reihe an einem Wüstenrastplatz unter einem Dach",
+      alt3:
+        "Verwitterte Holzbauten, langsam vom vordringenden Wüstensand begraben",
+    },
   },
 
   galleryPage: {
@@ -343,6 +374,16 @@ export const de = {
         tall: true,
       },
       {
+        src: "/imagery/crops/deadvlei-lone-tree-4x5.webp",
+        alt: "Ein einzelner toter Kameldornbaum auf der weißen Tonpfanne, dahinter eine rote Düne",
+        tall: true,
+      },
+      {
+        src: "/imagery/crops/quiver-tree-sun-silhouette-4x5.webp",
+        alt: "Ein Köcherbaum als Silhouette gegen die Sonne in tiefblauem Himmel",
+        tall: true,
+      },
+      {
         src: "/imagery/crops/deadvlei-blue-sky-16x9.webp",
         alt: "Tote Akazienbäume auf weißem Tonboden unter roten Dünen und tiefblauem Himmel",
       },
@@ -364,8 +405,17 @@ export const de = {
         alt: "Kahle tote Bäume auf hellem Ton, dahinter eine rote Düne",
       },
       {
+        src: "/imagery/crops/tropic-capricorn-group-16x9.webp",
+        alt: "Reisegruppe am Schild am Wendekreis des Steinbocks auf rotem Wüstenboden",
+      },
+      {
         src: "/imagery/crops/quiver-tree-forest-dusk-16x9.webp",
         alt: "Köcherbäume als Silhouetten vor einem orangen Abendhimmel",
+      },
+      {
+        src: "/imagery/crops/coast-beach-group-4x5.webp",
+        alt: "Vier Gäste auf einem weiten Atlantikstrand, eine Person hockt, um Abdrücke im Sand zu fotografieren",
+        tall: true,
       },
       {
         src: "/imagery/crops/red-dunes-valley-plain-16x9.webp",
@@ -385,12 +435,20 @@ export const de = {
         alt: "Ein Nashorn grast im grünen Gras, daneben ein Strauß",
       },
       {
+        src: "/imagery/crops/dunes-sunburst-pan-16x9.webp",
+        alt: "Die Sonne bricht über Dünen hervor, über einer dünnen Wasserschicht auf dem Sand",
+      },
+      {
         src: "/imagery/crops/fish-river-canyon-view-16x9.webp",
         alt: "Der Fish River Canyon windet sich zwischen geschichteten Felswänden im Abendlicht",
       },
       {
         src: "/imagery/crops/gemsbok-golden-light-16x9.webp",
         alt: "Gemsbok Oryx auf einem Graskamm im goldenen Abendlicht",
+      },
+      {
+        src: "/imagery/crops/overland-road-stop-16x9.webp",
+        alt: "Lastwagen in einer Reihe an einem Wüstenrastplatz unter einem Dach",
       },
       {
         src: "/imagery/crops/namib-night-sky-4x5.webp",
@@ -402,8 +460,16 @@ export const de = {
         alt: "Balancierter Granitblock des Spitzkoppe über dem Wüstenboden",
       },
       {
+        src: "/imagery/crops/deadvlei-grove-16x9.webp",
+        alt: "Ein Hain toter Kameldornbäume auf der weißen Tonpfanne unter roten Dünen",
+      },
+      {
         src: "/imagery/crops/safari-vehicle-red-sand-16x9.webp",
         alt: "Safarspuren über rotem Sand im Abendlicht",
+      },
+      {
+        src: "/imagery/crops/sand-buried-ruins-16x9.webp",
+        alt: "Verwitterte Holzbauten, langsam vom vordringenden Wüstensand begraben",
       },
       {
         src: "/imagery/crops/deadvlei-blue-sky-4x5.webp",
@@ -703,8 +769,8 @@ export const de = {
         "Wenig Zeit? Diese Route verbindet die zwei meistgewünschten Stationen Namibias: die Dünen des Sossusvlei und die Küstenstadt Swakopmund. Sie ist für Reisende gebaut, die die Highlights wollen, ohne zwei volle Wochen zu investieren.",
         "Früher Zutritt zu den Dünen, die Tongrube Deadvlei und ein ganzer Vormittag in Swakopmunds Mix aus Meeresluft, deutscher Architektur und Abenteueraktivitäten sind ebenso drin, alles in ruhigem Tempo ab Windhoek.",
       ],
-      image: "/imagery/crops/deadvlei-blue-sky-4x5.webp",
-      alt: "Tote Akazienbäume auf weißem Tonboden unter roten Dünen und tiefblauem Himmel",
+      image: "/imagery/crops/deadvlei-lone-tree-4x5.webp",
+      alt: "Ein einzelner toter Kameldornbaum auf der weißen Tonpfanne, dahinter eine rote Düne",
       highlights: [
         "Frühmorgen an den Dünen des Sossusvlei und der Tongrube Deadvlei",
         "Die Canyon Pässe von Gaub und Kuiseb auf der Fahrt zur Küste",
@@ -724,8 +790,8 @@ export const de = {
         "Diese Tour ist um die Tierbeobachtung gebaut und verbringt ihre Tage im Etosha-Nationalpark, wo Elefant, Löwe, Giraffe, Gemsbok und Nashorn an den Wasserlöchern der Salzpfanne zusammenkommen.",
         "Den Abschluss bildet das Waterberg Plateau, ein roter Sandsteintafelberg mit Wanderwegen und Aussichtspunkten. Ein ruhigerer Ausklang nach den frühen Pirschfahrten und eine Chance, den östlichen Buschveld des Parks von oben zu sehen.",
       ],
-      image: "/imagery/crops/gemsbok-golden-light-4x5.webp",
-      alt: "Gemsbok Oryx mit langen geraden Hörnern auf einem Graskamm im goldenen Licht",
+      image: "/imagery/crops/rhino-etosha-grass-4x5.webp",
+      alt: "Ein Nashorn weidet im goldenen Gras, Akazien dahinter",
       highlights: [
         "Ganze Pirschfahrten durch den Etosha-Nationalpark mit lokalem Guide",
         "Wasserloch-Beobachtungen am Okaukuejo und den berühmten Camps des Parks",
@@ -745,8 +811,8 @@ export const de = {
         "Südnamibia ist eine Studie in Weite. Die Route führt von den roten Sanden der Kalahari zum Köcherbaumwald bei Keetmanshoop, dann nach Süden zum Fish River Canyon, einem der größten Canyons des Kontinents.",
         "Hier geht es um Licht und Stille statt um Ablaken: Sonnenaufgang über den Dünen, Köcherbäume als Silhouetten in der Dämmerung und der Canyonrand zu den Tageszeiten, in denen seine Farben Minute für Minute wechseln.",
       ],
-      image: "/imagery/crops/quiver-tree-forest-dusk-4x5.webp",
-      alt: "Köcherbäume als Silhouetten vor orangem Abendhimmel in Südnamibia",
+      image: "/imagery/crops/quiver-tree-sun-silhouette-4x5.webp",
+      alt: "Ein Köcherbaum als Silhouette gegen die Sonne in tiefblauem Himmel",
       highlights: [
         "Rote Kalahari Sande und Aufenthalte in Wüstenlodges",
         "Der Köcherbaumwald bei Keetmanshoop, am schönsten zur goldenen Stunde",
@@ -766,8 +832,8 @@ export const de = {
         "Diese Route führt durch das kulturelle Herzland des Landes. Von der Küste bei Swakopmund geht es ins Damaraland, wo an die Wüste angepasste Tiere zwischen Felsformationen wechseln und uralte Felskunst Jahrhunderte menschlicher Anwesenheit bezeugt.",
         "Nördlich des Damaraland durchquert die Route Owamboland, Heimat der größten Gemeinschaften Namibias und einer Lebensweise, die die meisten Besucher nie sehen, bevor die Tierwelt des Etosha-Nationalparks die Reise beschließt.",
       ],
-      image: "/imagery/crops/giraffes-walking-savanna-4x5.webp",
-      alt: "Drei Giraffen gehen hintereinander zwischen grünen Akazien",
+      image: "/imagery/crops/rock-gorge-closeup-4x5.webp",
+      alt: "Hohe verwitterte Felswände einer Wüstenschlucht, die sich oben vor dem Himmel zusammenschließen",
       highlights: [
         "Felslandschaften und uralte Felskunst im Damaraland",
         "Owambo Kulturbesuche abseits der üblichen Touristenroute",
@@ -878,8 +944,8 @@ export const de = {
       location: "Namibwüste",
       description:
         "Erleben Sie, wie die Wüste erwacht, wenn die ersten Sonnenstrahlen die Dünen in Gold und Orange tauchen. Ein perfektes Erlebnis für Fotografen und Naturliebhaber.",
-      image: "/imagery/crops/deadvlei-warm-light-4x5.webp",
-      alt: "Kahle tote Bäume auf hellem Ton, dahinter eine rote Düne",
+      image: "/imagery/crops/dunes-sunburst-pan-4x5.webp",
+      alt: "Die Sonne bricht über Dünen hervor, über einer dünnen Wasserschicht auf dem Sand",
     },
     {
       slug: "photography-tour",
@@ -898,8 +964,8 @@ export const de = {
       location: "Spitzkoppe",
       description:
         "Erkunden Sie die dramatischen Granitformationen des Spitzkoppe und genießen Sie weite Blicke über die umgebende Wüstenlandschaft.",
-      image: "/imagery/crops/spitzkoppe-granite-peaks-4x5.webp",
-      alt: "Riesiger, ausbalancierter Granitblock auf dem Spitzkoppe über der Wüstenebene",
+      image: "/imagery/crops/spitzkoppe-massif-4x5.webp",
+      alt: "Das Granitmassiv der Spitzkoppe erhebt sich über den Wüstenbusch",
     },
     {
       slug: "swakopmund-coastal-adventure",
@@ -908,8 +974,8 @@ export const de = {
       location: "Swakopmund",
       description:
         "Genießen Sie die einzigartige Begegnung von Atlantik und Namibwüste mit Möglichkeiten zu Besichtigungen, Strandspaziergängen und lokalen Entdeckungen.",
-      image: "/imagery/crops/swakopmund-atlantic-coast-4x5.webp",
-      alt: "Atlantikwellen rollen auf den Sandstrand nahe Swakopmund",
+      image: "/imagery/crops/walvis-bay-jetty-4x5.webp",
+      alt: "Ein langer Holzsteg reicht in ruhiges Atlantikwasser, Segelboote liegen in der Bucht",
     },
     {
       slug: "etosha-wildlife-safari",

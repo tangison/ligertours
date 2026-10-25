@@ -247,6 +247,20 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 .gallery-item img { transition: transform var(--dur-slow) var(--ease); }
 .gallery-item:hover img, .gallery-item:focus-visible img { transform: scale(1.04); }
 
+/* ============ Side language dock ============ */
+/* Panel sits left of the globe button; it fades and slides with the same
+   easing family as the nav drawer, and is removed from the tab order closed. */
+.lang-dock-panel { transition: opacity var(--dur-base) var(--ease), transform var(--dur-base) var(--ease), visibility var(--dur-base) var(--ease); }
+.lang-dock-panel[data-open="false"] { opacity: 0; visibility: hidden; transform: translateY(-50%) translateX(8px); pointer-events: none; }
+.lang-dock-panel[data-open="true"] { opacity: 1; visibility: visible; }
+
+/* ============ Drawer search ============ */
+.drawer-search .field { min-height: 48px; padding-left: 44px; background: transparent; border-color: rgba(244, 214, 205, .35); color: var(--rose-50); }
+.drawer-search .field::placeholder { color: rgba(244, 214, 205, .6); }
+.drawer-search .field:focus { outline-color: var(--focus-dark); border-color: var(--rose-200); }
+.drawer-search-result { transition: background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease); }
+.drawer-search-result:hover, .drawer-search-result:focus-visible { background: rgba(255, 255, 255, .08); }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
 }

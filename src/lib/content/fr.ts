@@ -63,6 +63,7 @@ export const fr = {
     languages: "Changer de langue",
     menuOpen: "Ouvrir le menu",
     menuClose: "Fermer le menu",
+    languageDock: "Options de langue",
     homeLink: "Liger Tours Namibia : accueil",
     prevSlide: "Témoignage précédent",
     nextSlide: "Témoignage suivant",
@@ -80,6 +81,23 @@ export const fr = {
     { href: "/gallery", label: "Galerie" },
     { href: "/contact", label: "Contact" },
   ],
+
+  search: {
+    label: "Rechercher sur le site",
+    placeholder: "Rechercher circuits, activités, lieux",
+    noResults: "Aucun résultat. Essayez un lieu ou un mot comme dunes.",
+    clear: "Effacer la recherche",
+    pages: "Pages",
+    tours: "Circuits",
+    activities: "Activités",
+    resultAria: "Résultat de recherche : {name}",
+  },
+
+  langDock: {
+    open: "Choisir une langue",
+    heading: "Langue",
+    current: "Actuelle",
+  },
 
   header: { planTrip: "Planifier mon voyage", whatsapp: "Écrivez-nous sur WhatsApp" },
 
@@ -115,7 +133,7 @@ export const fr = {
       p2: "En tant qu'agence enregistrée auprès de la Namibia Tourism Board, nous planifions chaque voyage autour des personnes qui le réservent : couples, familles, groupes et voyageurs solos, chacun avec un itinéraire, un rythme et un style de voyage qui lui convient.",
       cta: "En savoir plus",
       imageAlt:
-        "Oryx gemsbok aux longues cornes droites sur une crête herbeuse, baigné d'or par le soleil du soir",
+        "Une harde d'antilopes paissant dans la savane verte parmi des acacias épars",
     },
     stats: {
       ariaLabel: "Liger Tours en chiffres",
@@ -317,6 +335,19 @@ export const fr = {
     panel:
       "Enregistré auprès de la Namibia Tourism Board, basé à Windhoek.",
     planCta: "Planifier mon voyage",
+    storyImageAlt:
+      "Clients de Liger Tours réunis au panneau du tropique du Capricorne sur un sol désertique rouge",
+    moments: {
+      eyebrow: "De nos voyages",
+      h2: "Des moments réels, pris sur la route.",
+      lead: "Clients au tropique du Capricorne, une marche sur la plage atlantique, un arrêt où le désert rejoint la route : des photographies de voyages Liger, pas une banque d'images.",
+      alt1:
+        "Quatre clients sur une large plage atlantique, l'un accroupi pour photographier des empreintes dans le sable",
+      alt2:
+        "Camions alignés à un arrêt routier du désert sous un auvent",
+      alt3:
+        "Bâtiments en bois vieillis lentement ensevelis par le sable du désert",
+    },
   },
 
   galleryPage: {
@@ -342,6 +373,16 @@ export const fr = {
         tall: true,
       },
       {
+        src: "/imagery/crops/deadvlei-lone-tree-4x5.webp",
+        alt: "Un arbre mort solitaire sur la plaine d'argile blanche, une dune rouge se dressant derrière",
+        tall: true,
+      },
+      {
+        src: "/imagery/crops/quiver-tree-sun-silhouette-4x5.webp",
+        alt: "Un quivrier en silhouette contre le soleil dans un ciel bleu profond",
+        tall: true,
+      },
+      {
         src: "/imagery/crops/deadvlei-blue-sky-16x9.webp",
         alt: "Acacias morts sur une plaine d'argile blanche sous des dunes rouges et un ciel bleu profond",
       },
@@ -363,8 +404,17 @@ export const fr = {
         alt: "Arbres morts nus sur l'argile pâle avec une dune rouge derrière",
       },
       {
+        src: "/imagery/crops/tropic-capricorn-group-16x9.webp",
+        alt: "Clients de Liger Tours réunis au panneau du tropique du Capricorne sur un sol désertique rouge",
+      },
+      {
         src: "/imagery/crops/quiver-tree-forest-dusk-16x9.webp",
         alt: "Quivriers en silhouette contre un ciel de crépuscule orangé",
+      },
+      {
+        src: "/imagery/crops/coast-beach-group-4x5.webp",
+        alt: "Quatre clients sur une large plage atlantique, l'un accroupi pour photographier des empreintes dans le sable",
+        tall: true,
       },
       {
         src: "/imagery/crops/red-dunes-valley-plain-16x9.webp",
@@ -384,12 +434,20 @@ export const fr = {
         alt: "Un rhinocéros broutant dans l'herbe verte avec une autruche à côté",
       },
       {
+        src: "/imagery/crops/dunes-sunburst-pan-16x9.webp",
+        alt: "Le soleil perce au-dessus des dunes, au-dessus d'une fine pellicule d'eau sur le sable",
+      },
+      {
         src: "/imagery/crops/fish-river-canyon-view-16x9.webp",
         alt: "Fish River Canyon serpentant entre des parois rocheuses stratifiées au soir",
       },
       {
         src: "/imagery/crops/gemsbok-golden-light-16x9.webp",
         alt: "Oryx gemsbok sur une crête herbeuse dans la lumière dorée du soir",
+      },
+      {
+        src: "/imagery/crops/overland-road-stop-16x9.webp",
+        alt: "Camions alignés à un arrêt routier du désert sous un auvent",
       },
       {
         src: "/imagery/crops/namib-night-sky-4x5.webp",
@@ -401,8 +459,16 @@ export const fr = {
         alt: "Bloc de granit en équilibre du Spitzkoppe au-dessus de la plaine du désert",
       },
       {
+        src: "/imagery/crops/deadvlei-grove-16x9.webp",
+        alt: "Un bosquet d'arbres morts sur la plaine d'argile blanche sous les dunes rouges",
+      },
+      {
         src: "/imagery/crops/safari-vehicle-red-sand-16x9.webp",
         alt: "Traces de safari sur le sable rouge à l'heure dorée",
+      },
+      {
+        src: "/imagery/crops/sand-buried-ruins-16x9.webp",
+        alt: "Bâtiments en bois vieillis lentement ensevelis par le sable du désert",
       },
       {
         src: "/imagery/crops/deadvlei-blue-sky-4x5.webp",
@@ -702,8 +768,8 @@ export const fr = {
         "Peu de temps ? Cet itinéraire associe les deux étapes les plus demandées de Namibie : les dunes du Sossusvlei et la ville côtière de Swakopmund. Il est pensé pour les voyageurs qui veulent l'essentiel sans consacrer deux semaines complètes.",
         "Vous bénéficiez malgré tout de l'accès aux dunes au lever du jour, de la plaine d'argile Deadvlei et d'une vraie découverte de Swakopmund, entre air marin, architecture allemande et activités d'aventure, le tout à un rythme tranquille depuis Windhoek.",
       ],
-      image: "/imagery/crops/deadvlei-blue-sky-4x5.webp",
-      alt: "Acacias morts sur une plaine d'argile blanche sous des dunes rouges et un ciel bleu profond",
+      image: "/imagery/crops/deadvlei-lone-tree-4x5.webp",
+      alt: "Un arbre mort solitaire sur la plaine d'argile blanche, une dune rouge se dressant derrière",
       highlights: [
         "Petit matin aux dunes du Sossusvlei et sur la plaine de Deadvlei",
         "Les cols de Gaub et Kuiseb sur la route de la côte",
@@ -723,8 +789,8 @@ export const fr = {
         "Conçu autour de l'observation des animaux, ce circuit passe ses journées dans Etosha National Park, où éléphants, lions, girafes, oryx et rhinocéros se retrouvent aux points d'eau de la grande plaine salée.",
         "Le voyage se referme sur le plateau du Waterberg, une montagne tabulaire de grès rouge aux sentiers et belvédères. Une fin plus douce après les réveils matinaux des safaris d'Etosha et l'occasion de voir le bushveld oriental du parc d'en haut.",
       ],
-      image: "/imagery/crops/gemsbok-golden-light-4x5.webp",
-      alt: "Oryx gemsbok aux longues cornes droites sur une crête herbeuse dans la lumière dorée",
+      image: "/imagery/crops/rhino-etosha-grass-4x5.webp",
+      alt: "Un rhinocéros paissant dans l'herbe dorée, des acacias derrière lui",
       highlights: [
         "Des safaris complets dans Etosha National Park avec un guide local",
         "Observation aux points d'eau d'Okaukuejo et des camps célèbres du parc",
@@ -744,8 +810,8 @@ export const fr = {
         "Le sud namibien est une leçon d'échelle. La route court des sables rouges du Kalahari à la forêt de quivriers près de Keetmanshoop, puis descend vers le Fish River Canyon, l'un des plus grands canyons du continent.",
         "Ici, les journées parlent de lumière et de silence plutôt que de liste à cocher : lever de soleil sur les dunes, quivriers en silhouette au crépuscule, et la rive du canyon aux heures où ses couleurs changent minute après minute.",
       ],
-      image: "/imagery/crops/quiver-tree-forest-dusk-4x5.webp",
-      alt: "Quivriers en silhouette contre un ciel de crépuscule orangé dans le sud de la Namibie",
+      image: "/imagery/crops/quiver-tree-sun-silhouette-4x5.webp",
+      alt: "Un quivrier en silhouette contre le soleil dans un ciel bleu profond",
       highlights: [
         "Sables rouges du Kalahari et séjours en lodges du désert",
         "La forêt de quivriers de Keetmanshoop, superbe à l'heure dorée",
@@ -765,8 +831,8 @@ export const fr = {
         "Cet itinéraire traverse le cœur culturel du pays. Depuis la côte à Swakopmund, il entre dans le Damaraland, où la faune adaptée au désert circule entre les inselbergs et où l'art rupestre atteste des siècles de présence humaine.",
         "Au nord du Damaraland, la route passe par l'Owamboland, où vivent les plus grandes communautés de Namibie et un mode de vie que la plupart des visiteurs ne voient jamais, avant de conclure par la faune d'Etosha National Park.",
       ],
-      image: "/imagery/crops/giraffes-walking-savanna-4x5.webp",
-      alt: "Trois girafes marchant en file entre des acacias verts",
+      image: "/imagery/crops/rock-gorge-closeup-4x5.webp",
+      alt: "De hautes parois rocheuses usées d'une gorge désertique se refermant vers le ciel",
       highlights: [
         "Paysages rocheux du Damaraland et art rupestre ancestral",
         "Visites culturelles en Owamboland, loin des circuits standards",
@@ -877,8 +943,8 @@ export const fr = {
       location: "Désert du Namib",
       description:
         "Regardez le désert s'éveiller quand les premiers rayons peignent les dunes d'or et d'orange. Une expérience parfaite pour les photographes et les amoureux de la nature.",
-      image: "/imagery/crops/deadvlei-warm-light-4x5.webp",
-      alt: "Arbres morts nus sur l'argile pâle avec une dune rouge derrière",
+      image: "/imagery/crops/dunes-sunburst-pan-4x5.webp",
+      alt: "Le soleil perce au-dessus des dunes, au-dessus d'une fine pellicule d'eau sur le sable",
     },
     {
       slug: "photography-tour",
@@ -897,8 +963,8 @@ export const fr = {
       location: "Spitzkoppe",
       description:
         "Explorez les formations de granit spectaculaires du Spitzkoppe et profitez de vues vastes sur le désert alentour.",
-      image: "/imagery/crops/spitzkoppe-granite-peaks-4x5.webp",
-      alt: "Énorme bloc de granit en équilibre sur le Spitzkoppe, dominant la plaine du désert",
+      image: "/imagery/crops/spitzkoppe-massif-4x5.webp",
+      alt: "Le massif de granit du Spitzkoppe s'élevant au-dessus de la brousse désertique",
     },
     {
       slug: "swakopmund-coastal-adventure",
@@ -907,8 +973,8 @@ export const fr = {
       location: "Swakopmund",
       description:
         "Profitez de la rencontre unique entre l'Atlantique et le désert du Namib, avec visites, promenades sur la plage et découvertes locales.",
-      image: "/imagery/crops/swakopmund-atlantic-coast-4x5.webp",
-      alt: "Vagues de l'Atlantique venant se briser sur le rivage de sable près de Swakopmund",
+      image: "/imagery/crops/walvis-bay-jetty-4x5.webp",
+      alt: "Une longue jetée de bois s'avance dans les eaux calmes de l'Atlantique, des voiliers amarrés dans la baie",
     },
     {
       slug: "etosha-wildlife-safari",

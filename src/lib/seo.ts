@@ -1,10 +1,19 @@
 /* Shared metadata builder: canonical + hreflang alternates + OG per locale.
-   English canonicals stay clean (no prefix); /de and /fr carry their locale. */
+   English canonicals stay clean (no prefix); other locales carry their segment.
+   The hreflang set is generated from the locale registry so every added
+   language (de, fr, af, pt, ...) is picked up automatically. */
 
 import type { Metadata } from "next";
-import { company, localePath, ogLocales, type Locale } from "@/lib/content";
+import { company, locales, localePath, ogLocales, defaultLocale, type Locale } from "@/lib/content";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ligertoursnamibia.com";
+
+function alternatesFor(path: string) {
+  const languages: Record<string, string> = {};
+  for (const l of locales) languages[l] = `${siteUrl}${localePath(l, path)}`;
+  languages["x-default"] = `${siteUrl}${localePath(defaultLocale, path)}`;
+  return languages;
+}
 
 export function pageMeta(
   locale: Locale,
@@ -22,12 +31,7 @@ export function pageMeta(
     description: meta.description,
     alternates: {
       canonical: localePath(locale, path),
-      languages: {
-        en: localePath("en", path),
-        de: localePath("de", path),
-        fr: localePath("fr", path),
-        "x-default": localePath("en", path),
-      },
+      languages: alternatesFor(path),
     },
     openGraph: {
       title: meta.title,
@@ -51,11 +55,6 @@ export function pageMeta(
 export function pageAlternates(locale: Locale, path: string) {
   return {
     canonical: localePath(locale, path),
-    languages: {
-      en: localePath("en", path),
-      de: localePath("de", path),
-      fr: localePath("fr", path),
-      "x-default": localePath("en", path),
-    },
+    languages: alternatesFor(path),
   };
 }
