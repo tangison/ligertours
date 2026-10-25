@@ -106,3 +106,28 @@ Stage Summary:
 - Languages: EN, DE, FR, AF, PT with the side globe dock + drawer search
 - Imagery: 14 authentic client photos across cards, tiles, arches, moments band and gallery
 - SECURITY: rotate the GitHub PAT and the Vercel token (both appeared in chat plaintext).
+
+---
+Task ID: 5
+Agent: main (Z.ai)
+Task: User round 5: ligertours.com is the site (domain already connected), optimise SEO + AI SEO/AEO, remove business-limiting copy ("Windhoek based", "small group"), add Sandwich Harbour activity with a picture, make the copy perfect, push everything to main as a human author.
+
+Work Log:
+- Domain switch: company.domain/url, seo.ts, robots.ts, sitemap.ts, layout.tsx and tours/[slug] siteUrl fallbacks now default to https://ligertours.com; NEXT_PUBLIC_SITE_URL env on Vercel updated from ligertours.vercel.app to https://ligertours.com (upsert, all targets). Reversed the Vercel domain roles via API: apex ligertours.com is primary (no redirect), www.ligertours.com 308s to apex; both verified.
+- De-limiting copy pass in all five locales (en/de/fr/af/pt): hero lead, home intro p1/p2 (now "groups of any size, from two people to fifty or more"), meta home/tours/activities/about titles and descriptions, footer blurb, about story + panel, tourDetail.touristType ("Group guided tour"), activitiesPage lead ("for groups of any size"). Windhoek kept only where factual: departure logistics, contact/legal pages, LocalBusiness address. Fixed an Afrikaans translation bug ("Ses" six -> "Sewe" seven tours).
+- Sandwich Harbour: sourced "Namib desert meets Atlantic ocean.jpg" (Red Dune Safaris, Wikimedia Commons, CC BY-SA 4.0) after visual QA of six candidates; cleaned scan dust with a four-pass pipeline (small-dot median replace, round-blob DoG inpaint, sky flattening for water spots, edge-blob rect inpaint) so dunes/ocean texture stays intact; cut 4x5 (36.5KB), 1x1 (118KB), 16x9 (104KB) WebP crops. Added the activity (slug sandwich-harbour-4x4, "Half day, Walvis Bay") in all five languages, added the 16x9 to the gallery, added the Commons credit to the /brand credits table.
+- Stats strip updated 12 -> 13 guided experiences in all locales.
+- AEO layer: new FAQ block on the home page (six crawlable questions with answers: large groups, departure, pricing, best season, NTB registration, custom routes) rendered in all five languages with FAQPage JSON-LD per locale; layout JSON-LD upgraded LocalBusiness -> TourOperator with structured areaServed; TouristTrip JSON-LD gains url/image and TourOperator provider; public/llms.txt added for AI answer engines (company facts, tours, activities, answers).
+- Manifest description de-limited. File-mode noise (644/755) normalised across the repo.
+- Built (96 static pages), verified locally in a real browser: FAQ section renders with scroll craft, Sandwich Harbour arch card on /activities, German FAQ text, drawer search finds "Sandwich Harbour: Where the Ocean Meets the Desert", hero shows the new group-first lead, zero console errors, contact API {"ok":true}.
+- SEO verification: canonical https://ligertours.com/ on every locale, hreflang en/de/fr/af/pt/x-default live, sitemap 80 URLs all on the new domain, robots Sitemap line correct, all meta descriptions 126-148 chars, JSON-LD parses (TourOperator + FAQPage 6 items), /en/* 308s preserved.
+- Git: committed as Tangison Studio <studio@tangison.com> (no bot trailers), pushed to main (49177ea); tool-results/ scratch dir removed from the repo and ignored.
+- Deployed with vercel --prod. Production verified: apex 200, www 308 -> apex, canonical live, new titles live in five languages, FAQPage schema live, Sandwich Harbour live on /activities with the new image 200, sitemap/robots/llms.txt live on ligertours.com.
+
+Stage Summary:
+- Live: https://ligertours.com (apex primary, www redirects, /de /fr /af /pt)
+- Repo: https://github.com/tangison/ligertours @ 49177ea, all commits by Tangison Studio
+- Sandwich Harbour: live everywhere the activity system reaches (page, search, meta, gallery, llms.txt)
+- Copy: zero "Windhoek based" identity framing, zero "small group" limits; group business of any size is explicitly welcome
+- AEO: FAQPage + TourOperator + TouristTrip schema, llms.txt for AI crawlers, FAQ content in all five languages
+- SECURITY: rotate the GitHub PAT and the Vercel token (both appeared in chat plaintext across sessions).
