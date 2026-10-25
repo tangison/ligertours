@@ -14,24 +14,24 @@ export const af = {
 
   meta: {
     home: {
-      title: "Liger Tours Namibia | Gidsgeleide Namibiese Toere vanaf Windhoek",
+      title: "Liger Tours Namibia | Gidsgeleide Toere deur Namibië",
       description:
-        "Plaaslik besit toernemaatskappy in Windhoek. Gidsgeleide Namibiese toere na Sossusvlei, Etosha, Swakopmund en die Kalahari, beplan rondom u datum en groep.",
+        "Plaaslik besit Namibiese toeronemer. Gidsgeleide groepstoere na Sossusvlei, Etosha, Swakopmund en die Kalahari, beplan rondom u datum en u groep.",
     },
     tours: {
       title: "Namibiese Toere: Duine, Wildlewe, Kus",
       description:
-        "Ses gidsgeleide Namibiese toere vanaf Windhoek: kenmerkende duin- en safariroetes, suidelike canyonreise, kulturele roetes en 'n 24-dagse ontdekkingskringloop.",
+        "Sewe gidsgeleide Namibiese toere: kenmerkende duin- en safariroetes, suidelike canyonreise, kulturele roetes en 'n 24-dagse ontdekkingskringloop.",
     },
     activities: {
-      title: "Dagaktiwiteite rondom Windhoek",
+      title: "Dagaktiwiteite en ervarings in Namibië",
       description:
-        "Wildritte, townshipbesoeke, San-geleide wandelinge, kookklasse, Spitzkoppe-wandelings en sterregazing rondom Windhoek, met plaaslike gidse.",
+        "Wildritte, Sandwich Harbour per 4x4, townshipbesoeke, San-geleide wandelinge, kookklasse, Spitzkoppe-wandelings en sterregazing, met plaaslike gidse.",
     },
     about: {
       title: "Oor Liger Tours Namibia",
       description:
-        "Liger Tours Namibia is 'n plaaslik besit, NTB geregistreerde toermaatskappy in Windhoek. Leer die span ken, ons sending en die waardes agter elke gidsgeleide roete.",
+        "Liger Tours Namibia is 'n plaaslik besit, NTB geregistreerde toermaatskappy. Leer die span ken, ons sending en die waardes agter elke gidsgeleide roete.",
     },
     gallery: {
       title: "Galery: Namibiese Beelde",
@@ -105,7 +105,7 @@ export const af = {
 
   footer: {
     blurb:
-      "Plaaslik besit toernemaatskappy gebaseer in Windhoek, geregistreer by die Namibiese Toerisme-raad. Gidsgeleide toere regoor Namibië: woestyn, kus, canyon en wildlewe.",
+      "Plaaslik besit Namibiese toeronemer, geregistreer by die Namibiese Toerisme-raad. Gidsgeleide groepstoere regoor Namibië: woestyn, kus, canyon en wildlewe.",
     explore: "Verken",
     contactHeading: "Kontak",
     whatsappLabel: "WhatsApp",
@@ -120,7 +120,7 @@ export const af = {
   hero: {
     kicker: "Gidsgelei deur plaaslikes",
     title: "Namibië, ongedwingd.",
-    lead: "Plaaslik besit, Windhoek gebaseer. Klein groep gidsgeleide toere van die rooi duine van Sossusvlei tot die wildlewe van Etosha, beplan rondom u datum en u tempo.",
+    lead: "Plaaslik besit en NTB geregistreer. Gidsgeleide groepstoere van die rooi duine van Sossusvlei tot die wildlewe van Etosha, beplan rondom u datum en u tempo.",
     primaryCta: "Beplan my reis",
     secondaryCta: "Sien die toere",
     imageAlt:
@@ -131,8 +131,8 @@ export const af = {
   intro: {
       eyebrow: "Plaaslik besit, NTB geregistreer",
       h2: "Die beste manier om Namibia te sien, is met mense wat dit tuis noem.",
-      p1: "Liger Tours Namibia is 'n Windhoek toermaatskappy gebou op egte plaaslike kennis. Van wildritte net buite die hoofstad tot meerdaagse reise dwarsdeur die land se woestyne, kuslyne en wildreservate, is elke roete ontwerp om u die regte Namibia te wys, teen 'n tempo wat u laat inkom.",
-      p2: "As 'n maatskappy geregistreer by die Namibia Tourism Board, beplan ons elke reis rondom die mense wat dit bespreek: pare, gesinne, groepe en enkelreisigers, elkeen met 'n roete, tempo en reisstyl wat by hulle pas.",
+      p1: "Liger Tours Namibia is 'n plaaslik besit toermaatskappy gebou op egte plaaslike kennis. Van wildritte net buite die hoofstad tot meerdaagse reise dwarsdeur die land se woestyne, kuslyne en wildreservate, is elke roete ontwerp om u die regte Namibia te wys, teen 'n tempo wat u laat inkom.",
+      p2: "As 'n maatskappy geregistreer by die Namibia Tourism Board, beplan ons elke reis rondom die mense wat dit bespreek: pare, gesinne, enkelreisigers en groepe van enige grootte, van twee mense tot vyftig of meer, elkeen met 'n roete, tempo en reisstyl wat by hulle pas.",
       cta: "Meer oor ons",
       imageAlt:
         "'n Kudde van antilope wat oor groen savanne met verspreide akasiabome wei",
@@ -141,7 +141,7 @@ export const af = {
       ariaLabel: "Liger Tours in syfers",
       items: [
         { value: 7, suffix: "", label: "Kenmerkende roetes" },
-        { value: 12, suffix: "", label: "Geduide ervarings" },
+        { value: 13, suffix: "", label: "Geduide ervarings" },
         { value: 100, suffix: "%", label: "Plaaslik besit" },
         { label: "Land, diep bekend", raw: "NTB" },
       ],
@@ -211,6 +211,37 @@ export const af = {
       h2: "Wat ons gaste sê.",
       ariaLabel: "Wat ons gaste sê",
     },
+    faq: {
+      eyebrow: "Goed om te weet",
+      h2: "Vrae wat gaste vra voordat hulle boek.",
+      ariaLabel: "Gereelde vrae",
+      items: [
+        {
+          q: "Verskaf julle toere vir groot groepe?",
+          a: "Ja. Liger Tours lei groepstoere van enige grootte, van twee reisigers tot groepe van vyftig of meer. Gee ons u getalle en ons bou die roete, die tempo en die voertuie daaromtrent.",
+        },
+        {
+          q: "Waar begin die toere?",
+          a: "Elke roete begin en eindig in Windhoek, die middelpunt van die land en die aankomspunt vir die meeste vlugte. Ons bevestig optelbesonderhede met u voor u reis.",
+        },
+        {
+          q: "Hoeveel kos 'n toer?",
+          a: "Elke toer word individueel in Namibiese dollar (N$) gekwoteer omdat die prys van u groepgrootte, die seisoen en u akkommodasie-keuses afhang. Stuur 'n navraag en u kry gewoonlik binne een werksdag 'n volledige kwotasie.",
+        },
+        {
+          q: "Wanneer is die beste tyd om Namibia te besoek?",
+          a: "Mei tot Oktober is hoogseisoen, met koel oggende, helder hemels en die beste wildbesigtiging in Etosha. Dit is ook wanneer die beste lodges eerste vol, dus doen vroegtydig navraag.",
+        },
+        {
+          q: "Is u 'n geregistreerde toeronemer?",
+          a: "Ja. Liger Tours Namibia is plaaslik besit en geregistreer by die Namibia Toerisme Raad (NTB), wat ons by elke stap van u reis aan professionele standaards hou.",
+        },
+        {
+          q: "Kan u 'n eie roete bou?",
+          a: "Ja, elke week. Vertel ons wat u wil sien en hoe lank u het, en ons bou 'n roete daaromtrent, selfs al is dit korter as die toere op hierdie blad.",
+        },
+      ],
+    },
     cta: {
       h2: "Klaar wanneer u klaar is.",
       script: "Vertel ons u datums. Ons sal die reis rondom hulle bou.",
@@ -273,7 +304,7 @@ export const af = {
         viewTour: "Bekyk die toer",
     moreTours: "Ander roetes wat u dalk sal leuk vind",
     viewTourAria: "Bekyk die toer: {name}",
-    touristType: "Klein groepsgeduide toer",
+    touristType: "Gidsgeleide groepstoer",
     enquireAria: "Navraag oor hierdie toer",
   },
 
@@ -282,7 +313,7 @@ export const af = {
     title: "Maak een dag tel.",
     pageHeaderAlt:
       "Gemsbok-oryx wat op 'n grasryk heuwel in warm goue aandlig staan",
-    lead: "Dag ervarings wat u alleen kan boek of by enige toer kan voeg. Hierdie alles loop met plaaslike gidse, in klein groepe, tye van die dag wat sin maak vir die lig en die wild.",
+    lead: "Dag ervarings wat u alleen kan boek of by enige toer kan voeg. Hierdie alles loop met plaaslike gidse, vir groepe van enige grootte, tye van die dag wat sin maak vir die lig en die wild.",
     addToTrip: "Voeg dit by my reis",
     addH2: "Voeg enige van hierdie by u toer.",
     addLead:
@@ -299,7 +330,7 @@ export const af = {
     storyEyebrow: "Ons storie",
     storyH2: "Deur mense gebou wat met hierdie land grootgeword het.",
     story: [
-      "Liger Tours Namibia is 'n plaaslik besit toermaatskappy wat in Windhoek gebaseer is, gebou op 'n eenvoudige idee: die beste manier om Namibia te sien is met mense wat dit hulle tuis noem. Die maatskappy is deur 'n Omgewingswetenskapse afgestudeerde gestig wie se bewondering vir natuur en volhouende reis elke roete vorm, van 'n oggendwildrit buite die hoofstad tot 'n meerdaagse reis deur die land.",
+      "Liger Tours Namibia is 'n plaaslik besit toermaatskappy, gebou op 'n eenvoudige idee: die beste manier om Namibia te sien is met mense wat dit hulle tuis noem. Die maatskappy is deur 'n Omgewingswetenskapse afgestudeerde gestig wie se bewondering vir natuur en volhouende reis elke roete vorm, van 'n oggendwildrit buite die hoofstad tot 'n meerdaagse reis deur die land.",
       "As 'n maatskappy by die Namibia Toerisme Raad (NTB) geregistreer, hou Liger Tours Namiba homself aan professionele standaards by elke stap van 'n reis. Toere word rondom die gaste wat boek beplan: pare, gesinne, groepe en alleenreisigers kry almal 'n roete, tempo en styl van reis wat by hulle pas, met gemak en veiligheid as prioriteite behandel eerder as ekstras.",
       "Elke toer wys die landskappe, wildlewe en kulture van Namibia terwyl verantwoordelike en volhouende toerisme bevorder word. Dit beteken plaaslike gidse, egte kulturele ontmoetings wat met respek gereël word, en roetes wat die plekke wat gaste besoek net laat soos hulle dit gevind het.",
     ],
@@ -333,7 +364,7 @@ export const af = {
         body: "Wy is toegewy om die skoonheid en uniekheid van ons land met besoekers van oral oor die wêreld te deel.",
       },
     ],
-    panel: "Geregistreer by die Namibia Toerisme Raad en gebaseer in Windhoek.",
+    panel: "Geregistreer by die Namibia Toerisme Raad en lei groepe regoor Namibië.",
     planCta: "Beplan my reis",
     storyImageAlt:
       "Liger Tours gaste saam rondom die Kreefstroppad paaiteken op rooi woestygrond",
@@ -427,6 +458,10 @@ export const af = {
       {
         src: "/imagery/crops/flamingos-walvis-bay-1x1.webp",
         alt: "Flamingo's wat deur die vlak blou water van Walvisbaai lagune stap",
+      },
+      {
+        src: "/imagery/crops/sandwich-harbour-ocean-dunes-16x9.webp",
+        alt: "Die duine van die Namib wat reguit in die Atlantiese branding by Sandwich Harbour loop",
       },
       {
         src: "/imagery/crops/rhino-and-ostrich-grassland-1x1.webp",
@@ -969,6 +1004,16 @@ export const af = {
         "Genuit die unieke ontmoetpunt van die Atlantiese Oseaan en die Namib-woestyne met geleenthede vir besigtiging, strandwandelinge en plaaslike verkenning.",
       image: "/imagery/crops/walvis-bay-jetty-4x5.webp",
       alt: "'n Lang houtsteiger wat in stil Atlantiese water uitsteek, seilskepe in die baai vasgemeet",
+    },
+    {
+      slug: "sandwich-harbour-4x4",
+      name: "Sandwich Harbour: Waar die Oseaan die Woestyn Ontmoet",
+      duration: "Halwe dag",
+      location: "Walvisbaai",
+      description:
+        "Ry suid vanaf Walvisbaai en sien hoe die duine van die Namib reguit in die Atlantiese Oseaan loop. Hierdie beskermde vlei in die Namib-Naukluft Park lok flamingo's en pelikane na sy lagune, en die enigste toegang is per 4x4 oor sagte sand, met u gids wat die getye lees.",
+      image: "/imagery/crops/sandwich-harbour-ocean-dunes-4x5.webp",
+      alt: "Die duine van die Namib wat reguit in die Atlantiese branding by Sandwich Harbour loop",
     },
     {
       slug: "etosha-wildlife-safari",

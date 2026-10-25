@@ -14,24 +14,24 @@ export const en = {
 
   meta: {
     home: {
-      title: "Liger Tours Namibia | Guided Namibia Tours from Windhoek",
+      title: "Liger Tours Namibia | Guided Tours Across Namibia",
       description:
-        "Locally owned tour operator in Windhoek. Guided Namibia tours to Sossusvlei, Etosha, Swakopmund and the Kalahari, planned around your dates and group.",
+        "Locally owned Namibian operator. Group guided tours to Sossusvlei, Etosha, Swakopmund and the Kalahari, built around your dates and your group.",
     },
     tours: {
       title: "Namibia Tours: Dunes, Wildlife, Coast",
       description:
-        "Seven guided Namibia tours from Windhoek: signature dune and safari routes, southern canyon journeys, cultural routes and a 24-day discovery circuit.",
+        "Seven guided Namibia tours: signature dune and safari routes, southern canyon journeys, cultural routes and a 24-day discovery circuit.",
     },
     activities: {
-      title: "Day Activities Around Windhoek",
+      title: "Day Activities and Experiences in Namibia",
       description:
-        "Game drives, township tours, San-guided walks, cooking classes, Spitzkoppe hiking and stargazing around Windhoek, with local guides.",
+        "Game drives, Sandwich Harbour by 4x4, township tours, San-guided walks, cooking classes, Spitzkoppe hiking and stargazing, with local guides.",
     },
     about: {
       title: "About Liger Tours Namibia",
       description:
-        "Liger Tours Namibia is a locally owned, NTB registered tour company in Windhoek. Meet the team, our mission and the values behind every guided route.",
+        "Liger Tours Namibia is a locally owned, NTB registered tour company. Meet the team, our mission and the values behind every guided route.",
     },
     gallery: {
       title: "Gallery: Namibia in Pictures",
@@ -105,7 +105,7 @@ export const en = {
 
   footer: {
     blurb:
-      "Locally owned tour operator based in Windhoek, registered with the Namibia Tourism Board. Guided tours across Namibia: desert, coast, canyon and wildlife.",
+      "Locally owned Namibian tour operator, registered with the Namibia Tourism Board. Group guided tours across Namibia: desert, coast, canyon and wildlife.",
     explore: "Explore",
     contactHeading: "Contact",
     whatsappLabel: "WhatsApp",
@@ -120,7 +120,7 @@ export const en = {
   hero: {
     kicker: "Guided by locals",
     title: "Namibia, unhurried.",
-    lead: "Locally owned, Windhoek based. Small group guided tours from the red dunes of Sossusvlei to the wildlife of Etosha, planned around your dates and your pace.",
+    lead: "Locally owned and NTB registered. Group guided tours from the red dunes of Sossusvlei to the wildlife of Etosha, planned around your dates and your pace.",
     primaryCta: "Plan my trip",
     secondaryCta: "See the tours",
     imageAlt:
@@ -131,8 +131,8 @@ export const en = {
     intro: {
       eyebrow: "Locally owned, NTB registered",
       h2: "The best way to see Namibia is with people who call it home.",
-      p1: "Liger Tours Namibia is a Windhoek tour company built on genuine local knowledge. From game drives just outside the capital to multi-day journeys across the country's deserts, coastlines and wildlife reserves, every route is designed to show you the real Namibia, at a pace that lets you actually take it in.",
-      p2: "As a company registered with the Namibia Tourism Board, we plan every trip around the people booking it: couples, families, groups and solo travellers, each with a route, pace and style of travel that suits them.",
+      p1: "Liger Tours Namibia is a locally owned tour company built on genuine local knowledge. From game drives on the doorstep of the capital to multi-day journeys across the country's deserts, coastlines and wildlife reserves, every route is designed to show you the real Namibia, at a pace that lets you actually take it in.",
+      p2: "As a company registered with the Namibia Tourism Board, we plan every trip around the people booking it: couples, families, solo travellers and groups of any size, from two people to fifty or more, each with a route, pace and style of travel that suits them.",
       cta: "More about us",
       imageAlt:
         "A herd of antelope grazing across green savanna with scattered acacia trees",
@@ -141,7 +141,7 @@ export const en = {
       ariaLabel: "Liger Tours in numbers",
       items: [
         { value: 7, suffix: "", label: "Signature routes" },
-        { value: 12, suffix: "", label: "Guided experiences" },
+        { value: 13, suffix: "", label: "Guided experiences" },
         { value: 100, suffix: "%", label: "Locally owned" },
         { label: "Country, known deeply", raw: "NTB" },
       ],
@@ -211,6 +211,37 @@ export const en = {
       h2: "What our guests say.",
       ariaLabel: "What our guests say",
     },
+    faq: {
+      eyebrow: "Good to know",
+      h2: "Questions guests ask before they book.",
+      ariaLabel: "Frequently asked questions",
+      items: [
+        {
+          q: "Do you run tours for large groups?",
+          a: "Yes. Liger Tours runs guided group tours of every size, from two travellers to groups of fifty or more. Tell us your numbers and we will build the route, the pace and the vehicles around them.",
+        },
+        {
+          q: "Where do your tours start?",
+          a: "Every route starts and ends in Windhoek, the centre of the country and the arrival point for most flights. We confirm pick-up details with you before you travel.",
+        },
+        {
+          q: "How much does a tour cost?",
+          a: "Every tour is quoted individually in Namibian dollars (N$) because price depends on your group size, the season and your accommodation choices. Send an enquiry and you will have a full quote, usually within one working day.",
+        },
+        {
+          q: "When is the best time to visit Namibia?",
+          a: "May to October is high season, with cool mornings, clear skies and the best wildlife viewing in Etosha. It is also when the best lodges fill first, so enquire as early as you can.",
+        },
+        {
+          q: "Are you a registered tour operator?",
+          a: "Yes. Liger Tours Namibia is locally owned and registered with the Namibia Tourism Board (NTB), which holds us to professional standards at every step of your trip.",
+        },
+        {
+          q: "Can you build a custom route?",
+          a: "Yes, every week. Tell us what you want to see and how long you have, and we will build a route around it, even if it is shorter than the tours on this site.",
+        },
+      ],
+    },
     cta: {
       h2: "Ready when you are.",
       script: "Tell us your dates. We will build the trip around them.",
@@ -273,7 +304,7 @@ export const en = {
         viewTour: "View the tour",
     moreTours: "Other routes you might like",
     viewTourAria: "View the tour: {name}",
-    touristType: "Small group guided tour",
+    touristType: "Group guided tour",
     enquireAria: "Enquire about this tour",
   },
 
@@ -282,7 +313,7 @@ export const en = {
     title: "Make one day count.",
     pageHeaderAlt:
       "Gemsbok oryx standing on a grassy ridge in warm golden evening light",
-    lead: "Day experiences you can book on their own or add to any tour. Everything here runs with local guides, in small groups, at times of day that make sense for the light and the wildlife.",
+    lead: "Day experiences you can book on their own or add to any tour. Everything here runs with local guides, for groups of any size, at times of day that make sense for the light and the wildlife.",
     addToTrip: "Add this to my trip",
     addH2: "Add any of these to your tour.",
     addLead:
@@ -300,7 +331,7 @@ export const en = {
     storyEyebrow: "Our story",
     storyH2: "Built by people who grew up with this land.",
     story: [
-      "Liger Tours Namibia is a locally owned tour company based in Windhoek, built on a simple idea: the best way to see Namibia is with people who call it home. The company was founded by an Environmental Sciences graduate whose appreciation for nature and sustainable travel shapes every itinerary, from a morning game drive outside the capital to a multi-day journey across the country.",
+      "Liger Tours Namibia is a locally owned tour company, built on a simple idea: the best way to see Namibia is with people who call it home. The company was founded by an Environmental Sciences graduate whose appreciation for nature and sustainable travel shapes every itinerary, from a morning game drive outside the capital to a multi-day journey across the country.",
       "As a company registered with the Namibia Tourism Board (NTB), Liger Tours Namibia holds itself to professional standards at every step of a trip. Tours are planned around the guests who book them: couples, families, groups and solo travellers each get a route, pace and style of travel that suits them, with comfort and safety treated as priorities rather than extras.",
       "Every tour showcases the landscapes, wildlife and cultures of Namibia while promoting responsible and sustainable tourism. That means local guides, genuine cultural encounters arranged with respect, and itineraries that leave the places guests visit as they found them.",
     ],
@@ -334,7 +365,7 @@ export const en = {
         body: "We are committed to sharing the beauty and uniqueness of our country with visitors from around the world.",
       },
     ],
-    panel: "Registered with the Namibia Tourism Board and based in Windhoek.",
+    panel: "Registered with the Namibia Tourism Board and guiding groups across Namibia.",
     planCta: "Plan my trip",
     storyImageAlt:
       "Liger Tours guests gathered around the Tropic of Capricorn roadside sign on red desert soil",
@@ -428,6 +459,10 @@ export const en = {
       {
         src: "/imagery/crops/flamingos-walvis-bay-1x1.webp",
         alt: "Flamingos wading through the shallow blue water of Walvis Bay lagoon",
+      },
+      {
+        src: "/imagery/crops/sandwich-harbour-ocean-dunes-16x9.webp",
+        alt: "The dunes of the Namib running straight into the Atlantic surf at Sandwich Harbour",
       },
       {
         src: "/imagery/crops/rhino-and-ostrich-grassland-1x1.webp",
@@ -974,6 +1009,16 @@ export const en = {
         "Enjoy the unique meeting point of the Atlantic Ocean and the Namib Desert with opportunities for sightseeing, beach walks and local exploration.",
       image: "/imagery/crops/walvis-bay-jetty-4x5.webp",
       alt: "A long wooden jetty reaching into calm Atlantic water, sailboats moored in the bay",
+    },
+    {
+      slug: "sandwich-harbour-4x4",
+      name: "Sandwich Harbour: Where the Ocean Meets the Desert",
+      duration: "Half day",
+      location: "Walvis Bay",
+      description:
+        "Drive south from Walvis Bay and watch the dunes of the Namib run straight into the Atlantic. This protected wetland inside the Namib-Naukluft Park draws flamingos and pelicans to its lagoon, and the only way in is by 4x4 over soft sand, with your guide reading the tides.",
+      image: "/imagery/crops/sandwich-harbour-ocean-dunes-4x5.webp",
+      alt: "The dunes of the Namib running straight into the Atlantic surf at Sandwich Harbour",
     },
     {
       slug: "etosha-wildlife-safari",

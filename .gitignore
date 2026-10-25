@@ -64,3 +64,4 @@ scripts/qa/
 
 # raw source material and working files, never ship
 /upload/
+tool-results/

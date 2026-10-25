@@ -1,5 +1,5 @@
 /* Shared, locale-independent data: company facts + locale registry + types.
-   Facts are real (from the client brand kit and ligertoursnamibia.com). */
+   Facts are real (from the client brand kit and the live site). */
 
 export const company = {
   name: "Liger Tours Namibia",
@@ -11,8 +11,8 @@ export const company = {
   city: "Windhoek",
   country: "Namibia",
   address: "Windhoek, Namibia",
-  domain: "ligertoursnamibia.com",
-  url: "https://ligertoursnamibia.com",
+  domain: "ligertours.com",
+  url: "https://ligertours.com",
   registered: "Registered with the Namibia Tourism Board (NTB)",
   hours: "Monday to Saturday, 08:00 to 17:00 (CAT)",
 } as const;

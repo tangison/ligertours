@@ -118,6 +118,12 @@ const credits = [
     licence: "Unsplash License",
     href: "https://unsplash.com",
   },
+  {
+    file: "Namib desert meets Atlantic ocean",
+    by: "Red Dune Safaris, Wikimedia Commons",
+    licence: "CC BY-SA 4.0",
+    href: "https://commons.wikimedia.org/wiki/File:Namib_desert_meets_Atlantic_ocean.jpg",
+  },
 ];
 
 export default async function BrandPage({ params }: Params) {

@@ -13,24 +13,24 @@ export const de = {
 
   meta: {
     home: {
-      title: "Liger Tours Namibia | Geführte Touren ab Windhoek",
+      title: "Liger Tours Namibia | Geführte Touren durch Namibia",
       description:
-        "Familiengeführter Touranbieter aus Windhoek. Geführte Namibia Reisen: Sossusvlei, Etosha, Swakopmund, Kalahari. Planung nach Ihren Terminen.",
+        "Familiengeführter namibischer Veranstalter. Geführte Gruppenreisen: Sossusvlei, Etosha, Swakopmund, Kalahari. Planung nach Ihren Terminen und Ihrer Gruppe.",
     },
     tours: {
       title: "Namibia Touren: Dünen, Tierwelt, Küste",
       description:
-        "Sieben geführte Namibia Touren ab Windhoek: Routen zu Dünen und Safari, Reisen in den Süden mit Canyon, Kulturrouten und eine 24-tägige Entdeckungsreise.",
+        "Sieben geführte Namibia Touren: Routen zu Dünen und Safari, Reisen in den Süden mit Canyon, Kulturrouten und eine 24-tägige Entdeckungsreise.",
     },
     activities: {
-      title: "Tagesaktivitäten rund um Windhoek",
+      title: "Tagesaktivitäten und Erlebnisse in Namibia",
       description:
-        "Pirschfahrten, Township-Touren, San-Wanderungen, Kochkurse, Wandern am Spitzkoppe und Sternenhimmel rund um Windhoek, mit lokalen Guides.",
+        "Pirschfahrten, Sandwich Harbour im 4x4, Township-Touren, San-Wanderungen, Kochkurse, Wandern am Spitzkoppe und Sternenhimmel, mit lokalen Guides.",
     },
     about: {
       title: "Über Liger Tours Namibia",
       description:
-        "Liger Tours Namibia ist ein familiengeführter, NTB registrierter Touranbieter in Windhoek. Team, Mission und die Werte hinter jeder Route.",
+        "Liger Tours Namibia ist ein familiengeführter, NTB registrierter Touranbieter. Team, Mission und die Werte hinter jeder Route.",
     },
     gallery: {
       title: "Galerie: Namibia in Bildern",
@@ -104,7 +104,7 @@ export const de = {
 
   footer: {
     blurb:
-      "Familiengeführter Touranbieter mit Sitz in Windhoek, registriert bei der Namibia Tourism Board. Geführte Reisen durch Namibia: Wüste, Küste, Canyon und Tierwelt.",
+      "Familiengeführter namibischer Touranbieter, registriert bei der Namibia Tourism Board. Geführte Gruppenreisen durch Namibia: Wüste, Küste, Canyon und Tierwelt.",
     explore: "Entdecken",
     contactHeading: "Kontakt",
     whatsappLabel: "WhatsApp",
@@ -119,7 +119,7 @@ export const de = {
   hero: {
     kicker: "Geführt von Einheimischen",
     title: "Namibia, ohne Eile.",
-    lead: "Familiengeführt, zuhause in Windhoek. Kleine geführte Gruppenreisen von den roten Dünen des Sossusvlei bis zur Tierwelt des Etosha, geplant nach Ihren Terminen und Ihrem Tempo.",
+    lead: "Familiengeführt und NTB registriert. Geführte Gruppenreisen von den roten Dünen des Sossusvlei bis zur Tierwelt des Etosha, geplant nach Ihren Terminen und Ihrem Tempo.",
     primaryCta: "Reise planen",
     secondaryCta: "Touren ansehen",
     imageAlt:
@@ -130,8 +130,8 @@ export const de = {
     intro: {
       eyebrow: "Lokal geführt, NTB registriert",
       h2: "Die beste Art, Namibia zu sehen, ist mit Menschen, die es ihr Zuhause nennen.",
-      p1: "Liger Tours Namibia ist ein Windhoeker Reiseunternehmen, gebaut auf echtem lokalen Wissen. Von der Pirschfahrt direkt vor der Hauptstadt bis zur mehrtägigen Reise durch Wüsten, Küsten und Schutzgebiete: Jede Route zeigt Ihnen das echte Namibia, in einem Tempo, in dem Sie es auch wirklich aufnehmen.",
-      p2: "Als bei der Namibia Tourism Board registriertes Unternehmen planen wir jede Reise rund um die Menschen, die sie buchen: Paare, Familien, Gruppen und Alleinreisende, jede mit einer Route, einem Tempo und einem Reisestil, der passt.",
+      p1: "Liger Tours Namibia ist ein familiengeführtes namibisches Reiseunternehmen, gebaut auf echtem lokalen Wissen. Von der Pirschfahrt direkt vor der Hauptstadt bis zur mehrtägigen Reise durch Wüsten, Küsten und Schutzgebiete: Jede Route zeigt Ihnen das echte Namibia, in einem Tempo, in dem Sie es auch wirklich aufnehmen.",
+      p2: "Als bei der Namibia Tourism Board registriertes Unternehmen planen wir jede Reise rund um die Menschen, die sie buchen: Paare, Familien, Alleinreisende und Gruppen jeder Größe, von zwei Personen bis über fünfzig hinaus, jede mit einer Route, einem Tempo und einem Reisestil, der passt.",
       cta: "Mehr über uns",
       imageAlt:
         "Eine Herde Antilopen weidet auf grüner Savanne zwischen verstreuten Akazien",
@@ -140,7 +140,7 @@ export const de = {
       ariaLabel: "Liger Tours in Zahlen",
       items: [
         { value: 7, suffix: "", label: "Signature-Routen" },
-        { value: 12, suffix: "", label: "Geführte Erlebnisse" },
+        { value: 13, suffix: "", label: "Geführte Erlebnisse" },
         { value: 100, suffix: "%", label: "Lokal geführt" },
         { label: "Zertifizierter Veranstalter", raw: "NTB" },
       ],
@@ -210,6 +210,37 @@ export const de = {
       h2: "Was unsere Gäste sagen.",
       ariaLabel: "Was unsere Gäste sagen",
     },
+    faq: {
+      eyebrow: "Gut zu wissen",
+      h2: "Fragen, die Gäste vor der Buchung stellen.",
+      ariaLabel: "Häufige Fragen",
+      items: [
+        {
+          q: "Fahren Sie auch Touren für große Gruppen?",
+          a: "Ja. Liger Tours führt Gruppenreisen in jeder Größe durch, von zwei Reisenden bis zu Gruppen von fünfzig und mehr. Nennen Sie uns Ihre Teilnehmerzahl, und wir bauen Route, Tempo und Fahrzeuge darum herum.",
+        },
+        {
+          q: "Wo starten die Touren?",
+          a: "Jede Route beginnt und endet in Windhoek, im Zentrum des Landes und Ankunftsort der meisten Flüge. Die Abholdetails bestätigen wir Ihnen vor der Reise.",
+        },
+        {
+          q: "Was kostet eine Tour?",
+          a: "Jede Tour wird individuell in Namibia-Dollar (N$) angeboten, weil der Preis von Ihrer Gruppengröße, der Reisezeit und der Unterkunftswahl abhängt. Senden Sie eine Anfrage, und Sie erhalten in der Regel innerhalb eines Werktags ein vollständiges Angebot.",
+        },
+        {
+          q: "Wann ist die beste Reisezeit für Namibia?",
+          a: "Mai bis Oktober ist Hochsaison, mit kühlen Morgenden, klarem Himmel und der besten Tierbeobachtung im Etosha. In dieser Zeit sind die besten Lodges zuerst ausgebucht, fragen Sie also früh an.",
+        },
+        {
+          q: "Sind Sie ein registrierter Veranstalter?",
+          a: "Ja. Liger Tours Namibia ist familiengeführt und bei der Namibia Tourism Board (NTB) registriert, was uns auf jedem Schritt Ihrer Reise zu professionellen Standards verpflichtet.",
+        },
+        {
+          q: "Können Sie eine individuelle Route bauen?",
+          a: "Ja, jede Woche. Sagen Sie uns, was Sie sehen möchten und wie viel Zeit Sie haben, und wir bauen die Route darum herum, auch wenn sie kürzer ist als die Touren auf dieser Seite.",
+        },
+      ],
+    },
     cta: {
       h2: "Bereit, wenn Sie es sind.",
       script: "Nennen Sie uns Ihre Termine. Wir bauen die Reise darum herum.",
@@ -272,7 +303,7 @@ export const de = {
         viewTour: "Tour ansehen",
     moreTours: "Weitere Routen, die Ihnen gefallen könnten",
     viewTourAria: "Tour ansehen: {name}",
-    touristType: "Geführte Kleingruppenreise",
+    touristType: "Geführte Gruppenreise",
     enquireAria: "Diese Tour anfragen",
   },
 
@@ -281,7 +312,7 @@ export const de = {
     title: "Machen Sie aus einem Tag ein Erlebnis.",
     pageHeaderAlt:
       "Gemsbok Oryx auf einem Graskamm im warmen goldenen Abendlicht",
-    lead: "Tageserlebnisse, die Sie einzeln buchen oder zu jeder Tour hinzufügen können. Alles läuft mit lokalen Guides, in kleinen Gruppen und zu Tageszeiten, die Sinn ergeben: für das Licht und für die Tiere.",
+    lead: "Tageserlebnisse, die Sie einzeln buchen oder zu jeder Tour hinzufügen können. Alles läuft mit lokalen Guides, für Gruppen jeder Größe und zu Tageszeiten, die Sinn ergeben: für das Licht und für die Tiere.",
     addToTrip: "In meine Reise aufnehmen",
     addH2: "Fügen Sie davon beliebiges zu Ihrer Tour hinzu.",
     addLead:
@@ -299,7 +330,7 @@ export const de = {
     storyEyebrow: "Unsere Geschichte",
     storyH2: "Von Menschen, die mit diesem Land aufgewachsen sind.",
     story: [
-      "Liger Tours Namibia ist ein familiengeführtes Reiseunternehmen mit Sitz in Windhoek, gebaut auf einer einfachen Idee: Die beste Art, Namibia zu sehen, ist mit Menschen, die es ihr Zuhause nennen. Gegründet wurde das Unternehmen von einem Umweltwissenschaftler, dessen Wertschätzung für Natur und nachhaltiges Reisen jede Reise prägt, von der Pirschfahrt am Morgen vor der Hauptstadt bis zur mehrtägigen Reise durchs ganze Land.",
+      "Liger Tours Namibia ist ein familiengeführtes Reiseunternehmen, gebaut auf einer einfachen Idee: Die beste Art, Namibia zu sehen, ist mit Menschen, die es ihr Zuhause nennen. Gegründet wurde das Unternehmen von einem Umweltwissenschaftler, dessen Wertschätzung für Natur und nachhaltiges Reisen jede Reise prägt, von der Pirschfahrt am Morgen vor der Hauptstadt bis zur mehrtägigen Reise durchs ganze Land.",
       "Als bei der Namibia Tourism Board (NTB) registriertes Unternehmen hält Liger Tours Namibia auf jedem Schritt einer Reise professionelle Standards ein. Touren werden rund um die Gäste geplant, die sie buchen: Paare, Familien, Gruppen und Alleinreisende erhalten jede eine Route, ein Tempo und einen Reisestil, der passt, mit Komfort und Sicherheit als Priorität und nicht als Extra.",
       "Jede Tour zeigt die Landschaften, die Tierwelt und die Kulturen Namibias und fördert zugleich einen verantwortungsvollen, nachhaltigen Tourismus. Das heißt: lokale Guides, echte kulturelle Begegnungen mit Respekt arrangiert, und Reisepläne, die jeden Ort so hinterlassen, wie sie ihn vorgefunden haben.",
     ],
@@ -334,7 +365,7 @@ export const de = {
       },
     ],
     panel:
-      "Registriert bei der Namibia Tourism Board mit Sitz in Windhoek.",
+      "Registriert bei der Namibia Tourism Board, mit geführten Gruppenreisen in ganz Namibia.",
     planCta: "Reise planen",
     storyImageAlt:
       "Gäste von Liger Tours versammelt am Schild am Wendekreis des Steinbocks auf rotem Wüstenboden",
@@ -429,6 +460,10 @@ export const de = {
       {
         src: "/imagery/crops/flamingos-walvis-bay-1x1.webp",
         alt: "Flamingos wateten durch das flache blaue Wasser der Lagune von Walvis Bay",
+      },
+      {
+        src: "/imagery/crops/sandwich-harbour-ocean-dunes-16x9.webp",
+        alt: "Die Dünen des Namib laufen am Sandwich Harbour direkt in die Brandung des Atlantiks",
       },
       {
         src: "/imagery/crops/rhino-and-ostrich-grassland-1x1.webp",
@@ -976,6 +1011,16 @@ export const de = {
         "Genießen Sie die einzigartige Begegnung von Atlantik und Namibwüste mit Möglichkeiten zu Besichtigungen, Strandspaziergängen und lokalen Entdeckungen.",
       image: "/imagery/crops/walvis-bay-jetty-4x5.webp",
       alt: "Ein langer Holzsteg reicht in ruhiges Atlantikwasser, Segelboote liegen in der Bucht",
+    },
+    {
+      slug: "sandwich-harbour-4x4",
+      name: "Sandwich Harbour: Wo der Ozean auf die Wüste trifft",
+      duration: "Halber Tag",
+      location: "Walvis Bay",
+      description:
+        "Fahren Sie von Walvis Bay aus nach Süden und sehen Sie, wie die Dünen des Namib direkt in den Atlantik laufen. Dieses geschützte Feuchtgebiet im Namib-Naukluft-Park zieht Flamingos und Pelikane in seine Lagune, und der einzige Zugang ist im 4x4 über weichen Sand, während Ihr Guide die Gezeiten im Blick behält.",
+      image: "/imagery/crops/sandwich-harbour-ocean-dunes-4x5.webp",
+      alt: "Die Dünen des Namib laufen am Sandwich Harbour direkt in die Brandung des Atlantiks",
     },
     {
       slug: "etosha-wildlife-safari",

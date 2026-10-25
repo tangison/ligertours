@@ -14,7 +14,7 @@ import {
 } from "@/lib/content";
 import { localePath } from "@/lib/content";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ligertoursnamibia.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ligertours.com";
 
 /* Root layout lives inside [locale] so <html lang> matches the URL segment.
    Unknown locales are rejected in the component body (notFound), so the
@@ -116,8 +116,7 @@ export default async function LocaleLayout({
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    additionalType: "https://schema.org/TouristAttraction",
+    "@type": "TourOperator",
     name: company.legalName,
     description: dict.meta.home.description,
     url: siteUrl,
@@ -130,7 +129,7 @@ export default async function LocaleLayout({
       addressLocality: "Windhoek",
       addressCountry: "NA",
     },
-    areaServed: "Namibia",
+    areaServed: { "@type": "Country", name: "Namibia" },
     priceRange: "On request",
     openingHours: "Mo-Sa 08:00-17:00",
     availableLanguage: locales.map((l) => localeNames[l]),

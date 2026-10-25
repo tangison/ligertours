@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getDict, locales } from "@/lib/content";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ligertoursnamibia.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ligertours.com";
 
 /* One sitemap entry per route per language, with hreflang alternates.
    English keeps the clean unprefixed URL and is x-default. */

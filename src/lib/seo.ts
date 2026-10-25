@@ -6,7 +6,7 @@
 import type { Metadata } from "next";
 import { company, locales, localePath, ogLocales, defaultLocale, type Locale } from "@/lib/content";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ligertoursnamibia.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ligertours.com";
 
 function alternatesFor(path: string) {
   const languages: Record<string, string> = {};

@@ -1,13 +1,21 @@
 {
   "name": "Liger Tours Namibia",
   "short_name": "Liger Tours",
-  "description": "Locally owned tour operator in Windhoek. Guided Namibia tours to Sossusvlei, Etosha, Swakopmund and the Kalahari.",
+  "description": "Locally owned Namibian tour operator. Group guided tours to Sossusvlei, Etosha, Swakopmund and the Kalahari, built around your dates and your group.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FBF4F2",
   "theme_color": "#744642",
   "icons": [
-    { "src": "/favicons/icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "/favicons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+    {
+      "src": "/favicons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
   ]
 }

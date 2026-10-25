@@ -14,24 +14,24 @@ export const pt = {
 
   meta: {
     home: {
-      title: "Liger Tours Namibia | Excursões Guiadas na Namíbia a partir de Windhoek",
+      title: "Liger Tours Namibia | Excursões Guiadas pela Namíbia",
       description:
-        "Operadora de turismo local em Windhoek. Excursões guiadas pela Namíbia para Sossusvlei, Etosha, Swakopmund e o Kalahari, planejadas em torno das suas datas e grupo.",
+        "Operadora de turismo local namibiana. Excursões guiadas em grupo para Sossusvlei, Etosha, Swakopmund e o Kalahari, planejadas em torno das suas datas e do seu grupo.",
     },
     tours: {
       title: "Excursões na Namíbia: Dunas, Vida Selvagem, Costa",
       description:
-        "Sete excursões guiadas pela Namíbia a partir de Windhoek: rotas clássicas de dunas e safári, viagens aos cânions do sul, rotas culturais e um circuito de descoberta de 24 dias.",
+        "Sete excursões guiadas pela Namíbia: rotas clássicas de dunas e safári, viagens aos cânions do sul, rotas culturais e um circuito de descoberta de 24 dias.",
     },
     activities: {
-      title: "Atividades Diárias em Volta de Windhoek",
+      title: "Atividades e Experiências de um Dia na Namíbia",
       description:
-        "Safaris fotográficos, tours de township, caminhadas guiadas pelos San, aulas de culinária, caminhadas no Spitzkoppe e observação de estrelas em volta de Windhoek, com guias locais.",
+        "Safaris fotográficos, Sandwich Harbour de 4x4, tours de township, caminhadas guiadas pelos San, aulas de culinária, Spitzkoppe e observação de estrelas, com guias locais.",
     },
     about: {
       title: "Sobre a Liger Tours Namibia",
       description:
-        "A Liger Tours Namibia é uma empresa de excursões local e registada na NTB em Windhoek. Conheça a equipa, a nossa missão e os valores por trás de cada rota guiada.",
+        "A Liger Tours Namibia é uma empresa de excursões local e registada na NTB. Conheça a equipa, a nossa missão e os valores por trás de cada rota guiada.",
     },
     gallery: {
       title: "Galeria: a Namíbia em Imagens",
@@ -105,7 +105,7 @@ export const pt = {
 
   footer: {
     blurb:
-      "Operadora de turismo local com sede em Windhoek, registada na Namibia Tourism Board. Excursões guiadas por toda a Namíbia: deserto, costa, cânion e vida selvagem.",
+      "Operadora de turismo local namibiana, registada na Namibia Tourism Board. Excursões guiadas em grupo por toda a Namíbia: deserto, costa, cânion e vida selvagem.",
     explore: "Explorar",
     contactHeading: "Contacto",
     whatsappLabel: "WhatsApp",
@@ -120,7 +120,7 @@ export const pt = {
   hero: {
     kicker: "Guiados por locais",
     title: "Namíbia, sem pressa.",
-    lead: "Empresa local, com sede em Windhoek. Pequenos grupos de excursões guiadas desde as dunas vermelhas de Sossusvlei até à vida selvagem de Etosha, planejados em torno das suas datas e do seu ritmo.",
+    lead: "Empresa local e registada na NTB. Excursões guiadas em grupo desde as dunas vermelhas de Sossusvlei até à vida selvagem de Etosha, planejadas em torno das suas datas e do seu ritmo.",
     primaryCta: "Planejar a minha viagem",
     secondaryCta: "Ver as excursões",
     imageAlt:
@@ -131,8 +131,8 @@ export const pt = {
   intro: {
       eyebrow: "Empresa local, registada na NTB",
       h2: "A melhor forma de ver a Namíbia é com quem a tem como casa.",
-      p1: "A Liger Tours Namíbia é uma empresa de excursões de Windhoek construída com um conhecimento genuíno local. Desde safáris perto da capital até jornadas de vários dias pelo deserto, costas e reservas de vida selvagem do país, cada rota é desenhada para mostrar a Namíbia real, num ritmo que lhe permite absorvê-la de facto.",
-      p2: "Enquanto empresa registada na Namibia Tourism Board, planejamos cada viagem em função das pessoas que a reservam: casais, famílias, grupos e viajantes solteiros, cada um com uma rota, ritmo e estilo de viagem que lhes é adequado.",
+      p1: "A Liger Tours Namíbia é uma empresa de excursões local construída com um conhecimento genuíno do terreno. Desde safáris perto da capital até jornadas de vários dias pelo deserto, costas e reservas de vida selvagem do país, cada rota é desenhada para mostrar a Namíbia real, num ritmo que lhe permite absorvê-la de facto.",
+      p2: "Enquanto empresa registada na Namibia Tourism Board, planejamos cada viagem em função das pessoas que a reservam: casais, famílias, viajantes solteiros e grupos de qualquer dimensão, de duas pessoas a cinquenta ou mais, cada um com uma rota, ritmo e estilo de viagem que lhes é adequado.",
       cta: "Saber mais sobre nós",
       imageAlt:
         "Um rebanho de antílopes a pastar numa savana verde com árvores de acácia dispersas",
@@ -141,7 +141,7 @@ export const pt = {
       ariaLabel: "Liger Tours em números",
       items: [
         { value: 7, suffix: "", label: "Rotas principais" },
-        { value: 12, suffix: "", label: "Experiências guiadas" },
+        { value: 13, suffix: "", label: "Experiências guiadas" },
         { value: 100, suffix: "%", label: "Empresa local" },
         { label: "País, conhecido em profundidade", raw: "NTB" },
       ],
@@ -211,6 +211,37 @@ export const pt = {
       h2: "O que os nossos hóspedes dizem.",
       ariaLabel: "O que os nossos hóspedes dizem",
     },
+    faq: {
+      eyebrow: "Bom saber",
+      h2: "Perguntas que os nossos hóspedes fazem antes de reservar.",
+      ariaLabel: "Perguntas frequentes",
+      items: [
+        {
+          q: "Fazem excursões para grandes grupos?",
+          a: "Sim. A Liger Tours conduz excursões guiadas em grupo de qualquer dimensão, de dois viajantes a grupos de cinquenta ou mais. Diga-nos o número de pessoas e nós construímos a rota, o ritmo e os veículos à volta.",
+        },
+        {
+          q: "Onde começam as excursões?",
+          a: "Cada rota começa e termina em Windhoek, no centro do país e ponto de chegada da maioria dos voos. Confirmamos os detalhes de recolha consigo antes da viagem.",
+        },
+        {
+          q: "Quanto custa uma excursão?",
+          a: "Cada excursão é orçamentada individualmente em dólares namibianos (N$), porque o preço depende da dimensão do grupo, da época e das escolhas de alojamento. Envie um pedido e receberá um orçamento completo, normalmente dentro de um dia útil.",
+        },
+        {
+          q: "Qual é a melhor altura para visitar a Namíbia?",
+          a: "De maio a outubro é a época alta, com manhãs frescas, céus limpos e a melhor observação de vida selvagem no Etosha. É também quando os melhores alojamentos esgotam primeiro, por isso contacte-nos o mais cedo possível.",
+        },
+        {
+          q: "São uma operadora registada?",
+          a: "Sim. A Liger Tours Namibia é local e está registada na Namibia Tourism Board (NTB), que nos mantém em padrões profissionais em cada etapa da sua viagem.",
+        },
+        {
+          q: "Podem criar uma rota à medida?",
+          a: "Sim, todas as semanas. Diga-nos o que quer ver e quanto tempo tem, e nós construímos a rota à volta disso, mesmo que seja mais curta do que as excursões deste site.",
+        },
+      ],
+    },
     cta: {
       h2: "Quando estiver pronto.",
       script: "Diga-nos as suas datas. Construiremos a viagem em torno delas.",
@@ -273,7 +304,7 @@ export const pt = {
         viewTour: "Ver a excursão",
     moreTours: "Outras rotas que pode gostar",
     viewTourAria: "Ver a excursão: {name}",
-    touristType: "Excursão guiada em pequeno grupo",
+    touristType: "Excursão guiada em grupo",
     enquireAria: "Contactar sobre esta excursão",
   },
 
@@ -282,7 +313,7 @@ export const pt = {
     title: "Faça de um dia especial.",
     pageHeaderAlt:
       "Oryx gemsbok a erguer-se numa crista relvada em luz dourada e quente do final da tarde",
-    lead: "Experiências de um dia que pode reservar separadamente ou adicionar a qualquer excursão. Tudo aqui é realizado com guias locais, em pequenos grupos, em horários que fazem sentido para a luz e a vida selvagem.",
+    lead: "Experiências de um dia que pode reservar separadamente ou adicionar a qualquer excursão. Tudo aqui é realizado com guias locais, para grupos de qualquer dimensão, em horários que fazem sentido para a luz e a vida selvagem.",
     addToTrip: "Adicionar à minha viagem",
     addH2: "Adicione qualquer uma destas à sua excursão.",
     addLead:
@@ -299,7 +330,7 @@ export const pt = {
     storyEyebrow: "A nossa história",
     storyH2: "Construída por pessoas que cresceram com esta terra.",
     story: [
-      "A Liger Tours Namibia é uma empresa de turismo local sediada em Windhoek, construída numa ideia simples: a melhor forma de ver a Namíbia é com pessoas que a consideram sua casa. A empresa foi fundada por um graduado em Ciências Ambientais cuja apreciação pela natureza e pelo turismo sustentável molda cada itinerário, desde um safári de manhã fora da capital até uma jornada de vários dias pelo país.",
+      "A Liger Tours Namibia é uma empresa de turismo local, construída numa ideia simples: a melhor forma de ver a Namíbia é com pessoas que a consideram sua casa. A empresa foi fundada por um graduado em Ciências Ambientais cuja apreciação pela natureza e pelo turismo sustentável molda cada itinerário, desde um safári de manhã fora da capital até uma jornada de vários dias pelo país.",
       "Como empresa registada na Namibia Tourism Board (NTB), a Liger Tours Namibia mantém padrões profissionais em cada etapa da viagem. Os tours são planeados em torno dos hóspedes que os reservam: casais, famílias, grupos e viajantes solitários recebem uma rota, ritmo e estilo de viagem adequados a si, com o conforto e a segurança tratados como prioridades e não como extras.",
       "Cada tour exibe as paisagens, a vida selvagem e as culturas da Namíbia, promovendo um turismo responsável e sustentável. Isso significa guias locais, encontros culturais autênticos organizados com respeito, e itinerários que deixam os locais visitados pelos hóspedes como os encontraram.",
     ],
@@ -333,7 +364,7 @@ export const pt = {
         body: "Estamos comprometidos em partilhar a beleza e a singularidade do nosso país com visitantes de todo o mundo.",
       },
     ],
-    panel: "Registada na Namibia Tourism Board e sediada em Windhoek.",
+    panel: "Registada na Namibia Tourism Board e a conduzir grupos por toda a Namíbia.",
     planCta: "Planear a minha viagem",
     storyImageAlt:
       "Hóspedes da Liger Tours reunidos à volta do sinal rodoviário do Trópico de Capricórnio no solo desértico vermelho",
@@ -427,6 +458,10 @@ export const pt = {
       {
         src: "/imagery/crops/flamingos-walvis-bay-1x1.webp",
         alt: "Flamingos a atravessar águas rasas e azuis da lagoa da Baía de Walvis",
+      },
+      {
+        src: "/imagery/crops/sandwich-harbour-ocean-dunes-16x9.webp",
+        alt: "As dunas do Namib a correrem diretas para as ondas do Atlântico no Sandwich Harbour",
       },
       {
         src: "/imagery/crops/rhino-and-ostrich-grassland-1x1.webp",
@@ -969,6 +1004,16 @@ export const pt = {
         "Desfrute do ponto de encontro único do Oceano Atlântico e do Deserto de Namib com oportunidades para turismo, caminhadas na praia e exploração local.",
       image: "/imagery/crops/walvis-bay-jetty-4x5.webp",
       alt: "Um cais de madeira longo a estender-se para dentro de águas calmas do Atlântico, barcos a vela atracados na baía",
+    },
+    {
+      slug: "sandwich-harbour-4x4",
+      name: "Sandwich Harbour: Onde o Oceano Encontra o Deserto",
+      duration: "Meio dia",
+      location: "Walvis Bay",
+      description:
+        "Conduza para sul a partir da Walvis Bay e veja as dunas do Namib correrem diretas para o Atlântico. Esta zona húmida protegida no Parque Namib-Naukluft atrai flamingos e pelicanos à sua lagoa, e o único acesso é de 4x4 sobre areia fofa, com o seu guia a ler as marés.",
+      image: "/imagery/crops/sandwich-harbour-ocean-dunes-4x5.webp",
+      alt: "As dunas do Namib a correrem diretas para as ondas do Atlântico no Sandwich Harbour",
     },
     {
       slug: "etosha-wildlife-safari",

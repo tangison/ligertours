@@ -32,6 +32,16 @@ export default async function HomePage({ params }: Params) {
   const dict = getDict(locale);
   const home = dict.home;
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: home.faq.items.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.a },
+    })),
+  };
+
   const featured = [
     dict.tours.find((t) => t.slug === "windhoek-sossusvlei-swakopmund-spitzkoppe-etosha")!,
     dict.tours.find((t) => t.slug === "etosha-and-waterberg")!,
@@ -41,6 +51,10 @@ export default async function HomePage({ params }: Params) {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       {/* 1. Hero: load-crafted entrance, parallax capped 12% */}
       <HomeHero locale={locale} dict={dict} />
 
@@ -254,6 +268,26 @@ export default async function HomePage({ params }: Params) {
               <TestimonialCarousel quotes={dict.testimonials} dict={dict} />
             </Batch>
           </div>
+        </div>
+      </section>
+
+      {/* 8b. FAQ: plain crawlable Q+A, FAQPage schema in head */}
+      <Dune variant="rose-100" />
+      <section className="section bg-surface-alt" aria-label={home.faq.ariaLabel}>
+        <div className="container-liger">
+          <p className="t-eyebrow text-rose-600">{home.faq.eyebrow}</p>
+          <WordScrub as="h2" className="t-h2 mt-4 max-w-3xl" text={home.faq.h2} />
+          <Batch
+            className="mt-12 grid gap-x-12 gap-y-10 md:grid-cols-2"
+            selector=":scope > div"
+          >
+            {home.faq.items.map((item) => (
+              <div key={item.q} className="border-t-2 border-rose-700/30 pt-6">
+                <h3 className="t-h4">{item.q}</h3>
+                <p className="t-small mt-3 text-ink-muted">{item.a}</p>
+              </div>
+            ))}
+          </Batch>
         </div>
       </section>
 
