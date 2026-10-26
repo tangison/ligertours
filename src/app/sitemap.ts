@@ -14,9 +14,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/about", priority: 0.7 },
     { path: "/gallery", priority: 0.6 },
     { path: "/contact", priority: 0.8 },
+    { path: "/faq", priority: 0.7 },
     { path: "/brand", priority: 0.3 },
+    { path: "/accessibility", priority: 0.3 },
     { path: "/privacy-policy", priority: 0.2 },
     { path: "/terms", priority: 0.2 },
+    { path: "/disclaimer", priority: 0.2 },
   ];
 
   const tourSlugs = getDict("en").tours.map((t) => `/tours/${t.slug}`);

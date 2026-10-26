@@ -22,7 +22,7 @@ export const fr = {
         "Sept circuits guidés en Namibie : dunes et safari, canyons du sud, routes culturelles et un circuit découverte de 24 jours.",
     },
     activities: {
-      title: "Activités et expériences à la journée en Namibie",
+      title: "Activités à la journée en Namibie",
       description:
         "Safaris photo, Sandwich Harbour en 4x4, townships, marches avec les San, cours de cuisine, Spitzkoppe et ciel étoilé, avec des guides locaux.",
     },
@@ -55,6 +55,21 @@ export const fr = {
       title: "Conditions générales",
       description:
         "Conditions de réservation des circuits Liger Tours Namibia : devis, paiements en N$, annulations, assurance et responsabilité.",
+    },
+    faq: {
+      title: "Questions fréquentes",
+      description:
+        "Réponses claires sur les groupes, la réservation, les prix en N$, les véhicules, l'assurance et la meilleure saison pour un circuit en Namibie.",
+    },
+    disclaimer: {
+      title: "Avertissement",
+      description:
+        "Comment les informations du site s'appliquent à votre demande, votre devis et votre circuit, et les limites de notre responsabilité.",
+    },
+    accessibility: {
+      title: "Accessibilité",
+      description:
+        "Notre engagement d'accessibilité pour ce site et nos circuits, les limites connues et comment nous envoyer vos remarques.",
     },
   },
 
@@ -111,6 +126,9 @@ export const fr = {
     registered: "Enregistré auprès de la Namibia Tourism Board (NTB)",
     privacy: "Confidentialité",
     terms: "Conditions",
+    faq: "FAQ",
+    disclaimer: "Avertissement",
+    accessibility: "Accessibilité",
     brandLink: "Marque",
     credit: "Made by Tangison Studio",
   },
@@ -213,6 +231,7 @@ export const fr = {
       eyebrow: "Bon à savoir",
       h2: "Les questions que posent nos voyageurs avant de réserver.",
       ariaLabel: "Questions fréquentes",
+      moreLink: "Plus de réponses sur la page FAQ",
       items: [
         {
           q: "Organisez-vous des circuits pour grands groupes ?",
@@ -743,6 +762,169 @@ export const fr = {
         h: "Réclamations et droit applicable",
         p: [
           "Si quelque chose ne va pas, dites-le immédiatement à votre guide afin que cela soit réglé sur place, puis informez-nous par écrit. Ces conditions sont régies par les lois de la République de Namibie, et les tribunaux namibiens ont compétence sur tout litige.",
+        ],
+      },
+    ],
+  },
+
+  faqPage: {
+    eyebrow: "Bon à savoir",
+    title: "Questions, réponses.",
+    pageHeaderAlt:
+      "Dunes rouges dominant une plaine verte et graveleuse sous un ciel dégagé dans le désert du Namib",
+    lead: "Les questions que posent nos voyageurs avant de réserver, auxquelles nous répondons honnêtement. Il en manque une ? Écrivez-nous sur WhatsApp et elle rejoint cette page.",
+    groups: [
+      {
+        h: "Réservation et préparation",
+        items: [
+          {
+            q: "Organisez-vous des circuits pour grands groupes ?",
+            a: "Oui. Liger Tours encadre des circuits guidés en groupe de toute taille, de deux voyageurs à des groupes de cinquante personnes et plus. Indiquez-nous vos effectifs : nous construisons l'itinéraire, le rythme et les véhicules autour.",
+          },
+          {
+            q: "Comment réserver un circuit ?",
+            a: "Envoyez le formulaire de demande ou écrivez-nous sur WhatsApp avec vos dates, la taille de votre groupe et les lieux que vous voulez voir. Vous recevez un devis complet en dollars namibiens, généralement sous un jour ouvré, et vos dates sont garanties par l'acompte indiqué dans ce devis.",
+          },
+          {
+            q: "Combien coûte un circuit ?",
+            a: "Chaque circuit est chiffré individuellement en dollars namibiens (N$), car le prix dépend de la taille du groupe, de la saison et des hébergements choisis. Envoyez une demande : vous recevez un devis complet, sans rien de caché, généralement sous un jour ouvré.",
+          },
+          {
+            q: "Pouvez-vous créer un itinéraire sur mesure ?",
+            a: "Oui, chaque semaine. Dites-nous ce que vous voulez voir et le temps dont vous disposez, et nous construisons l'itinéraire autour, même s'il est plus court que les circuits de ce site.",
+          },
+        ],
+      },
+      {
+        h: "Sur la route",
+        items: [
+          {
+            q: "Où commencent les circuits ?",
+            a: "Chaque itinéraire commence et finit à Windhoek, au centre du pays et point d'arrivée de la plupart des vols. Nous confirmons les détails de prise en charge avant votre voyage.",
+          },
+          {
+            q: "Qu'inclut le prix ?",
+            a: "Votre devis couvre votre guide et chauffeur locaux, les hébergements de l'itinéraire réservés pour vous, les droits d'entrée des parcs et conservatoires prévus, et l'ensemble des transports depuis Windhoek et retour. Les vols internationaux, l'assurance voyage, les dépenses personnelles et les activités optionnelles ne sont pas inclus.",
+          },
+          {
+            q: "Quels véhicules utilisez-vous ?",
+            a: "Nous adaptons le véhicule à la taille de votre groupe et à votre itinéraire, et chaque véhicule est entretenu pour les longues pistes de gravier et de sable de Namibie. L'équipement exact de votre voyage est confirmé dans votre devis, avant tout paiement.",
+          },
+          {
+            q: "Que dois-je emporter ?",
+            a: "En Namibie, les couches de vêtements comptent le plus : matins froids sur les dunes, midi chaud sur la route. Prévoyez une protection solaire, des chaussures de marche fermées, un appareil photo ou des jumelles, et vos médicaments. Votre devis et les notes avant départ détaillent le nécessaire pour votre itinéraire et votre saison.",
+          },
+        ],
+      },
+      {
+        h: "Questions pratiques",
+        items: [
+          {
+            q: "Quelle est la meilleure période pour visiter la Namibie ?",
+            a: "De mai à octobre, c'est la haute saison : matins frais, ciel dégagé et meilleure observation de la faune dans l'Etosha. C'est aussi la période où les meilleurs lodges se remplissent en premier, écrivez-nous donc le plus tôt possible.",
+          },
+          {
+            q: "Ai-je besoin d'une assurance voyage ?",
+            a: "Oui. Une assurance voyage complète couvrant les frais médicaux, l'évacuation et l'annulation est obligatoire sur tous les voyages Liger Tours et doit être souscrite avant le départ. Les lodges et parcs namibiens appliquent des conditions d'annulation strictes : l'assurance vous protège autant que nous.",
+          },
+          {
+            q: "Êtes-vous un opérateur enregistré ?",
+            a: "Oui. Liger Tours Namibia est une agence locale enregistrée auprès de la Namibia Tourism Board (NTB), qui nous impose des standards professionnels à chaque étape de votre voyage.",
+          },
+          {
+            q: "Comment se passent les paiements ?",
+            a: `Un acompte garantit vos dates, le solde étant dû avant le départ comme indiqué dans votre devis. Tout est chiffré et encaissé en dollars namibiens (N$). Les coordonnées bancaires ne figurent que sur nos devis et factures officiels ; si quelqu'un vous demande de payer sur un autre compte, appelez-nous d'abord au ${company.phone}.`,
+          },
+        ],
+      },
+    ],
+    ctaH2: "Encore indécis ?",
+    ctaScript: "Donnez-nous vos dates. Nous construirons le voyage autour.",
+    ctaLead:
+      "Envoyez une demande et recevez un devis complet en N$, généralement sous un jour ouvré. Sans pression, sans engagement.",
+    ctaPrimary: "Planifier mon voyage",
+    ctaWhatsapp: "Écrivez-nous sur WhatsApp",
+  },
+
+  disclaimer: {
+    title: "Avertissement",
+    lastUpdated: "Dernière mise à jour : octobre 2026",
+    legalEyebrow: "Mentions légales",
+    sections: [
+      {
+        h: "Objet de cette page",
+        p: [
+          `Les informations de ce site sont publiées par Liger Tours Namibia, un opérateur touristique local enregistré auprès de la Namibia Tourism Board, pour vous aider à préparer un voyage avec nous. Elles décrivent nos circuits, nos activités et notre façon de travailler de bonne foi. Ce qui engage les deux parties, ce sont le devis que nous vous envoyons, ces conditions et votre confirmation de réservation. Si un élément de cette page semble contredire votre devis, contactez-nous au ${company.phone} et nous corrigerons.`,
+        ],
+      },
+      {
+        h: "Itinéraires et images",
+        p: [
+          "La Namibie est un pays sauvage où les conditions changent : les routes s'effritent, les rivières débordent, les animaux se déplacent et certains lodges ferment ponctuellement pour entretien. Nous ajustons les itinéraires selon la météo, l'état des routes, les décisions des parcs et la sécurité, et tout changement de valeur égale ou supérieure est offert. Durées et programmes sont confirmés avec vous à la demande : vous réservez exactement ce que vous obtenez.",
+          "Les photographies de ce site montrent des lieux réels de nos itinéraires et des moments réels de nos voyages, mais les points de vue exacts, les observations de faune et la lumière ne peuvent être garantis. La faune est sauvage et aucune observation n'est promise.",
+        ],
+      },
+      {
+        h: "Devis et tarifs",
+        p: [
+          "Le contenu de ce site est informatif, pas une offre. Chaque circuit est chiffré individuellement en dollars namibiens (N$), car le prix dépend de la taille du groupe, de la saison et des hébergements choisis. Un devis est valable 14 jours à compter de son envoi sauf mention contraire, et c'est lui qui fixe votre acompte, votre solde et votre barème d'annulation.",
+        ],
+      },
+      {
+        h: "Sécurité en circuit",
+        p: [
+          "Vous participez aux safaris, marches, ascensions de dunes et autres activités à vos propres risques et devez suivre en permanence les consignes de votre guide. Nous prenons toutes les précautions raisonnables dans la planification et la conduite de nos circuits et travaillons avec des prestataires enregistrés dans toute la Namibie.",
+        ],
+      },
+      {
+        h: "Liens vers d'autres sites",
+        p: [
+          "Ce site renvoie vers des services que nous utilisons et recommandons, comme WhatsApp ou des outils cartographiques. Ces sites ont leurs propres conditions et politiques de confidentialité, et nous ne sommes pas responsables de leur contenu ou de leur comportement.",
+        ],
+      },
+      {
+        h: "Responsabilité et droit applicable",
+        p: [
+          "Notre responsabilité est limitée dans les limites permises par les lois de la République de Namibie et reste toujours soumise à l'obligation d'assurance voyage de nos conditions générales. Ces conditions sont régies par les lois de la République de Namibie, et les tribunaux namibiens ont compétence sur tout litige.",
+        ],
+      },
+    ],
+  },
+
+  accessibility: {
+    title: "Accessibilité",
+    lastUpdated: "Dernière mise à jour : octobre 2026",
+    legalEyebrow: "Voyage inclusif",
+    sections: [
+      {
+        h: "Notre engagement",
+        p: [
+          "Tout le monde devrait pouvoir préparer un voyage en Namibie avec nous, sur n'importe quel appareil et avec n'importe quelles capacités. Ce site vise les Web Content Accessibility Guidelines (WCAG) 2.1 niveau AA, et nos circuits sont construits autour des voyageurs qui les réservent, quels que soient leurs besoins.",
+        ],
+      },
+      {
+        h: "Comment ce site est construit",
+        p: [
+          "Le site utilise du HTML sémantique, de vrais titres et des repères labellisés pour que les lecteurs d'écran puissent le parcourir. Chaque élément interactif fonctionne au clavier, le focus est toujours visible et un lien d'évitement mène directement au contenu. Les images portent un texte alternatif descriptif, les contrastes respectent les ratios AA et toutes les animations respectent le réglage de réduction de mouvement de votre appareil.",
+          "Le contenu est disponible en anglais, allemand, français, afrikaans et portugais, et le sélecteur de langue vous garde sur la page que vous lisez.",
+        ],
+      },
+      {
+        h: "Limites connues",
+        p: [
+          "Nous sommes honnêtes sur ce que nous ne contrôlons pas. Le lien carte ouvre Google Maps, dont l'accessibilité dépend de Google. Si un point de ce site vous est difficile à utiliser, dites-le-nous et nous le corrigerons : les problèmes d'accessibilité sont traités comme des bugs urgents, pas comme des demandes de fonctionnalités.",
+        ],
+      },
+      {
+        h: "L'accessibilité en circuit",
+        p: [
+          "Les espaces sauvages namibiens ne sont pas toujours plats ni pavés, et certaines activités comme les marches sur dunes ou les crêtes de canyon demandent une mobilité correcte. Signalez-nous tout besoin de mobilité, alimentaire ou médical à la demande, et nous façonnerons l'itinéraire, le rythme et les hébergements autour, en vous disant honnêtement quand une activité n'est pas adaptée.",
+        ],
+      },
+      {
+        h: "Vos remarques",
+        p: [
+          `Si quelque chose sur ce site ou en circuit vous est difficile d'accès, écrivez à ${company.email}, appelez le ${company.phone} ou envoyez-nous un message WhatsApp. Nous répondons sous un jour ouvré et nous chercherons la solution avec vous.`,
         ],
       },
     ],

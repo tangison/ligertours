@@ -4,6 +4,7 @@ import Dune from "@/components/site/dune";
 import TourCard from "@/components/site/tour-card";
 import HomeHero from "@/components/site/home-hero";
 import TestimonialCarousel from "@/components/site/testimonial-carousel";
+import Reveal from "@/components/site/reveal";
 import {
   WordScrub,
   ImgReveal,
@@ -288,6 +289,14 @@ export default async function HomePage({ params }: Params) {
               </div>
             ))}
           </Batch>
+          <Reveal className="mt-12">
+            <Link
+              href={localePath(locale, "/faq")}
+              className="t-button inline-block text-brand underline decoration-2 underline-offset-[6px] transition-colors duration-[240ms] hover:text-brand-hover"
+            >
+              {home.faq.moreLink}
+            </Link>
+          </Reveal>
         </div>
       </section>
 

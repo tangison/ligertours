@@ -65,3 +65,11 @@ scripts/qa/
 # raw source material and working files, never ship
 /upload/
 tool-results/
+
+# internal audit tooling
+scripts/squirrel_scan.py
+scripts/squirrel-report.json
+scripts/verify_fixes.py
+scripts/verify-report.json
+scripts/check-meta.py
+scripts/meta-check.json

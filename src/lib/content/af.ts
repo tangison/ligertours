@@ -58,6 +58,21 @@ export const af = {
       description:
         "Boekingsvoorwaardes vir Liger Tours Namibia toere: kwotasies, betalings in N$, kansellasies, versekering en aanspreeklikheid.",
     },
+    faq: {
+      title: "Gereelde Vrae",
+      description:
+        "Heldere antwoorde oor groepgroottes, besprekings, pryse in N$, voertuie, versekering en die beste seisoen vir 'n Namibië-toer met Liger Tours Namibia.",
+    },
+    disclaimer: {
+      title: "Vrywaring",
+      description:
+        "Hoe die inligting op die Liger Tours Namibia-webwerf op u navraag, kwotasie en toer van toepassing is, en die perke van ons aanspreeklikheid.",
+    },
+    accessibility: {
+      title: "Toeganklikheid",
+      description:
+        "Ons toeganklikheidsverbintenis vir hierdie webwerf en ons toere: wat ons gebou het, bekende perke en hoe u vir ons terugvoer kan gee.",
+    },
   },
 
   a11y: {
@@ -113,6 +128,9 @@ export const af = {
     registered: company.registered as string,
     privacy: "Privaatheidsbeleid",
     terms: "Voorwaardes",
+    faq: "Gereelde vrae",
+    disclaimer: "Vrywaring",
+    accessibility: "Toeganklikheid",
     brandLink: "Handelsmerk",
     credit: "Gemaak deur Tangison Studio",
   },
@@ -215,6 +233,7 @@ export const af = {
       eyebrow: "Goed om te weet",
       h2: "Vrae wat gaste vra voordat hulle boek.",
       ariaLabel: "Gereelde vrae",
+      moreLink: "Meer antwoorde op die gereelde vrae-bladsy",
       items: [
         {
           q: "Verskaf julle toere vir groot groepe?",
@@ -739,6 +758,169 @@ export const af = {
         h: "Klagte en toepaslike wetgewing",
         p: [
           "As iets nie reg is nie, sê dit vir u gids onmiddellik sodat dit ter plaatse reggemaak kan word, en sê dit ons daarna skriftelik. Hierdie voorwaardes word gereguleer deur die wette van die Republiek van Namibië, en die howe van Namibië het jurisdiksie oor enige geskil.",
+        ],
+      },
+    ],
+  },
+
+  faqPage: {
+    eyebrow: "Goed om te weet",
+    title: "Vrae, beantwoord.",
+    pageHeaderAlt:
+      "Rooi duine bo 'n groen en gruisvlakte onder 'n helder lug in die Namib-woestyn",
+    lead: "Die vrae wat gaste vra voordat hulle boek, eerlik beantwoord. Is u s'n weg? Stuur 'n WhatsApp en dit word deel van hierdie bladsy.",
+    groups: [
+      {
+        h: "Bespreking en beplanning",
+        items: [
+          {
+            q: "Verskaf julle toere vir groot groepe?",
+            a: "Ja. Liger Tours lei groepstoere van enige grootte, van twee reisigers tot groepe van vyftig of meer. Gee ons u getalle en ons bou die roete, die tempo en die voertuie daaromtrent.",
+          },
+          {
+            q: "Hoe bespreek ek 'n toer?",
+            a: "Stuur die navraagvorm of stuur 'n WhatsApp met u datums, groepgrootte en die plekke wat u wil sien. U ontvang 'n volledige kwotasie in Namibiese dollar, gewoonlik binne een werksdag, en u datums word verseker met die voorbetaling in daardie kwotasie.",
+          },
+          {
+            q: "Wat kos 'n toer?",
+            a: "Elke toer word afsonderlik gekwoteer in Namibiese dollar (N$) omdat die prys van u groepgrootte, die seisoen en u verblyfkeuses afhang. Stuur 'n navraag en u ontvang 'n volledige kwotasie, met niks weggesteek nie, gewoonlik binne een werksdag.",
+          },
+          {
+            q: "Kan julle 'n eie roete bou?",
+            a: "Ja, elke week. Sê ons wat u wil sien en hoe lank u het, en ons bou die roete daaromtrent, selfs al is dit korter as die toere op hierdie webwerf.",
+          },
+        ],
+      },
+      {
+        h: "Onderweg",
+        items: [
+          {
+            q: "Waar begin julle toere?",
+            a: "Elke roete begin en eindig in Windhoek, die middelpunt van die land en die aankomspunt vir die meeste vlugte. Ons bevestig die afhaalbesonderhede met u voordat u reis.",
+          },
+          {
+            q: "Wat is ingesluit by die prys?",
+            a: "U kwotasie dek u plaaslike gids en bestuurder, verblyf op die roete wat vir u bespreek word, park- en bewaringsgebiedfooie op die roete, en alle vervoer vanaf Windhoek en terug. Internasionale vlugte, reisversekering, persoonlike uitgawes en opsionele aktiwiteite is nie ingesluit nie.",
+          },
+          {
+            q: "Watter voertuie gebruik julle?",
+            a: "Ons pas die voertuig by u groepgrootte en u roete aan, en elke voertuig word onderhou vir Namibië se lange gruis- en sandpaaie. Die presiese opset vir u reis word in u kwotasie bevestig voordat u iets betaal.",
+          },
+          {
+            q: "Wat moet ek pak?",
+            a: "Lae klere maak in Namibië die verskil: koue oggende op die duine, warm middae op die pad. Bring sonskerm, geslote stapskoeie, 'n kamera of verkyker, en enige medikasie wat u nodig het. U kwotasie en die notas voor vertrek dek die besonderhede vir u presiese roete en seisoen.",
+          },
+        ],
+      },
+      {
+        h: "Praktiese aangeleenthede",
+        items: [
+          {
+            q: "Wanneer is die beste tyd om Namibië te besoek?",
+            a: "Mei tot Oktober is hoë seisoen, met koel oggende, helder lug en die beste wildkyk in Etosha. Dit is ook wanneer die beste lodges eers vol raak, doen dus so vroeg moontlik 'n navraag.",
+          },
+          {
+            q: "Het ek reisversekering nodig?",
+            a: "Ja. Omvattende reisversekering wat mediese koste, ontruiming en kansellasie dek, is verpligtend op alle Liger Tours-reise en moet voor vertrek gereël word. Namibië se lodges en parke pas streng kansellasievoorwaardes toe, so versekering beskerm u net soveel as ons.",
+          },
+          {
+            q: "Is julle 'n geregistreerde toeronemer?",
+            a: "Ja. Liger Tours Namibia is plaaslik besit en geregistreer by die Namibiese Toerisme-raad (NTB), wat ons by elke stap van u reis aan professionele standaarde hou.",
+          },
+          {
+            q: "Hoe werk betalings?",
+            a: `In voorbetaling verseker u datums, met die balans voor vertrek verskuld soos in u kwotasie uiteengesit. Alles word in Namibiese dollar (N$) gekwoteer en ingesamel. Bankbesonderhede verskyn slegs op ons amptelike kwotasies en fakture; as iemand vra om in 'n ander rekening te betaal, skakel ons eers by ${company.phone}.`,
+          },
+        ],
+      },
+    ],
+    ctaH2: "Nog onseker?",
+    ctaScript: "Vertel ons u datums. Ons bou die reis daaromtrent.",
+    ctaLead:
+      "Stuur 'n navraag en ontvang 'n volledige kwotasie in N$, gewoonlik binne een werksdag. Geen druk, geen verpligting nie.",
+    ctaPrimary: "Beplan my toer",
+    ctaWhatsapp: "Stuur nou 'n WhatsApp",
+  },
+
+  disclaimer: {
+    title: "Vrywaring",
+    lastUpdated: "Laas opgedateer: Oktober 2026",
+    legalEyebrow: "Regs",
+    sections: [
+      {
+        h: "Waaroor hierdie bladsy gaan",
+        p: [
+          `Die inligting op hierdie webwerf word gepubliseer deur Liger Tours Namibia, 'n plaaslik besitte toeronemer geregistreer by die Namibiese Toerisme-raad, om u te help om 'n reis met ons te beplan. Dit beskryf ons roetes, aktiwiteite en ons werkwyse in goeie trou. Vir enigiets wat enige party bind, is die kwotasie wat ons stuur, hierdie voorwaardes en u besprekingsbevestiging die dokumente wat tel. As enigiets op hierdie bladsy met u kwotasie blyk te bots, kontak ons by ${company.phone} en ons reg dit.`,
+        ],
+      },
+      {
+        h: "Roetes, reisplanne en beelde",
+        p: [
+          "Namibië is 'n wilde land en toestande verander: paaie spoel weg, riviere kom oorstroom, diere beweeg en lodges sluit soms vir onderhoud. Ons pas reisplanne aan vir weer, padtoestande, parkbesluite en veiligheid, en enige verandering van gelyke of beter waarde is gratis. Duur en dagplanne word met u by die navraag bevestig, sodat u boek wat u kry.",
+          "Foto's op hierdie webwerf wys regte plekke op ons roetes en regte oomblikke van ons toere, maar presiese uitkykpunte, wildwaarnemings en lig kan nie gewaarborg word nie. Wild is wild en waarnemings word nooit belowe nie.",
+        ],
+      },
+      {
+        h: "Kwotasies en pryse",
+        p: [
+          "Inhoud op hierdie webwerf is inligting, nie 'n aanbod nie. Elke toer word afsonderlik gekwoteer in Namibiese dollar (N$) omdat die prys van groepgrootte, seisoen en verblyfkeuses afhang. 'n Kwotasie is 14 dae geldig vanaf die datum waarop dit gestuur is, tensy dit anders vermeld, en dit is die kwotasie wat u voorbetaling, balans en kansellasieskedule uiteensit.",
+        ],
+      },
+      {
+        h: "Veiligheid op toer",
+        p: [
+          "U neem deel aan wildrit-togte, wandelinge, duineklim en ander aktiwiteite op eie risiko en moet te alle tye u gids se instruksies volg. Ons neem alle redelike sorg in die beplanning en uitvoering van ons toere en werk met geregistreerde verskaffers regdeur Namibië.",
+        ],
+      },
+      {
+        h: "Skakels na ander webwerwe",
+        p: [
+          "Hierdie webwerf skakel na dienste wat ons gebruik en aanbeveel, soos WhatsApp en kaartgereedskap. Daardie webwerwe het hul eie voorwaardes en privaatheidsbeleide, en ons is nie verantwoordelik vir hul inhoud of gedrag nie.",
+        ],
+      },
+      {
+        h: "Aanspreeklikheid en toepaslike reg",
+        p: [
+          "Ons aanspreeklikheid is beperk tot die mate wat die wette van die Republiek van Namibië toelaat en is altyd onderworpe aan die reisversekeringsvereiste in ons diensvoorwaardes. Hierdie voorwaardes word gereguleer deur die wette van die Republiek van Namibië, en die howe van Namibië het jurisdiksie oor enige geskil.",
+        ],
+      },
+    ],
+  },
+
+  accessibility: {
+    title: "Toeganklikheid",
+    lastUpdated: "Laas opgedateer: Oktober 2026",
+    legalEyebrow: "Inklusiewe reis",
+    sections: [
+      {
+        h: "Ons verbintenis",
+        p: [
+          "Almal behoort 'n Namibië-reis met ons te kan beplan, op enige toestel en met enige vermoë. Hierdie webwerf mik na die Web Content Accessibility Guidelines (WCAG) 2.1 op vlak AA, en ons toere word beplan rondom die gaste wat dit boek, watter behoeftes hulle ook al het.",
+        ],
+      },
+      {
+        h: "Hoe hierdie webwerf gebou is",
+        p: [
+          "Die webwerf gebruik semantiese HTML, regte opskrifte en gemerkte landmerke sodat skermlesers dit kan navigeer. Elke interaktiewe element werk met 'n sleutelbord, fokus is altyd sigbaar, en 'n oorslaanskakel neem u regstreeks na die inhoud. Beelde dra beskrywende alternatiewe teks, kleurkontras voldoen aan AA-verhoudings, en alle beweging respekteer u toestel se verminderde-beweginginstelling.",
+          "Inhoud is beskikbaar in Engels, Duits, Frans, Afrikaans en Portugees, en die taalwisselaar hou u op die bladsy wat u lees.",
+        ],
+      },
+      {
+        h: "Bekende perke",
+        p: [
+          "Ons is eerlik oor wat ons nie beheer nie. Die kaartskakel maak Google Maps oop, waarvan die toeganklikheid deur Google bestuur word. As enigiets op hierdie webwerf moeilik is om te gebruik, sê dit vir ons en ons reg dit: toeganklikheidskwessies word as dringende foute hanteer, nie as funksieversoeke nie.",
+        ],
+      },
+      {
+        h: "Toeganklikheid op toer",
+        p: [
+          "Namibië se wilde plekke is nie altyd gelyk of geteer nie, en sommige aktiwiteite soos duinwandeling en canyonrand-stap verg 'n redelike mate van beweeglikheid. Vertel ons by die navraag van enige beweeglikheids-, dieet- of mediese behoeftes en ons vorm die roete, die tempo en die verblyf daaromtrent, en sê u eerlik waar 'n aktiwiteit nie pas nie.",
+        ],
+      },
+      {
+        h: "Terugvoer",
+        p: [
+          `As enigiets op hierdie webwerf of op toer moeilik vir u is om te gebruik, stuur 'n e-pos aan ${company.email}, skakel ${company.phone} of stuur 'n WhatsApp. Ons antwoord binne een werksdag en ons werk saam met u aan 'n oplossing.`,
         ],
       },
     ],

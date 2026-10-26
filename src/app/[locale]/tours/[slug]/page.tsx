@@ -77,9 +77,39 @@ export default async function TourDetailPage({ params }: Params) {
     },
   };
 
+  /* Breadcrumb trail for answer engines and rich results. */
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: company.name,
+        item: `${siteUrl}${localePath(locale, "/")}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: dict.meta.tours.title.split(":")[0],
+        item: `${siteUrl}${localePath(locale, "/tours")}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: tour.name,
+        item: `${siteUrl}${localePath(locale, `/tours/${tour.slug}`)}`,
+      },
+    ],
+  };
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
 
       <PageHeader
         image={tour.image.replace("-4x5", "-16x9")}

@@ -58,6 +58,21 @@ export const en = {
       description:
         "Booking terms for Liger Tours Namibia tours: quotations, payments in N$, cancellations, insurance and liability.",
     },
+    faq: {
+      title: "Frequently Asked Questions",
+      description:
+        "Straight answers about group sizes, bookings, costs in N$, vehicles, insurance and the best season for a Namibia tour with Liger Tours Namibia.",
+    },
+    disclaimer: {
+      title: "Disclaimer",
+      description:
+        "How the information on the Liger Tours Namibia website applies to your enquiry, quotation and tour, and the limits of our liability.",
+    },
+    accessibility: {
+      title: "Accessibility Statement",
+      description:
+        "Our accessibility commitment for this website and for our tours, what we have built, known limitations and how to send us feedback.",
+    },
   },
 
   a11y: {
@@ -113,6 +128,9 @@ export const en = {
     registered: company.registered as string,
     privacy: "Privacy policy",
     terms: "Terms",
+    faq: "FAQ",
+    disclaimer: "Disclaimer",
+    accessibility: "Accessibility",
     brandLink: "Brand",
     credit: "Made by Tangison Studio",
   },
@@ -215,6 +233,7 @@ export const en = {
       eyebrow: "Good to know",
       h2: "Questions guests ask before they book.",
       ariaLabel: "Frequently asked questions",
+      moreLink: "More answers on the FAQ page",
       items: [
         {
           q: "Do you run tours for large groups?",
@@ -742,6 +761,169 @@ export const en = {
         h: "Complaints and governing law",
         p: [
           "If something is not right, tell your guide immediately so it can be fixed on the spot, and tell us in writing afterwards. These terms are governed by the laws of the Republic of Namibia, and the courts of Namibia have jurisdiction over any dispute.",
+        ],
+      },
+    ],
+  },
+
+  faqPage: {
+    eyebrow: "Good to know",
+    title: "Questions, answered.",
+    pageHeaderAlt:
+      "Red dunes rising above a green and gravel plain under a clear sky in the Namib desert",
+    lead: "The questions guests ask before they book, answered honestly. If yours is missing, WhatsApp us and it becomes part of this page.",
+    groups: [
+      {
+        h: "Booking and planning",
+        items: [
+          {
+            q: "Do you run tours for large groups?",
+            a: "Yes. Liger Tours runs guided group tours of every size, from two travellers to groups of fifty or more. Tell us your numbers and we will build the route, the pace and the vehicles around them.",
+          },
+          {
+            q: "How do I book a tour?",
+            a: "Send the enquiry form or WhatsApp us with your dates, your group size and the places you want to see. You receive a full quotation in Namibian dollars, usually within one working day, and your dates are secured with the deposit set out in that quotation.",
+          },
+          {
+            q: "How much does a tour cost?",
+            a: "Every tour is quoted individually in Namibian dollars (N$) because price depends on your group size, the season and your accommodation choices. Send an enquiry and you will have a full quote, with nothing hidden, usually within one working day.",
+          },
+          {
+            q: "Can you build a custom route?",
+            a: "Yes, every week. Tell us what you want to see and how long you have, and we will build a route around it, even if it is shorter than the tours on this site.",
+          },
+        ],
+      },
+      {
+        h: "On the road",
+        items: [
+          {
+            q: "Where do your tours start?",
+            a: "Every route starts and ends in Windhoek, the centre of the country and the arrival point for most flights. We confirm pick-up details with you before you travel.",
+          },
+          {
+            q: "What is included in the price?",
+            a: "Your quotation covers your local guide and driver, accommodation on the route booked for you, park and conservancy fees on the itinerary, and all route transport from Windhoek and back. International flights, travel insurance, personal spending and optional activities are not included.",
+          },
+          {
+            q: "What vehicles do you use?",
+            a: "We match the vehicle to your group size and your route, and every vehicle is maintained for Namibia's long gravel and sand roads. The exact setup for your trip is confirmed in your quotation before you pay anything.",
+          },
+          {
+            q: "What should I pack?",
+            a: "Layers matter most in Namibia: cold mornings on the dunes, hot middays on the road. Bring sun protection, closed walking shoes, a camera or binoculars, and any medication you need. Your quotation and pre-departure notes cover the details for your exact route and season.",
+          },
+        ],
+      },
+      {
+        h: "Practical matters",
+        items: [
+          {
+            q: "When is the best time to visit Namibia?",
+            a: "May to October is high season, with cool mornings, clear skies and the best wildlife viewing in Etosha. It is also when the best lodges fill first, so enquire as early as you can.",
+          },
+          {
+            q: "Do I need travel insurance?",
+            a: "Yes. Comprehensive travel insurance covering medical costs, evacuation and cancellation is required on all Liger Tours trips and must be arranged before departure. Namibia's lodges and parks apply strict cancellation terms, so insurance protects you as much as us.",
+          },
+          {
+            q: "Are you a registered tour operator?",
+            a: "Yes. Liger Tours Namibia is locally owned and registered with the Namibia Tourism Board (NTB), which holds us to professional standards at every step of your trip.",
+          },
+          {
+            q: "How do payments work?",
+            a: `A deposit secures your dates, with the balance due before departure as set out in your quotation. Everything is quoted and collected in Namibian dollars (N$). Banking details appear only on our official quotations and invoices; if anyone asks you to pay into a different account, call us on ${company.phone} first.`,
+          },
+        ],
+      },
+    ],
+    ctaH2: "Still deciding?",
+    ctaScript: "Tell us your dates. We will build the trip around them.",
+    ctaLead:
+      "Send an enquiry and get a full quotation in N$, usually within one working day. No pressure, no obligation.",
+    ctaPrimary: "Plan my trip",
+    ctaWhatsapp: "WhatsApp us now",
+  },
+
+  disclaimer: {
+    title: "Disclaimer",
+    lastUpdated: "Last updated: October 2026",
+    legalEyebrow: "Legal",
+    sections: [
+      {
+        h: "What this page covers",
+        p: [
+          `The information on this website is published by Liger Tours Namibia, a locally owned tour operator registered with the Namibia Tourism Board, to help you plan a trip with us. It describes our routes, activities and the way we work in good faith. For anything that binds either side, the quotation we send you, these terms and your booking confirmation are the documents that count. If anything on this page seems to conflict with your quotation, contact us on ${company.phone} and we will put it right.`,
+        ],
+      },
+      {
+        h: "Routes, itineraries and images",
+        p: [
+          "Namibia is a wild country and conditions change: roads wash out, rivers flood, animals move and lodges occasionally close for maintenance. We adjust itineraries for weather, road conditions, park decisions and safety, and any change of equal or better value is made at no cost. Durations and day plans are confirmed with you at enquiry, so what you book is what you get.",
+          "Photographs on this site show real places on our routes and real moments from our trips, but exact viewpoints, wildlife sightings and light cannot be guaranteed. Wildlife is wild and sightings are never promised.",
+        ],
+      },
+      {
+        h: "Quotations and pricing",
+        p: [
+          "Content on this website is information, not an offer. Every tour is quoted individually in Namibian dollars (N$) because price depends on group size, season and accommodation choices. A quotation is valid for 14 days from the date it is sent unless it states otherwise, and it is the quotation that sets out your deposit, balance and cancellation schedule.",
+        ],
+      },
+      {
+        h: "Safety on tour",
+        p: [
+          "You take part in game drives, walks, dune climbs and other activities at your own risk and must follow your guide's instructions at all times. We take every reasonable care in planning and running our tours and work with registered providers throughout Namibia.",
+        ],
+      },
+      {
+        h: "Links to other websites",
+        p: [
+          "This site links to services we use and recommend, such as WhatsApp and mapping tools. Those websites have their own terms and privacy policies, and we are not responsible for their content or behaviour.",
+        ],
+      },
+      {
+        h: "Liability and governing law",
+        p: [
+          "Our liability is limited to the extent permitted by the laws of the Republic of Namibia and is always subject to the travel insurance requirement set out in our terms of service. These terms are governed by the laws of the Republic of Namibia, and the courts of Namibia have jurisdiction over any dispute.",
+        ],
+      },
+    ],
+  },
+
+  accessibility: {
+    title: "Accessibility",
+    lastUpdated: "Last updated: October 2026",
+    legalEyebrow: "Inclusive travel",
+    sections: [
+      {
+        h: "Our commitment",
+        p: [
+          "Everyone should be able to plan a Namibia trip with us, on any device and with any ability. This website aims to meet the Web Content Accessibility Guidelines (WCAG) 2.1 at level AA, and our tours are planned around the guests who book them, whatever their needs.",
+        ],
+      },
+      {
+        h: "How this website is built",
+        p: [
+          "The site uses semantic HTML, real headings and labelled landmarks so screen readers can navigate it. Every interactive element works with a keyboard, focus is always visible, and a skip link takes you straight to the content. Images carry descriptive alternative text, colour contrast meets AA ratios, and all motion respects your device's reduced-motion setting.",
+          "Content is available in English, German, French, Afrikaans and Portuguese, and the language switcher keeps you on the page you are reading.",
+        ],
+      },
+      {
+        h: "Known limitations",
+        p: [
+          "We are honest about what we do not control. The map link opens Google Maps, whose accessibility is managed by Google. If you hit anything on this site that is hard to use, tell us and we will fix it: accessibility issues are treated as urgent bugs, not feature requests.",
+        ],
+      },
+      {
+        h: "Accessibility on tour",
+        p: [
+          "Namibia's wild places are not always flat or paved, and some activities such as dune walks and canyon rim walks need a reasonable level of mobility. Tell us about any mobility, dietary or medical needs at enquiry and we will shape the route, the pace and the lodging around them, and tell you honestly where an activity is not a fit.",
+        ],
+      },
+      {
+        h: "Feedback",
+        p: [
+          `If anything on this website or on tour is hard for you to use, email ${company.email}, call ${company.phone} or message us on WhatsApp. We reply within one working day and we will work with you on a fix.`,
         ],
       },
     ],

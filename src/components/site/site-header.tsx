@@ -75,6 +75,12 @@ export default function SiteHeader({
     const items: SearchHit[] = [];
     for (const p of dict.nav)
       items.push({ name: p.label, sub: dict.search.pages, href: p.href, group: "pages" });
+    items.push({
+      name: dict.footer.faq,
+      sub: dict.faqPage.eyebrow,
+      href: "/faq",
+      group: "pages",
+    });
     for (const t of dict.tours)
       items.push({ name: t.name, sub: t.route, href: `/tours/${t.slug}`, group: "tours" });
     for (const a of dict.activities)

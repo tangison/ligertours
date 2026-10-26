@@ -50,6 +50,13 @@ export default function SiteFooter({
               </Link>
             ))}
             <Link
+              href={localePath(locale, "/faq")}
+              prefetch={false}
+              className="t-body w-fit text-ink-muted-on-dark transition-colors duration-[240ms] hover:text-white"
+            >
+              {dict.footer.faq}
+            </Link>
+            <Link
               href={localePath(locale, "/brand")}
               prefetch={false}
               className="t-body w-fit text-ink-muted-on-dark transition-colors duration-[240ms] hover:text-white"
@@ -107,6 +114,20 @@ export default function SiteFooter({
                 className="t-small text-ink-muted-on-dark transition-colors duration-[240ms] hover:text-white"
               >
                 {dict.footer.terms}
+              </Link>
+              <Link
+                href={localePath(locale, "/disclaimer")}
+                prefetch={false}
+                className="t-small text-ink-muted-on-dark transition-colors duration-[240ms] hover:text-white"
+              >
+                {dict.footer.disclaimer}
+              </Link>
+              <Link
+                href={localePath(locale, "/accessibility")}
+                prefetch={false}
+                className="t-small text-ink-muted-on-dark transition-colors duration-[240ms] hover:text-white"
+              >
+                {dict.footer.accessibility}
               </Link>
               <a
                 href="https://studio.tangison.com"

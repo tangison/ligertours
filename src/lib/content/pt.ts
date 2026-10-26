@@ -19,14 +19,14 @@ export const pt = {
         "Operadora de turismo local namibiana. Excursões guiadas em grupo para Sossusvlei, Etosha, Swakopmund e o Kalahari, planejadas em torno das suas datas e do seu grupo.",
     },
     tours: {
-      title: "Excursões na Namíbia: Dunas, Vida Selvagem, Costa",
+      title: "Excursões e Safáris na Namíbia",
       description:
         "Sete excursões guiadas pela Namíbia: rotas clássicas de dunas e safári, viagens aos cânions do sul, rotas culturais e um circuito de descoberta de 24 dias.",
     },
     activities: {
-      title: "Atividades e Experiências de um Dia na Namíbia",
+      title: "Atividades de um Dia na Namíbia",
       description:
-        "Safaris fotográficos, Sandwich Harbour de 4x4, tours de township, caminhadas guiadas pelos San, aulas de culinária, Spitzkoppe e observação de estrelas, com guias locais.",
+        "Safaris fotográficos, Sandwich Harbour de 4x4, tours de township, caminhadas com os San e observação de estrelas, com guias locais.",
     },
     about: {
       title: "Sobre a Liger Tours Namibia",
@@ -36,7 +36,7 @@ export const pt = {
     gallery: {
       title: "Galeria: a Namíbia em Imagens",
       description:
-        "Dunas, vida selvagem e alojamentos das viagens da Liger Tours Namibia: planos de argila de Sossusvlei, areias do Kalahari, vida selvagem de Etosha e o alojamento onde pernoita.",
+        "Dunas, fauna e alojamentos das viagens da Liger Tours: planos de argila de Sossusvlei, areias do Kalahari, fauna de Etosha e onde pernoita.",
     },
     contact: {
       title: "Contacto e Pedidos",
@@ -57,6 +57,21 @@ export const pt = {
       title: "Termos de Serviço",
       description:
         "Termos de reserva para as excursões da Liger Tours Namibia: orçamentos, pagamentos em N$, cancelamentos, seguros e responsabilidade.",
+    },
+    faq: {
+      title: "Perguntas Frequentes",
+      description:
+        "Respostas diretas sobre tamanhos de grupo, reservas, preços em N$, veículos, seguros e a melhor estação para conhecer a Namíbia.",
+    },
+    disclaimer: {
+      title: "Aviso Legal",
+      description:
+        "Como as informações do site da Liger Tours Namibia se aplicam ao seu pedido, orçamento e excursão, e os limites da nossa responsabilidade.",
+    },
+    accessibility: {
+      title: "Acessibilidade",
+      description:
+        "O nosso compromisso de acessibilidade para este site e as nossas excursões: o que construímos, limites conhecidos e como nos enviar comentários.",
     },
   },
 
@@ -113,6 +128,9 @@ export const pt = {
     registered: company.registered as string,
     privacy: "Política de privacidade",
     terms: "Termos",
+    faq: "Perguntas frequentes",
+    disclaimer: "Aviso legal",
+    accessibility: "Acessibilidade",
     brandLink: "Marca",
     credit: "Desenvolvido por Tangison Studio",
   },
@@ -215,6 +233,7 @@ export const pt = {
       eyebrow: "Bom saber",
       h2: "Perguntas que os nossos hóspedes fazem antes de reservar.",
       ariaLabel: "Perguntas frequentes",
+      moreLink: "Mais respostas na página de perguntas frequentes",
       items: [
         {
           q: "Fazem excursões para grandes grupos?",
@@ -739,6 +758,169 @@ export const pt = {
         h: "Queixas e lei aplicável",
         p: [
           "Se algo não estiver correto, avise o seu guia imediatamente para que possa ser resolvido no local e informe-nos por escrito posteriormente. Estes termos são regidos pelas leis da República da Namíbia, e os tribunais da Namíbia têm jurisdição sobre qualquer disputa.",
+        ],
+      },
+    ],
+  },
+
+  faqPage: {
+    eyebrow: "Bom saber",
+    title: "Perguntas, respondidas.",
+    pageHeaderAlt:
+      "Dunas vermelhas acima de uma planície verde e de cascalho sob um céu limpo no deserto do Namibe",
+    lead: "As perguntas que os nossos hóspedes fazem antes de reservar, respondidas com honestidade. Faltou a sua? Envie-nos um WhatsApp e ela passa a fazer parte desta página.",
+    groups: [
+      {
+        h: "Reservas e planeamento",
+        items: [
+          {
+            q: "Fazem excursões para grandes grupos?",
+            a: "Sim. A Liger Tours conduz excursões guiadas em grupo de qualquer dimensão, de dois viajantes a grupos de cinquenta ou mais. Diga-nos o número de pessoas e nós construímos a rota, o ritmo e os veículos à volta.",
+          },
+          {
+            q: "Como reservo uma excursão?",
+            a: "Envie o formulário de pedido ou escreva-nos no WhatsApp com as suas datas, o tamanho do grupo e os lugares que quer ver. Recebe um orçamento completo em dólares namibianos, normalmente dentro de um dia útil, e as suas datas ficam garantidas com o sinal indicado nesse orçamento.",
+          },
+          {
+            q: "Quanto custa uma excursão?",
+            a: "Cada excursão é orçamentada individualmente em dólares namibianos (N$) porque o preço depende do tamanho do grupo, da estação e das escolhas de alojamento. Envie um pedido e receberá um orçamento completo, sem nada escondido, normalmente dentro de um dia útil.",
+          },
+          {
+            q: "Podem criar uma rota personalizada?",
+            a: "Sim, todas as semanas. Diga-nos o que quer ver e quanto tempo tem, e nós construímos a rota à volta disso, mesmo que seja mais curta do que as excursões deste site.",
+          },
+        ],
+      },
+      {
+        h: "Na estrada",
+        items: [
+          {
+            q: "Onde começam as excursões?",
+            a: "Todas as rotas começam e terminam em Windhoek, o centro do país e o ponto de chegada da maioria dos voos. Confirmamos os detalhes do levantamento consigo antes de viajar.",
+          },
+          {
+            q: "O que está incluído no preço?",
+            a: "O seu orçamento cobre o guia e motorista locais, o alojamento da rota reservado para si, as taxas de parques e conservas do itinerário e todo o transporte desde Windhoek e de regresso. Voos internacionais, seguro de viagem, despesas pessoais e atividades opcionais não estão incluídos.",
+          },
+          {
+            q: "Que veículos utilizam?",
+            a: "Adaptamos o veículo ao tamanho do seu grupo e à sua rota, e cada veículo é mantido para as longas estradas de cascalho e areia da Namíbia. A configuração exata da sua viagem é confirmada no seu orçamento, antes de pagar qualquer coisa.",
+          },
+          {
+            q: "O que devo levar na bagagem?",
+            a: "Na Namíbia, as camadas de roupa são o mais importante: manhãs frias nas dunas, meio-dia quente na estrada. Traga proteção solar, calçado fechado para caminhar, uma máquina fotográfica ou binóculos e qualquer medicação de que precise. O seu orçamento e as notas pré-partida detalham o necessário para a sua rota e estação.",
+          },
+        ],
+      },
+      {
+        h: "Questões práticas",
+        items: [
+          {
+            q: "Qual é a melhor época para visitar a Namíbia?",
+            a: "De maio a outubro é a alta estação, com manhãs frescas, céu limpo e a melhor observação de vida selvagem no Etosha. É também quando os melhores lodges esgotam primeiro, portanto envie o seu pedido o mais cedo possível.",
+          },
+          {
+            q: "Preciso de seguro de viagem?",
+            a: "Sim. Um seguro de viagem completo que cubra despesas médicas, evacuação e cancelamento é obrigatório em todas as viagens da Liger Tours e deve ser contratado antes da partida. Os lodges e parques da Namíbia aplicam condições de cancelamento rigorosas, por isso o seguro protege-o tanto como a nós.",
+          },
+          {
+            q: "São uma operadora registada?",
+            a: "Sim. A Liger Tours Namibia é uma empresa local registada na Namibia Tourism Board (NTB), que nos exige padrões profissionais em cada etapa da sua viagem.",
+          },
+          {
+            q: "Como funcionam os pagamentos?",
+            a: `Um sinal garante as suas datas, com o restante devido antes da partida conforme indicado no seu orçamento. Tudo é orçamentado e cobrado em dólares namibianos (N$). Os dados bancários aparecem apenas nos nossos orçamentos e faturas oficiais; se alguém lhe pedir para pagar para outra conta, ligue-nos primeiro para ${company.phone}.`,
+          },
+        ],
+      },
+    ],
+    ctaH2: "Ainda a decidir?",
+    ctaScript: "Diga-nos as suas datas. Construímos a viagem à volta delas.",
+    ctaLead:
+      "Envie um pedido e receba um orçamento completo em N$, normalmente dentro de um dia útil. Sem pressão, sem compromisso.",
+    ctaPrimary: "Planear a minha viagem",
+    ctaWhatsapp: "Fale connosco no WhatsApp",
+  },
+
+  disclaimer: {
+    title: "Aviso Legal",
+    lastUpdated: "Última atualização: outubro de 2026",
+    legalEyebrow: "Legal",
+    sections: [
+      {
+        h: "Sobre esta página",
+        p: [
+          `As informações neste site são publicadas pela Liger Tours Namibia, uma operadora de turismo local registada na Namibia Tourism Board, para o ajudar a planear uma viagem connosco. Descrevem as nossas rotas, atividades e a nossa forma de trabalhar com boa fé. Para tudo o que vincula qualquer uma das partes, contam o orçamento que lhe enviamos, estes termos e a sua confirmação de reserva. Se algo nesta página parecer contradizer o seu orçamento, contacte-nos para ${company.phone} e corrigiremos.`,
+        ],
+      },
+      {
+        h: "Rotas, itinerários e imagens",
+        p: [
+          "A Namíbia é um país selvagem e as condições mudam: estradas lavam-se, rios transbordam, animais movem-se e os lodges fecham ocasionalmente para manutenção. Ajustamos itinerários por causa do tempo, estado das estradas, decisões dos parques e segurança, e qualquer alteração de valor igual ou superior é feita sem custos. Durações e planos diários são confirmados consigo no pedido, para que reserve exatamente o que recebe.",
+          "As fotografias deste site mostram lugares reais das nossas rotas e momentos reais das nossas viagens, mas pontos de vista exatos, avistamentos de vida selvagem e luz não podem ser garantidos. A vida selvagem é selvagem e avistamentos nunca são prometidos.",
+        ],
+      },
+      {
+        h: "Orçamentos e preços",
+        p: [
+          "O conteúdo deste site é informativo, não uma oferta. Cada excursão é orçamentada individualmente em dólares namibianos (N$) porque o preço depende do tamanho do grupo, da estação e das escolhas de alojamento. Um orçamento é válido por 14 dias a partir da data de envio, salvo indicação em contrário, e é o orçamento que define o seu sinal, saldo e calendário de cancelamento.",
+        ],
+      },
+      {
+        h: "Segurança em viagem",
+        p: [
+          "Participa em safaris, caminhadas, subidas de dunas e outras atividades por sua conta e risco e deve seguir as instruções do seu guia em todos os momentos. Tomamos todos os cuidados razoáveis no planeamento e execução das nossas viagens e trabalhamos com prestadores registados em toda a Namíbia.",
+        ],
+      },
+      {
+        h: "Ligações para outros sites",
+        p: [
+          "Este site liga a serviços que utilizamos e recomendamos, como o WhatsApp e ferramentas de mapas. Esses sites têm os seus próprios termos e políticas de privacidade, e não somos responsáveis pelo seu conteúdo ou comportamento.",
+        ],
+      },
+      {
+        h: "Responsabilidade e lei aplicável",
+        p: [
+          "A nossa responsabilidade é limitada ao permitido pelas leis da República da Namíbia e está sempre sujeita ao requisito de seguro de viagem dos nossos termos de serviço. Estes termos são regidos pelas leis da República da Namíbia, e os tribunais da Namíbia têm jurisdição sobre qualquer disputa.",
+        ],
+      },
+    ],
+  },
+
+  accessibility: {
+    title: "Acessibilidade",
+    lastUpdated: "Última atualização: outubro de 2026",
+    legalEyebrow: "Viagem inclusiva",
+    sections: [
+      {
+        h: "O nosso compromisso",
+        p: [
+          "Todos deveriam poder planear uma viagem à Namíbia connosco, em qualquer dispositivo e com qualquer capacidade. Este site visa as Web Content Accessibility Guidelines (WCAG) 2.1 ao nível AA, e as nossas excursões são planeadas à volta dos hóspedes que as reservam, quaisquer que sejam as suas necessidades.",
+        ],
+      },
+      {
+        h: "Como este site é construído",
+        p: [
+          "O site utiliza HTML semântico, títulos reais e landmarks etiquetados para que os leitores de ecrã o possam navegar. Cada elemento interativo funciona com teclado, o foco está sempre visível e uma ligação de salto leva-o diretamente ao conteúdo. As imagens têm texto alternativo descritivo, o contraste de cores cumpre os rácios AA e todos os movimentos respeitam a definição de movimento reduzido do seu dispositivo.",
+          "O conteúdo está disponível em inglês, alemão, francês, afrikaans e português, e o seletor de idioma mantém-no na página que está a ler.",
+        ],
+      },
+      {
+        h: "Limitações conhecidas",
+        p: [
+          "Somos honestos quanto ao que não controlamos. A ligação do mapa abre o Google Maps, cuja acessibilidade é gerida pela Google. Se algo neste site for difícil de utilizar, diga-nos e corrigiremos: problemas de acessibilidade são tratados como erros urgentes, não como pedidos de funcionalidades.",
+        ],
+      },
+      {
+        h: "Acessibilidade em viagem",
+        p: [
+          "Os espaços selvagens da Namíbia nem sempre são planos ou pavimentados, e algumas atividades como caminhadas nas dunas e nas bordas de cânions exigem uma mobilidade razoável. Diga-nos no pedido quaisquer necessidades de mobilidade, alimentares ou médicas e moldaremos a rota, o ritmo e o alojamento à volta delas, dizendo-lhe com honestidade quando uma atividade não é adequada.",
+        ],
+      },
+      {
+        h: "Comentários",
+        p: [
+          `Se algo neste site ou em viagem for difícil de utilizar, escreva para ${company.email}, ligue para ${company.phone} ou envie-nos um WhatsApp. Respondemos dentro de um dia útil e trabalharemos consigo numa solução.`,
         ],
       },
     ],

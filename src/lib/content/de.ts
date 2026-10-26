@@ -57,6 +57,21 @@ export const de = {
       description:
         "Buchungsbedingungen für Touren von Liger Tours Namibia: Angebote, Zahlung in N$, Stornierung, Versicherung und Haftung.",
     },
+    faq: {
+      title: "Häufige Fragen",
+      description:
+        "Klare Antworten zu Gruppengrößen, Buchung, Preisen in N$, Fahrzeugen, Versicherung und der besten Reisezeit für eine Namibia-Reise mit Liger Tours Namibia.",
+    },
+    disclaimer: {
+      title: "Haftungsausschluss",
+      description:
+        "Wie die Angaben auf der Website von Liger Tours Namibia zu Ihrer Anfrage, Ihrem Angebot und Ihrer Tour passen und wo unsere Haftungsgrenzen liegen.",
+    },
+    accessibility: {
+      title: "Barrierefreiheit",
+      description:
+        "Unser Barrierefreiheitsversprechen für diese Website und unsere Touren: was wir gebaut haben, bekannte Grenzen und wie Sie uns Feedback geben.",
+    },
   },
 
   a11y: {
@@ -112,6 +127,9 @@ export const de = {
     registered: "Registriert bei der Namibia Tourism Board (NTB)",
     privacy: "Datenschutzerklärung",
     terms: "AGB",
+    faq: "FAQ",
+    disclaimer: "Haftungsausschluss",
+    accessibility: "Barrierefreiheit",
     brandLink: "Marke",
     credit: "Made by Tangison Studio",
   },
@@ -214,6 +232,7 @@ export const de = {
       eyebrow: "Gut zu wissen",
       h2: "Fragen, die Gäste vor der Buchung stellen.",
       ariaLabel: "Häufige Fragen",
+      moreLink: "Mehr Antworten auf der FAQ-Seite",
       items: [
         {
           q: "Fahren Sie auch Touren für große Gruppen?",
@@ -744,6 +763,169 @@ export const de = {
         h: "Beschwerden und anwendbares Recht",
         p: [
           "Wenn etwas nicht stimmt, sagen Sie es sofort Ihrem Guide, damit es vor Ort behoben werden kann, und teilen Sie es uns danach schriftlich mit. Diese Bedingungen unterliegen dem Recht der Republik Namibia; namibische Gerichte haben Gerichtsbarkeit über Streitfälle.",
+        ],
+      },
+    ],
+  },
+
+  faqPage: {
+    eyebrow: "Gut zu wissen",
+    title: "Fragen, beantwortet.",
+    pageHeaderAlt:
+      "Rote Dünen über einer grünen Kiesebene unter klarem Himmel in der Namibwüste",
+    lead: "Die Fragen, die Gäste vor der Buchung stellen, ehrlich beantwortet. Fehlt Ihre? Schreiben Sie uns per WhatsApp, und sie wird Teil dieser Seite.",
+    groups: [
+      {
+        h: "Buchung und Planung",
+        items: [
+          {
+            q: "Fahren Sie auch Touren für große Gruppen?",
+            a: "Ja. Liger Tours führt Gruppenreisen in jeder Größe durch, von zwei Reisenden bis zu Gruppen von fünfzig und mehr. Nennen Sie uns Ihre Teilnehmerzahl, und wir bauen Route, Tempo und Fahrzeuge darum herum.",
+          },
+          {
+            q: "Wie buche ich eine Tour?",
+            a: "Senden Sie das Anfrageformular oder schreiben Sie uns per WhatsApp mit Ihren Terminen, Ihrer Gruppengröße und den Orten, die Sie sehen möchten. Sie erhalten in der Regel innerhalb eines Werktags ein vollständiges Angebot in Namibia-Dollar, und Ihre Termine werden mit der im Angebot genannten Anzahlung gesichert.",
+          },
+          {
+            q: "Was kostet eine Tour?",
+            a: "Jede Tour wird individuell in Namibia-Dollar (N$) angeboten, weil der Preis von Ihrer Gruppengröße, der Reisezeit und Ihrer Unterkunftswahl abhängt. Senden Sie eine Anfrage, und Sie erhalten in der Regel innerhalb eines Werktags ein vollständiges Angebot ohne versteckte Kosten.",
+          },
+          {
+            q: "Können Sie eine eigene Route bauen?",
+            a: "Ja, jede Woche. Sagen Sie uns, was Sie sehen möchten und wie viel Zeit Sie haben, und wir bauen die Route darum herum, auch wenn sie kürzer ist als die Touren auf dieser Website.",
+          },
+        ],
+      },
+      {
+        h: "Unterwegs",
+        items: [
+          {
+            q: "Wo starten Ihre Touren?",
+            a: "Jede Route beginnt und endet in Windhoek, dem Mittelpunkt des Landes und Ankunftsort der meisten Flüge. Die Abholdetails bestätigen wir Ihnen vor der Reise.",
+          },
+          {
+            q: "Was ist im Preis enthalten?",
+            a: "Ihr Angebot umfasst Ihren lokalen Guide und Fahrer, die für Sie gebuchte Unterkunft entlang der Route, Park- und Schutzgebietsgebühren der Reiseroute sowie die gesamte Beförderung ab Windhoek und zurück. Internationale Flüge, Reiseversicherung, persönliche Ausgaben und optionale Aktivitäten sind nicht enthalten.",
+          },
+          {
+            q: "Welche Fahrzeuge nutzen Sie?",
+            a: "Wir passen das Fahrzeug an Ihre Gruppengröße und Route an, und jedes Fahrzeug wird für Namibias lange Schotter- und Sandstraßen gewartet. Die genaue Ausstattung Ihrer Reise wird im Angebot bestätigt, bevor Sie etwas zahlen.",
+          },
+          {
+            q: "Was soll ich einpacken?",
+            a: "In Namibia zählen Schichten: kalte Morgen an den Dünen, heiße Mittage auf der Straße. Bringen Sie Sonnenschutz, geschlossene Wanderschuhe, eine Kamera oder ein Fernglas und Ihre Medikamente mit. Ihr Angebot und die Hinweise vor Abreise enthalten die Details für Ihre Route und Reisezeit.",
+          },
+        ],
+      },
+      {
+        h: "Praktisches",
+        items: [
+          {
+            q: "Wann ist die beste Reisezeit für Namibia?",
+            a: "Mai bis Oktober ist Hochsaison, mit kühlen Morgen, klarem Himmel und der besten Tierbeobachtung im Etosha. In dieser Zeit sind die besten Lodges zuerst ausgebucht, fragen Sie also so früh wie möglich an.",
+          },
+          {
+            q: "Brauche ich eine Reiseversicherung?",
+            a: "Ja. Eine umfassende Reiseversicherung mit medizinischen Kosten, Evakuierung und Stornierung ist für alle Liger-Tours-Reisen vorgeschrieben und muss vor der Abreise abgeschlossen sein. Lodges und Parks in Namibia wenden strenge Stornierungsbedingungen an, deshalb schützt die Versicherung Sie genauso wie uns.",
+          },
+          {
+            q: "Sind Sie ein registrierter Reiseveranstalter?",
+            a: "Ja. Liger Tours Namibia ist familiengeführt und bei der Namibia Tourism Board (NTB) registriert, die uns bei jedem Schritt Ihrer Reise professionelle Standards abverlangt.",
+          },
+          {
+            q: "Wie funktionieren Zahlungen?",
+            a: `Eine Anzahlung sichert Ihre Termine, der Restbetrag ist vor der Abreise fällig, wie in Ihrem Angebot beschrieben. Alles wird in Namibia-Dollar (N$) angeboten und abgerechnet. Bankdaten erscheinen nur auf unseren offiziellen Angeboten und Rechnungen; wenn jemand Sie bittet, auf ein anderes Konto zu zahlen, rufen Sie uns zuerst unter ${company.phone} an.`,
+          },
+        ],
+      },
+    ],
+    ctaH2: "Noch am Überlegen?",
+    ctaScript: "Nennen Sie uns Ihre Termine. Wir bauen die Reise darum herum.",
+    ctaLead:
+      "Senden Sie eine Anfrage und erhalten Sie ein vollständiges Angebot in N$, in der Regel innerhalb eines Werktags. Ohne Druck, ohne Verpflichtung.",
+    ctaPrimary: "Meine Reise planen",
+    ctaWhatsapp: "Jetzt per WhatsApp schreiben",
+  },
+
+  disclaimer: {
+    title: "Haftungsausschluss",
+    lastUpdated: "Zuletzt aktualisiert: Oktober 2026",
+    legalEyebrow: "Rechtliches",
+    sections: [
+      {
+        h: "Worum es auf dieser Seite geht",
+        p: [
+          `Die Informationen auf dieser Website veröffentlicht Liger Tours Namibia, ein familiengeführter und bei der Namibia Tourism Board registrierter Reiseveranstalter, damit Sie Ihre Reise mit uns planen können. Sie beschreiben unsere Routen, Aktivitäten und unsere Arbeitsweise nach bestem Wissen. Verbindlich sind das Angebot, das wir Ihnen senden, diese Bedingungen und Ihre Buchungsbestätigung. Wenn Angaben auf dieser Seite mit Ihrem Angebot scheinen zu kollidieren, kontaktieren Sie uns unter ${company.phone}, und wir korrigieren es.`,
+        ],
+      },
+      {
+        h: "Routen, Reiserouten und Bilder",
+        p: [
+          "Namibia ist ein wildes Land und die Bedingungen ändern sich: Straßen werden weggespült, Flüsse treten über die Ufer, Tiere wandern, und Lodges schließen gelegentlich für Wartungsarbeiten. Wir passen Reiserouten wegen Wetter, Straßenverhältnissen, Parkentscheidungen und Sicherheit an, und jede Änderung von gleichem oder besserem Wert ist kostenfrei. Dauer und Tagespläne werden mit Ihnen bei der Anfrage bestätigt, damit Sie genau das buchen, was Sie bekommen.",
+          "Fotografien auf dieser Website zeigen echte Orte unserer Routen und echte Momente unserer Reisen, aber genaue Aussichtspunkte, Tierbeobachtungen und Licht können nicht garantiert werden. Wildtiere sind wild, und Sichtungen werden nie versprochen.",
+        ],
+      },
+      {
+        h: "Angebote und Preise",
+        p: [
+          "Inhalte auf dieser Website sind Informationen, kein Angebot. Jede Tour wird individuell in Namibia-Dollar (N$) angeboten, weil der Preis von Gruppengröße, Reisezeit und Unterkunftswahl abhängt. Ein Angebot gilt 14 Tage ab Versanddatum, sofern nicht anders angegeben, und es ist das Angebot, das Anzahlung, Restbetrag und Stornierungsplan festlegt.",
+        ],
+      },
+      {
+        h: "Sicherheit auf Tour",
+        p: [
+          "Sie nehmen an Pirschfahrten, Wanderungen, Dünenbesteigungen und anderen Aktivitäten auf eigene Gefahr teil und müssen den Anweisungen Ihres Guides jederzeit folgen. Wir treffen bei Planung und Durchführung unserer Touren alle angemessenen Vorsichtsmaßnahmen und arbeiten mit registrierten Anbietern in ganz Namibia zusammen.",
+        ],
+      },
+      {
+        h: "Links zu anderen Websites",
+        p: [
+          "Diese Website verlinkt auf Dienste, die wir nutzen und empfehlen, etwa WhatsApp und Kartenwerkzeuge. Diese Websites haben eigene Bedingungen und Datenschutzrichtlinien, und wir sind nicht für deren Inhalt oder Verhalten verantwortlich.",
+        ],
+      },
+      {
+        h: "Haftung und anwendbares Recht",
+        p: [
+          "Unsere Haftung ist im Umfang beschränkt, wie es das Recht der Republik Namibia zulässt, und unterliegt stets der Reiseversicherungs-Pflicht aus unseren Geschäftsbedingungen. Es gilt das Recht der Republik Namibia; namibische Gerichte haben Gerichtsbarkeit über Streitfälle.",
+        ],
+      },
+    ],
+  },
+
+  accessibility: {
+    title: "Barrierefreiheit",
+    lastUpdated: "Zuletzt aktualisiert: Oktober 2026",
+    legalEyebrow: "Inklusives Reisen",
+    sections: [
+      {
+        h: "Unser Versprechen",
+        p: [
+          "Jeder soll mit uns eine Namibia-Reise planen können, auf jedem Gerät und mit jeder Fähigkeit. Diese Website zielt auf die Web Content Accessibility Guidelines (WCAG) 2.1 Stufe AA ab, und unsere Touren werden um die Gäste geplant, die sie buchen, ganz gleich welche Bedürfnisse sie haben.",
+        ],
+      },
+      {
+        h: "Wie diese Website gebaut ist",
+        p: [
+          "Die Website nutzt semantisches HTML, echte Überschriften und beschriftete Landmarks, damit Screenreader sie navigieren können. Jedes interaktive Element funktioniert mit der Tastatur, der Fokus ist immer sichtbar, und ein Skip-Link führt direkt zum Inhalt. Bilder tragen beschreibenden Alternativtext, Farbkontraste erfüllen AA-Verhältnisse, und alle Bewegungen respektieren die Einstellung für reduzierte Bewegung Ihres Geräts.",
+          "Inhalte sind auf Englisch, Deutsch, Französisch, Afrikaans und Portugiesisch verfügbar, und der Sprachwechsel hält Sie auf der Seite, die Sie gerade lesen.",
+        ],
+      },
+      {
+        h: "Bekannte Grenzen",
+        p: [
+          "Wir sind ehrlich dazu, was wir nicht kontrollieren. Der Kartenlink öffnet Google Maps, dessen Barrierefreiheit Google verwaltet. Wenn Ihnen auf dieser Website etwas schwerfällt, sagen Sie es uns, und wir beheben es: Barrierefreiheitsprobleme behandeln wir als dringende Fehler, nicht als Funktionswünsche.",
+        ],
+      },
+      {
+        h: "Barrierefreiheit auf Tour",
+        p: [
+          "Namibias wilde Landschaften sind nicht immer flach oder befestigt, und manche Aktivitäten wie Dünenwanderungen und Canyonrand-Wanderungen brauchen ein gewisses Maß an Beweglichkeit. Nennen Sie uns bei der Anfrage etwaige Mobilitäts-, Ernährungs- oder medizinische Bedürfnisse, und wir formen Route, Tempo und Unterkunft darum herum und sagen Ihnen ehrlich, wo eine Aktivität nicht passt.",
+        ],
+      },
+      {
+        h: "Feedback",
+        p: [
+          `Wenn Ihnen etwas auf dieser Website oder auf Tour schwerfällt, schreiben Sie an ${company.email}, rufen Sie ${company.phone} an oder senden Sie uns eine WhatsApp-Nachricht. Wir antworten innerhalb eines Werktags und arbeiten mit Ihnen an einer Lösung.`,
         ],
       },
     ],
