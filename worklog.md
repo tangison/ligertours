@@ -131,3 +131,29 @@ Stage Summary:
 - Copy: zero "Windhoek based" identity framing, zero "small group" limits; group business of any size is explicitly welcome
 - AEO: FAQPage + TourOperator + TouristTrip schema, llms.txt for AI crawlers, FAQ content in all five languages
 - SECURITY: rotate the GitHub PAT and the Vercel token (both appeared in chat plaintext across sessions).
+
+---
+Task ID: 6
+Agent: main (Z.ai)
+Task: User round 6: audit ligertours.com end to end, audit all pages, add every missing page (error, legal, disclaimer and all others), check the CSS, make sure robots.txt and all SEO are in place, run a squirrel scan.
+
+Work Log:
+- Squirrel scan v1 (scripts/squirrel_scan.py) against production: 85 route/locale checks, robots/sitemap/llms.txt/manifest/favicons all 200, sitemap 80 URLs all respond, CSS 110KB loads, JSON-LD on every page, single H1 everywhere, localized 404s in five locales. Findings: no security headers (nosniff, frame, referrer, permissions), 4 FR/PT meta length overruns, and no disclaimer/FAQ/accessibility pages plus no root global-error.
+- Environment quirk documented: the shell transport strips [digits]m patterns from OUTPUT, which fake-corrupted Tailwind classes like duration-[240ms] into duration-s] in the console. Verified via script files + Read tool that the source was always correct; no CSS bug existed. Protocol adopted: scan results are written to JSON files and read with the Read tool.
+- Fixed the 4 real meta overruns: fr activities title, pt tours title, pt activities title + description, pt gallery description.
+- Security headers added in next.config.ts (X-Content-Type-Options nosniff, X-Frame-Options SAMEORIGIN, Referrer-Policy strict-origin-when-cross-origin, Permissions-Policy camera/mic/geo locked), verified live.
+- robots.txt upgraded with explicit allowances for 13 AI answer engines (GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-Web, anthropic-ai, PerplexityBot, Google-Extended, Applebot-Extended, CCBot, Amazonbot, meta-externalagent, Bytespider).
+- New pages built in all five locales with full scroll craft: /faq (three groups, 12 honest answers aligned with the terms: groups of any size, booking flow, N$ pricing, what is included, vehicles, packing, best season, insurance, NTB registration, payments) with per-locale FAQPage JSON-LD and a night CTA band; /disclaimer (six sections: coverage, routes/images honesty, quotations, safety, external links, liability under Namibian law); /accessibility statement (WCAG 2.1 AA commitment, how the site is built, known limitations, on-trip accessibility, feedback).
+- src/app/global-error.tsx added: branded 500 boundary with its own html/body that survives layout crashes.
+- SEO wiring: sitemap grows 80 to 95 URLs; footer gains FAQ (explore column) + disclaimer + accessibility (legal row); home FAQ section links to the full FAQ page (new moreLink key); drawer search indexes the FAQ page; tour detail pages gain BreadcrumbList JSON-LD; llms.txt now carries the full answer set plus a policy-pages section.
+- All new content translated to de/fr/af/pt with Dict = typeof en shape checking; German grammar fix (Sorgfalt line), Afrikaans spelling fix (Heldere), Portuguese fix (pré-partida).
+- Local verification: 119 automated checks -> 118 pass (HSTS is Vercel-edge only; live scan confirms max-age=63072000). Browser QA: FAQ/disclaimer/accessibility render, scroll craft runs, zero console errors.
+- Deploy incident: .vercel/project.json had been reset to the environment default project; one stray deployment landed on "my-project" before I caught it, re-linked the file to the ligertours project (prj_nWSVGArt5iYGCERORg6dpOFtpr5r, targis47s-projects team) and deployed production properly. Stray deployment not reachable via any ligertours domain.
+- Production re-scan: 100 route checks, 95 sitemap URLs, zero broken links, zero errors. Live spot checks: all security headers present, 9 AI bots in robots.txt, footer links live, FAQ page live with 12 questions + FAQPage schema, tour detail has TouristTrip + BreadcrumbList, llms.txt updated, www 308 to apex. Live browser check of /faq and /de/faq clean.
+
+Stage Summary:
+- Live: https://ligertours.com (plus /de /fr /af /pt), repo @ 7b39617, all commits by Tangison Studio
+- Pages: 19 route templates x 5 locales = 95 static pages; added /faq /disclaimer /accessibility + global-error to the mandatory set (404/500/privacy/terms/brand already existed)
+- SEO/AEO: security headers, AI-bot robots allows, BreadcrumbList, FAQPage x 5 locales, sitemap 95 URLs, llms.txt answers, all meta within length budget
+- Next candidates if the client wants more: Booking/conditions FAQ on tour pages, Google Business Profile + Search Console submission, hreflang sitemap for the FAQ answers is already covered
+- SECURITY: rotate the GitHub PAT and the Vercel token (both appeared in chat plaintext across sessions).
