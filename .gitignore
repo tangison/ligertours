@@ -73,3 +73,6 @@ scripts/verify_fixes.py
 scripts/verify-report.json
 scripts/check-meta.py
 scripts/meta-check.json
+scripts/squirrel_scan2.py
+scripts/final_check.py
+scripts/final-check.json
