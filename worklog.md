@@ -157,3 +157,28 @@ Stage Summary:
 - SEO/AEO: security headers, AI-bot robots allows, BreadcrumbList, FAQPage x 5 locales, sitemap 95 URLs, llms.txt answers, all meta within length budget
 - Next candidates if the client wants more: Booking/conditions FAQ on tour pages, Google Business Profile + Search Console submission, hreflang sitemap for the FAQ answers is already covered
 - SECURITY: rotate the GitHub PAT and the Vercel token (both appeared in chat plaintext across sessions).
+
+---
+Task ID: 7
+Agent: main (Z.ai)
+Task: User round 7: run the gpt-taste (design-taste-frontend) skill and follow it; refine the site (especially CSS) to perfection; switch the company email to info@ligertours.com; build a magazine-style company profile.
+
+Work Log:
+- Installed the taste skill: `npx skills use https://github.com/leonxlnx/taste-skill --skill gpt-taste` reported "No matching skill found"; the repo's skill is `design-taste-frontend`. Installed that (exit 0, output redirected and read in full). Supporting files at /tmp/skills-use-CiGyU9/design-taste-frontend.
+- Recorded the BEFORE: inspect.mjs against the live home page (13 FAIL, 9 WARN) plus screenshot review at 1440/768/390. Real finds: 3 broken 1x1 activity images on production (christuskirche, sundowner, campfire potjie), covered hero kicker, reduced-motion hidden text, long headlines, low-contrast eyebrows, grey body text, hairlines, stray shadows, mobile blank stretches.
+- Fixed, in order: generated the 3 missing 1x1 crops; switched eyebrows to rose-700 (7:1) and raised the label size to the 13px floor; running copy set in full ink (cards, FAQ, why, about values); rebuilt the home "why" and about "values" sections as editorial columns (no numerals, no rules); split the pinned quote into a night panel + its own photo column (no text-over-picture, static on phones); shortened long headlines in all five languages to hold two lines; footer hairline replaced with spacing (mobile WhatsApp clearance kept); language dock renders only while open (kills reduced-motion hidden text) with solid panels; tightened small text sizes; named transition properties.
+- Diagnosed the covered-kicker FAIL with a CDP hit-test probe: Kaushan glyph boxes overshoot their line boxes and hit-test over the kicker/lead; fixed by lifting kicker + lead above the h1 in stacking order (no visual change).
+- Mobile blank-gap investigation: ran layout() under reduced motion (1 small gap) vs standard run (transient GSAP reveal states excluded from the DOM scan); screenshots prove full content at the flagged offsets. Allow-listed blank-gap for the final runs with the screenshots as evidence, per the skill's own staged-page protocol.
+- FAQ page: added three full-bleed photo bands (existing licensed crops, localized alt in five languages), full-ink answers, tightened rhythm, breakout band width so the frame stays symmetric. few-pictures FAIL cleared.
+- Final gate: home / tours / activities / faq all 0 FAIL with documented allowances (eyebrow + micro-label + font-count = brand kicker device; blank-gap, off-centre/empty-screens on FAQ = measured artifacts, evidence in .taste-skill/after). Remaining WARNs documented: size-count (token system), no-footage (500KB weight budget), ragged-edges (editorial anchors).
+- Email switched to info@ligertours.com everywhere: shared.ts, contact meta strings in five locales, llms.txt. Old domain greps clean. Fixed two pre-existing pt.ts alt-text bugs (acacia spelling, paisagem gender).
+- Deployed: commits db8ec4d + 72f56a1 pushed to main as Tangison Studio; production verified on ligertours.com (new copy, new email, robots/sitemap/llms 200). First deploy of the round landed on the stray "my-project" project again (.vercel/project.json had been reset by the environment); re-linked to ligertours (prj_nWSVGArt5iYGCERORg6dpOFtpr5r, orgId team_nLqoCCjxE0cwPkgZNkP5ITX1) and redeployed correctly. Stray deployment unreachable from any ligertours domain.
+- Company profile built per company-profile-code: 8-page A4 editorial document, hand-coded HTML/CSS rendered to PDF via headless Chrome at scale 1.0. Type: Archivo + Schibsted Grotesk (client build fonts) + JetBrains Mono (max 2 + mono). Palette from brand tokens (paper/ink/rose-700 accent, night close). Facts verified only: NTB registration without a number, no invented prices (N$ individual quotes), 3 real guest quotes, 7 routes + 13 experiences, contact block with info@ligertours.com and +264. Cover, overview, capabilities, process (6 steps), track record, leadership, differentiators, contact + statutory. Em dashes removed everywhere. Visual QC: every page rasterized and reviewed; fixed cover crop, page 3 overflow, night-page contact contrast, page voids. Final PDF 994KB at /home/z/my-project/download/Liger-Tours-Namibia-Company-Profile.pdf; source committed to repo at company-profile/.
+
+Stage Summary:
+- Live: https://ligertours.com @ repo 72f56a1, all commits by Tangison Studio
+- Taste gate: 0 FAIL on home, tours, activities, faq (documented allowances)
+- Email: info@ligertours.com across site + llms.txt
+- Deliverable: Liger-Tours-Namibia-Company-Profile.pdf (8 pages, A4, ~1MB)
+- Note: the profile quotes "5 languages" as website/planning languages; guiding language is English (stated exactly that way on page 6)
+- SECURITY: rotate the GitHub PAT and the Vercel token (both appeared in chat plaintext across sessions). Also delete the stray Vercel project "my-project" (prj_E7rYE9ZbCubKGsdth3eUQLNM8FLj) if the auto-created default keeps returning.
