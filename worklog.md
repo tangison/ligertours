@@ -182,3 +182,26 @@ Stage Summary:
 - Deliverable: Liger-Tours-Namibia-Company-Profile.pdf (8 pages, A4, ~1MB)
 - Note: the profile quotes "5 languages" as website/planning languages; guiding language is English (stated exactly that way on page 6)
 - SECURITY: rotate the GitHub PAT and the Vercel token (both appeared in chat plaintext across sessions). Also delete the stray Vercel project "my-project" (prj_E7rYE9ZbCubKGsdth3eUQLNM8FLj) if the auto-created default keeps returning.
+
+---
+Task ID: 8
+Agent: main (Z.ai)
+Task: User round 8: run scroll-craft (nateherkai/scroll-craft) + gpt-taste (leonxlnx/taste-skill -> design-taste-frontend v2) and follow them; apply the pasted tangison-gauntlet-loop as the working discipline; keep refining the site, especially CSS.
+
+Work Log:
+- Ran both skill commands with output redirected to temp files and read them in full; supporting files resolved from /tmp/skills-use-sM7Tk2/scroll-craft and /tmp/skills-use-on7Ecd/design-taste-frontend. The repo's skill is design-taste-frontend ("gpt-taste" alone exits 1; confirmed twice).
+- Debugging detour that mattered: the taste skill's raw-CDP inspector deadlocked headless Chrome 143 in this container (renderer idle at 0% CPU, eval + captureScreenshot never return) on BOTH the live site and local builds. Bisected for a long time (blocked images OK, rAF stub OK, region kills, font kills, SVG kills, --disable-gpu, HTTP/1, mirrored live HTML). Root cause: the harness's CDP session handling races this Chrome build; Playwright drives the exact same pages flawlessly (live included). Built scripts/taste-gate.mjs as a Playwright port of the checks that matter (3 viewports + walk + reduced motion + headline/line rules, 16px floor, margins, blank stretches, alt, motion count). Findings from the detour still shipped: dynamic will-change (3b3dbdf) and cutting the whole-page route fade (5af4bbf) — both real hygiene wins independent of the harness issue.
+- Local faithful gate: standalone server needed .next/static + public copied in and sharp added for /​_next/image; documented the rebuild steps (build -> copy -> kill bun -> restart) after several stale-asset races (500ing CSS, phantom 404s).
+- BEFORE gate on home: 10 FAIL (14px running text, gate artifacts since fixed in the harness: alt="" counting, WordsIn line counting, margin probe, blank probe vs pseudo scrims). Fixed the real ones: --fs-small 0.875rem -> 1rem and footer prose 15px -> 16px.
+- Scroll-craft audit: 8 device families on home, no same family twice in a row violated by WordScrub+Batch running across why -> activities -> stay -> testimonials -> faq. Rebalanced: scrubbed statements stay on intro/tours/CTA + PinnedQuote; working-section headings moved to the IO Reveal; LineDraw accent added to the why panel; stats numerals size down on phones.
+- Gauntlet per tangison-gauntlet-loop: bar = live amix-tours-safaris-demo.vercel.app (named, fetchable, comparable), critic = fresh-context subagent, evidence = unlabeled side-by-side pairs at 1440/390 with randomized A/B placement (blind). Round 1: ours 3 - bar 4 (bar swept mobile). Fixed the named gaps: fuller mobile hero scrim (62% top / 88% bottom under 768px), photo-overlay ghost buttons keep a flat rgba(31,22,19,.32) fill, PinnedQuote tightened (86svh -> 80svh, +=750 -> +=680, word start 0.35 -> 0.5), Game Drive tile swapped to the gemsbok crop in all five locales with alt text updated, arch photo object-position anchored to its subject, intro paragraph gap on mobile. Round 2: ours 4 - bar 3; the critic's OVERALL picked ours; the mobile-hero pair flipped to ours with the contrast fix. Post-round extras: dune divider easing the drop into the night panel.
+- AFTER gate: home, tours, activities, faq, tour detail, contact all 0 FAIL 0 WARN at 1440/768/390 + reduced motion.
+- Deployed: 3b3dbdf, 5af4bbf, 3639d29 pushed to main as Tangison Studio; production READY; live-verified with Playwright: mobile scrim strong, ghost fill present, info@ligertours.com everywhere (old domain absent), gemsbok tile live, robots/sitemap/llms/privacy/terms/disclaimer/brand/faq 200, 404 route returns 404.
+
+Stage Summary:
+- Live: https://ligertours.com @ 3639d29, commits by Tangison Studio
+- Gate: taste-gate 0 FAIL / 0 WARN on all six key routes (3 viewports + reduced motion)
+- Gauntlet: blind critic round 2 ours 4 - bar 3 vs amix demo; remaining named gaps addressed after the round
+- New harness: scripts/taste-gate.mjs (Playwright port of the taste checks; use it instead of the raw-CDP inspector in this environment)
+- Note: rebuild + serve locally = bun run build; cp -r .next/static .next/standalone/.next/static; cp -r public .next/standalone/public; kill bun; PORT=3100 bun .next/standalone/server.js
+- SECURITY: rotate the GitHub PAT and the Vercel token (both appeared in chat plaintext across sessions).
