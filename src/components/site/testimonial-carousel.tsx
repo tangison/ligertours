@@ -28,7 +28,8 @@ export default function TestimonialCarousel({
   const count = quotes.length;
   const step = (dir: 1 | -1) => setIndex((i) => (i + dir + count) % count);
 
-  /* Slide motion: track slides to -100% per index. First paint positions instantly. */
+  /* Slide motion: track slides to -100% per index. First paint positions instantly.
+     will-change is set only for the tween and dropped on complete: no resting layer. */
   useGSAP(
     () => {
       const el = track.current;
@@ -36,10 +37,14 @@ export default function TestimonialCarousel({
       if (prevIndex.current === index && index === 0) {
         gsap.set(el, { xPercent: 0 });
       } else {
+        el.style.willChange = "transform";
         gsap.to(el, {
           xPercent: -100 * index,
           duration: prefersReduced() ? 0 : 0.9,
           ease: "expo.out",
+          onComplete: () => {
+            el.style.willChange = "";
+          },
         });
       }
       prevIndex.current = index;
@@ -111,7 +116,7 @@ export default function TestimonialCarousel({
       >
         <div
           ref={track}
-          className="flex will-change-transform"
+          className="flex"
           style={{ touchAction: "pan-y" }}
         >
           {quotes.map((q, i) => (

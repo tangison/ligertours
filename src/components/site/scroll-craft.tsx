@@ -59,7 +59,7 @@ export function WordsIn({
   return (
     <Tag ref={root as React.RefObject<never>} className={className}>
       {words.map((w, i) => (
-        <span key={`${w}-${i}`} className="w inline-block will-change-transform">
+        <span key={`${w}-${i}`} className="w inline-block">
           {w}
           {i < words.length - 1 ? "\u00A0" : ""}
         </span>
