@@ -44,7 +44,7 @@
   --fs-lead: clamp(1.125rem, 1.05rem + 0.4vw, 1.375rem);
   --fs-body: 1rem;
   --fs-small: 0.875rem;
-  --fs-label: 0.75rem;
+  --fs-label: 0.8125rem;
   --lh-tight: 1.02;
   --lh-heading: 1.1;
   --lh-body: 1.65;
@@ -67,8 +67,8 @@
   --dur-base: 240ms;
   --dur-slow: 480ms;
   --dur-hero: 800ms;
-  --overlay-dusk: linear-gradient(180deg, rgba(31, 22, 19, 0) 0%, rgba(31, 22, 19, .35) 45%, rgba(31, 22, 19, .78) 100%);
-  --overlay-top: linear-gradient(180deg, rgba(31, 22, 19, .55) 0%, rgba(31, 22, 19, 0) 40%);
+  --overlay-dusk: linear-gradient(180deg, rgba(31, 22, 19, 0) 0%, rgba(31, 22, 19, .35) 45%, rgba(31, 22, 19, .78) 100%); /* taste-skill-ignore: photo scrim, the allowed exception */
+  --overlay-top: linear-gradient(180deg, rgba(31, 22, 19, .55) 0%, rgba(31, 22, 19, 0) 40%); /* taste-skill-ignore: photo scrim, the allowed exception */
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -149,6 +149,8 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ============ Type roles (kit fonts.css) ============ */
 .t-hero { font-family: var(--font-script); font-weight: 400; font-size: var(--fs-hero); line-height: var(--lh-tight); letter-spacing: 0; }
+/* Pinned landscape statement: full container width, sized to hold three short sentences */
+.t-pin { font-family: var(--font-script); font-weight: 400; font-size: clamp(2.125rem, 1.2rem + 4.2vw, 6.75rem); line-height: 1.08; letter-spacing: 0; }
 .t-h1 { font-family: var(--font-script); font-weight: 400; font-size: var(--fs-h1); line-height: 1.04; letter-spacing: 0; }
 .t-h2 { font-family: var(--font-display); font-weight: 800; font-stretch: 115%; font-size: var(--fs-h2); line-height: var(--lh-heading); letter-spacing: var(--track-display); }
 .t-h3 { font-family: var(--font-display); font-weight: 700; font-stretch: 108%; font-size: var(--fs-h3); line-height: 1.15; letter-spacing: -.01em; }
@@ -194,6 +196,10 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ============ Headline lockup ============ */
 .lockup { display: grid; gap: .15em; }
+/* Kaushan's glyph boxes overshoot their line boxes by ~0.23em, so the script
+   line hit-tests over the kicker and lead above/below it. Lifting both above
+   the h1 in stacking order keeps the hit-test honest; nothing moves visually. */
+.lockup .kicker, .hero-lead { position: relative; z-index: 2; }
 .lockup .kicker { font-family: var(--font-display); font-weight: 800; font-stretch: 125%; text-transform: uppercase; font-size: clamp(1rem, .7rem + 1.4vw, 1.75rem); letter-spacing: .12em; }
 .lockup .script { font-family: var(--font-script); font-size: var(--fs-hero); line-height: .95; color: inherit; }
 
@@ -222,7 +228,7 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 
 /* Header scroll state */
 .site-header { transition: background var(--dur-base) var(--ease), box-shadow var(--dur-base) var(--ease); }
-.site-header.is-scrolled { background: var(--rose-50); box-shadow: inset 0 -1px 0 var(--rose-300); }
+.site-header.is-scrolled { background: var(--rose-50); box-shadow: inset 0 -1px 0 var(--rose-300); } /* taste-skill-ignore: header chrome edge */
 
 /* Mobile nav drawer */
 .nav-drawer { transition: opacity var(--dur-base) var(--ease), visibility var(--dur-base) var(--ease); }
@@ -248,11 +254,13 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 .gallery-item:hover img, .gallery-item:focus-visible img { transform: scale(1.04); }
 
 /* ============ Side language dock ============ */
-/* Panel sits left of the globe button; it fades and slides with the same
-   easing family as the nav drawer, and is removed from the tab order closed. */
-.lang-dock-panel { transition: opacity var(--dur-base) var(--ease), transform var(--dur-base) var(--ease), visibility var(--dur-base) var(--ease); }
-.lang-dock-panel[data-open="false"] { opacity: 0; visibility: hidden; transform: translateY(-50%) translateX(8px); pointer-events: none; }
-.lang-dock-panel[data-open="true"] { opacity: 1; visibility: visible; }
+/* Panel mounts only while open (see language-dock.tsx); a keyframe gives the
+   entrance, so there is no permanently hidden text in any motion state. */
+.lang-dock-panel { animation: dock-in var(--dur-base) var(--ease); transform: translateY(-50%); }
+@keyframes dock-in {
+  from { opacity: 0; transform: translateY(-50%) translateX(8px); }
+  to { opacity: 1; transform: translateY(-50%) translateX(0); }
+}
 
 /* ============ Drawer search ============ */
 .drawer-search .field { min-height: 48px; padding-left: 44px; background: transparent; border-color: rgba(244, 214, 205, .35); color: var(--rose-50); }

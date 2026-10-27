@@ -92,8 +92,8 @@ export default function SiteFooter({
           </div>
         </div>
 
-        <div className="border-t border-white/10">
-          <div className="container-liger flex flex-col gap-4 py-6 pb-24 md:flex-row md:items-center md:justify-between md:pb-6">
+        <div>
+          <div className="container-liger flex flex-col gap-4 pt-10 pb-24 md:flex-row md:items-center md:justify-between md:pt-14 md:pb-6">
             <div className="grid gap-1">
               <p className="t-small text-ink-muted-on-dark">
                 &copy; {year} {company.legalName}. {dict.footer.rights}

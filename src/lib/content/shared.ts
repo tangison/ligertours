@@ -7,7 +7,7 @@ export const company = {
   phone: "+264 81 472 2552",
   phoneHref: "tel:+264814722552",
   whatsapp: "https://wa.me/264814722552",
-  email: "info@ligertoursnamibia.com",
+  email: "info@ligertours.com",
   city: "Windhoek",
   country: "Namibia",
   address: "Windhoek, Namibia",

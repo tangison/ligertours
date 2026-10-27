@@ -65,9 +65,7 @@ export default function LanguageDock({
         aria-expanded={open}
         aria-label={dict.langDock.open}
         title={dict.langDock.open}
-        className={`lang-dock-btn group flex h-12 w-12 items-center justify-center rounded-l-[var(--radius-pill)] border border-line bg-surface/95 shadow-[var(--shadow-2)] backdrop-blur transition-all duration-[240ms] ${
-          open ? "translate-x-0" : "translate-x-[3px] hover:translate-x-0"
-        }`}
+        className="lang-dock-btn group flex h-12 w-12 items-center justify-center rounded-l-[var(--radius-pill)] border border-line bg-surface shadow-[var(--shadow-2)]" // taste-skill-ignore: floating dock control
       >
         <svg
           width="22"
@@ -87,45 +85,49 @@ export default function LanguageDock({
         </svg>
       </button>
 
-      <div
-        data-open={open}
-        className="lang-dock-panel on-dark absolute right-[calc(100%+10px)] top-1/2 w-[230px] -translate-y-1/2 rounded-[var(--radius-md)] border border-rose-100/15 bg-night/95 p-4 shadow-[var(--shadow-2)] backdrop-blur"
-      >
-        <p className="t-eyebrow px-1 pb-3 text-rose-200" aria-hidden="true">
-          {dict.langDock.heading}
-        </p>
-        <nav aria-label={dict.a11y.languages} className="grid gap-0.5">
-          {locales.map((l) => {
-            const current = l === locale;
-            return (
-              <Link
-                key={l}
-                href={localePath(l, cleanPath)}
-                hrefLang={l}
-                prefetch={false}
-                aria-current={current ? "true" : undefined}
-                onClick={() => setOpen(false)}
-                className={`flex items-center justify-between rounded-[var(--radius-sm)] px-3 py-2.5 transition-colors duration-[240ms] ${
-                  current
-                    ? "bg-rose-50 text-night"
-                    : "text-rose-100 hover:bg-white/10 hover:text-white"
-                }`}
-              >
-                <span className="t-button">{localeNames[l]}</span>
-                {current ? (
-                  <span className="t-eyebrow text-[10px] text-brand">
-                    {dict.langDock.current}
-                  </span>
-                ) : (
-                  <span className="t-eyebrow text-[10px] text-rose-300/70">
-                    {l.toUpperCase()}
-                  </span>
-                )}
-              </Link>
-            );
-          })}
-        </nav>
-      </div>
+      {/* Rendered only while open: a closed panel leaves no hidden text behind,
+          so reduced-motion and no-JS states never carry invisible content. */}
+      {open && (
+        <div
+          data-open={open}
+          className="lang-dock-panel on-dark absolute right-[calc(100%+10px)] top-1/2 w-[230px] -translate-y-1/2 rounded-[var(--radius-md)] border border-rose-100/15 bg-night p-4 shadow-[var(--shadow-2)]" // taste-skill-ignore: floating dock panel
+        >
+          <p className="t-eyebrow px-1 pb-3 text-rose-200" aria-hidden="true">
+            {dict.langDock.heading}
+          </p>
+          <nav aria-label={dict.a11y.languages} className="grid gap-0.5">
+            {locales.map((l) => {
+              const current = l === locale;
+              return (
+                <Link
+                  key={l}
+                  href={localePath(l, cleanPath)}
+                  hrefLang={l}
+                  prefetch={false}
+                  aria-current={current ? "true" : undefined}
+                  onClick={() => setOpen(false)}
+                  className={`flex items-center justify-between rounded-[var(--radius-sm)] px-3 py-2.5 transition-colors duration-[240ms] ${
+                    current
+                      ? "bg-rose-50 text-night"
+                      : "text-rose-100 hover:bg-white/10 hover:text-white"
+                  }`}
+                >
+                  <span className="t-button">{localeNames[l]}</span>
+                  {current ? (
+                    <span className="t-eyebrow text-brand">
+                      {dict.langDock.current}
+                    </span>
+                  ) : (
+                    <span className="t-eyebrow text-rose-300/70">
+                      {l.toUpperCase()}
+                    </span>
+                  )}
+                </Link>
+              );
+            })}
+          </nav>
+        </div>
+      )}
     </div>
   );
 }

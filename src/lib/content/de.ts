@@ -40,7 +40,7 @@ export const de = {
     contact: {
       title: "Kontakt und Anfragen",
       description:
-        "Planen Sie Ihre Namibia Reise: Telefon +264 81 472 2552, WhatsApp oder E-Mail an info@ligertoursnamibia.com. Antwort innerhalb eines Werktags.",
+        "Planen Sie Ihre Namibia Reise: Telefon +264 81 472 2552, WhatsApp oder E-Mail an info@ligertours.com. Antwort innerhalb eines Werktags.",
     },
     brand: {
       title: "Marke: Farben, Schriften, Logoregeln",
@@ -147,7 +147,7 @@ export const de = {
   home: {
     intro: {
       eyebrow: "Lokal geführt, NTB registriert",
-      h2: "Die beste Art, Namibia zu sehen, ist mit Menschen, die es ihr Zuhause nennen.",
+      h2: "Mit Menschen, die hier zuhause sind.",
       p1: "Liger Tours Namibia ist ein familiengeführtes namibisches Reiseunternehmen, gebaut auf echtem lokalen Wissen. Von der Pirschfahrt direkt vor der Hauptstadt bis zur mehrtägigen Reise durch Wüsten, Küsten und Schutzgebiete: Jede Route zeigt Ihnen das echte Namibia, in einem Tempo, in dem Sie es auch wirklich aufnehmen.",
       p2: "Als bei der Namibia Tourism Board registriertes Unternehmen planen wir jede Reise rund um die Menschen, die sie buchen: Paare, Familien, Alleinreisende und Gruppen jeder Größe, von zwei Personen bis über fünfzig hinaus, jede mit einer Route, einem Tempo und einem Reisestil, der passt.",
       cta: "Mehr über uns",
@@ -170,7 +170,8 @@ export const de = {
       ariaLabel: "Signature-Touren",
     },
     pinned: {
-      quote: "Bäume, fünfhundert Jahre alt. Dünen, tausend Meter hoch. Ihr Morgen.",
+      quote: "Uralte Bäume. Hohe Dünen.",
+      sub: "Euer Morgen.",
       imageAlt:
         "Tote Akazienbäume auf weißem Tonboden des Deadvlei, umgeben von hohen roten Dünen unter tiefblauem Himmel",
       ariaLabel: "Die Landschaft des Namib",
@@ -215,7 +216,7 @@ export const de = {
     },
     stay: {
       eyebrow: "Wo Sie übernachten",
-      h2: "Lodges und Camps, ausgewählt wie für die eigene Familie.",
+      h2: "Unterkünfte, gewählt wie für Familie.",
       p: "Von Holz Lodges auf Kalahari Dünen bis zu Strohdach Chalets über dem Flussbett: Jede Station einer Liger Reise ist ein Ort, an dem wir selbst übernachtet haben und den wir der eigenen Familie empfehlen würden. Komfort, wo er zählt, Charakter überall, und Lagen, die man wegen des Ausblicks wählt, in dem man aufwacht.",
       cta: "Routen ansehen",
       imageAlt1:
@@ -230,7 +231,7 @@ export const de = {
     },
     faq: {
       eyebrow: "Gut zu wissen",
-      h2: "Fragen, die Gäste vor der Buchung stellen.",
+      h2: "Was Gäste vor der Buchung fragen.",
       ariaLabel: "Häufige Fragen",
       moreLink: "Mehr Antworten auf der FAQ-Seite",
       items: [
@@ -773,6 +774,12 @@ export const de = {
     title: "Fragen, beantwortet.",
     pageHeaderAlt:
       "Rote Dünen über einer grünen Kiesebene unter klarem Himmel in der Namibwüste",
+    band1Alt:
+      "Offenes Safari-Fahrzeug mit Gästen über rotem Namib-Sand in der goldenen Stunde",
+    band2Alt:
+      "Tote Akazien auf dem weißen Tonboden des Deadvlei im warmen Morgenlicht",
+    band3Alt:
+      "Köcherbaum als Silhouette gegen die Sonne in der namibischen Abenddämmerung",
     lead: "Die Fragen, die Gäste vor der Buchung stellen, ehrlich beantwortet. Fehlt Ihre? Schreiben Sie uns per WhatsApp, und sie wird Teil dieser Seite.",
     groups: [
       {

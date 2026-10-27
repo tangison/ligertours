@@ -104,7 +104,7 @@ export default function TestimonialCarousel({
       />
 
       <div
-        className="relative z-10 overflow-hidden rounded-[var(--radius-lg)] border border-line bg-surface shadow-[var(--shadow-1)]"
+        className="relative z-10 overflow-hidden rounded-[var(--radius-lg)] border border-line bg-surface"
         aria-live={paused ? "polite" : "off"}
         onPointerDown={onPointerDown}
         onPointerUp={onPointerUp}
@@ -160,7 +160,7 @@ export default function TestimonialCarousel({
               onClick={() => setIndex(i)}
               aria-label={dict.a11y.goToSlide.replace("{n}", String(i + 1))}
               aria-current={i === index ? "true" : undefined}
-              className={`h-3 rounded-full transition-all duration-[240ms] ${
+              className={`h-3 rounded-full transition-[width,background-color] duration-[240ms] ${
                 i === index
                   ? "w-8 bg-brand"
                   : "w-3 bg-rose-300 hover:bg-rose-400"

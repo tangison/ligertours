@@ -58,7 +58,7 @@ export default async function ContactPage({ params }: Params) {
               <h2 className="t-h3">{t.panelH2}</h2>
               <dl className="mt-6 grid gap-6">
                 <div>
-                  <dt className="t-eyebrow text-rose-600">{t.phone}</dt>
+                  <dt className="t-eyebrow text-rose-700">{t.phone}</dt>
                   <dd className="mt-1">
                     <a
                       href={company.phoneHref}
@@ -69,7 +69,7 @@ export default async function ContactPage({ params }: Params) {
                   </dd>
                 </div>
                 <div>
-                  <dt className="t-eyebrow text-rose-600">{t.whatsapp}</dt>
+                  <dt className="t-eyebrow text-rose-700">{t.whatsapp}</dt>
                   <dd className="mt-1">
                     <a
                       href={company.whatsapp}
@@ -82,7 +82,7 @@ export default async function ContactPage({ params }: Params) {
                   </dd>
                 </div>
                 <div>
-                  <dt className="t-eyebrow text-rose-600">{t.email}</dt>
+                  <dt className="t-eyebrow text-rose-700">{t.email}</dt>
                   <dd className="mt-1">
                     <a
                       href={`mailto:${company.email}`}
@@ -93,11 +93,11 @@ export default async function ContactPage({ params }: Params) {
                   </dd>
                 </div>
                 <div>
-                  <dt className="t-eyebrow text-rose-600">{t.whereWeAre}</dt>
+                  <dt className="t-eyebrow text-rose-700">{t.whereWeAre}</dt>
                   <dd className="t-body mt-1 text-ink-muted">{company.address}</dd>
                 </div>
                 <div>
-                  <dt className="t-eyebrow text-rose-600">{t.hours}</dt>
+                  <dt className="t-eyebrow text-rose-700">{t.hours}</dt>
                   <dd className="t-body mt-1 text-ink-muted">{company.hours}</dd>
                 </div>
               </dl>

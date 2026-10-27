@@ -166,7 +166,7 @@ export default async function BrandPage({ params }: Params) {
           </Reveal>
           <div className="mt-10 grid gap-6 md:grid-cols-2">
             <Reveal className="rounded-[var(--radius-lg)] bg-surface p-8">
-              <p className="t-eyebrow text-rose-600">{t.onLight}</p>
+              <p className="t-eyebrow text-rose-700">{t.onLight}</p>
               <div className="mt-6 flex items-center justify-center rounded-[var(--radius-md)] bg-rose-50 p-8">
                 <Image
                   src="/brand/logos/light-bg/liger-tours-primary-rose-800w.png"
@@ -211,7 +211,7 @@ export default async function BrandPage({ params }: Params) {
               </thead>
               <tbody>
                 {colourRows.map((c) => (
-                  <tr key={c.hex} className="border-b border-line">
+                  <tr key={c.hex} className="border-b border-line"> {/* taste-skill-ignore: real colour table */}
                     <td className="py-3 pr-4">
                       <span
                         className="inline-block h-9 w-14 rounded-[var(--radius-sm)] border border-rose-300"
@@ -238,17 +238,17 @@ export default async function BrandPage({ params }: Params) {
           </Reveal>
           <div className="mt-10 grid gap-6">
             <Reveal className="rounded-[var(--radius-lg)] bg-surface-tint p-8">
-              <p className="t-eyebrow text-rose-600">{t.typeRows[0].label}</p>
+              <p className="t-eyebrow text-rose-700">{t.typeRows[0].label}</p>
               <p className="t-h2 mt-4 font-script text-rose-700">{t.typeRows[0].sample}</p>
               <p className="t-small mt-4 text-ink-muted">{t.typeRows[0].note}</p>
             </Reveal>
             <Reveal delay={80} className="rounded-[var(--radius-lg)] bg-surface-tint p-8">
-              <p className="t-eyebrow text-rose-600">{t.typeRows[1].label}</p>
+              <p className="t-eyebrow text-rose-700">{t.typeRows[1].label}</p>
               <p className="t-h3 mt-4">{t.typeRows[1].sample}</p>
               <p className="t-small mt-4 text-ink-muted">{t.typeRows[1].note}</p>
             </Reveal>
             <Reveal delay={160} className="rounded-[var(--radius-lg)] bg-surface-tint p-8">
-              <p className="t-eyebrow text-rose-600">{t.typeRows[2].label}</p>
+              <p className="t-eyebrow text-rose-700">{t.typeRows[2].label}</p>
               <p className="t-body mt-4 max-w-[62ch]">{t.typeRows[2].sample}</p>
               <p className="t-small mt-4 text-ink-muted">{t.typeRows[2].note}</p>
             </Reveal>
@@ -288,7 +288,7 @@ export default async function BrandPage({ params }: Params) {
               <p className="t-small mt-4 text-ink-muted">{t.deviceCaptions[2]}</p>
             </Reveal>
             <Reveal delay={240} className="rounded-[var(--radius-lg)] bg-surface p-6 text-center">
-              <p className="t-eyebrow text-rose-600">{t.lockupKicker}</p>
+              <p className="t-eyebrow text-rose-700">{t.lockupKicker}</p>
               <p className="font-script text-2xl text-rose-700">{t.lockupScript}</p>
               <p className="t-small mt-4 text-ink-muted">{t.deviceCaptions[3]}</p>
             </Reveal>
@@ -306,7 +306,7 @@ export default async function BrandPage({ params }: Params) {
             <table className="w-full min-w-[560px] border-collapse text-left">
               <tbody>
                 {credits.map((c) => (
-                  <tr key={c.file} className="border-b border-line">
+                  <tr key={c.file} className="border-b border-line"> {/* taste-skill-ignore: real credits table */}
                     <td className="t-small py-3 pr-4 font-semibold">{c.file}</td>
                     <td className="t-small py-3 pr-4 text-ink-muted">{c.by}</td>
                     <td className="t-small py-3 pr-4 text-ink-muted">{c.licence}</td>

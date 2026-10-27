@@ -102,7 +102,7 @@ export default function GalleryGrid({
 
       {active !== null && (
         <div
-          className="on-dark fixed inset-0 z-[1000] flex flex-col bg-night/95 p-4 backdrop-blur-sm md:p-10"
+          className="on-dark fixed inset-0 z-[1000] flex flex-col bg-night/95 p-4 backdrop-blur-sm md:p-10" // taste-skill-ignore: lightbox is a real dialog overlay
           role="dialog"
           aria-modal="true"
           aria-label={photos[active].alt}

@@ -41,7 +41,7 @@ export const en = {
     contact: {
       title: "Contact and Enquiries",
       description:
-        "Plan your Namibia tour: phone +264 81 472 2552, WhatsApp or email info@ligertoursnamibia.com. We reply within one working day.",
+        "Plan your Namibia tour: phone +264 81 472 2552, WhatsApp or email info@ligertours.com. We reply within one working day.",
     },
     brand: {
       title: "Brand: Colours, Type and Logo Rules",
@@ -148,7 +148,7 @@ export const en = {
   home: {
     intro: {
       eyebrow: "Locally owned, NTB registered",
-      h2: "The best way to see Namibia is with people who call it home.",
+      h2: "With the people who call it home.",
       p1: "Liger Tours Namibia is a locally owned tour company built on genuine local knowledge. From game drives on the doorstep of the capital to multi-day journeys across the country's deserts, coastlines and wildlife reserves, every route is designed to show you the real Namibia, at a pace that lets you actually take it in.",
       p2: "As a company registered with the Namibia Tourism Board, we plan every trip around the people booking it: couples, families, solo travellers and groups of any size, from two people to fifty or more, each with a route, pace and style of travel that suits them.",
       cta: "More about us",
@@ -171,7 +171,8 @@ export const en = {
       ariaLabel: "Signature tours",
     },
     pinned: {
-      quote: "Five hundred year old trees. A thousand metre dunes. Your morning.",
+      quote: "Ancient trees. Towering dunes.",
+      sub: "Your morning.",
       imageAlt:
         "Dead acacia trees standing on the white clay of Deadvlei, surrounded by towering red dunes under a deep blue sky",
       ariaLabel: "The Namib landscape",
@@ -216,7 +217,7 @@ export const en = {
     },
     stay: {
       eyebrow: "Where you stay",
-      h2: "Lodges and camps chosen the way we would choose for family.",
+      h2: "Lodges we would choose for family.",
       p: "From timber lodges on Kalahari dunes to thatched chalets above the riverbeds, every stop on a Liger tour is a place we have stayed ourselves and would recommend to family. Comfort where it counts, character everywhere, and locations chosen for the view you wake up to.",
       cta: "See the routes",
       imageAlt1:
@@ -231,7 +232,7 @@ export const en = {
     },
     faq: {
       eyebrow: "Good to know",
-      h2: "Questions guests ask before they book.",
+      h2: "What guests ask before booking.",
       ariaLabel: "Frequently asked questions",
       moreLink: "More answers on the FAQ page",
       items: [
@@ -771,6 +772,12 @@ export const en = {
     title: "Questions, answered.",
     pageHeaderAlt:
       "Red dunes rising above a green and gravel plain under a clear sky in the Namib desert",
+    band1Alt:
+      "Open safari vehicle carrying guests across red Namib sand at golden hour",
+    band2Alt:
+      "Dead acacia trees on the white clay pan of Deadvlei in warm morning light",
+    band3Alt:
+      "Quiver tree silhouetted against the sun in the southern Namibian dusk",
     lead: "The questions guests ask before they book, answered honestly. If yours is missing, WhatsApp us and it becomes part of this page.",
     groups: [
       {

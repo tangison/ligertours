@@ -1,0 +1,2468 @@
+{
+ "url": "http://localhost:3100/activities",
+ "at": "2026-10-27T01:49:40.430Z",
+ "allow": [
+  "eyebrow",
+  "micro-label",
+  "font-count",
+  "blank-gap"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.18,
+    0.37,
+    0.27,
+    0.36,
+    0.29,
+    0.37,
+    0.28,
+    0.32,
+    0.31,
+    0.38,
+    0.97,
+    0.97
+   ],
+   "motion": {
+    "elements": 50,
+    "css": 0,
+    "transitions": 21,
+    "scripted": 29,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 10225,
+     "screens": 11.4,
+     "words": 652,
+     "img": 17,
+     "video": 0,
+     "canvas": 0,
+     "svg": 5,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 14,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fimagery%2Fweb%2Fgemsbok-golden-ligh",
+      "image?url=%2Fimagery%2Fcrops%2Fgiraffes-walking-",
+      "image?url=%2Fimagery%2Fcrops%2Fwindhoek-christus",
+      "image?url=%2Fimagery%2Fcrops%2Fsundowner-drinks-",
+      "image?url=%2Fimagery%2Fcrops%2Fcampfire-cooking-",
+      "image?url=%2Fimagery%2Fcrops%2Fgemsbok-golden-li",
+      "image?url=%2Fimagery%2Fcrops%2Fdunes-sunburst-pa",
+      "image?url=%2Fimagery%2Fcrops%2Fsafari-vehicle-re"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Make one day count.",
+     "words": 4,
+     "chars": 19,
+     "lines": 1,
+     "size": 89.3,
+     "vw": 6.2,
+     "font": "Kaushan Script",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 1.04,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.62,
+     "top": 301,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Make one day count.",
+     "words": 4,
+     "lines": 1,
+     "size": 89.3,
+     "font": "Kaushan Script"
+    },
+    "headings": [
+     {
+      "text": "Make one day count.",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 89.3,
+      "vw": 6.2,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.62,
+      "top": 301,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Game Drive",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.42,
+      "top": 938,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "City and Township Tour",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 1572,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Bar Hopping: Windhoek by Night",
+      "words": 5,
+      "chars": 30,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.42,
+      "top": 2180,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Taste Namibia: Traditional Cooking Class",
+      "words": 5,
+      "chars": 40,
+      "lines": 2,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 2796,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Step into Ancient Wisdom: The Bushmen Walk",
+      "words": 7,
+      "chars": 42,
+      "lines": 2,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.42,
+      "top": 3404,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Sunrise Desert Excursion",
+      "words": 3,
+      "chars": 24,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 4043,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Photography Tour",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.42,
+      "top": 4677,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Spitzkoppe Hiking Experience",
+      "words": 3,
+      "chars": 28,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 5298,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Swakopmund Coastal Adventure",
+      "words": 3,
+      "chars": 28,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.42,
+      "top": 5919,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Sandwich Harbour: Where the Ocean Meets the Desert",
+      "words": 8,
+      "chars": 50,
+      "lines": 2,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 6496,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Etosha Wildlife Safari",
+      "words": 3,
+      "chars": 22,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.42,
+      "top": 7161,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Stargazing Experience",
+      "words": 2,
+      "chars": 21,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 7782,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Kalahari Cultural Experience",
+      "words": 3,
+      "chars": 28,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.42,
+      "top": 8403,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Add any of these to your tour.",
+      "words": 7,
+      "chars": 30,
+      "lines": 2,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.53,
+      "top": 9140,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 15,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Schibsted Grotesk",
+       "share": 0.72,
+       "mono": false
+      },
+      {
+       "family": "Archivo",
+       "share": 0.27,
+       "mono": false
+      },
+      {
+       "family": "Kaushan Script",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      22,
+      32,
+      56,
+      89
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Schibsted Grotesk",
+      "size": 16,
+      "leading": 1.65,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6.4
+     },
+     "measureChars": 72,
+     "max": {
+      "size": 89.3,
+      "vw": 6.2,
+      "font": "Kaushan Script",
+      "text": "Make"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 15,
+     "microLabelShare": 0.082,
+     "microSamples": [
+      "Activities",
+      "3 to 4 hours · Outside Windhoek",
+      "2 to 3 hours · Windhoek",
+      "Evening tour · Windhoek",
+      "2 to 3 hours · Windhoek",
+      "3 hours · Near Windhoek"
+     ],
+     "upperShare": 0.17,
+     "centerShare": 0.05,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Activities",
+      "above": "Make one day count.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 274
+     },
+     {
+      "text": "3 to 4 hours · Outside Windhoek",
+      "above": "Game Drive",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 911
+     },
+     {
+      "text": "2 to 3 hours · Windhoek",
+      "above": "City and Township Tour",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 1545
+     },
+     {
+      "text": "Evening tour · Windhoek",
+      "above": "Bar Hopping: Windhoek by Night",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 2153
+     },
+     {
+      "text": "2 to 3 hours · Windhoek",
+      "above": "Taste Namibia: Traditional Cooking Class",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 2768
+     },
+     {
+      "text": "3 hours · Near Windhoek",
+      "above": "Step into Ancient Wisdom: The Bushmen Wa",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 3376
+     },
+     {
+      "text": "Half day · Namib desert",
+      "above": "Sunrise Desert Excursion",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 4016
+     },
+     {
+      "text": "Flexible · On request",
+      "above": "Photography Tour",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 4650
+     },
+     {
+      "text": "Half day · Spitzkoppe",
+      "above": "Spitzkoppe Hiking Experience",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 5271
+     },
+     {
+      "text": "Full day · Swakopmund",
+      "above": "Swakopmund Coastal Adventure",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 5892
+     },
+     {
+      "text": "Half day · Walvis Bay",
+      "above": "Sandwich Harbour: Where the Ocean Meets ",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 6468
+     },
+     {
+      "text": "Full day · Etosha National Park",
+      "above": "Etosha Wildlife Safari",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 7134
+     },
+     {
+      "text": "Evening · On request",
+      "above": "Stargazing Experience",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 7755
+     },
+     {
+      "text": "Half day · Kalahari",
+      "above": "Kalahari Cultural Experience",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 8376
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fbf4f2",
+     "bodyBgHsl": {
+      "h": 13,
+      "s": 0.53,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#1f1613",
+       "top": 9006,
+       "hsl": {
+        "h": 15,
+        "s": 0.24,
+        "l": 0.1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#6b5450",
+       "share": 0.57
+      },
+      {
+       "color": "#744642",
+       "share": 0.14
+      },
+      {
+       "color": "#cda9a4",
+       "share": 0.1
+      },
+      {
+       "color": "#2f1e1c",
+       "share": 0.09
+      },
+      {
+       "color": "#f0dad5",
+       "share": 0.06
+      }
+     ],
+     "button": {
+      "bg": "#744642",
+      "hsl": {
+       "h": 5,
+       "s": 0.27,
+       "l": 0.36
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 4,
+     "heroLabels": [
+      "SKIP TO MAIN CONTENT",
+      "PLAN MY TRIP"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 7,
+     "boxRadius": 50,
+     "squareMedia": 1,
+     "roundedMedia": 13,
+     "mediaRadius": 999,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.5
+     }
+    ],
+    "nav": {
+     "links": 7,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "kaushan script",
+     "archivo",
+     "schibsted grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 10225,
+    "margins": {
+     "left": 80,
+     "right": 134
+    },
+    "sections": [
+     {
+      "sel": "main#main.flex-1.overflow-x-hidden",
+      "tag": "main",
+      "top": 0,
+      "height": 9566,
+      "words": 573,
+      "media": 15,
+      "middle": 0,
+      "heading": {
+       "text": "Make",
+       "size": 89,
+       "tag": "h1"
+      },
+      "left": 80,
+      "right": 116,
+      "textLeft": 80,
+      "textRight": 116,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.dune",
+      "tag": "div",
+      "top": 9566,
+      "height": 144,
+      "words": 0,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.on-dark.bg-night",
+      "tag": "footer",
+      "top": 9710,
+      "height": 514,
+      "words": 75,
+      "media": 0,
+      "middle": 174,
+      "heading": {
+       "text": "Explore",
+       "size": 13,
+       "tag": "h2"
+      },
+      "left": 80,
+      "right": 80,
+      "textLeft": 80,
+      "textRight": 80,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Make one day count.",
+      "size": 89,
+      "top": 301,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 80,
+      "n": 14
+     },
+     {
+      "x": 752,
+      "n": 14
+     },
+     {
+      "x": 305,
+      "n": 1
+     },
+     {
+      "x": 450,
+      "n": 1
+     },
+     {
+      "x": 595,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 31,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.19,
+    "voidBox": {
+     "x": 840,
+     "y": 480,
+     "w": 600,
+     "h": 420
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.26,
+    0.47,
+    0.4,
+    0.39,
+    0.48,
+    0.43,
+    0.42,
+    0.36,
+    0.44,
+    0.42,
+    0.41,
+    0.88
+   ],
+   "motion": {
+    "elements": 45,
+    "css": 0,
+    "transitions": 16,
+    "scripted": 29,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 12495,
+     "screens": 12.2,
+     "words": 644,
+     "img": 17,
+     "video": 0,
+     "canvas": 0,
+     "svg": 5,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 14,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fimagery%2Fweb%2Fgemsbok-golden-ligh",
+      "image?url=%2Fimagery%2Fcrops%2Fgiraffes-walking-",
+      "image?url=%2Fimagery%2Fcrops%2Fwindhoek-christus",
+      "image?url=%2Fimagery%2Fcrops%2Fsundowner-drinks-",
+      "image?url=%2Fimagery%2Fcrops%2Fcampfire-cooking-",
+      "image?url=%2Fimagery%2Fcrops%2Fgemsbok-golden-li",
+      "image?url=%2Fimagery%2Fcrops%2Fdunes-sunburst-pa",
+      "image?url=%2Fimagery%2Fcrops%2Fsafari-vehicle-re"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Make one day count.",
+     "words": 4,
+     "chars": 19,
+     "lines": 1,
+     "size": 61.1,
+     "vw": 8,
+     "font": "Kaushan Script",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 1.04,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 393,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Make one day count.",
+     "words": 4,
+     "lines": 1,
+     "size": 61.1,
+     "font": "Kaushan Script"
+    },
+    "headings": [
+     {
+      "text": "Make one day count.",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 61.1,
+      "vw": 8,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 393,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Game Drive",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 26.1,
+      "vw": 3.4,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1355,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "City and Township Tour",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 26.1,
+      "vw": 3.4,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2182,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Bar Hopping: Windhoek by Night",
+      "words": 5,
+      "chars": 30,
+      "lines": 1,
+      "size": 26.1,
+      "vw": 3.4,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2983,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Taste Namibia: Traditional Cooking Class",
+      "words": 5,
+      "chars": 40,
+      "lines": 1,
+      "size": 26.1,
+      "vw": 3.4,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3810,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Step into Ancient Wisdom: The Bushmen Walk",
+      "words": 7,
+      "chars": 42,
+      "lines": 1,
+      "size": 26.1,
+      "vw": 3.4,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 4611,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Sunrise Desert Excursion",
+      "words": 3,
+      "chars": 24,
+      "lines": 1,
+      "size": 26.1,
+      "vw": 3.4,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5438,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Photography Tour",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 26.1,
+      "vw": 3.4,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6265,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Spitzkoppe Hiking Experience",
+      "words": 3,
+      "chars": 28,
+      "lines": 1,
+      "size": 26.1,
+      "vw": 3.4,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 7066,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Swakopmund Coastal Adventure",
+      "words": 3,
+      "chars": 28,
+      "lines": 1,
+      "size": 26.1,
+      "vw": 3.4,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 7867,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Sandwich Harbour: Where the Ocean Meets the Desert",
+      "words": 8,
+      "chars": 50,
+      "lines": 2,
+      "size": 26.1,
+      "vw": 3.4,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 8668,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Etosha Wildlife Safari",
+      "words": 3,
+      "chars": 22,
+      "lines": 1,
+      "size": 26.1,
+      "vw": 3.4,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 9551,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Stargazing Experience",
+      "words": 2,
+      "chars": 21,
+      "lines": 1,
+      "size": 26.1,
+      "vw": 3.4,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 10352,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Kalahari Cultural Experience",
+      "words": 3,
+      "chars": 28,
+      "lines": 1,
+      "size": 26.1,
+      "vw": 3.4,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 11153,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Add any of these to your tour.",
+      "words": 7,
+      "chars": 30,
+      "lines": 1,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 11562,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 15,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Schibsted Grotesk",
+       "share": 0.73,
+       "mono": false
+      },
+      {
+       "family": "Archivo",
+       "share": 0.26,
+       "mono": false
+      },
+      {
+       "family": "Kaushan Script",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      20,
+      26,
+      40,
+      61
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Schibsted Grotesk",
+      "size": 16,
+      "leading": 1.65,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6.4
+     },
+     "measureChars": 72,
+     "max": {
+      "size": 61.1,
+      "vw": 8,
+      "font": "Kaushan Script",
+      "text": "Make"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 15,
+     "microLabelShare": 0.083,
+     "microSamples": [
+      "Activities",
+      "3 to 4 hours · Outside Windhoek",
+      "2 to 3 hours · Windhoek",
+      "Evening tour · Windhoek",
+      "2 to 3 hours · Windhoek",
+      "3 hours · Near Windhoek"
+     ],
+     "upperShare": 0.16,
+     "centerShare": 0.05,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Activities",
+      "above": "Make one day count.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 365
+     },
+     {
+      "text": "3 to 4 hours · Outside Windhoek",
+      "above": "Game Drive",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 1327
+     },
+     {
+      "text": "2 to 3 hours · Windhoek",
+      "above": "City and Township Tour",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 2155
+     },
+     {
+      "text": "Evening tour · Windhoek",
+      "above": "Bar Hopping: Windhoek by Night",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 2955
+     },
+     {
+      "text": "2 to 3 hours · Windhoek",
+      "above": "Taste Namibia: Traditional Cooking Class",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 3783
+     },
+     {
+      "text": "3 hours · Near Windhoek",
+      "above": "Step into Ancient Wisdom: The Bushmen Wa",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 4583
+     },
+     {
+      "text": "Half day · Namib desert",
+      "above": "Sunrise Desert Excursion",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 5411
+     },
+     {
+      "text": "Flexible · On request",
+      "above": "Photography Tour",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 6238
+     },
+     {
+      "text": "Half day · Spitzkoppe",
+      "above": "Spitzkoppe Hiking Experience",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 7039
+     },
+     {
+      "text": "Full day · Swakopmund",
+      "above": "Swakopmund Coastal Adventure",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 7839
+     },
+     {
+      "text": "Half day · Walvis Bay",
+      "above": "Sandwich Harbour: Where the Ocean Meets ",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 8640
+     },
+     {
+      "text": "Full day · Etosha National Park",
+      "above": "Etosha Wildlife Safari",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 9524
+     },
+     {
+      "text": "Evening · On request",
+      "above": "Stargazing Experience",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 10325
+     },
+     {
+      "text": "Half day · Kalahari",
+      "above": "Kalahari Cultural Experience",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 11125
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fbf4f2",
+     "bodyBgHsl": {
+      "h": 13,
+      "s": 0.53,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#1f1613",
+       "top": 11468,
+       "hsl": {
+        "h": 15,
+        "s": 0.24,
+        "l": 0.1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#6b5450",
+       "share": 0.58
+      },
+      {
+       "color": "#744642",
+       "share": 0.14
+      },
+      {
+       "color": "#cda9a4",
+       "share": 0.1
+      },
+      {
+       "color": "#2f1e1c",
+       "share": 0.09
+      },
+      {
+       "color": "#f0dad5",
+       "share": 0.07
+      }
+     ],
+     "button": {
+      "bg": "#f0dad5",
+      "hsl": {
+       "h": 11,
+       "s": 0.47,
+       "l": 0.89
+      },
+      "fg": "#1f1613"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 9,
+     "inHero": 7,
+     "radius": "pill",
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 9,
+     "heroLabels": [
+      "SKIP TO MAIN CONTENT"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 7,
+     "boxRadius": 50,
+     "squareMedia": 1,
+     "roundedMedia": 13,
+     "mediaRadius": 999,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.5
+     },
+     {
+      "type": "img",
+      "ratio": 0.14
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "kaushan script",
+     "archivo",
+     "schibsted grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 12495,
+    "margins": {
+     "left": 31,
+     "right": 49
+    },
+    "sections": [
+     {
+      "sel": "main#main.flex-1.overflow-x-hidden",
+      "tag": "main",
+      "top": 0,
+      "height": 11862,
+      "words": 573,
+      "media": 15,
+      "middle": 0,
+      "heading": {
+       "text": "Make",
+       "size": 61,
+       "tag": "h1"
+      },
+      "left": 31,
+      "right": 43,
+      "textLeft": 31,
+      "textRight": 43,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.on-dark.bg-night",
+      "tag": "footer",
+      "top": 11939,
+      "height": 556,
+      "words": 75,
+      "media": 0,
+      "middle": 28,
+      "heading": {
+       "text": "Explore",
+       "size": 13,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 41,
+      "textLeft": 31,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Make one day count.",
+      "size": 61,
+      "top": 393,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 31,
+      "n": 28
+     },
+     {
+      "x": 185,
+      "n": 1
+     },
+     {
+      "x": 284,
+      "n": 1
+     },
+     {
+      "x": 383,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 31,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.33,
+    0.57,
+    0.66,
+    0.67,
+    0.69,
+    0.7,
+    0.56,
+    0.7,
+    0.71,
+    0.76,
+    0.61,
+    0.72
+   ],
+   "motion": {
+    "elements": 43,
+    "css": 0,
+    "transitions": 14,
+    "scripted": 29,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 12501,
+     "screens": 14.8,
+     "words": 644,
+     "img": 17,
+     "video": 0,
+     "canvas": 0,
+     "svg": 5,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 14,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fimagery%2Fweb%2Fgemsbok-golden-ligh",
+      "image?url=%2Fimagery%2Fcrops%2Fgiraffes-walking-",
+      "image?url=%2Fimagery%2Fcrops%2Fwindhoek-christus",
+      "image?url=%2Fimagery%2Fcrops%2Fsundowner-drinks-",
+      "image?url=%2Fimagery%2Fcrops%2Fcampfire-cooking-",
+      "image?url=%2Fimagery%2Fcrops%2Fgemsbok-golden-li",
+      "image?url=%2Fimagery%2Fcrops%2Fdunes-sunburst-pa",
+      "image?url=%2Fimagery%2Fcrops%2Fsafari-vehicle-re"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Make one day count.",
+     "words": 4,
+     "chars": 19,
+     "lines": 2,
+     "size": 45.2,
+     "vw": 11.6,
+     "font": "Kaushan Script",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 1.04,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 272,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Make one day count.",
+     "words": 4,
+     "lines": 2,
+     "size": 45.2,
+     "font": "Kaushan Script"
+    },
+    "headings": [
+     {
+      "text": "Make one day count.",
+      "words": 4,
+      "chars": 19,
+      "lines": 2,
+      "size": 45.2,
+      "vw": 11.6,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 272,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Game Drive",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 22.3,
+      "vw": 5.7,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1222,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "City and Township Tour",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 22.3,
+      "vw": 5.7,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1984,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Bar Hopping: Windhoek by Night",
+      "words": 5,
+      "chars": 30,
+      "lines": 2,
+      "size": 22.3,
+      "vw": 5.7,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2747,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Taste Namibia: Traditional Cooking Class",
+      "words": 5,
+      "chars": 40,
+      "lines": 2,
+      "size": 22.3,
+      "vw": 5.7,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3535,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Step into Ancient Wisdom: The Bushmen Walk",
+      "words": 7,
+      "chars": 42,
+      "lines": 2,
+      "size": 22.3,
+      "vw": 5.7,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4323,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Sunrise Desert Excursion",
+      "words": 3,
+      "chars": 24,
+      "lines": 1,
+      "size": 22.3,
+      "vw": 5.7,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5111,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Photography Tour",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 22.3,
+      "vw": 5.7,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5873,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Spitzkoppe Hiking Experience",
+      "words": 3,
+      "chars": 28,
+      "lines": 1,
+      "size": 22.3,
+      "vw": 5.7,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 6636,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Swakopmund Coastal Adventure",
+      "words": 3,
+      "chars": 28,
+      "lines": 2,
+      "size": 22.3,
+      "vw": 5.7,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 7372,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Sandwich Harbour: Where the Ocean Meets the Desert",
+      "words": 8,
+      "chars": 50,
+      "lines": 2,
+      "size": 22.3,
+      "vw": 5.7,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 8160,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Etosha Wildlife Safari",
+      "words": 3,
+      "chars": 22,
+      "lines": 1,
+      "size": 22.3,
+      "vw": 5.7,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 9043,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Stargazing Experience",
+      "words": 2,
+      "chars": 21,
+      "lines": 1,
+      "size": 22.3,
+      "vw": 5.7,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 9779,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Kalahari Cultural Experience",
+      "words": 3,
+      "chars": 28,
+      "lines": 1,
+      "size": 22.3,
+      "vw": 5.7,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 10539,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Add any of these to your tour.",
+      "words": 7,
+      "chars": 30,
+      "lines": 2,
+      "size": 31,
+      "vw": 7.9,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 10885,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 15,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Schibsted Grotesk",
+       "share": 0.73,
+       "mono": false
+      },
+      {
+       "family": "Archivo",
+       "share": 0.26,
+       "mono": false
+      },
+      {
+       "family": "Kaushan Script",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      18,
+      22,
+      31,
+      45
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Schibsted Grotesk",
+      "size": 16,
+      "leading": 1.65,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6.4
+     },
+     "measureChars": 44,
+     "max": {
+      "size": 45.2,
+      "vw": 11.6,
+      "font": "Kaushan Script",
+      "text": "Make"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 15,
+     "microLabelShare": 0.083,
+     "microSamples": [
+      "Activities",
+      "3 to 4 hours · Outside Windhoek",
+      "2 to 3 hours · Windhoek",
+      "Evening tour · Windhoek",
+      "2 to 3 hours · Windhoek",
+      "3 hours · Near Windhoek"
+     ],
+     "upperShare": 0.16,
+     "centerShare": 0.05,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Activities",
+      "above": "Make one day count.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 244
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fbf4f2",
+     "bodyBgHsl": {
+      "h": 13,
+      "s": 0.53,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#1f1613",
+       "top": 10813,
+       "hsl": {
+        "h": 15,
+        "s": 0.24,
+        "l": 0.1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#6b5450",
+       "share": 0.58
+      },
+      {
+       "color": "#744642",
+       "share": 0.14
+      },
+      {
+       "color": "#cda9a4",
+       "share": 0.1
+      },
+      {
+       "color": "#2f1e1c",
+       "share": 0.09
+      },
+      {
+       "color": "#f0dad5",
+       "share": 0.07
+      }
+     ],
+     "button": {
+      "bg": "#f0dad5",
+      "hsl": {
+       "h": 11,
+       "s": 0.47,
+       "l": 0.89
+      },
+      "fg": "#1f1613"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 9,
+     "inHero": 7,
+     "radius": "pill",
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 9,
+     "heroLabels": [
+      "SKIP TO MAIN CONTENT"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 6,
+     "boxRadius": 50,
+     "squareMedia": 1,
+     "roundedMedia": 13,
+     "mediaRadius": 999,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.5
+     },
+     {
+      "type": "img",
+      "ratio": 0.15
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "kaushan script",
+     "archivo",
+     "schibsted grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 12501,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "main#main.flex-1.overflow-x-hidden",
+      "tag": "main",
+      "top": 0,
+      "height": 11307,
+      "words": 517,
+      "media": 14,
+      "middle": 0,
+      "heading": {
+       "text": "Make",
+       "size": 45,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 22,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.on-dark.bg-night",
+      "tag": "footer",
+      "top": 11367,
+      "height": 1134,
+      "words": 75,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Explore",
+       "size": 13,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 28,
+      "textLeft": 20,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 9944,
+      "height": 808
+     },
+     {
+      "top": 10956,
+      "height": 348
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Make one day count.",
+      "size": 45,
+      "top": 272,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 27
+     },
+     {
+      "x": 134,
+      "n": 1
+     },
+     {
+      "x": 207,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 29,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "grey-body",
+   "width": 1440,
+   "message": "The running text is a soft grey on its ground (6.4:1).",
+   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 1440,
+   "message": "The margins differ: 80px on the left, 134px on the right, at 1440px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page.",
+   "alsoAt": [
+    768
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/home/z/my-project/.taste-skill/after/activities/desktop-fold.jpg",
+   "pages": [
+    "/home/z/my-project/.taste-skill/after/activities/desktop-page-01.jpg",
+    "/home/z/my-project/.taste-skill/after/activities/desktop-page-02.jpg",
+    "/home/z/my-project/.taste-skill/after/activities/desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/home/z/my-project/.taste-skill/after/activities/tablet-fold.jpg",
+   "pages": [
+    "/home/z/my-project/.taste-skill/after/activities/tablet-page-01.jpg",
+    "/home/z/my-project/.taste-skill/after/activities/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/home/z/my-project/.taste-skill/after/activities/mobile-fold.jpg",
+   "pages": [
+    "/home/z/my-project/.taste-skill/after/activities/mobile-page-01.jpg",
+    "/home/z/my-project/.taste-skill/after/activities/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

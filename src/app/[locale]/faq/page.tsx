@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import PageHeader from "@/components/site/page-header";
-import { Batch, WordScrub } from "@/components/site/scroll-craft";
+import { Batch, ImgReveal, WordScrub } from "@/components/site/scroll-craft";
 import Reveal from "@/components/site/reveal";
 import Dune from "@/components/site/dune";
 import {
@@ -58,14 +59,14 @@ export default async function FaqPage({ params }: Params) {
         title={t.title}
       />
 
-      <section className="section" aria-label={t.eyebrow}>
+      <section className="pt-20 pb-28" aria-label={t.eyebrow}>
         <div className="container-narrow">
           <Reveal>
-            <p className="t-lead text-ink-muted">{t.lead}</p>
+            <p className="t-lead text-ink">{t.lead}</p>
           </Reveal>
 
-          {t.groups.map((group) => (
-            <div key={group.h} className="mt-16 first:mt-12">
+          {t.groups.map((group, gi) => (
+            <div key={group.h} className="mt-14 first:mt-10">
               <Reveal>
                 <h2 className="t-h3 text-rose-700">{group.h}</h2>
               </Reveal>
@@ -79,10 +80,55 @@ export default async function FaqPage({ params }: Params) {
                     className="border-t-2 border-rose-700/30 pt-6"
                   >
                     <h3 className="t-h4">{item.q}</h3>
-                    <p className="t-body mt-3 text-ink-muted">{item.a}</p>
+                    <p className="t-body mt-3 text-ink">{item.a}</p>
                   </div>
                 ))}
               </Batch>
+              {/* Photo bands between groups: the road the answers describe.
+                  They break out of the narrow column to the page container
+                  width, so the frame stays symmetric left and right. */}
+              {gi === 0 && (
+                <ImgReveal className="mt-14 lg:mx-[calc((760px - min(100vw - 2 * var(--gutter), var(--container))) / 2)]">
+                  <div className="relative aspect-[16/9] overflow-hidden rounded-[var(--radius-md)]">
+                    <Image
+                      src="/imagery/crops/safari-vehicle-red-sand-16x9.webp"
+                      alt={t.band1Alt}
+                      fill
+                      loading="lazy"
+                      sizes="(min-width: 1024px) 80vw, 92vw"
+                      className="object-cover"
+                    />
+                  </div>
+                </ImgReveal>
+              )}
+              {gi === 1 && (
+                <ImgReveal className="mt-14 lg:mx-[calc((760px - min(100vw - 2 * var(--gutter), var(--container))) / 2)]">
+                  <div className="relative aspect-[16/9] overflow-hidden rounded-[var(--radius-md)]">
+                    <Image
+                      src="/imagery/crops/deadvlei-warm-light-16x9.webp"
+                      alt={t.band2Alt}
+                      fill
+                      loading="lazy"
+                      sizes="(min-width: 1024px) 80vw, 92vw"
+                      className="object-cover"
+                    />
+                  </div>
+                </ImgReveal>
+              )}
+              {gi === 2 && (
+                <ImgReveal className="mt-14 lg:mx-[calc((760px - min(100vw - 2 * var(--gutter), var(--container))) / 2)]">
+                  <div className="relative aspect-[16/9] overflow-hidden rounded-[var(--radius-md)]">
+                    <Image
+                      src="/imagery/crops/quiver-tree-sun-silhouette-16x9.webp"
+                      alt={t.band3Alt}
+                      fill
+                      loading="lazy"
+                      sizes="(min-width: 1024px) 80vw, 92vw"
+                      className="object-cover"
+                    />
+                  </div>
+                </ImgReveal>
+              )}
             </div>
           ))}
         </div>

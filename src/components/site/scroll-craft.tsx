@@ -92,7 +92,7 @@ export function WordScrub({
       }
       gsap.fromTo(
         words,
-        { opacity: 0.1 },
+        { opacity: 0.35 },
         {
           opacity: 1,
           ease: "none",
@@ -263,11 +263,15 @@ export function PinnedQuote({
   image,
   alt,
   quote,
+  sub,
+  ariaLabel = "The Namib landscape",
   className = "",
 }: {
   image: string;
   alt: string;
   quote: string;
+  sub?: string;
+  ariaLabel?: string;
   className?: string;
 }) {
   const root = useRef<HTMLElement | null>(null);
@@ -277,50 +281,81 @@ export function PinnedQuote({
     () => {
       if (!root.current || !stage.current) return;
       const words = root.current.querySelectorAll<HTMLElement>(".w");
+      const subEl = root.current.querySelector<HTMLElement>(".pin-sub");
       const img = root.current.querySelector<HTMLElement>(".pin-img");
       if (prefersReduced()) {
         gsap.set(words, { opacity: 1 });
         return;
       }
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: root.current,
-          start: "top top",
-          end: "+=750",
-          pin: stage.current,
-          scrub: 0.6,
-        },
-      });
-      tl.fromTo(
-        words,
-        { opacity: 0.1 },
-        { opacity: 1, ease: "none", stagger: 0.05 },
-        0
-      ).fromTo(img, { scale: 1.14 }, { scale: 1, ease: "none", duration: tl.duration() }, 0);
+      /* Desktop holds the stage and scrubs it. Phones render the same split
+         band statically: no pin spacer, final states set, nothing to wait for. */
+      const mm = gsap.matchMedia();
+      mm.add(
+        { isDesktop: "(min-width: 768px)", isMobile: "(max-width: 767px)" },
+        (ctx) => {
+          const mobile = ctx.conditions?.isMobile;
+          if (mobile) {
+            gsap.set(words, { opacity: 1 });
+            gsap.set(img, { scale: 1 });
+            if (subEl) gsap.set(subEl, { autoAlpha: 1, y: 0 });
+            return;
+          }
+          const tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: root.current,
+              start: "top top",
+              end: "+=750",
+              pin: stage.current,
+              scrub: 0.6,
+            },
+          });
+          tl.fromTo(
+            words,
+            { opacity: 0.35 },
+            { opacity: 1, ease: "none", stagger: 0.05 },
+            0
+          );
+          if (subEl) {
+            tl.fromTo(subEl, { autoAlpha: 0, y: 18 }, { autoAlpha: 1, y: 0, ease: "none", duration: 0.25 }, 0.7);
+          }
+          tl.fromTo(img, { scale: 1.14 }, { scale: 1, ease: "none", duration: tl.duration() }, 0);
+        }
+      );
+      return () => mm.revert();
     },
     { scope: root }
   );
 
   const words = quote.split(" ");
   return (
-    <section ref={root as React.RefObject<never>} className={`relative isolate ${className}`} aria-label="The Namib landscape">
-      <div ref={stage} className="relative grid min-h-[86svh] items-center overflow-hidden">
-        <img
-          src={image}
-          alt={alt}
-          className="pin-img absolute inset-0 h-full w-full object-cover object-[center_38%]"
-          loading="lazy"
-        />
-        <div className="absolute inset-0 bg-[var(--overlay-dusk)]" aria-hidden="true" />
-        <div className="container-liger relative py-24">
-          <p className="t-hero max-w-4xl text-rose-50">
-            {words.map((w, i) => (
-              <span key={`${w}-${i}`} className="w">
-                {w}
-                {i < words.length - 1 ? " " : ""}
-              </span>
-            ))}
-          </p>
+    <section ref={root as React.RefObject<never>} className={`relative isolate ${className}`} aria-label={ariaLabel}>
+      {/* Split stage: the statement sits on a solid night panel, the picture holds
+          its own column. Text never crosses the photograph, at any width. */}
+      <div ref={stage} className="relative grid min-h-[86svh] overflow-hidden bg-night md:grid-cols-[1.05fr_1fr]">
+        <div className="relative order-2 flex items-center md:order-1">
+          <div className="w-full py-14 pl-[max(var(--gutter),calc((100vw-var(--container))/2))] pr-[var(--gutter)] md:py-0 md:pr-[clamp(2rem,5vw,5rem)]">
+            <p className="t-pin text-rose-50">
+              {words.map((w, i) => (
+                <span key={`${w}-${i}`} className="w">
+                  {w}
+                  {i < words.length - 1 ? " " : ""}
+                </span>
+              ))}
+            </p>
+            {sub ? (
+              <p className="pin-sub mt-5 font-script text-2xl text-rose-200 md:mt-6 md:text-4xl">
+                {sub}
+              </p>
+            ) : null}
+          </div>
+        </div>
+        <div className="relative order-1 h-[46svh] overflow-hidden md:order-2 md:h-auto">
+          <img
+            src={image}
+            alt={alt}
+            className="pin-img absolute inset-0 h-full w-full object-cover object-[center_38%]"
+            loading="lazy"
+          />
         </div>
       </div>
     </section>

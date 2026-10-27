@@ -63,14 +63,14 @@ export default async function HomePage({ params }: Params) {
       <section className="section" aria-label={home.intro.eyebrow}>
         <div className="container-liger grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
           <div>
-            <p className="t-eyebrow text-rose-600">{home.intro.eyebrow}</p>
+            <p className="t-eyebrow text-rose-700">{home.intro.eyebrow}</p>
             <WordScrub
               as="h2"
               className="t-h2 mt-4"
               text={home.intro.h2}
             />
-            <p className="t-body mt-6 text-ink-muted">{home.intro.p1}</p>
-            <p className="t-body mt-4 text-ink-muted">{home.intro.p2}</p>
+            <p className="t-body mt-6 text-ink">{home.intro.p1}</p>
+            <p className="t-body mt-4 text-ink">{home.intro.p2}</p>
             <Link
               href={localePath(locale, "/about")}
               className="t-button mt-8 inline-block text-brand underline decoration-2 underline-offset-[6px] transition-colors duration-[240ms] hover:text-brand-hover"
@@ -93,8 +93,8 @@ export default async function HomePage({ params }: Params) {
         </div>
       </section>
 
-      {/* 2b. Facts strip: count-up on enter */}
-      <section className="border-y border-rose-200 bg-rose-50" aria-label={home.stats.ariaLabel}>
+      {/* 2b. Facts strip: count-up on enter. Tone steps do the separating, no rules. */}
+      <section className="bg-rose-50" aria-label={home.stats.ariaLabel}>
         <div className="container-liger grid grid-cols-2 gap-x-6 gap-y-10 py-14 lg:grid-cols-4">
           {home.stats.items.map((s) => (
             <div key={s.label} className="text-center">
@@ -105,7 +105,7 @@ export default async function HomePage({ params }: Params) {
                   <CountUp to={("value" in s ? s.value : 0) ?? 0} suffix={("suffix" in s ? s.suffix : "") ?? ""} />
                 )}
               </p>
-              <p className="t-eyebrow mt-3 text-ink-muted">{s.label}</p>
+              <p className="t-eyebrow mt-3 text-ink">{s.label}</p>
               <span className="sr-only">
                 {("raw" in s ? s.raw : "") || `${("value" in s ? s.value : 0)}${("suffix" in s ? s.suffix : "") || ""}`} {s.label}
               </span>
@@ -118,7 +118,7 @@ export default async function HomePage({ params }: Params) {
       <Dune variant="rose-100" />
       <section className="section bg-surface-alt" aria-label={home.tours.ariaLabel}>
         <div className="container-liger">
-          <p className="t-eyebrow text-rose-600">{home.tours.eyebrow}</p>
+          <p className="t-eyebrow text-rose-700">{home.tours.eyebrow}</p>
           <WordScrub
             as="h2"
             className="t-h2 mt-4 max-w-3xl"
@@ -149,6 +149,8 @@ export default async function HomePage({ params }: Params) {
         image="/imagery/web/deadvlei-blue-sky.webp"
         alt={home.pinned.imageAlt}
         quote={home.pinned.quote}
+        sub={home.pinned.sub}
+        ariaLabel={home.pinned.ariaLabel}
       />
       <Dune variant="rose-200" />
 
@@ -157,14 +159,11 @@ export default async function HomePage({ params }: Params) {
         <div className="container-liger">
           <p className="t-eyebrow text-rose-700">{home.why.eyebrow}</p>
           <WordScrub as="h2" className="t-h2 mt-4 max-w-3xl" text={home.why.h2} />
-          <Batch className="mt-12 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-5" stagger={0.06}>
-            {home.why.items.map((item) => (
-              <div key={item.n} className="border-t-2 border-rose-700/30 pt-6">
-                <p className="font-script text-5xl text-rose-700" aria-hidden="true">
-                  {item.n}
-                </p>
-                <h3 className="t-h4 mt-4">{item.title}</h3>
-                <p className="t-small mt-3 text-ink-muted">{item.body}</p>
+          <Batch className="mt-12 grid gap-x-12 gap-y-12 sm:grid-cols-2 lg:grid-cols-6" stagger={0.06}>
+            {home.why.items.map((item, i) => (
+              <div key={item.n} className={i < 3 ? "lg:col-span-2" : "lg:col-span-3"}>
+                <h3 className="t-h4 text-brand">{item.title}</h3>
+                <p className="t-body mt-3 text-ink">{item.body}</p>
               </div>
             ))}
           </Batch>
@@ -175,7 +174,7 @@ export default async function HomePage({ params }: Params) {
       <Dune variant="rose-50" />
       <section className="section" aria-label={home.activities.ariaLabel}>
         <div className="container-liger">
-          <p className="t-eyebrow text-rose-600">{home.activities.eyebrow}</p>
+          <p className="t-eyebrow text-rose-700">{home.activities.eyebrow}</p>
           <WordScrub as="h2" className="t-h2 mt-4 max-w-3xl" text={home.activities.h2} />
           <Batch className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {homeActivities.map((a) => (
@@ -194,7 +193,7 @@ export default async function HomePage({ params }: Params) {
                   className="object-cover transition-transform duration-[480ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]"
                 />
                 <span
-                  className="absolute inset-0 bg-[linear-gradient(180deg,rgba(31,22,19,0)_35%,rgba(31,22,19,.78)_100%)]"
+                  className="absolute inset-0 bg-[linear-gradient(180deg,rgba(31,22,19,0)_35%,rgba(31,22,19,.78)_100%)]" // taste-skill-ignore: photo scrim, the allowed exception
                   aria-hidden="true"
                 />
                 <span className="absolute inset-x-0 bottom-0 p-5">
@@ -232,7 +231,7 @@ export default async function HomePage({ params }: Params) {
                 </div>
               </ImgReveal>
               <ImgReveal delay={0.15}>
-                <div className="relative mt-4 aspect-[16/9] overflow-hidden rounded-[var(--radius-md)] sm:ml-16 sm:mt-[-3rem] sm:w-2/3 sm:shadow-[var(--shadow-2)]">
+                <div className="relative mt-4 aspect-[16/9] overflow-hidden rounded-[var(--radius-md)] sm:ml-16 sm:mt-[-3rem] sm:w-2/3">
                   <Image
                     src="/imagery/crops/red-dune-timber-lodge-16x9.webp"
                     alt={home.stay.imageAlt2}
@@ -245,9 +244,9 @@ export default async function HomePage({ params }: Params) {
               </ImgReveal>
             </div>
             <div>
-              <p className="t-eyebrow text-rose-600">{home.stay.eyebrow}</p>
+              <p className="t-eyebrow text-rose-700">{home.stay.eyebrow}</p>
               <WordScrub as="h2" className="t-h2 mt-4" text={home.stay.h2} />
-              <p className="t-body mt-6 text-ink-muted">{home.stay.p}</p>
+              <p className="t-body mt-6 text-ink">{home.stay.p}</p>
               <Link
                 href={localePath(locale, "/tours")}
                 className="t-button mt-8 inline-block text-brand underline decoration-2 underline-offset-[6px] transition-colors duration-[240ms] hover:text-brand-hover"
@@ -262,7 +261,7 @@ export default async function HomePage({ params }: Params) {
       {/* 8. Testimonials: sliding carousel widget, auto-advance + swipe + dots */}
       <section className="section" aria-label={home.testimonials.ariaLabel}>
         <div className="container-narrow">
-          <p className="t-eyebrow text-rose-600">{home.testimonials.eyebrow}</p>
+          <p className="t-eyebrow text-rose-700">{home.testimonials.eyebrow}</p>
           <WordScrub as="h2" className="t-h2 mt-4" text={home.testimonials.h2} />
           <div className="mt-12">
             <Batch y={20}>
@@ -276,7 +275,7 @@ export default async function HomePage({ params }: Params) {
       <Dune variant="rose-100" />
       <section className="section bg-surface-alt" aria-label={home.faq.ariaLabel}>
         <div className="container-liger">
-          <p className="t-eyebrow text-rose-600">{home.faq.eyebrow}</p>
+          <p className="t-eyebrow text-rose-700">{home.faq.eyebrow}</p>
           <WordScrub as="h2" className="t-h2 mt-4 max-w-3xl" text={home.faq.h2} />
           <Batch
             className="mt-12 grid gap-x-12 gap-y-10 md:grid-cols-2"
@@ -285,7 +284,7 @@ export default async function HomePage({ params }: Params) {
             {home.faq.items.map((item) => (
               <div key={item.q} className="border-t-2 border-rose-700/30 pt-6">
                 <h3 className="t-h4">{item.q}</h3>
-                <p className="t-small mt-3 text-ink-muted">{item.a}</p>
+                <p className="t-body mt-3 text-ink">{item.a}</p>
               </div>
             ))}
           </Batch>

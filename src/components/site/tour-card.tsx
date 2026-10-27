@@ -34,8 +34,8 @@ export default function TourCard({
           className="object-cover"
         />
       </Link>
-      <p className="t-eyebrow mt-2 text-rose-600">{tour.eyebrow}</p>
-      <h3 className="t-h3">
+      <p className="t-eyebrow mt-2 text-rose-700">{tour.eyebrow}</p>
+      <h3 className="t-h4 text-balance">
         <Link
           href={href}
           prefetch={false}
@@ -44,7 +44,7 @@ export default function TourCard({
           {tour.name}
         </Link>
       </h3>
-      <p className="t-body text-ink-muted">{tour.blurb}</p>
+      <p className="t-body text-ink">{tour.blurb}</p>
       <Link
         href={href}
         prefetch={false}

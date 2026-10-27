@@ -1,0 +1,2779 @@
+{
+ "url": "http://localhost:3100/",
+ "at": "2026-10-27T02:00:45.640Z",
+ "allow": [
+  "eyebrow",
+  "micro-label",
+  "font-count",
+  "blank-gap"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.22,
+    0.41,
+    0.97,
+    0.97,
+    0.84,
+    0.97,
+    0.59,
+    0.48,
+    0.97,
+    0.43,
+    0.9,
+    0.97
+   ],
+   "motion": {
+    "elements": 94,
+    "css": 0,
+    "transitions": 9,
+    "scripted": 85,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 11826,
+     "screens": 13.1,
+     "words": 986,
+     "img": 18,
+     "video": 0,
+     "canvas": 0,
+     "svg": 11,
+     "sections": 11,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 14,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fimagery%2Fweb%2Fsafari-vehicle-red-",
+      "image?url=%2Fimagery%2Fcrops%2Fantelope-herd-sav",
+      "image?url=%2Fimagery%2Fcrops%2Fsafari-vehicle-re",
+      "image?url=%2Fimagery%2Fcrops%2Frhino-etosha-gras",
+      "image?url=%2Fimagery%2Fcrops%2Fquiver-tree-sun-s",
+      "deadvlei-blue-sky.webp",
+      "image?url=%2Fimagery%2Fcrops%2Fgiraffes-walking-",
+      "image?url=%2Fimagery%2Fcrops%2Fwindhoek-christus"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Namibia, unhurried.",
+     "words": 2,
+     "chars": 19,
+     "lines": 2,
+     "size": 134.4,
+     "vw": 9.3,
+     "font": "Kaushan Script",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 0.95,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.71,
+     "top": 266,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Namibia, unhurried.",
+     "words": 2,
+     "lines": 2,
+     "size": 134.4,
+     "font": "Kaushan Script"
+    },
+    "headings": [
+     {
+      "text": "GUIDED BY LOCALS",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": 0.12,
+      "leading": 1.65,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.71,
+      "top": 218,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Namibia, unhurried.",
+      "words": 2,
+      "chars": 19,
+      "lines": 2,
+      "size": 134.4,
+      "vw": 9.3,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.71,
+      "top": 266,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "With the people who call it home.",
+      "words": 7,
+      "chars": 33,
+      "lines": 2,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 1014,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "7",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 60,
+      "vw": 4.2,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.21,
+      "top": 1678,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "13",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 60,
+      "vw": 4.2,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.21,
+      "top": 1678,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "100%",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 60,
+      "vw": 4.2,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.21,
+      "top": 1678,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "NTB",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 60,
+      "vw": 4.2,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.21,
+      "top": 1678,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Signature tours, shaped around you.",
+      "words": 5,
+      "chars": 35,
+      "lines": 2,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 2131,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Ancient trees. Towering dunes.",
+      "words": 4,
+      "chars": 30,
+      "lines": 2,
+      "size": 79.7,
+      "vw": 5.5,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 3551,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "What makes the difference.",
+      "words": 4,
+      "chars": 26,
+      "lines": 2,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 5116,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Short on time? Start here.",
+      "words": 5,
+      "chars": 26,
+      "lines": 2,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 5985,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Lodges we would choose for family.",
+      "words": 6,
+      "chars": 34,
+      "lines": 2,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.42,
+      "top": 7548,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "What our guests say.",
+      "words": 4,
+      "chars": 20,
+      "lines": 1,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.53,
+      "top": 8299,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "“",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 60,
+      "vw": 4.2,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 8466,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "“",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 60,
+      "vw": 4.2,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.45,
+      "top": 8466,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "“",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 60,
+      "vw": 4.2,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.45,
+      "top": 8466,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "What guests ask before booking.",
+      "words": 5,
+      "chars": 31,
+      "lines": 2,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 9414,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Ready when you are.",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.53,
+      "top": 10632,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Tell us your dates. We will build the trip around them.",
+      "words": 11,
+      "chars": 55,
+      "lines": 2,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.38,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.47,
+      "top": 10710,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 19,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 7,
+     "centered": 6,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Schibsted Grotesk",
+       "share": 0.73,
+       "mono": false
+      },
+      {
+       "family": "Archivo",
+       "share": 0.25,
+       "mono": false
+      },
+      {
+       "family": "Kaushan Script",
+       "share": 0.02,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      20,
+      22,
+      28,
+      36,
+      56,
+      60,
+      80,
+      134
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "Schibsted Grotesk",
+      "size": 16,
+      "leading": 1.65,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.6
+     },
+     "measureChars": 59,
+     "max": {
+      "size": 134.4,
+      "vw": 9.3,
+      "font": "Kaushan Script",
+      "text": "Namibia,"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 18,
+     "microLabelShare": 0.054,
+     "microSamples": [
+      "Locally owned, NTB registered",
+      "Signature routes",
+      "Guided experiences",
+      "Locally owned",
+      "Country, known deeply",
+      "Where we go"
+     ],
+     "upperShare": 0.11,
+     "centerShare": 0.04,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Locally owned, NTB registered",
+      "above": "With the people who call it home.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 982
+     },
+     {
+      "text": "Where we go",
+      "above": "Signature tours, shaped around you.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 2100
+     },
+     {
+      "text": "Why Liger Tours",
+      "above": "What makes the difference.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 5084
+     },
+     {
+      "text": "Day trips and experiences",
+      "above": "Short on time? Start here.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 5954
+     },
+     {
+      "text": "Where you stay",
+      "above": "Lodges we would choose for family.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 7517
+     },
+     {
+      "text": "Guest words",
+      "above": "What our guests say.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 8268
+     },
+     {
+      "text": "Good to know",
+      "above": "What guests ask before booking.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 9382
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fbf4f2",
+     "bodyBgHsl": {
+      "h": 13,
+      "s": 0.53,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f6e8e4",
+       "top": 1965,
+       "hsl": {
+        "h": 13,
+        "s": 0.5,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#1f1613",
+       "top": 3282,
+       "hsl": {
+        "h": 15,
+        "s": 0.24,
+        "l": 0.1
+       }
+      },
+      {
+       "color": "#f0dad5",
+       "top": 4950,
+       "hsl": {
+        "h": 11,
+        "s": 0.47,
+        "l": 0.89
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2f1e1c",
+       "share": 0.72
+      },
+      {
+       "color": "#cda9a4",
+       "share": 0.08
+      },
+      {
+       "color": "#744642",
+       "share": 0.07
+      },
+      {
+       "color": "#fbf4f2",
+       "share": 0.04
+      },
+      {
+       "color": "#f0dad5",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#744642",
+      "hsl": {
+       "h": 5,
+       "s": 0.27,
+       "l": 0.36
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 8,
+     "inHero": 4,
+     "radius": "pill",
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 8,
+     "heroLabels": [
+      "SKIP TO MAIN CONTENT",
+      "PLAN MY TRIP",
+      "PLAN MY TRIP",
+      "SEE THE TOURS"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 6,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 1,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 50,
+     "squareMedia": 3,
+     "roundedMedia": 12,
+     "mediaRadius": 12,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 9585
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.92
+     }
+    ],
+    "nav": {
+     "links": 7,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "kaushan script",
+     "archivo",
+     "schibsted grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 11826,
+    "margins": {
+     "left": 80,
+     "right": 80
+    },
+    "sections": [
+     {
+      "sel": "main#main.flex-1.overflow-x-hidden",
+      "tag": "main",
+      "top": 0,
+      "height": 11168,
+      "words": 783,
+      "media": 19,
+      "middle": 0,
+      "heading": {
+       "text": "Namibia,",
+       "size": 134,
+       "tag": "h1"
+      },
+      "left": 80,
+      "right": 0,
+      "textLeft": 80,
+      "textRight": 82,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "div.dune",
+      "tag": "div",
+      "top": 11168,
+      "height": 144,
+      "words": 0,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.on-dark.bg-night",
+      "tag": "footer",
+      "top": 11312,
+      "height": 514,
+      "words": 75,
+      "media": 0,
+      "middle": 174,
+      "heading": {
+       "text": "Explore",
+       "size": 13,
+       "tag": "h2"
+      },
+      "left": 80,
+      "right": 80,
+      "textLeft": 80,
+      "textRight": 80,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 7084,
+      "height": 284
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Namibia, unhurried.",
+      "size": 134,
+      "top": 266,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 80,
+      "n": 27
+     },
+     {
+      "x": 744,
+      "n": 8
+     },
+     {
+      "x": 517,
+      "n": 5
+     },
+     {
+      "x": 258,
+      "n": 3
+     },
+     {
+      "x": 350,
+      "n": 3
+     },
+     {
+      "x": 397,
+      "n": 3
+     },
+     {
+      "x": 760,
+      "n": 3
+     },
+     {
+      "x": 227,
+      "n": 2
+     },
+     {
+      "x": 480,
+      "n": 2
+     },
+     {
+      "x": 955,
+      "n": 2
+     },
+     {
+      "x": 965,
+      "n": 2
+     },
+     {
+      "x": 1005,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 71,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.07,
+    "voidBox": {
+     "x": 0,
+     "y": 840,
+     "w": 1440,
+     "h": 60
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.24,
+    0.49,
+    0.78,
+    0.95,
+    0.95,
+    0.95,
+    0.69,
+    0.57,
+    0.88,
+    0.73,
+    0.82,
+    0.98
+   ],
+   "motion": {
+    "elements": 89,
+    "css": 0,
+    "transitions": 4,
+    "scripted": 85,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 12993,
+     "screens": 12.7,
+     "words": 978,
+     "img": 18,
+     "video": 0,
+     "canvas": 0,
+     "svg": 11,
+     "sections": 11,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 14,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fimagery%2Fweb%2Fsafari-vehicle-red-",
+      "image?url=%2Fimagery%2Fcrops%2Fantelope-herd-sav",
+      "image?url=%2Fimagery%2Fcrops%2Fsafari-vehicle-re",
+      "image?url=%2Fimagery%2Fcrops%2Frhino-etosha-gras",
+      "image?url=%2Fimagery%2Fcrops%2Fquiver-tree-sun-s",
+      "deadvlei-blue-sky.webp",
+      "image?url=%2Fimagery%2Fcrops%2Fgiraffes-walking-",
+      "image?url=%2Fimagery%2Fcrops%2Fwindhoek-christus"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Namibia, unhurried.",
+     "words": 2,
+     "chars": 19,
+     "lines": 1,
+     "size": 87.4,
+     "vw": 11.4,
+     "font": "Kaushan Script",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 0.95,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 517,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Namibia, unhurried.",
+     "words": 2,
+     "lines": 1,
+     "size": 87.4,
+     "font": "Kaushan Script"
+    },
+    "headings": [
+     {
+      "text": "Namibia, unhurried.",
+      "words": 2,
+      "chars": 19,
+      "lines": 1,
+      "size": 87.4,
+      "vw": 11.4,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 517,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "With the people who call it home.",
+      "words": 7,
+      "chars": 33,
+      "lines": 2,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1022,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "7",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 60,
+      "vw": 7.8,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.44,
+      "top": 2119,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "13",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 60,
+      "vw": 7.8,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.44,
+      "top": 2119,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "100%",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 60,
+      "vw": 7.8,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.44,
+      "top": 2247,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "NTB",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 60,
+      "vw": 7.8,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.44,
+      "top": 2247,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Signature tours, shaped around you.",
+      "words": 5,
+      "chars": 35,
+      "lines": 2,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2593,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Ancient trees. Towering dunes.",
+      "words": 4,
+      "chars": 30,
+      "lines": 2,
+      "size": 51.5,
+      "vw": 6.7,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 4649,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "What makes the difference.",
+      "words": 4,
+      "chars": 26,
+      "lines": 1,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6130,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Short on time? Start here.",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6963,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Lodges we would choose for family.",
+      "words": 6,
+      "chars": 34,
+      "lines": 2,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 9246,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "What our guests say.",
+      "words": 4,
+      "chars": 20,
+      "lines": 1,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 9710,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "“",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 60,
+      "vw": 7.8,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.77,
+      "top": 9859,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "“",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 60,
+      "vw": 7.8,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 9859,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "“",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 60,
+      "vw": 7.8,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.77,
+      "top": 9859,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "What guests ask before booking.",
+      "words": 5,
+      "chars": 31,
+      "lines": 2,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 10636,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Ready when you are.",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 11881,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Tell us your dates. We will build the trip around them.",
+      "words": 11,
+      "chars": 55,
+      "lines": 2,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.38,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 11941,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 18,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 6,
+     "centered": 6,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Schibsted Grotesk",
+       "share": 0.74,
+       "mono": false
+      },
+      {
+       "family": "Archivo",
+       "share": 0.24,
+       "mono": false
+      },
+      {
+       "family": "Kaushan Script",
+       "share": 0.02,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      20,
+      22,
+      36,
+      40,
+      52,
+      60,
+      87
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Schibsted Grotesk",
+      "size": 16,
+      "leading": 1.65,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.6
+     },
+     "measureChars": 59,
+     "max": {
+      "size": 87.4,
+      "vw": 11.4,
+      "font": "Kaushan Script",
+      "text": "Namibia,"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 18,
+     "microLabelShare": 0.054,
+     "microSamples": [
+      "Locally owned, NTB registered",
+      "Signature routes",
+      "Guided experiences",
+      "Locally owned",
+      "Country, known deeply",
+      "Where we go"
+     ],
+     "upperShare": 0.11,
+     "centerShare": 0.04,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Locally owned, NTB registered",
+      "above": "With the people who call it home.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 990
+     },
+     {
+      "text": "Where we go",
+      "above": "Signature tours, shaped around you.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 2561
+     },
+     {
+      "text": "Why Liger Tours",
+      "above": "What makes the difference.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 6098
+     },
+     {
+      "text": "Day trips and experiences",
+      "above": "Short on time? Start here.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 6932
+     },
+     {
+      "text": "Where you stay",
+      "above": "Lodges we would choose for family.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 9214
+     },
+     {
+      "text": "Guest words",
+      "above": "What our guests say.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 9679
+     },
+     {
+      "text": "Good to know",
+      "above": "What guests ask before booking.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 10604
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fbf4f2",
+     "bodyBgHsl": {
+      "h": 13,
+      "s": 0.53,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#fbf4f2",
+       "top": 2063,
+       "hsl": {
+        "h": 13,
+        "s": 0.53,
+        "l": 0.97
+       }
+      },
+      {
+       "color": "#f6e8e4",
+       "top": 2467,
+       "hsl": {
+        "h": 13,
+        "s": 0.5,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#1f1613",
+       "top": 4297,
+       "hsl": {
+        "h": 15,
+        "s": 0.24,
+        "l": 0.1
+       }
+      },
+      {
+       "color": "#f0dad5",
+       "top": 6004,
+       "hsl": {
+        "h": 11,
+        "s": 0.47,
+        "l": 0.89
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 9802,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2f1e1c",
+       "share": 0.72
+      },
+      {
+       "color": "#cda9a4",
+       "share": 0.08
+      },
+      {
+       "color": "#744642",
+       "share": 0.07
+      },
+      {
+       "color": "#f0dad5",
+       "share": 0.04
+      },
+      {
+       "color": "#fbf4f2",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#744642",
+      "hsl": {
+       "h": 5,
+       "s": 0.27,
+       "l": 0.36
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 13,
+     "inHero": 9,
+     "radius": "pill",
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 13,
+     "heroLabels": [
+      "SKIP TO MAIN CONTENT",
+      "PLAN MY TRIP",
+      "SEE THE TOURS"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 6,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 1,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 50,
+     "squareMedia": 3,
+     "roundedMedia": 12,
+     "mediaRadius": 12,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 10772
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.88
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "kaushan script",
+     "archivo",
+     "schibsted grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 12993,
+    "margins": {
+     "left": 31,
+     "right": 31
+    },
+    "sections": [
+     {
+      "sel": "main#main.flex-1.overflow-x-hidden",
+      "tag": "main",
+      "top": 0,
+      "height": 12359,
+      "words": 783,
+      "media": 19,
+      "middle": 0,
+      "heading": {
+       "text": "Namibia,",
+       "size": 87,
+       "tag": "h1"
+      },
+      "left": 31,
+      "right": 0,
+      "textLeft": 31,
+      "textRight": 32,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "footer.on-dark.bg-night",
+      "tag": "footer",
+      "top": 12436,
+      "height": 556,
+      "words": 75,
+      "media": 0,
+      "middle": 28,
+      "heading": {
+       "text": "Explore",
+       "size": 13,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 41,
+      "textLeft": 31,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Namibia, unhurried.",
+      "size": 87,
+      "top": 517,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 31,
+      "n": 32
+     },
+     {
+      "x": 408,
+      "n": 11
+     },
+     {
+      "x": 397,
+      "n": 5
+     },
+     {
+      "x": 158,
+      "n": 4
+     },
+     {
+      "x": 225,
+      "n": 2
+     },
+     {
+      "x": 317,
+      "n": 2
+     },
+     {
+      "x": 362,
+      "n": 2
+     },
+     {
+      "x": 486,
+      "n": 2
+     },
+     {
+      "x": 572,
+      "n": 2
+     },
+     {
+      "x": 88,
+      "n": 1
+     },
+     {
+      "x": 142,
+      "n": 1
+     },
+     {
+      "x": 206,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 71,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.28,
+    0.55,
+    0.66,
+    0.99,
+    0.96,
+    0.96,
+    0.96,
+    0.99,
+    0.67,
+    0.68,
+    0.66,
+    0.96
+   ],
+   "motion": {
+    "elements": 87,
+    "css": 0,
+    "transitions": 3,
+    "scripted": 84,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 14983,
+     "screens": 17.8,
+     "words": 598,
+     "img": 18,
+     "video": 0,
+     "canvas": 0,
+     "svg": 11,
+     "sections": 11,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 14,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fimagery%2Fweb%2Fsafari-vehicle-red-",
+      "image?url=%2Fimagery%2Fcrops%2Fantelope-herd-sav",
+      "image?url=%2Fimagery%2Fcrops%2Fsafari-vehicle-re",
+      "image?url=%2Fimagery%2Fcrops%2Frhino-etosha-gras",
+      "image?url=%2Fimagery%2Fcrops%2Fquiver-tree-sun-s",
+      "deadvlei-blue-sky.webp",
+      "image?url=%2Fimagery%2Fcrops%2Fgiraffes-walking-",
+      "image?url=%2Fimagery%2Fcrops%2Fwindhoek-christus"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Namibia, unhurried.",
+     "words": 2,
+     "chars": 19,
+     "lines": 2,
+     "size": 60.9,
+     "vw": 15.6,
+     "font": "Kaushan Script",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 0.95,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 278,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Namibia, unhurried.",
+     "words": 2,
+     "lines": 2,
+     "size": 60.9,
+     "font": "Kaushan Script"
+    },
+    "headings": [
+     {
+      "text": "Namibia, unhurried.",
+      "words": 2,
+      "chars": 19,
+      "lines": 2,
+      "size": 60.9,
+      "vw": 15.6,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 278,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "With the people who call it home.",
+      "words": 7,
+      "chars": 33,
+      "lines": 2,
+      "size": 31,
+      "vw": 7.9,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 896,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "7",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 48,
+      "vw": 12.3,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 2049,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "13",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 48,
+      "vw": 12.3,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.42,
+      "top": 2049,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "100%",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 48,
+      "vw": 12.3,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 2180,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "NTB",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 48,
+      "vw": 12.3,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "right",
+      "widthRatio": 0.42,
+      "top": 2180,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Signature tours, shaped around you.",
+      "words": 5,
+      "chars": 35,
+      "lines": 2,
+      "size": 31,
+      "vw": 7.9,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2491,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Ancient trees. Towering dunes.",
+      "words": 4,
+      "chars": 30,
+      "lines": 2,
+      "size": 35.6,
+      "vw": 9.1,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5404,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Your morning.",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5501,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "What makes the difference.",
+      "words": 4,
+      "chars": 26,
+      "lines": 2,
+      "size": 31,
+      "vw": 7.9,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5776,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Short on time? Start here.",
+      "words": 5,
+      "chars": 26,
+      "lines": 2,
+      "size": 31,
+      "vw": 7.9,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 6874,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Lodges we would choose for family.",
+      "words": 6,
+      "chars": 34,
+      "lines": 2,
+      "size": 31,
+      "vw": 7.9,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 10002,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "What our guests say.",
+      "words": 4,
+      "chars": 20,
+      "lines": 2,
+      "size": 31,
+      "vw": 7.9,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 10508,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "What guests ask before booking.",
+      "words": 5,
+      "chars": 31,
+      "lines": 2,
+      "size": 31,
+      "vw": 7.9,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 11547,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Ready when you are.",
+      "words": 4,
+      "chars": 19,
+      "lines": 2,
+      "size": 31,
+      "vw": 7.9,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 13297,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Tell us your dates. We will build the trip around them.",
+      "words": 11,
+      "chars": 55,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.38,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 13382,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 16,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 7,
+     "centered": 6,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Schibsted Grotesk",
+       "share": 0.65,
+       "mono": false
+      },
+      {
+       "family": "Archivo",
+       "share": 0.32,
+       "mono": false
+      },
+      {
+       "family": "Kaushan Script",
+       "share": 0.03,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      24,
+      30,
+      31,
+      36,
+      48,
+      61
+     ],
+     "sizeCount": 13,
+     "notLoaded": [],
+     "body": {
+      "font": "Schibsted Grotesk",
+      "size": 16,
+      "leading": 1.65,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.6
+     },
+     "measureChars": 44,
+     "max": {
+      "size": 60.9,
+      "vw": 15.6,
+      "font": "Kaushan Script",
+      "text": "Namibia,"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 15,
+     "microLabelShare": 0.067,
+     "microSamples": [
+      "Locally owned, NTB registered",
+      "Signature routes",
+      "Guided experiences",
+      "Locally owned",
+      "Country, known deeply",
+      "Where we go"
+     ],
+     "upperShare": 0.15,
+     "centerShare": 0.06,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Guided by locals",
+      "above": "Namibia, unhurried.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 16.7,
+      "top": 249
+     },
+     {
+      "text": "Locally owned, NTB registered",
+      "above": "With the people who call it home.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 848
+     },
+     {
+      "text": "Where we go",
+      "above": "Signature tours, shaped around you.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 2459
+     },
+     {
+      "text": "Why Liger Tours",
+      "above": "What makes the difference.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 5745
+     },
+     {
+      "text": "Day trips and experiences",
+      "above": "Short on time? Start here.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 6843
+     },
+     {
+      "text": "Where you stay",
+      "above": "Lodges we would choose for family.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 9970
+     },
+     {
+      "text": "Guest words",
+      "above": "What our guests say.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 10476
+     },
+     {
+      "text": "Good to know",
+      "above": "What guests ask before booking.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 11516
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fbf4f2",
+     "bodyBgHsl": {
+      "h": 13,
+      "s": 0.53,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#fbf4f2",
+       "top": 1993,
+       "hsl": {
+        "h": 13,
+        "s": 0.53,
+        "l": 0.97
+       }
+      },
+      {
+       "color": "#f6e8e4",
+       "top": 2387,
+       "hsl": {
+        "h": 13,
+        "s": 0.5,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#1f1613",
+       "top": 4887,
+       "hsl": {
+        "h": 15,
+        "s": 0.24,
+        "l": 0.1
+       }
+      },
+      {
+       "color": "#f0dad5",
+       "top": 5673,
+       "hsl": {
+        "h": 11,
+        "s": 0.47,
+        "l": 0.89
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2f1e1c",
+       "share": 0.57
+      },
+      {
+       "color": "#cda9a4",
+       "share": 0.12
+      },
+      {
+       "color": "#744642",
+       "share": 0.11
+      },
+      {
+       "color": "#f0dad5",
+       "share": 0.07
+      },
+      {
+       "color": "#fbf4f2",
+       "share": 0.06
+      }
+     ],
+     "button": {
+      "bg": "#744642",
+      "hsl": {
+       "h": 5,
+       "s": 0.27,
+       "l": 0.36
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 13,
+     "inHero": 9,
+     "radius": "pill",
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 13,
+     "heroLabels": [
+      "SKIP TO MAIN CONTENT",
+      "PLAN MY TRIP",
+      "SEE THE TOURS"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 6,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 2,
+     "boxRadius": 50,
+     "squareMedia": 2,
+     "roundedMedia": 12,
+     "mediaRadius": 12,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.92
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "kaushan script",
+     "archivo",
+     "schibsted grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 14983,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "main#main.flex-1.overflow-x-hidden",
+      "tag": "main",
+      "top": 0,
+      "height": 13789,
+      "words": 514,
+      "media": 19,
+      "middle": 0,
+      "heading": {
+       "text": "Namibia,",
+       "size": 61,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.on-dark.bg-night",
+      "tag": "footer",
+      "top": 13849,
+      "height": 1134,
+      "words": 75,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Explore",
+       "size": 13,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 28,
+      "textLeft": 20,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 10576,
+      "height": 804
+     },
+     {
+      "top": 11616,
+      "height": 1508
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Namibia, unhurried.",
+      "size": 61,
+      "top": 278,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 36
+     },
+     {
+      "x": 118,
+      "n": 5
+     },
+     {
+      "x": 155,
+      "n": 3
+     },
+     {
+      "x": 170,
+      "n": 2
+     },
+     {
+      "x": 210,
+      "n": 2
+     },
+     {
+      "x": 241,
+      "n": 2
+     },
+     {
+      "x": 278,
+      "n": 2
+     },
+     {
+      "x": 88,
+      "n": 1
+     },
+     {
+      "x": 105,
+      "n": 1
+     },
+     {
+      "x": 140,
+      "n": 1
+     },
+     {
+      "x": 182,
+      "n": 1
+     },
+     {
+      "x": 195,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 58,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "1 box(es) drawn with a 1px outline.",
+   "fix": "Prefer a filled surface or no box.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "12 different font sizes (13, 14, 15, 16, 20, 22, 28, 36, 56, 60, 80, 134).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "ragged-edges",
+   "width": 1440,
+   "message": "Left-aligned text starts at 12 different lines (80px, 744px, 517px, 258px, 350px, 397px, 760px); the three most used hold only 56% of it.",
+   "fix": "Pick two or three anchor lines from the grid and start every heading and paragraph on one of them."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/home/z/my-project/.taste-skill/after/desktop-fold.jpg",
+   "pages": [
+    "/home/z/my-project/.taste-skill/after/desktop-page-01.jpg",
+    "/home/z/my-project/.taste-skill/after/desktop-page-02.jpg",
+    "/home/z/my-project/.taste-skill/after/desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/home/z/my-project/.taste-skill/after/tablet-fold.jpg",
+   "pages": [
+    "/home/z/my-project/.taste-skill/after/tablet-page-01.jpg",
+    "/home/z/my-project/.taste-skill/after/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/home/z/my-project/.taste-skill/after/mobile-fold.jpg",
+   "pages": [
+    "/home/z/my-project/.taste-skill/after/mobile-page-01.jpg",
+    "/home/z/my-project/.taste-skill/after/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

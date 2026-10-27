@@ -41,7 +41,7 @@ export const af = {
     contact: {
       title: "Kontak en Navrae",
       description:
-        "Beplan u Namibiese toer: bel +264 81 472 2552, WhatsApp of e-pos info@ligertoursnamibia.com. Ons antwoord binne een werksdag.",
+        "Beplan u Namibiese toer: bel +264 81 472 2552, WhatsApp of e-pos info@ligertours.com. Ons antwoord binne een werksdag.",
     },
     brand: {
       title: "Handelsmerk: Kleure, Tipe en Logo Reëls",
@@ -148,7 +148,7 @@ export const af = {
   home: {
   intro: {
       eyebrow: "Plaaslik besit, NTB geregistreer",
-      h2: "Die beste manier om Namibia te sien, is met mense wat dit tuis noem.",
+      h2: "Saam met die mense wat dit huis noem.",
       p1: "Liger Tours Namibia is 'n plaaslik besit toermaatskappy gebou op egte plaaslike kennis. Van wildritte net buite die hoofstad tot meerdaagse reise dwarsdeur die land se woestyne, kuslyne en wildreservate, is elke roete ontwerp om u die regte Namibia te wys, teen 'n tempo wat u laat inkom.",
       p2: "As 'n maatskappy geregistreer by die Namibia Tourism Board, beplan ons elke reis rondom die mense wat dit bespreek: pare, gesinne, enkelreisigers en groepe van enige grootte, van twee mense tot vyftig of meer, elkeen met 'n roete, tempo en reisstyl wat by hulle pas.",
       cta: "Meer oor ons",
@@ -171,7 +171,8 @@ export const af = {
       ariaLabel: "Kenmerkende toere",
     },
     pinned: {
-      quote: "Vyfhonderd jaar ou bome. 'n Duisend meter duine. Jou oggend.",
+      quote: "Eeu-oue bome. Reuse duine.",
+      sub: "Jou oggend.",
       imageAlt:
         "Dooie akasiabome wat op die wit klei van Deadvlei staan, omring deur indrukwekkende rooi duine onder 'n diepblou hemel",
       ariaLabel: "Die Namib-landskap",
@@ -216,7 +217,7 @@ export const af = {
     },
     stay: {
       eyebrow: "Waar u oornag",
-      h2: "Lodges en kampe gekies soos ons vir ons familie sou kies.",
+      h2: "Kampe wat ons vir familie sou kies.",
       p: "Van houtlodges op Kalahari-duine tot rietdakchalets bo die rivierbeddens, is elke stop op 'n Liger-toer 'n plek wat ons self oorgebly het en aan ons familie sou aanbeveel. Gemak waar dit tel, karakter oral, en plekke gekies vir die uitsig waarmee u wakker word.",
       cta: "Sien die roetes",
       imageAlt1:
@@ -231,7 +232,7 @@ export const af = {
     },
     faq: {
       eyebrow: "Goed om te weet",
-      h2: "Vrae wat gaste vra voordat hulle boek.",
+      h2: "Wat gaste vra voor hulle bespreek.",
       ariaLabel: "Gereelde vrae",
       moreLink: "Meer antwoorde op die gereelde vrae-bladsy",
       items: [
@@ -768,6 +769,12 @@ export const af = {
     title: "Vrae, beantwoord.",
     pageHeaderAlt:
       "Rooi duine bo 'n groen en gruisvlakte onder 'n helder lug in die Namib-woestyn",
+    band1Alt:
+      "Oop safari-voertuig wat gaste oor rooi Namib-sand dra in goue lig",
+    band2Alt:
+      "Dooie akasiabome op die wit kleivlakte van Deadvlei in warm oggendlig",
+    band3Alt:
+      "Kokerboom se silhouet teen die son in die Namibiese skemering",
     lead: "Die vrae wat gaste vra voordat hulle boek, eerlik beantwoord. Is u s'n weg? Stuur 'n WhatsApp en dit word deel van hierdie bladsy.",
     groups: [
       {

@@ -57,7 +57,7 @@ export default function PageHeader({
         />
       </Parallax>
       <div className="container-liger pb-14 pt-40">
-        <p className="ph-eyebrow t-eyebrow text-rose-200">{eyebrow}</p>
+        <p className="ph-eyebrow t-eyebrow relative z-[2] text-rose-200">{eyebrow}</p>
         <WordsIn
           as="h1"
           text={title}

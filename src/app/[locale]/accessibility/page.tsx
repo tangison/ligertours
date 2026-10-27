@@ -29,7 +29,7 @@ export default async function AccessibilityPage({ params }: Params) {
     <>
       <section className="section" aria-label={t.title}>
         <div className="container-narrow">
-          <p className="t-eyebrow text-rose-600">{t.legalEyebrow}</p>
+          <p className="t-eyebrow text-rose-700">{t.legalEyebrow}</p>
           <h1 className="t-h1 mt-3">{t.title}</h1>
           <p className="t-small mt-4 text-ink-muted">{t.lastUpdated}</p>
           <div className="mt-12 grid gap-10">

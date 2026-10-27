@@ -119,23 +119,23 @@ export default async function TourDetailPage({ params }: Params) {
       />
 
       {/* Summary bar */}
-      <div className="border-b border-line bg-surface-alt">
+      <div className="bg-surface-alt">
         <div className="container-liger grid gap-6 py-8 sm:grid-cols-2 lg:grid-cols-4">
           <Batch className="contents" selector=":scope > *">
             <div>
-              <p className="t-eyebrow text-rose-600">{td.route}</p>
+              <p className="t-eyebrow text-rose-700">{td.route}</p>
               <p className="t-body mt-1">{tour.route}</p>
             </div>
             <div>
-              <p className="t-eyebrow text-rose-600">{td.duration}</p>
+              <p className="t-eyebrow text-rose-700">{td.duration}</p>
               <p className="t-body mt-1">{tour.duration ?? td.confirmedAtEnquiry}</p>
             </div>
             <div>
-              <p className="t-eyebrow text-rose-600">{td.groupSize}</p>
+              <p className="t-eyebrow text-rose-700">{td.groupSize}</p>
               <p className="t-body mt-1">{td.groupSizeValue}</p>
             </div>
             <div>
-              <p className="t-eyebrow text-rose-600">{td.departs}</p>
+              <p className="t-eyebrow text-rose-700">{td.departs}</p>
               <p className="t-body mt-1">{td.departsValue}</p>
             </div>
           </Batch>
@@ -231,7 +231,7 @@ export default async function TourDetailPage({ params }: Params) {
 
           {/* Sticky enquiry panel */}
           <aside className="lg:sticky lg:top-28 lg:self-start" aria-label={td.enquireAria}>
-            <Reveal className="rounded-[var(--radius-lg)] border border-line bg-surface p-8 shadow-[var(--shadow-1)]">
+            <Reveal className="rounded-[var(--radius-lg)] border border-line bg-surface p-8 shadow-[var(--shadow-1)]"> {/* taste-skill-ignore: sticky enquiry panel is a real overlay */}
               <h2 className="t-h3">{td.enquiryTitle}</h2>
               <p className="t-body mt-3 text-ink-muted">{td.enquiryLead}</p>
               <div className="mt-6">
@@ -278,7 +278,7 @@ export default async function TourDetailPage({ params }: Params) {
                       className="object-cover"
                     />
                   </span>
-                  <span className="t-eyebrow mt-2 block text-rose-600">{t.eyebrow}</span>
+                  <span className="t-eyebrow mt-2 block text-rose-700">{t.eyebrow}</span>
                   <span className="t-h3 mt-2 block transition-colors duration-[240ms] group-hover:text-brand">
                     {t.name}
                   </span>

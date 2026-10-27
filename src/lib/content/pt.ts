@@ -41,7 +41,7 @@ export const pt = {
     contact: {
       title: "Contacto e Pedidos",
       description:
-        "Planeie a sua excursão na Namíbia: telefone +264 81 472 2552, WhatsApp ou email info@ligertoursnamibia.com. Respondemos dentro de um dia útil.",
+        "Planeie a sua excursão na Namíbia: telefone +264 81 472 2552, WhatsApp ou email info@ligertours.com. Respondemos dentro de um dia útil.",
     },
     brand: {
       title: "Marca: Cores, Tipografia e Regras de Logo",
@@ -148,7 +148,7 @@ export const pt = {
   home: {
   intro: {
       eyebrow: "Empresa local, registada na NTB",
-      h2: "A melhor forma de ver a Namíbia é com quem a tem como casa.",
+      h2: "Com quem chama a Namíbia de casa.",
       p1: "A Liger Tours Namíbia é uma empresa de excursões local construída com um conhecimento genuíno do terreno. Desde safáris perto da capital até jornadas de vários dias pelo deserto, costas e reservas de vida selvagem do país, cada rota é desenhada para mostrar a Namíbia real, num ritmo que lhe permite absorvê-la de facto.",
       p2: "Enquanto empresa registada na Namibia Tourism Board, planejamos cada viagem em função das pessoas que a reservam: casais, famílias, viajantes solteiros e grupos de qualquer dimensão, de duas pessoas a cinquenta ou mais, cada um com uma rota, ritmo e estilo de viagem que lhes é adequado.",
       cta: "Saber mais sobre nós",
@@ -171,10 +171,11 @@ export const pt = {
       ariaLabel: "Rotas principais",
     },
     pinned: {
-      quote: "Árvores com quinhentos anos. Dunas de mil metros. A sua manhã.",
+      quote: "Árvores antigas. Dunas gigantes.",
+      sub: "A sua manhã.",
       imageAlt:
-        "Árvores de acáia mortas a erguer-se na argila branca de Deadvlei, rodeadas por dunas vermelhas altas sob um céu azul profundo",
-      ariaLabel: "O paisagem do Namib",
+        "Árvores de acácia mortas a erguer-se na argila branca de Deadvlei, rodeadas por dunas vermelhas altas sob um céu azul profundo",
+      ariaLabel: "A paisagem do Namib",
     },
     why: {
       eyebrow: "Por quê Liger Tours",
@@ -216,7 +217,7 @@ export const pt = {
     },
     stay: {
       eyebrow: "Onde vai ficar",
-      h2: "Lodges e acampamentos escolhidos como escolheríamos para a família.",
+      h2: "Lodges que escolheríamos para família.",
       p: "Desde lodges de madeira nas dunas do Kalahari até bungalows de palha acima dos leitos de rio, cada paragem numa excursão da Liger é um lugar onde já ficámos e recomendaríamos à nossa família. Conforto onde é preciso, carácter em toda a parte e locais escolhidos pela vista com que acorda.",
       cta: "Ver as rotas",
       imageAlt1:
@@ -231,7 +232,7 @@ export const pt = {
     },
     faq: {
       eyebrow: "Bom saber",
-      h2: "Perguntas que os nossos hóspedes fazem antes de reservar.",
+      h2: "O que os hóspedes perguntam.",
       ariaLabel: "Perguntas frequentes",
       moreLink: "Mais respostas na página de perguntas frequentes",
       items: [
@@ -768,6 +769,12 @@ export const pt = {
     title: "Perguntas, respondidas.",
     pageHeaderAlt:
       "Dunas vermelhas acima de uma planície verde e de cascalho sob um céu limpo no deserto do Namibe",
+    band1Alt:
+      "Veículo de safári aberto a transportar hóspedes pela areia vermelha da Namíbia à hora dourada",
+    band2Alt:
+      "Árvores de acácia mortas na argila branca de Deadvlei sob luz quente da manhã",
+    band3Alt:
+      "Árvore-de-alobre em silhueta contra o sol no crepúsculo namibiano",
     lead: "As perguntas que os nossos hóspedes fazem antes de reservar, respondidas com honestidade. Faltou a sua? Envie-nos um WhatsApp e ela passa a fazer parte desta página.",
     groups: [
       {

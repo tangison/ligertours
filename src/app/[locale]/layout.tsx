@@ -168,7 +168,7 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="flex min-h-screen flex-col bg-bg text-ink">
+      <body className="flex min-h-svh flex-col bg-bg text-ink">
         <a
           href="#main"
           className="t-button absolute left-4 top-4 z-[200] -translate-y-24 rounded-[var(--radius-pill)] bg-brand px-5 py-3 text-white transition-transform duration-[240ms] focus:translate-y-0"

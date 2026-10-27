@@ -44,7 +44,7 @@ export default async function AboutPage({ params }: Params) {
       <section className="section" aria-label={t.storyEyebrow}>
         <div className="container-liger grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
           <Reveal className="order-2 lg:order-1">
-            <p className="t-eyebrow text-rose-600">{t.storyEyebrow}</p>
+            <p className="t-eyebrow text-rose-700">{t.storyEyebrow}</p>
             <WordScrub as="h2" className="t-h2 mt-4" text={t.storyH2} />
             <div className="prose-liger mt-6 grid gap-4">
               {t.story.map((p) => (
@@ -75,11 +75,11 @@ export default async function AboutPage({ params }: Params) {
       <section className="section bg-[#F0DAD5]" aria-label={t.missionEyebrow}>
         <div className="container-liger grid gap-10 md:grid-cols-2">
           <Reveal className="rounded-[var(--radius-lg)] bg-surface p-10">
-            <p className="t-eyebrow text-rose-600">{t.missionEyebrow}</p>
+            <p className="t-eyebrow text-rose-700">{t.missionEyebrow}</p>
             <p className="t-lead mt-4 text-ink">{t.mission}</p>
           </Reveal>
           <Reveal delay={80} className="rounded-[var(--radius-lg)] bg-surface p-10">
-            <p className="t-eyebrow text-rose-600">{t.visionEyebrow}</p>
+            <p className="t-eyebrow text-rose-700">{t.visionEyebrow}</p>
             <p className="t-lead mt-4 text-ink">{t.vision}</p>
           </Reveal>
         </div>
@@ -89,7 +89,7 @@ export default async function AboutPage({ params }: Params) {
       <section className="section" aria-label={t.moments.eyebrow}>
         <div className="container-liger">
           <Reveal>
-            <p className="t-eyebrow text-rose-600">{t.moments.eyebrow}</p>
+            <p className="t-eyebrow text-rose-700">{t.moments.eyebrow}</p>
           </Reveal>
           <WordScrub as="h2" className="t-h2 mt-4 max-w-3xl" text={t.moments.h2} />
           <p className="t-body mt-6 max-w-2xl text-ink-muted">{t.moments.lead}</p>
@@ -141,17 +141,14 @@ export default async function AboutPage({ params }: Params) {
       <section className="section" aria-label={t.valuesEyebrow}>
         <div className="container-liger">
           <Reveal>
-            <p className="t-eyebrow text-rose-600">{t.valuesEyebrow}</p>
+            <p className="t-eyebrow text-rose-700">{t.valuesEyebrow}</p>
           </Reveal>
           <WordScrub as="h2" className="t-h2 mt-4 max-w-3xl" text={t.valuesH2} />
           <Batch className="mt-12 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-3" stagger={0.06}>
-            {t.values.map((v, i) => (
-              <div key={v.title} className="border-t-2 border-rose-700/30 pt-6">
-                <span className="font-script text-4xl text-rose-700" aria-hidden="true">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <h3 className="t-h4 mt-3">{v.title}</h3>
-                <p className="t-body mt-3 text-ink-muted">{v.body}</p>
+            {t.values.map((v) => (
+              <div key={v.title}>
+                <h3 className="t-h4 text-brand">{v.title}</h3>
+                <p className="t-body mt-3 text-ink">{v.body}</p>
               </div>
             ))}
             <div className="self-end">

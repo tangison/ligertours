@@ -276,7 +276,7 @@ export default function SiteHeader({
                         className="drawer-search-result block rounded-[var(--radius-sm)] px-3 py-3"
                         aria-label={dict.search.resultAria.replace("{name}", r.name)}
                       >
-                        <span className="t-eyebrow block text-[10px] text-rose-300">
+                        <span className="t-eyebrow block text-rose-300">
                           {r.group === "pages"
                             ? dict.search.pages
                             : r.group === "tours"
@@ -327,7 +327,7 @@ export default function SiteHeader({
                 aria-current={l === locale ? "true" : undefined}
                 aria-label={localeNames[l]}
                 onClick={() => setOpen(false)}
-                className={`t-eyebrow flex h-11 items-center justify-center rounded-full border-2 px-3.5 text-[11px] transition-colors duration-[240ms] ${
+                className={`t-eyebrow flex h-11 items-center justify-center rounded-full border-2 px-3.5 transition-colors duration-[240ms] ${
                   l === locale
                     ? "border-rose-50 bg-rose-50 text-night"
                     : "border-rose-200 text-rose-100 hover:border-rose-50 hover:text-white"

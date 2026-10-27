@@ -1,0 +1,1482 @@
+{
+ "url": "http://localhost:3100/tours",
+ "at": "2026-10-27T01:49:13.382Z",
+ "allow": [
+  "eyebrow",
+  "micro-label",
+  "font-count",
+  "blank-gap"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.17,
+    0.66,
+    0.44,
+    0.5,
+    0.97,
+    0.97
+   ],
+   "motion": {
+    "elements": 31,
+    "css": 0,
+    "transitions": 10,
+    "scripted": 21,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 4646,
+     "screens": 5.2,
+     "words": 357,
+     "img": 11,
+     "video": 0,
+     "canvas": 0,
+     "svg": 5,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fimagery%2Fweb%2Fred-dunes-valley-pl",
+      "image?url=%2Fimagery%2Fcrops%2Fsafari-vehicle-re",
+      "image?url=%2Fimagery%2Fcrops%2Fdeadvlei-lone-tre",
+      "image?url=%2Fimagery%2Fcrops%2Frhino-etosha-gras",
+      "image?url=%2Fimagery%2Fcrops%2Fquiver-tree-sun-s",
+      "image?url=%2Fimagery%2Fcrops%2Frock-gorge-closeu",
+      "image?url=%2Fimagery%2Fcrops%2Fred-dunes-valley-",
+      "image?url=%2Fimagery%2Fcrops%2Fthatched-chalets-"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Choose your Namibia.",
+     "words": 3,
+     "chars": 20,
+     "lines": 1,
+     "size": 89.3,
+     "vw": 6.2,
+     "font": "Kaushan Script",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 1.04,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.62,
+     "top": 301,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Choose your Namibia.",
+     "words": 3,
+     "lines": 1,
+     "size": 89.3,
+     "font": "Kaushan Script"
+    },
+    "headings": [
+     {
+      "text": "Choose your Namibia.",
+      "words": 3,
+      "chars": 20,
+      "lines": 1,
+      "size": 89.3,
+      "vw": 6.2,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.62,
+      "top": 301,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Multi-day routes",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 743,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The long haul",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 2387,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Not sure which route yet?",
+      "words": 5,
+      "chars": 25,
+      "lines": 2,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.53,
+      "top": 3562,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 4,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Schibsted Grotesk",
+       "share": 0.69,
+       "mono": false
+      },
+      {
+       "family": "Archivo",
+       "share": 0.3,
+       "mono": false
+      },
+      {
+       "family": "Kaushan Script",
+       "share": 0.01,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      20,
+      22,
+      32,
+      56,
+      89
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Schibsted Grotesk",
+      "size": 16,
+      "leading": 1.65,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.6
+     },
+     "measureChars": 70,
+     "max": {
+      "size": 89.3,
+      "vw": 6.2,
+      "font": "Kaushan Script",
+      "text": "Choose"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 9,
+     "microLabelShare": 0.051,
+     "microSamples": [
+      "Tours",
+      "Signature tour",
+      "Short itinerary",
+      "Wildlife focus",
+      "Southern Namibia",
+      "Culture and wildlife"
+     ],
+     "upperShare": 0.14,
+     "centerShare": 0.08,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Tours",
+      "above": "Choose your Namibia.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 274
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fbf4f2",
+     "bodyBgHsl": {
+      "h": 13,
+      "s": 0.53,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#1f1613",
+       "top": 3427,
+       "hsl": {
+        "h": 15,
+        "s": 0.24,
+        "l": 0.1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2f1e1c",
+       "share": 0.45
+      },
+      {
+       "color": "#cda9a4",
+       "share": 0.17
+      },
+      {
+       "color": "#6b5450",
+       "share": 0.11
+      },
+      {
+       "color": "#f0dad5",
+       "share": 0.11
+      },
+      {
+       "color": "#744642",
+       "share": 0.1
+      }
+     ],
+     "button": {
+      "bg": "#744642",
+      "hsl": {
+       "h": 5,
+       "s": 0.27,
+       "l": 0.36
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 4,
+     "heroLabels": [
+      "SKIP TO MAIN CONTENT",
+      "PLAN MY TRIP"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 1,
+     "boxRadius": 24,
+     "squareMedia": 1,
+     "roundedMedia": 7,
+     "mediaRadius": 999,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.5
+     }
+    ],
+    "nav": {
+     "links": 7,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "kaushan script",
+     "archivo",
+     "schibsted grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 4646,
+    "margins": {
+     "left": 80,
+     "right": 80
+    },
+    "sections": [
+     {
+      "sel": "main#main.flex-1.overflow-x-hidden",
+      "tag": "main",
+      "top": 0,
+      "height": 3988,
+      "words": 286,
+      "media": 9,
+      "middle": 0,
+      "heading": {
+       "text": "Choose",
+       "size": 89,
+       "tag": "h1"
+      },
+      "left": 80,
+      "right": 80,
+      "textLeft": 80,
+      "textRight": 82,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.dune",
+      "tag": "div",
+      "top": 3988,
+      "height": 144,
+      "words": 0,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.on-dark.bg-night",
+      "tag": "footer",
+      "top": 4132,
+      "height": 514,
+      "words": 75,
+      "media": 0,
+      "middle": 174,
+      "heading": {
+       "text": "Explore",
+       "size": 13,
+       "tag": "h2"
+      },
+      "left": 80,
+      "right": 80,
+      "textLeft": 80,
+      "textRight": 80,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Choose your Namibia.",
+      "size": 89,
+      "top": 301,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 80,
+      "n": 10
+     },
+     {
+      "x": 517,
+      "n": 4
+     },
+     {
+      "x": 955,
+      "n": 4
+     },
+     {
+      "x": 549,
+      "n": 2
+     },
+     {
+      "x": 346,
+      "n": 1
+     },
+     {
+      "x": 531,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 22,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.14,
+    "voidBox": {
+     "x": 840,
+     "y": 480,
+     "w": 600,
+     "h": 300
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.3,
+    0.66,
+    0.41,
+    0.58,
+    0.95
+   ],
+   "motion": {
+    "elements": 25,
+    "css": 0,
+    "transitions": 4,
+    "scripted": 21,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 4854,
+     "screens": 4.7,
+     "words": 349,
+     "img": 11,
+     "video": 0,
+     "canvas": 0,
+     "svg": 5,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fimagery%2Fweb%2Fred-dunes-valley-pl",
+      "image?url=%2Fimagery%2Fcrops%2Fsafari-vehicle-re",
+      "image?url=%2Fimagery%2Fcrops%2Fdeadvlei-lone-tre",
+      "image?url=%2Fimagery%2Fcrops%2Frhino-etosha-gras",
+      "image?url=%2Fimagery%2Fcrops%2Fquiver-tree-sun-s",
+      "image?url=%2Fimagery%2Fcrops%2Frock-gorge-closeu",
+      "image?url=%2Fimagery%2Fcrops%2Fred-dunes-valley-",
+      "image?url=%2Fimagery%2Fcrops%2Fthatched-chalets-"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Choose your Namibia.",
+     "words": 3,
+     "chars": 20,
+     "lines": 1,
+     "size": 61.1,
+     "vw": 8,
+     "font": "Kaushan Script",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 1.04,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 393,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Choose your Namibia.",
+     "words": 3,
+     "lines": 1,
+     "size": 61.1,
+     "font": "Kaushan Script"
+    },
+    "headings": [
+     {
+      "text": "Choose your Namibia.",
+      "words": 3,
+      "chars": 20,
+      "lines": 1,
+      "size": 61.1,
+      "vw": 8,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 393,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Multi-day routes",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 26.1,
+      "vw": 3.4,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 754,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The long haul",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 26.1,
+      "vw": 3.4,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2989,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Not sure which route yet?",
+      "words": 5,
+      "chars": 25,
+      "lines": 1,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3921,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 4,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Schibsted Grotesk",
+       "share": 0.7,
+       "mono": false
+      },
+      {
+       "family": "Archivo",
+       "share": 0.29,
+       "mono": false
+      },
+      {
+       "family": "Kaushan Script",
+       "share": 0.01,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      20,
+      26,
+      40,
+      61
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Schibsted Grotesk",
+      "size": 16,
+      "leading": 1.65,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.6
+     },
+     "measureChars": 71,
+     "max": {
+      "size": 61.1,
+      "vw": 8,
+      "font": "Kaushan Script",
+      "text": "Choose"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 9,
+     "microLabelShare": 0.052,
+     "microSamples": [
+      "Tours",
+      "Signature tour",
+      "Short itinerary",
+      "Wildlife focus",
+      "Southern Namibia",
+      "Culture and wildlife"
+     ],
+     "upperShare": 0.12,
+     "centerShare": 0.08,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Tours",
+      "above": "Choose your Namibia.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 365
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fbf4f2",
+     "bodyBgHsl": {
+      "h": 13,
+      "s": 0.53,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#1f1613",
+       "top": 3827,
+       "hsl": {
+        "h": 15,
+        "s": 0.24,
+        "l": 0.1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2f1e1c",
+       "share": 0.46
+      },
+      {
+       "color": "#cda9a4",
+       "share": 0.18
+      },
+      {
+       "color": "#6b5450",
+       "share": 0.11
+      },
+      {
+       "color": "#f0dad5",
+       "share": 0.11
+      },
+      {
+       "color": "#744642",
+       "share": 0.1
+      }
+     ],
+     "button": {
+      "bg": "#f0dad5",
+      "hsl": {
+       "h": 11,
+       "s": 0.47,
+       "l": 0.89
+      },
+      "fg": "#1f1613"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 9,
+     "inHero": 7,
+     "radius": "pill",
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 9,
+     "heroLabels": [
+      "SKIP TO MAIN CONTENT"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 1,
+     "boxRadius": 24,
+     "squareMedia": 1,
+     "roundedMedia": 7,
+     "mediaRadius": 999,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.5
+     },
+     {
+      "type": "img",
+      "ratio": 0.09
+     },
+     {
+      "type": "img",
+      "ratio": 0.09
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "kaushan script",
+     "archivo",
+     "schibsted grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 4854,
+    "margins": {
+     "left": 31,
+     "right": 31
+    },
+    "sections": [
+     {
+      "sel": "main#main.flex-1.overflow-x-hidden",
+      "tag": "main",
+      "top": 0,
+      "height": 4221,
+      "words": 283,
+      "media": 9,
+      "middle": 0,
+      "heading": {
+       "text": "Choose",
+       "size": 61,
+       "tag": "h1"
+      },
+      "left": 31,
+      "right": 31,
+      "textLeft": 31,
+      "textRight": 39,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.on-dark.bg-night",
+      "tag": "footer",
+      "top": 4297,
+      "height": 556,
+      "words": 75,
+      "media": 0,
+      "middle": 28,
+      "heading": {
+       "text": "Explore",
+       "size": 13,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 41,
+      "textLeft": 31,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Choose your Namibia.",
+      "size": 61,
+      "top": 393,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 31,
+      "n": 11
+     },
+     {
+      "x": 404,
+      "n": 6
+     },
+     {
+      "x": 436,
+      "n": 2
+     },
+     {
+      "x": 213,
+      "n": 1
+     },
+     {
+      "x": 339,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 21,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 10,
+   "filled": [
+    0.27,
+    0.67,
+    0.67,
+    0.67,
+    0.66,
+    0.58,
+    0.59,
+    0.83,
+    0.96,
+    0.96
+   ],
+   "motion": {
+    "elements": 26,
+    "css": 0,
+    "transitions": 5,
+    "scripted": 21,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 7811,
+     "screens": 9.3,
+     "words": 349,
+     "img": 11,
+     "video": 0,
+     "canvas": 0,
+     "svg": 5,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "image?url=%2Fimagery%2Fweb%2Fred-dunes-valley-pl",
+      "image?url=%2Fimagery%2Fcrops%2Fsafari-vehicle-re",
+      "image?url=%2Fimagery%2Fcrops%2Fdeadvlei-lone-tre",
+      "image?url=%2Fimagery%2Fcrops%2Frhino-etosha-gras",
+      "image?url=%2Fimagery%2Fcrops%2Fquiver-tree-sun-s",
+      "image?url=%2Fimagery%2Fcrops%2Frock-gorge-closeu",
+      "image?url=%2Fimagery%2Fcrops%2Fred-dunes-valley-",
+      "image?url=%2Fimagery%2Fcrops%2Fthatched-chalets-"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Choose your Namibia.",
+     "words": 3,
+     "chars": 20,
+     "lines": 2,
+     "size": 45.2,
+     "vw": 11.6,
+     "font": "Kaushan Script",
+     "weight": 400,
+     "tracking": 0,
+     "leading": 1.04,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 272,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Choose your Namibia.",
+     "words": 3,
+     "lines": 2,
+     "size": 45.2,
+     "font": "Kaushan Script"
+    },
+    "headings": [
+     {
+      "text": "Choose your Namibia.",
+      "words": 3,
+      "chars": 20,
+      "lines": 2,
+      "size": 45.2,
+      "vw": 11.6,
+      "font": "Kaushan Script",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 272,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Multi-day routes",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 22.3,
+      "vw": 5.7,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 692,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The long haul",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 22.3,
+      "vw": 5.7,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.01,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5062,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Not sure which route yet?",
+      "words": 5,
+      "chars": 25,
+      "lines": 2,
+      "size": 31,
+      "vw": 7.9,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 6195,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 4,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Schibsted Grotesk",
+       "share": 0.7,
+       "mono": false
+      },
+      {
+       "family": "Archivo",
+       "share": 0.29,
+       "mono": false
+      },
+      {
+       "family": "Kaushan Script",
+       "share": 0.01,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      18,
+      20,
+      22,
+      31,
+      45
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Schibsted Grotesk",
+      "size": 16,
+      "leading": 1.65,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.6
+     },
+     "measureChars": 38,
+     "max": {
+      "size": 45.2,
+      "vw": 11.6,
+      "font": "Kaushan Script",
+      "text": "Choose"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 9,
+     "microLabelShare": 0.052,
+     "microSamples": [
+      "Tours",
+      "Signature tour",
+      "Short itinerary",
+      "Wildlife focus",
+      "Southern Namibia",
+      "Culture and wildlife"
+     ],
+     "upperShare": 0.12,
+     "centerShare": 0.08,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Tours",
+      "above": "Choose your Namibia.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 13,
+      "top": 244
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fbf4f2",
+     "bodyBgHsl": {
+      "h": 13,
+      "s": 0.53,
+      "l": 0.97
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#1f1613",
+       "top": 6123,
+       "hsl": {
+        "h": 15,
+        "s": 0.24,
+        "l": 0.1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2f1e1c",
+       "share": 0.46
+      },
+      {
+       "color": "#cda9a4",
+       "share": 0.18
+      },
+      {
+       "color": "#6b5450",
+       "share": 0.11
+      },
+      {
+       "color": "#f0dad5",
+       "share": 0.11
+      },
+      {
+       "color": "#744642",
+       "share": 0.1
+      }
+     ],
+     "button": {
+      "bg": "#f0dad5",
+      "hsl": {
+       "h": 11,
+       "s": 0.47,
+       "l": 0.89
+      },
+      "fg": "#1f1613"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 9,
+     "inHero": 7,
+     "radius": "pill",
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 9,
+     "heroLabels": [
+      "SKIP TO MAIN CONTENT"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 2,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 1,
+     "boxRadius": 24,
+     "squareMedia": 1,
+     "roundedMedia": 7,
+     "mediaRadius": 999,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.5
+     },
+     {
+      "type": "img",
+      "ratio": 0.1
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 76,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "kaushan script",
+     "archivo",
+     "schibsted grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 7811,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "main#main.flex-1.overflow-x-hidden",
+      "tag": "main",
+      "top": 0,
+      "height": 6617,
+      "words": 286,
+      "media": 9,
+      "middle": 0,
+      "heading": {
+       "text": "Choose",
+       "size": 45,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.on-dark.bg-night",
+      "tag": "footer",
+      "top": 6677,
+      "height": 1134,
+      "words": 75,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Explore",
+       "size": 13,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 28,
+      "textLeft": 20,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Choose your Namibia.",
+      "size": 45,
+      "top": 272,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 19
+     },
+     {
+      "x": 52,
+      "n": 2
+     },
+     {
+      "x": 155,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 22,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/home/z/my-project/.taste-skill/after/tours/desktop-fold.jpg",
+   "pages": [
+    "/home/z/my-project/.taste-skill/after/tours/desktop-page-01.jpg",
+    "/home/z/my-project/.taste-skill/after/tours/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/home/z/my-project/.taste-skill/after/tours/tablet-fold.jpg",
+   "pages": [
+    "/home/z/my-project/.taste-skill/after/tours/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/home/z/my-project/.taste-skill/after/tours/mobile-fold.jpg",
+   "pages": [
+    "/home/z/my-project/.taste-skill/after/tours/mobile-page-01.jpg",
+    "/home/z/my-project/.taste-skill/after/tours/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

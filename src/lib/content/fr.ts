@@ -39,7 +39,7 @@ export const fr = {
     contact: {
       title: "Contact et demandes",
       description:
-        "Planifiez votre voyage en Namibie : téléphone +264 81 472 2552, WhatsApp ou info@ligertoursnamibia.com. Réponse en un jour ouvré.",
+        "Planifiez votre voyage en Namibie : téléphone +264 81 472 2552, WhatsApp ou info@ligertours.com. Réponse en un jour ouvré.",
     },
     brand: {
       title: "Marque : couleurs, typographie, logo",
@@ -146,7 +146,7 @@ export const fr = {
   home: {
     intro: {
       eyebrow: "Agence locale, enregistrée NTB",
-      h2: "La meilleure façon de voir la Namibie, c'est avec ceux qui l'appellent chez eux.",
+      h2: "Voyagez avec ceux qui vivent ici.",
       p1: "Liger Tours Namibia est une agence locale bâtie sur une vraie connaissance du terrain. Des safaris aux portes de la capitale aux voyages de plusieurs jours à travers les déserts, les côtes et les réserves du pays, chaque itinéraire est pensé pour vous montrer la vraie Namibie, à un rythme qui vous laisse le temps de la savourer.",
       p2: "En tant qu'agence enregistrée auprès de la Namibia Tourism Board, nous planifions chaque voyage autour des personnes qui le réservent : couples, familles, voyageurs solos et groupes de toute taille, de deux personnes à cinquante et plus, chacun avec un itinéraire, un rythme et un style de voyage qui lui convient.",
       cta: "En savoir plus",
@@ -169,7 +169,8 @@ export const fr = {
       ariaLabel: "Circuits signature",
     },
     pinned: {
-      quote: "Des arbres vieux de cinq cents ans. Des dunes de mille mètres. Votre matin.",
+      quote: "Arbres anciens. Dunes géantes.",
+      sub: "Votre matin.",
       imageAlt:
         "Acacias morts sur l'argile blanche de Deadvlei, entourés de dunes rouges immenses sous un ciel bleu profond",
       ariaLabel: "Le paysage du Namib",
@@ -214,7 +215,7 @@ export const fr = {
     },
     stay: {
       eyebrow: "Où vous dormez",
-      h2: "Des lodges et camps choisis comme pour notre propre famille.",
+      h2: "Des lodges choisis comme pour famille.",
       p: "Des lodges en bois sur les dunes du Kalahari aux chalets de chaume au-dessus des lits de rivière, chaque étape d'un circuit Liger est un lieu où nous avons dormi nous-mêmes et que nous recommanderions à notre famille. Du confort là où il compte, du caractère partout, et des emplacements choisis pour la vue du réveil.",
       cta: "Voir les itinéraires",
       imageAlt1:
@@ -229,7 +230,7 @@ export const fr = {
     },
     faq: {
       eyebrow: "Bon à savoir",
-      h2: "Les questions que posent nos voyageurs avant de réserver.",
+      h2: "Ce que les voyageurs demandent.",
       ariaLabel: "Questions fréquentes",
       moreLink: "Plus de réponses sur la page FAQ",
       items: [
@@ -772,6 +773,12 @@ export const fr = {
     title: "Questions, réponses.",
     pageHeaderAlt:
       "Dunes rouges dominant une plaine verte et graveleuse sous un ciel dégagé dans le désert du Namib",
+    band1Alt:
+      "Véhicule safari ouvert transportant des invités sur le sable rouge namibien à l'heure dorée",
+    band2Alt:
+      "Acacias morts sur l'argile blanche de Deadvlei dans la lumière douce du matin",
+    band3Alt:
+      "Quiver tree en silhouette face au soleil dans le crépuscule namibien",
     lead: "Les questions que posent nos voyageurs avant de réserver, auxquelles nous répondons honnêtement. Il en manque une ? Écrivez-nous sur WhatsApp et elle rejoint cette page.",
     groups: [
       {

@@ -65,7 +65,7 @@ export default async function ActivitiesPage({ params }: Params) {
                     </div>
                   </ImgReveal>
                   <div>
-                    <p className="t-eyebrow text-rose-600">
+                    <p className="t-eyebrow text-rose-700">
                       {a.duration} &middot; {a.location}
                     </p>
                     <h2 className="t-h3 mt-3">{a.name}</h2>
