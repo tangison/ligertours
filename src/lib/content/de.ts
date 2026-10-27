@@ -1118,8 +1118,8 @@ export const de = {
       location: "Außerhalb Windhoeks",
       description:
         "Erleben Sie Namibias Tierwelt direkt vor Windhoek. Genießen Sie eine geführte Pirschfahrt, bei der Sie Giraffen, Zebras, Antilopen und andere heimische Tiere in ihrem Lebensraum begegnen können.",
-      image: "/imagery/crops/giraffes-walking-savanna-4x5.webp",
-      alt: "Drei Giraffen gehen hintereinander zwischen grünen Akazien auf der Savanne",
+      image: "/imagery/crops/gemsbok-golden-light-4x5.webp",
+      alt: "Gemsbok Oryx mit langen geraden Hörnern auf einem Graskamm im goldenen Licht",
     },
     {
       slug: "city-and-township-tour",

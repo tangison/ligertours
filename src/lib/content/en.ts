@@ -1116,8 +1116,8 @@ export const en = {
       location: "Outside Windhoek",
       description:
         "Experience Namibia's wildlife just outside Windhoek. Enjoy a guided safari where you may encounter giraffes, zebras, antelopes and other native animals in their natural habitat.",
-      image: "/imagery/crops/giraffes-walking-savanna-4x5.webp",
-      alt: "Three giraffes walking in a line between green acacia trees on the savanna",
+      image: "/imagery/crops/gemsbok-golden-light-4x5.webp",
+      alt: "Gemsbok oryx with long straight horns standing on a grassy ridge in golden light",
     },
     {
       slug: "city-and-township-tour",

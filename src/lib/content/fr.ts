@@ -1117,8 +1117,8 @@ export const fr = {
       location: "Autour de Windhoek",
       description:
         "Découvrez la faune namibienne aux portes de Windhoek. Profitez d'un safari guidé où vous croiserez peut-être girafes, zèbres, antilopes et autres animaux locaux dans leur habitat naturel.",
-      image: "/imagery/crops/giraffes-walking-savanna-4x5.webp",
-      alt: "Trois girafes marchant en file entre des acacias verts sur la savane",
+      image: "/imagery/crops/gemsbok-golden-light-4x5.webp",
+      alt: "Oryx gemsbok aux longues cornes droites sur une crête herbeuse dans la lumière dorée",
     },
     {
       slug: "city-and-township-tour",

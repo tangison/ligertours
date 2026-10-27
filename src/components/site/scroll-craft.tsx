@@ -304,14 +304,14 @@ export function PinnedQuote({
             scrollTrigger: {
               trigger: root.current,
               start: "top top",
-              end: "+=750",
+              end: "+=680",
               pin: stage.current,
               scrub: 0.6,
             },
           });
           tl.fromTo(
             words,
-            { opacity: 0.35 },
+            { opacity: 0.5 },
             { opacity: 1, ease: "none", stagger: 0.05 },
             0
           );
@@ -331,7 +331,7 @@ export function PinnedQuote({
     <section ref={root as React.RefObject<never>} className={`relative isolate ${className}`} aria-label={ariaLabel}>
       {/* Split stage: the statement sits on a solid night panel, the picture holds
           its own column. Text never crosses the photograph, at any width. */}
-      <div ref={stage} className="relative grid min-h-[86svh] overflow-hidden bg-night md:grid-cols-[1.05fr_1fr]">
+      <div ref={stage} className="relative grid min-h-[80svh] overflow-hidden bg-night md:grid-cols-[1.05fr_1fr]">
         <div className="relative order-2 flex items-center md:order-1">
           <div className="w-full py-14 pl-[max(var(--gutter),calc((100vw-var(--container))/2))] pr-[var(--gutter)] md:py-0 md:pr-[clamp(2rem,5vw,5rem)]">
             <p className="t-pin text-rose-50">

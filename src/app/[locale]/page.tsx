@@ -11,6 +11,7 @@ import {
   Batch,
   CountUp,
   PinnedQuote,
+  LineDraw,
   DriftY,
 } from "@/components/site/scroll-craft";
 import {
@@ -70,7 +71,7 @@ export default async function HomePage({ params }: Params) {
               text={home.intro.h2}
             />
             <p className="t-body mt-6 text-ink">{home.intro.p1}</p>
-            <p className="t-body mt-4 text-ink">{home.intro.p2}</p>
+            <p className="t-body mt-5 text-ink">{home.intro.p2}</p>
             <Link
               href={localePath(locale, "/about")}
               className="t-button mt-8 inline-block text-brand underline decoration-2 underline-offset-[6px] transition-colors duration-[240ms] hover:text-brand-hover"
@@ -86,7 +87,7 @@ export default async function HomePage({ params }: Params) {
                 alt={home.intro.imageAlt}
                 fill
                 sizes="(min-width: 1024px) 420px, 86vw"
-                className="object-cover"
+                className="object-cover object-[center_72%]"
               />
             </div>
           </ImgReveal>
@@ -98,7 +99,7 @@ export default async function HomePage({ params }: Params) {
         <div className="container-liger grid grid-cols-2 gap-x-6 gap-y-10 py-14 lg:grid-cols-4">
           {home.stats.items.map((s) => (
             <div key={s.label} className="text-center">
-              <p className="font-script text-5xl text-rose-700 md:text-6xl" aria-hidden="true">
+              <p className="font-script text-4xl text-rose-700 sm:text-5xl md:text-6xl" aria-hidden="true">
                 {"raw" in s && s.raw ? (
                   s.raw
                 ) : (
@@ -144,7 +145,9 @@ export default async function HomePage({ params }: Params) {
         </div>
       </section>
 
-      {/* 4. Flagship: pinned landscape band, script line scrubs while pinned */}
+      {/* 4. Flagship: pinned landscape band, script line scrubs while pinned.
+          A dune edge eases the drop from the rose tours panel into the night. */}
+      <Dune variant="night" />
       <PinnedQuote
         image="/imagery/web/deadvlei-blue-sky.webp"
         alt={home.pinned.imageAlt}
@@ -154,11 +157,20 @@ export default async function HomePage({ params }: Params) {
       />
       <Dune variant="rose-200" />
 
-      {/* 5. Why Liger: rose-200 panel, batched script numbers */}
+      {/* 5. Why Liger: rose-200 panel, line-draw accent, batched columns.
+          Heading carries itself here: the scrubbed statements stay on the
+          intro, tours and closing sections so no device runs twice in a row. */}
       <section className="section bg-[#F0DAD5]" aria-label={home.why.ariaLabel}>
         <div className="container-liger">
-          <p className="t-eyebrow text-rose-700">{home.why.eyebrow}</p>
-          <WordScrub as="h2" className="t-h2 mt-4 max-w-3xl" text={home.why.h2} />
+          <div className="grid gap-x-12 gap-y-10 lg:grid-cols-[max-content_1fr]">
+            <LineDraw className="hidden w-[3px] self-stretch bg-rose-700/70 lg:block" />
+            <div>
+              <p className="t-eyebrow text-rose-700">{home.why.eyebrow}</p>
+              <Reveal as="div">
+                <h2 className="t-h2 mt-4 max-w-3xl">{home.why.h2}</h2>
+              </Reveal>
+            </div>
+          </div>
           <Batch className="mt-12 grid gap-x-12 gap-y-12 sm:grid-cols-2 lg:grid-cols-6" stagger={0.06}>
             {home.why.items.map((item, i) => (
               <div key={item.n} className={i < 3 ? "lg:col-span-2" : "lg:col-span-3"}>
@@ -175,7 +187,9 @@ export default async function HomePage({ params }: Params) {
       <section className="section" aria-label={home.activities.ariaLabel}>
         <div className="container-liger">
           <p className="t-eyebrow text-rose-700">{home.activities.eyebrow}</p>
-          <WordScrub as="h2" className="t-h2 mt-4 max-w-3xl" text={home.activities.h2} />
+          <Reveal as="div">
+            <h2 className="t-h2 mt-4 max-w-3xl">{home.activities.h2}</h2>
+          </Reveal>
           <Batch className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {homeActivities.map((a) => (
               <Link
@@ -245,7 +259,9 @@ export default async function HomePage({ params }: Params) {
             </div>
             <div>
               <p className="t-eyebrow text-rose-700">{home.stay.eyebrow}</p>
-              <WordScrub as="h2" className="t-h2 mt-4" text={home.stay.h2} />
+              <Reveal as="div">
+                <h2 className="t-h2 mt-4">{home.stay.h2}</h2>
+              </Reveal>
               <p className="t-body mt-6 text-ink">{home.stay.p}</p>
               <Link
                 href={localePath(locale, "/tours")}
@@ -262,7 +278,9 @@ export default async function HomePage({ params }: Params) {
       <section className="section" aria-label={home.testimonials.ariaLabel}>
         <div className="container-narrow">
           <p className="t-eyebrow text-rose-700">{home.testimonials.eyebrow}</p>
-          <WordScrub as="h2" className="t-h2 mt-4" text={home.testimonials.h2} />
+          <Reveal as="div">
+            <h2 className="t-h2 mt-4">{home.testimonials.h2}</h2>
+          </Reveal>
           <div className="mt-12">
             <Batch y={20}>
               <TestimonialCarousel quotes={dict.testimonials} dict={dict} />
@@ -276,7 +294,9 @@ export default async function HomePage({ params }: Params) {
       <section className="section bg-surface-alt" aria-label={home.faq.ariaLabel}>
         <div className="container-liger">
           <p className="t-eyebrow text-rose-700">{home.faq.eyebrow}</p>
-          <WordScrub as="h2" className="t-h2 mt-4 max-w-3xl" text={home.faq.h2} />
+          <Reveal as="div">
+            <h2 className="t-h2 mt-4 max-w-3xl">{home.faq.h2}</h2>
+          </Reveal>
           <Batch
             className="mt-12 grid gap-x-12 gap-y-10 md:grid-cols-2"
             selector=":scope > div"

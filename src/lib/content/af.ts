@@ -1111,8 +1111,8 @@ export const af = {
       location: "Buite Windhoek",
       description:
         "Erva Namibië wildlewe net buite Windhoek. Geniet 'n gelei safari waar u giraffes, sebras, antilopes en ander inheemse diere in hul natuurlike habitat kan ontmoet.",
-      image: "/imagery/crops/giraffes-walking-savanna-4x5.webp",
-      alt: "Drie giraffes wat in 'n lyn loop tussen groen akasiabome op die savanne",
+      image: "/imagery/crops/gemsbok-golden-light-4x5.webp",
+      alt: "Gemsbok of kudu met lang reguit horings wat op 'n grasryk heuwel in goue lig staan",
     },
     {
       slug: "city-and-township-tour",

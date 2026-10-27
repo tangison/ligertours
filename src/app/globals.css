@@ -43,7 +43,7 @@
   --fs-h4: 1.25rem;
   --fs-lead: clamp(1.125rem, 1.05rem + 0.4vw, 1.375rem);
   --fs-body: 1rem;
-  --fs-small: 0.875rem;
+  --fs-small: 1rem;
   --fs-label: 0.8125rem;
   --lh-tight: 1.02;
   --lh-heading: 1.1;
@@ -177,6 +177,10 @@ img { max-width: 100%; height: auto; display: block; }
 .btn--ghost:hover { background: var(--brand); color: #fff; }
 .on-dark .btn--primary { background: var(--rose-200); color: var(--night); }
 .on-dark .btn--primary:hover { background: #fff; }
+/* A ghost button over a photograph keeps a flat night fill so it never
+   disappears into the image; over solid dark surfaces it stays transparent. */
+.photo-hero .btn--ghost { border-color: var(--rose-100); color: var(--rose-50); background: rgba(31, 22, 19, .32); }
+.photo-hero .btn--ghost:hover { background: var(--rose-50); border-color: var(--rose-50); color: var(--night); }
 .on-dark .btn--ghost { border-color: var(--rose-200); color: var(--rose-200); }
 .on-dark .btn--ghost:hover { background: var(--rose-200); color: var(--night); }
 
@@ -207,6 +211,11 @@ img { max-width: 100%; height: auto; display: block; }
 .photo-hero { position: relative; min-height: min(92svh, 56rem); display: grid; align-items: end; color: var(--rose-50); isolation: isolate; }
 .photo-hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
 .photo-hero::before { content: ""; position: absolute; inset: 0; background: var(--overlay-top), var(--overlay-dusk); z-index: -1; }
+/* Phones need a fuller scrim: the same photo that reads well at desktop width
+   turns to murk behind text on a small screen. Flat gradient, no glass. */
+@media (max-width: 767px) {
+  .photo-hero::before { background: linear-gradient(180deg, rgba(31, 22, 19, .62) 0%, rgba(31, 22, 19, .38) 42%, rgba(31, 22, 19, .88) 100%); }
+}
 
 .page-header { position: relative; min-height: 50svh; display: grid; align-items: end; color: var(--rose-50); isolation: isolate; }
 .page-header > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }

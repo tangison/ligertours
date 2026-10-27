@@ -1111,8 +1111,8 @@ export const pt = {
       location: "Fora de Windhoek",
       description:
         "Experimente a vida selvagem da Namibia perto de Windhoek. Desfrute de uma safaria guiada onde pode encontrar girafas, zebras, antílopes e outros animais nativos no seu habitat natural.",
-      image: "/imagery/crops/giraffes-walking-savanna-4x5.webp",
-      alt: "Três girafas a caminhar em linha reta entre árvores de acácia verdes na savana",
+      image: "/imagery/crops/gemsbok-golden-light-4x5.webp",
+      alt: "Oryx gemsbok com chifres longos e retos a ficar numa crista de erva em luz dourada",
     },
     {
       slug: "city-and-township-tour",

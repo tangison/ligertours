@@ -32,7 +32,7 @@ export default function SiteFooter({
               loading="lazy"
               className="h-auto w-[200px]"
             />
-            <p className="prose-liger mt-6 text-[15px] leading-relaxed text-ink-muted-on-dark">
+            <p className="prose-liger mt-6 text-base leading-relaxed text-ink-muted-on-dark">
               {dict.footer.blurb}
             </p>
           </div>
