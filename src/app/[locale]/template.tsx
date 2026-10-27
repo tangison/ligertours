@@ -1,33 +1,11 @@
 "use client";
 
-/* Route-change craft: every navigation replays a short page entrance.
-   Runs on every route (the correction: craft everywhere, not just home).
-   GSAP via useGSAP with auto cleanup; reduced motion = instant. */
-
-import { useRef } from "react";
-import { gsap, useGSAP, prefersReduced } from "@/lib/gsap";
+/* Route container. The former whole-page fade lived here; it was cut for two
+   reasons: it is the "one fade for the whole block" pattern the motion rules
+   call out (per-section entrances already carry the craft), and a full-page
+   ancestor tween re-composites every layer on the page each frame, which
+   deadlocked software rasterizers during load. Entrances belong to sections. */
 
 export default function Template({ children }: { children: React.ReactNode }) {
-  const ref = useRef<HTMLDivElement | null>(null);
-
-  useGSAP(
-    () => {
-      const el = ref.current;
-      if (!el || prefersReduced()) return;
-      gsap.fromTo(
-        el,
-        { autoAlpha: 0, y: 14 },
-        {
-          autoAlpha: 1,
-          y: 0,
-          duration: 0.5,
-          ease: "power2.out",
-          clearProps: "transform,visibility",
-        }
-      );
-    },
-    { scope: ref }
-  );
-
-  return <div ref={ref}>{children}</div>;
+  return <>{children}</>;
 }
