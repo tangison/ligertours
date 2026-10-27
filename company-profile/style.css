@@ -1,0 +1,202 @@
+/* ============================================================
+   Liger Tours Namibia — Company Profile
+   Print design system. Tokens from the site build (brand kit).
+   Type: Archivo (display) + Schibsted Grotesk (body) + JetBrains Mono (labels).
+   Ground: paper #FBF4F2 / white. Ink: #2F1E1C. Accent: rose-700 #744642.
+   ============================================================ */
+
+@font-face {
+  font-family: "Archivo";
+  src: url("assets/Archivo-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+}
+@font-face {
+  font-family: "Schibsted Grotesk";
+  src: url("assets/SchibstedGrotesk-Variable.woff2") format("woff2");
+  font-weight: 400 900;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("assets/jetbrains-mono-400.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("assets/jetbrains-mono-700.woff2") format("woff2");
+  font-weight: 700;
+}
+
+:root {
+  --paper: #FBF4F2;
+  --white: #FFFFFF;
+  --rose-100: #F6E8E4;
+  --rose-200: #F0DAD5;
+  --rose-300: #E3C3BE;
+  --rose-400: #CDA9A4;
+  --ink: #2F1E1C;
+  --muted: #6B5450;
+  --accent: #744642;
+  --accent-deep: #523431;
+  --night: #1F1613;
+  --cream: #F0DAD5;
+  --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", "Courier New", monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body { background: #E9E2DE; }
+body { font-family: var(--font-body); color: var(--ink); -webkit-font-smoothing: antialiased; }
+
+/* ---------- Page shells ---------- */
+.page {
+  width: 210mm;
+  height: 297mm;
+  position: relative;
+  overflow: hidden;
+  background: var(--paper);
+  page-break-after: always;
+  break-after: page;
+  display: flex;
+  flex-direction: column;
+}
+.page--white { background: var(--white); }
+.page--night { background: var(--night); color: var(--cream); }
+
+.pad { padding: 16mm 18mm; }
+
+/* Folio: mono running foot */
+.folio {
+  position: absolute;
+  left: 18mm; right: 18mm; bottom: 9mm;
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-family: var(--font-mono); font-size: 6.6pt; letter-spacing: 0.14em;
+  color: var(--muted); text-transform: uppercase;
+}
+.page--night .folio { color: var(--rose-400); }
+.folio strong { font-weight: 700; color: var(--accent); }
+.page--night .folio strong { color: var(--rose-200); }
+
+/* ---------- Type roles ---------- */
+.eyebrow {
+  font-family: var(--font-mono); font-size: 7pt; font-weight: 700;
+  letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent);
+}
+.page--night .eyebrow { color: var(--rose-200); }
+.display {
+  font-family: var(--font-display); font-weight: 800; font-stretch: 115%;
+  letter-spacing: -0.015em; line-height: 1.04; color: var(--ink);
+}
+.page--night .display { color: var(--rose-50, #FBF4F2); }
+.h-section {
+  font-family: var(--font-display); font-weight: 800; font-stretch: 112%;
+  font-size: 19pt; line-height: 1.12; letter-spacing: -0.01em; color: var(--ink);
+}
+.h-item {
+  font-family: var(--font-display); font-weight: 700; font-stretch: 105%;
+  font-size: 11.5pt; line-height: 1.25; color: var(--ink);
+}
+.lead { font-size: 11pt; line-height: 1.55; color: var(--ink); }
+.body { font-size: 9.6pt; line-height: 1.62; color: var(--ink); }
+.body--muted { color: var(--muted); }
+.page--night .body { color: var(--cream); }
+.mono { font-family: var(--font-mono); font-size: 7pt; letter-spacing: 0.08em; }
+.script-note {
+  font-family: var(--font-body); font-weight: 600; font-size: 12.5pt;
+  line-height: 1.45; color: var(--accent);
+}
+
+/* ---------- Cover ---------- */
+.cover-visual { height: 168mm; position: relative; overflow: hidden; }
+.cover-visual img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cover-brandbar {
+  position: absolute; top: 0; left: 0; right: 0; height: 3.2mm;
+  background: var(--accent);
+}
+.cover-panel { flex: 1; background: var(--paper); padding: 12mm 18mm 0; position: relative; }
+.cover-logo { width: 46mm; height: auto; }
+.cover-title {
+  font-family: var(--font-display); font-weight: 800; font-stretch: 118%;
+  font-size: 34pt; line-height: 1.0; letter-spacing: -0.02em; color: var(--ink);
+  margin-top: 9mm;
+}
+.cover-sub { margin-top: 5mm; max-width: 118mm; }
+.cover-meta {
+  position: absolute; left: 18mm; right: 18mm; bottom: 9mm;
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-family: var(--font-mono); font-size: 6.6pt; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--muted);
+}
+.cover-meta .dot { color: var(--accent); }
+
+/* ---------- Shared editorial parts ---------- */
+.kicker-row { display: flex; align-items: baseline; justify-content: space-between; }
+.rule { border: 0; border-top: 0.5mm solid var(--rose-200); margin: 6mm 0; }
+.rule--accent { border-top-color: var(--accent); }
+
+.facts { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm 6mm; }
+.fact { border-top: 0.5mm solid var(--rose-300); padding-top: 2.4mm; }
+.fact b {
+  display: block; font-family: var(--font-display); font-weight: 800;
+  font-stretch: 112%; font-size: 15pt; line-height: 1.1; color: var(--accent);
+}
+.fact span {
+  display: block; margin-top: 1.2mm; font-family: var(--font-mono);
+  font-size: 6.4pt; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+}
+
+.photo { display: block; width: 100%; object-fit: cover; }
+.caption {
+  margin-top: 2mm; font-family: var(--font-mono); font-size: 6.4pt;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
+}
+
+.quote-card { background: var(--rose-100); padding: 7mm 8mm; }
+.quote-card .q-mark { font-family: var(--font-display); font-weight: 800; font-size: 20pt; line-height: 0.6; color: var(--rose-400); }
+.quote-card p { margin-top: 3.5mm; font-size: 9.8pt; line-height: 1.6; color: var(--ink); }
+.quote-card .who { margin-top: 4mm; font-family: var(--font-mono); font-size: 6.8pt; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
+
+.route-row {
+  display: grid; grid-template-columns: 4.5mm 1fr auto; gap: 4mm; align-items: baseline;
+  padding: 3mm 0; border-top: 0.4mm solid var(--rose-200);
+}
+.route-row .idx { font-family: var(--font-mono); font-size: 7pt; font-weight: 700; color: var(--rose-400); }
+.route-row .name { font-family: var(--font-display); font-weight: 700; font-stretch: 106%; font-size: 10.5pt; color: var(--ink); line-height: 1.3; }
+.route-row .path { grid-column: 2 / 4; font-family: var(--font-mono); font-size: 6.6pt; letter-spacing: 0.06em; color: var(--muted); margin-top: 1mm; }
+
+.steps { display: grid; grid-template-columns: 1fr 1fr; gap: 9mm 8mm; }
+.step .n {
+  font-family: var(--font-mono); font-size: 7pt; font-weight: 700; letter-spacing: 0.16em;
+  color: var(--rose-400); text-transform: uppercase;
+}
+.step h4 { margin-top: 1.6mm; font-family: var(--font-display); font-weight: 700; font-stretch: 106%; font-size: 11.5pt; color: #FBF4F2; }
+.step p { margin-top: 2mm; font-size: 9.2pt; line-height: 1.58; color: var(--cream); }
+
+.band { position: relative; overflow: hidden; }
+.band img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.band .tag {
+  position: absolute; left: 8mm; bottom: 6mm;
+  font-family: var(--font-mono); font-size: 6.6pt; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase; color: #FBF4F2;
+}
+
+.value-row { display: grid; grid-template-columns: 42mm 1fr; gap: 6mm; padding: 4.6mm 0; border-top: 0.5mm solid var(--rose-200); }
+.value-row h4 { font-family: var(--font-display); font-weight: 800; font-stretch: 110%; font-size: 12.5pt; line-height: 1.2; color: var(--accent); }
+.value-row p { font-size: 9.4pt; line-height: 1.58; color: var(--ink); }
+
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm 10mm; }
+.contact-item .k { font-family: var(--font-mono); font-size: 6.4pt; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); }
+.contact-item .v { margin-top: 1.6mm; font-size: 10.5pt; line-height: 1.5; color: var(--ink); font-weight: 600; }
+.contact-item .v a { color: inherit; text-decoration: none; }
+.page--night .contact-item .k { color: var(--rose-200); }
+.page--night .contact-item .v { color: var(--paper); }
+
+.closing { position: relative; }
+.closing-logo { width: 40mm; height: auto; }
+.prepared {
+  font-family: var(--font-mono); font-size: 6.4pt; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--muted);
+}
+.prepared a { color: var(--accent); text-decoration: none; font-weight: 700; }
